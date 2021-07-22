@@ -8,9 +8,9 @@ CXXFLAGS = -std=c++11 -Wall
 LDFLAGS = 
 
 # Makefile settings - Can be customized.
-APPNAME = BPCE
+APPNAME = ComissionEmployee
 EXT = .cpp
-SRCDIR = /home/iaa/Desktop/VScodeProjects/C++/2021/Chapter12/BPCE
+SRCDIR = /home/iaa/Desktop/VScodeProjects/C++/2021/Chapter12/ComissionEmployee
 OBJDIR = obj
 
 ############## Do not change anything from here downwards! #############
