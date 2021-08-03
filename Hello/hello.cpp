@@ -23,7 +23,7 @@ int main()
         wePtr1 = shPtr1;
     }
     cout << "hello, world\n";
-    cout << "Work on VSC with GitHub\n";
+    cout << "Trying to work on VSC with GitHub\n";
     getch();
     return 0;
     
