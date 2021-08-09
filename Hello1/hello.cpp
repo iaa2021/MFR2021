@@ -1,5 +1,5 @@
 #include <iostream>
-#include <conio.h>
+
 #include <memory>
 using namespace std;
 struct Smaptphone
@@ -48,6 +48,6 @@ int main()
     p.gender = "mail";
     p.smartphone = smartphone;
     printPersonInfo( p );
-    getch();
+    cin.get();
     return 0;
 }
