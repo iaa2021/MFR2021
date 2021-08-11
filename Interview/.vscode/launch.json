@@ -7,12 +7,12 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "/home/iaa/Desktop/NewStore/MFR2021/Interview",
+      "cwd": "c:\\Users\\ivano\\OneDrive\\Рабочий стол\\TempGit\\MFR2021\\Interview",
       "environment": [],
-      "program": "/home/iaa/Desktop/NewStore/MFR2021/Interview/build/Debug/outDebug",
+      "program": "c:\\Users\\ivano\\OneDrive\\Рабочий стол\\TempGit\\MFR2021\\Interview\\build\\Debug\\outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
-      "miDebuggerPath": "/usr/bin/gdb",
+      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
       "externalConsole": false
     }
   ]
