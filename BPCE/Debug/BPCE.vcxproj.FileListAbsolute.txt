@@ -1,1 +1,2 @@
 I:\GitStore\BPCE\Debug\BPCE.exe
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\BPCE\Debug\BPCE.exe
