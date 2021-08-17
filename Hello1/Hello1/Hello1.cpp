@@ -23,7 +23,10 @@ class MyClass
 int main()
 {
     {
-        unique_ptr< MyClass >unPtr1 = make_unique< MyClass >();
+        shared_ptr<MyClass>shPtr1 = make_shared<MyClass>();
+        cout << "Shared count: " << shPtr1.use_count() << endl;
+        shared_ptr<MyClass>shPtr2 = shPtr1;
+        cout << "Shared count: " << shPtr1.use_count() << endl;
     }
     cin.get();
     return 0;
