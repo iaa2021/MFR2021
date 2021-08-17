@@ -2,10 +2,15 @@
 //
 
 #include <iostream>
-
+#include <memory>
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    unique_ptr< int >unPtr1 = make_unique<int>(25);
+    unique_ptr< int >unPtr2 = move(unPtr1);
+    cout << *unPtr2 << endl;
+    cin.get();
+    return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
