@@ -1,14 +1,30 @@
-﻿// Hello1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+// This is an independent project of an individual developer. Dear PVS-Studio, please check it.
+
+// PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
+
+// Hello1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
 #include <memory>
 using namespace std;
+class MyClass
+{
+    public:
+    MyClass()
+    {
+        cout << "Constructor is invoked.\n";
+    }
+    ~MyClass()
+    {
+        cout << "Destructor is invoked.\n";
+    }
+};
 int main()
 {
-    unique_ptr< int >unPtr1 = make_unique<int>(25);
-    unique_ptr< int >unPtr2 = move(unPtr1);
-    cout << *unPtr2 << endl;
+    {
+        unique_ptr< MyClass >unPtr1 = make_unique< MyClass >();
+    }
     cin.get();
     return 0;
 }
