@@ -22,8 +22,9 @@ class MyClass
 };
 int main()
 {
-    
-    unique_ptr<MyClass>(new MyClass);
+    {
+        unique_ptr<MyClass>unPtr1(new MyClass);
+    }
     cin.get();
     return 0;
 }
