@@ -18,6 +18,9 @@ int main()
     CEptr->print();
     cout << "\nInvoking print function by BPCeptr:\n";
     BPCEptr->print();
+    CEptr = &employee;
+    cout << "\nInvoking print function by Ceptr pointing to BPCE object:\n";
+    CEptr->print();
     cin.get();
     return 0;
 }
