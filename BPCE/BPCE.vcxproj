@@ -142,12 +142,17 @@
     <ClCompile Include="BPCE.cpp" />
     <ClCompile Include="ComissionEmployee.cpp" />
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="HourlyEmployee.cpp" />
+    <ClCompile Include="SalariedEmployee.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Source1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BPCE.h" />
     <ClInclude Include="ComissionEmployee.h" />
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="HourlyEmployee.h" />
+    <ClInclude Include="SalariedEmployee.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
