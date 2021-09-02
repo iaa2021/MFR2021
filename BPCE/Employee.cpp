@@ -34,6 +34,6 @@ string Employee::getSocialSecurityNamber() const
 }
 void Employee::print() const
 {
-    cout << "Comission employee " << firstName << "  " << lastName
-        << "\nsocial security number: " << sSN << endl;
+    cout << getFirstName() << "  " << getLastName()
+        << "\nsocial security number: " << getSocialSecurityNamber() << endl;
 }

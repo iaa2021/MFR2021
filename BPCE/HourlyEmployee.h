@@ -1,5 +1,5 @@
-#ifndef SALARIEDEMPLOYEE_H
-#define SALARIEDEMPLOYEE_H
+#ifndef HOURLYEMPLOYEE_H
+#define HOURLYEMPLOYEE_H
 #include "Employee.h"
 class HourlyEmployee : public Employee
 {

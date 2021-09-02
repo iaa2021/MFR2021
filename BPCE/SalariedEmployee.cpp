@@ -17,7 +17,7 @@ double SalariedEmployee::getWeeklySalary() const
 }
 double SalariedEmployee::earnings() const
 {
-    return weeklySalary;
+    return getWeeklySalary();
 }
 void SalariedEmployee::print() const
 {
