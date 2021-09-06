@@ -14,6 +14,7 @@ public:
     string getSocialSecurityNamber() const;
     virtual double earnings() const = 0;
     virtual void print() const;
+   
 private:
     string firstName;
     string lastName;

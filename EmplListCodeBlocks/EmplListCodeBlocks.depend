@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1630906386 source:c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\src\comissionemployee.cpp
+	<iostream>
+	"ComissionEmployee.h"
+
+1630906386 c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\include\comissionemployee.h
+	<string>
+	"Employee.h"
+
+1630906276 c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\include\employee.h
+	<string>
+
+1630906276 source:c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\src\employee.cpp
+	<iostream>
+	"Employee.h"
+
+1630906673 source:c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\src\bpce.cpp
+	<iostream>
+	"BPCE.h"
+
+1630906673 c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\include\bpce.h
+	<string>
+	"ComissionEmployee.h"
+
+1630906811 source:c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\main.cpp
+	<iostream>
+	<vector>
+	<iomanip>
+	"Employee.h"
+	"ComissionEmployee.h"
+	"BPCE.h"
+
+1630906924 source:c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\src\salariedemployee.cpp
+	"SalariedEmployee.h"
+	<iostream>
+
+1630906924 c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\include\salariedemployee.h
+	"Employee.h"
+
+1630907178 source:c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\src\hourlyemployee.cpp
+	"HourlyEmployee.h"
+	<iostream>
+
+1630907178 c:\users\ivano\onedrive\Рабочий стол\tempgit\mfr2021\mfr2021\empllistcodeblocks\include\hourlyemployee.h
+	"Employee.h"
+
