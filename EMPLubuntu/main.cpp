@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <typeinfo>
 using namespace std;
 #include "Employee.h"
 #include "ComissionEmployee.h"
@@ -34,6 +35,11 @@ int main()
             cout << "New base salary with 10% premium is: " << derivedPtr -> getBaseSalary() << endl;
         }
         cout << "Total earnings: " << store[ i ] -> earnings() << "$\n\n";
+    }
+    for( size_t i = 0; i < store.size(); i++ )
+    {
+        cout << "Deleting objects of " << typeid( *store[ i ] ).name() << endl;
+        
     }
     return 0;
 }

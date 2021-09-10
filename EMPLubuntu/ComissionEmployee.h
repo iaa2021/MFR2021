@@ -6,8 +6,8 @@ using namespace std;
 class ComissionEmployee : public Employee
 {
 public:
-    ComissionEmployee(const string&, const string&, const string&,
-        double = 0.0, double = 0.0);
+    ComissionEmployee(const string&, const string&, const string&, double = 0.0, double = 0.0);
+    virtual ~ComissionEmployee();
     void setGrossSales(double);
     double getGrossSales() const;
     void setComissionRate(double);

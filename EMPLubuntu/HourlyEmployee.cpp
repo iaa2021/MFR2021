@@ -9,6 +9,10 @@ HourlyEmployee::HourlyEmployee(const string& first, const string& last, const st
     setWage(hourlyWage);
     setHours(workedHours);
 }
+HourlyEmployee::~HourlyEmployee()
+{
+    
+}
 void HourlyEmployee::setWage(double hourlyWage)
 {
     wage = (hourlyWage < 0 ? 0.0 : hourlyWage);

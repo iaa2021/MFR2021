@@ -6,6 +6,10 @@ BPCE::BPCE(const string& first, const string& last, const string& ssn, double sa
 {
     setBaseSalary(salary);
 }
+BPCE::~BPCE()
+{
+    
+}
 void BPCE::setBaseSalary(double salary)
 {
     baseSalary = (salary >= 0.0 ? salary : 0.0);

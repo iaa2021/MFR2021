@@ -8,7 +8,10 @@ ComissionEmployee::ComissionEmployee(const string& first, const string& last,
     setGrossSales(sales);
     setComissionRate(rate);
 }
-
+ComissionEmployee::~ComissionEmployee()
+{
+    
+}
 void ComissionEmployee::setGrossSales(double sales)
 {
     grossSales = (sales < 0 ? 0.0 : sales);
