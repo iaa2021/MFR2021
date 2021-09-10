@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <typeinfo>
 using namespace std;
 #include "Employee.h"
 #include "ComissionEmployee.h"
@@ -35,5 +36,11 @@ int main()
         }
         cout << "Total earnings: " << store[ i ] -> earnings() << "$\n\n";
     }
+    for( size_t i = 0; i < store.size(); i++ )
+    {
+        cout << "Deleting object of vector store:  " << typeid( *store[ i ] ).name() << endl;
+        delete store[ i ];
+    }
+    cin.get();
     return 0;
 }
