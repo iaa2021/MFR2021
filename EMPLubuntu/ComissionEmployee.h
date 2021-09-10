@@ -7,7 +7,8 @@ class ComissionEmployee : public Employee
 {
 public:
     ComissionEmployee(const string&, const string&, const string&, double = 0.0, double = 0.0);
-    virtual ~ComissionEmployee();
+    ~ComissionEmployee() override
+    {}
     void setGrossSales(double);
     double getGrossSales() const;
     void setComissionRate(double);
