@@ -8,10 +8,7 @@ Employee::Employee(const string& first, const string& last,
 {
 
 }
-Employee::~Employee()
-{
-    
-}
+Employee::~Employee(){}
 void Employee::setFirstName(const string& first)
 {
     firstName = first;
