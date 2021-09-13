@@ -11,7 +11,7 @@ HourlyEmployee::HourlyEmployee(const string& first, const string& last, const st
 }
 HourlyEmployee::~HourlyEmployee()
 {
-    
+    cout << "HE destructor is launched.\n";
 }
 void HourlyEmployee::setWage(double hourlyWage)
 {

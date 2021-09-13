@@ -9,7 +9,7 @@ SalariedEmployee::SalariedEmployee(const string& first, const string& last, cons
 }
 SalariedEmployee::~SalariedEmployee()
 {
-    
+    cout << "CE destructor is launched.\n";
 }
 void SalariedEmployee::setWeeklySalary(double salary)
 {

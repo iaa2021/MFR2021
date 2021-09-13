@@ -7,8 +7,8 @@ class ComissionEmployee : public Employee
 {
 public:
     ComissionEmployee(const string&, const string&, const string&, double = 0.0, double = 0.0);
-    ~ComissionEmployee() override
-    {}
+    virtual ~ComissionEmployee() override
+    { cout << "CE destructor is launched.\n"; }
     void setGrossSales(double);
     double getGrossSales() const;
     void setComissionRate(double);

@@ -8,7 +8,7 @@ BPCE::BPCE(const string& first, const string& last, const string& ssn, double sa
 }
 BPCE::~BPCE()
 {
-    
+    cout << "BPCE destructor is launched.\n";
 }
 void BPCE::setBaseSalary(double salary)
 {
