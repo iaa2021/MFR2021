@@ -6,7 +6,7 @@ class Employee
 {
 public:
     Employee(const string&, const string&, const string&);
-    virtual ~Employee();
+    virtual ~Employee() = default;
     void setFirstName(const string&);
     string getFirstName() const;
     void setLastName(const string&);
