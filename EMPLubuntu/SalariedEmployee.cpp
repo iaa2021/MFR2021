@@ -7,6 +7,10 @@ SalariedEmployee::SalariedEmployee(const string& first, const string& last, cons
 {
     setWeeklySalary(salary);
 }
+SalariedEmployee::~SalariedEmployee()
+{
+    cout << "CE destructor is launched.\n";
+}
 void SalariedEmployee::setWeeklySalary(double salary)
 {
     weeklySalary = (salary < 0 ? 0.0 : salary);

@@ -7,6 +7,7 @@ class BPCE : public ComissionEmployee
 {
 public:
     BPCE(const string&, const string&, const string&, double = 0.0, double = 0.0, double = 0.0);
+    virtual ~BPCE();
     void setBaseSalary(double);
     double getBaseSalary() const;
     virtual double earnings() const;

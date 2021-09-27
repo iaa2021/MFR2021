@@ -9,6 +9,10 @@ HourlyEmployee::HourlyEmployee(const string& first, const string& last, const st
     setWage(hourlyWage);
     setHours(workedHours);
 }
+HourlyEmployee::~HourlyEmployee()
+{
+    cout << "HE destructor is launched.\n";
+}
 void HourlyEmployee::setWage(double hourlyWage)
 {
     wage = (hourlyWage < 0 ? 0.0 : hourlyWage);

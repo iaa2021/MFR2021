@@ -5,6 +5,7 @@ class HourlyEmployee : public Employee
 {
 public:
     HourlyEmployee(const string&, const string&, const string&, double = 0.0, double = 0.0);
+    virtual ~HourlyEmployee();
     void setWage(double);
     double getWage() const;
     void setHours(double);
