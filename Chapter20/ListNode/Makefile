@@ -10,7 +10,7 @@ LDFLAGS =
 # Makefile settings - Can be customized.
 APPNAME = listNode
 EXT = .cpp
-SRCDIR = /home/iaa/Desktop/GitStore/MFR2021/Chapter20/ListNode
+SRCDIR = /home/iaa/Desktop/gitStore/MFR2021/Chapter20/ListNode
 OBJDIR = obj
 
 ############## Do not change anything from here downwards! #############
