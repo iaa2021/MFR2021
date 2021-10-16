@@ -21,9 +21,11 @@ private:
 	ListNode< NODETYPE> *lastPtr;
 	ListNode< NODETYPE> *getNewNode(const NODETYPE&);
 };
+template <typename NODETYPE>
 List<NODETYPE>::List()
 	: firstPtr( 0 ), lastPtr( 0 )
 {}
+template <typename NODETYPE>
 List<NODETYPE>::~List()
 {
 	if (!isEmpty())
@@ -40,5 +42,46 @@ List<NODETYPE>::~List()
 		}
 	}
 	cout << "All nodes are destroyed." << endl;
+}
+template <typename NODETYPE>
+void List<NODETYPE>::insertAtFront(const NODETYPE& value)
+{
+	ListNode< NODETYPE>* newPtr = getNewNode(value);
+	if (isEmpty())
+		lastPtr = firstPtr = newPtr;//list has single node
+	else //list is not empty
+	{
+		newPtr->nextPtr = firstPtr;
+		firstPtr = newPtr;
+	}
+}
+template <typename NODETYPE>
+void List<NODETYPE>::insertAtBack(const NODETYPE& value)
+{
+	ListNode< NODETYPE>* newPtr = getNewNode(value);
+	if (isEmpty())
+		lastPtr = firstPtr = newPtr;//list has single node
+	else //list is not empty
+	{
+		lastPtr->nextPtr = newPtr;
+		lastPtr = newPtr;
+	}
+}
+template <typename NODETYPE>
+void List<NODETYPE>::removeFrwmFront(const NODETYPE& value)
+{
+	if (isEmpty)
+		return false;
+	else
+	{
+		ListNode< NODETYPE>* tempPtr = firstPtr;
+		if (firstPtr == lastPtr)
+			firstPtr = lastPtr = 0;
+		else
+			firstPtr->nextPtr;
+		value = tempPtr -> data;
+		delete tempPtr;
+		return true;
+	}
 }
 #endif
