@@ -1,7 +1,7 @@
 #ifndef LISTNODE_H
 #define LISTNODE_H
 template <typename NODETYPE> class List
-template <typename NODETYPE> 
+template <typename NODETYPE>
 class ListNode
 {
 	friend class List;
@@ -12,7 +12,7 @@ private:
 	NODETYPE data;
 	ListNode< NODETYPE>* nextPtr;
 };
-ListNode< NODETYPE>::ListNode( const NODETYPE &info )
+ListNode< NODETYPE >::ListNode( const NODETYPE &info )
 	: data( info ), nextPtr( 0 )
 {}
 ListNode< NODETYPE>::getData() const
