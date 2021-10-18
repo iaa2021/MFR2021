@@ -9,6 +9,14 @@ public:
 	Node *Next;
 	int value;
 };
+void printList(Node* ptr)
+{
+	while (ptr != 0)
+	{
+		cout << ptr->value << endl;
+		ptr = ptr->Next;
+	}
+}
 
 int main()
 {
@@ -16,15 +24,14 @@ int main()
 	Node* head = new Node();
 	Node* first = new Node();
 	Node* second = new Node();
-	head->value = 1;
-	first->value = 2;
-	second->value = 3;
 	head->Next = first;
 	first->Next = second;
 	second->Next = 0;
-
-
-    std::cout << "Hello World!\n";
+	head->value = 1;
+	first->value = 2;
+	second->value = 3;
+	printList(head);
+	return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
