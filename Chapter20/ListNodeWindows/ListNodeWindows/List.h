@@ -12,8 +12,8 @@ public:
 	~List();
 	void insertAtFront(const NODETYPE&);
 	void insertAtBack(const NODETYPE&);
-	void removeFremFront(const NODETYPE&);
-	void removeFromBack(const NODETYPE&);
+	bool removeFromFront(const NODETYPE&);
+	bool removeFromBack(const NODETYPE&);
 	bool isEmpty() const;
 	void print() const;
 private:
@@ -68,7 +68,7 @@ void List<NODETYPE>::insertAtBack(const NODETYPE& value)
 	}
 }
 template <typename NODETYPE>
-void List<NODETYPE>::removeFrwmFront(const NODETYPE& value)
+bool List<NODETYPE>::removeFromFront(const NODETYPE& value)
 {
 	if (isEmpty)
 		return false;
@@ -78,14 +78,15 @@ void List<NODETYPE>::removeFrwmFront(const NODETYPE& value)
 		if (firstPtr == lastPtr)
 			firstPtr = lastPtr = 0;
 		else
-			firstPtr->nextPtr;
+			firstPtr = firstPtr->nextPtr;
+
 		value = tempPtr -> data;
 		delete tempPtr;
 		return true;
 	}
 }
 template <typename NODETYPE>
-void List<NODETYPE>::removeFrwmBack(const NODETYPE& value)
+bool List<NODETYPE>::removeFromBack(const NODETYPE& value)
 {
 	if (isEmpty)
 		return false;
@@ -95,10 +96,43 @@ void List<NODETYPE>::removeFrwmBack(const NODETYPE& value)
 		if (firstPtr == lastPtr)
 			firstPtr = lastPtr = 0;
 		else
-			firstPtr->nextPtr;
+		{
+			ListNode< NODETYPE>* currentPtr = firstPtr;
+			while (currentPtr -> nextPtr != lastPtr)
+				currentPtr = currentPtr->nextPtr;
+
+			lastPtr = currentPtr;
+			currentPtr->nextPtr = 0;
+		}
 		value = tempPtr->data;
 		delete tempPtr;
 		return true;
 	}
+}
+template <typename NODETYPE>
+bool List<NODETYPE>::isEmpty() const
+{
+	return firstPtr == 0;	
+}
+template <typename NODETYPE>
+ListNode< NODETYPE>* List<NODETYPE>::getNewNode(const NODETYPE &value)
+{
+	return new ListNode< NODETYPE>(value);
+}
+template <typename NODETYPE>
+void List<NODETYPE>::print() const
+{
+	if (isEmpty)
+	{
+		cout << "The array is empty.\n";
+		return;
+	}
+	ListNode< NODETYPE>* currentPtr = firstPtr;
+	while (currentPtr->nextPtr != 0)
+	{
+		cout << currentPtr->data << endl;
+		currentPtr = currentPtr->nextPtr;
+	}
+	cout << endl << endl;
 }
 #endif
