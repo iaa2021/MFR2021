@@ -84,4 +84,21 @@ void List<NODETYPE>::removeFrwmFront(const NODETYPE& value)
 		return true;
 	}
 }
+template <typename NODETYPE>
+void List<NODETYPE>::removeFrwmBack(const NODETYPE& value)
+{
+	if (isEmpty)
+		return false;
+	else
+	{
+		ListNode< NODETYPE>* tempPtr = lastPtr;
+		if (firstPtr == lastPtr)
+			firstPtr = lastPtr = 0;
+		else
+			firstPtr->nextPtr;
+		value = tempPtr->data;
+		delete tempPtr;
+		return true;
+	}
+}
 #endif
