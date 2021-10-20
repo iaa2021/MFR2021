@@ -6,9 +6,13 @@ using namespace std;
 class Node
 {
 public:
+	Node(int n);
 	Node *Next;
 	int value;
 };
+Node::Node( int n )
+	: value(n), Next(0)
+{}
 void printList(Node* ptr)
 {
 	while (ptr != 0)
@@ -17,22 +21,34 @@ void printList(Node* ptr)
 		ptr = ptr->Next;
 	}
 }
-
+void insertAtFront(Node **ptr, int num)
+{
+	Node* newPtr = new Node(num);
+	newPtr->Next = *ptr;
+	*ptr = newPtr;
+}
 int main()
 {
 
-	Node* head = new Node();
-	Node* first = new Node();
-	Node* second = new Node();
+	Node* head = new Node(1);
+	Node* first = new Node(2);
+	Node* second = new Node(3);
 	head->Next = first;
 	first->Next = second;
 	second->Next = 0;
-	head->value = 1;
-	first->value = 2;
-	second->value = 3;
+	
+	printList(head);
+	cout << "\nArray after inserting at front:\n";
+	insertAtFront(&head, 0);
+	printList(head);
+	cout << "\nArray after inserting at back:\n";
+	Node* backHead = new Node(4);
+	backHead->Next = 0;
+	second->Next = backHead;
 	printList(head);
 	return 0;
 }
+
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
