@@ -1,18 +1,7 @@
 ﻿// CodeBeautyLintedList.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
-#include <iostream>
-using namespace std;
-class Node
-{
-public:
-	Node(int n);
-	Node *Next;
-	int value;
-};
-Node::Node( int n )
-	: value(n), Next(0)
-{}
+
 void printList(Node* ptr)
 {
 	while (ptr != 0)
