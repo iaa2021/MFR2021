@@ -1,40 +1,49 @@
 ﻿// CodeBeautyLintedList.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
-
-void printList(Node* ptr)
-{
-	while (ptr != 0)
-	{
-		cout << ptr->value << endl;
-		ptr = ptr->Next;
-	}
-}
-void insertAtFront(Node **ptr, int num)
-{
-	Node* newPtr = new Node(num);
-	newPtr->Next = *ptr;
-	*ptr = newPtr;
-}
+#include <iostream>
+#include <cstdlib>
+#include<ctime>
+using namespace std;
+#include "List.h"
 int main()
 {
-
-	Node* head = new Node(1);
-	Node* first = new Node(2);
-	Node* second = new Node(3);
-	head->Next = first;
-	first->Next = second;
-	second->Next = 0;
+	srand(time(0));
+	List list;
+	int choice; int num;
+	cout << "1 - insert at front;\n2 - insert at back;\n3 - remove from front;\n4 - remove from back;\n0 - to stop operations; " << endl;
+	cout << "Input your choice  ";
+	cin >> choice;
+	while (choice != 0)
+	{
+		switch (choice)
+		{
+		case 1:
+			cout << "Input number, you'd like to operate with\n";
+			cin >> num;
+			list.insertAtFront(num);
+			break;
+		case 2:
+			cout << "Input number, you'd like to operate with\n";
+			cin >> num;
+			list.insertAtBack(num);
+			break;
+		case 3:
+			list.removeFromFront();
+			break;
+		case 4:
+			list.removeFromBack();
+			break;
+		default:
+			cout << "You've entered wrong choice.\n";
+			break;
+		}
+		
+		cout << "Input your choice\n";
+		cin >> choice;
+	}
 	
-	printList(head);
-	cout << "\nArray after inserting at front:\n";
-	insertAtFront(&head, 0);
-	printList(head);
-	cout << "\nArray after inserting at back:\n";
-	Node* backHead = new Node(4);
-	backHead->Next = 0;
-	second->Next = backHead;
-	printList(head);
+	list.printList();
+
 	return 0;
 }
 
