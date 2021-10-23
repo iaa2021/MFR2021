@@ -11,7 +11,7 @@ int main()
 	List list;
 	int choice; int num;
 	cout << "1 - insert at front;\n2 - insert at back;\n3 - remove from front;\n4 - remove from back;\n0 - to stop operations; " << endl;
-	cout << "Input your choice  ";
+	cout << "Input your choice:  ";
 	cin >> choice;
 	while (choice != 0)
 	{
