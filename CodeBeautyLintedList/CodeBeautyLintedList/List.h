@@ -90,14 +90,14 @@ bool List::removeFromBack()
 		return false;
 	else
 	{
-		Node* newPtr = lastPtr;
+		Node* newPtr = lastPtr;//for removing
 		if (firstPtr == lastPtr)
 			firstPtr = lastPtr = 0;
 		else
 		{
-			Node* currentPtr = firstPtr;
-			while (newPtr->nextPtr != lastPtr)
-				newPtr = newPtr->nextPtr;
+			Node* currentPtr = firstPtr;//for moving throw the list
+			while (currentPtr->nextPtr != lastPtr)
+				currentPtr = currentPtr->nextPtr;
 
 			lastPtr = currentPtr;
 			currentPtr->nextPtr = 0;
@@ -138,7 +138,7 @@ void List::insertAfter(int num, int pst)
 	while (tempPtr->value != num)
 	{
 		tempPtr = tempPtr->nextPtr;
-		newPtr->nextPtr = tempPtr->nextPtr;
-		tempPtr->nextPtr = newPtr;
 	}
+	newPtr->nextPtr = tempPtr->nextPtr;
+	tempPtr->nextPtr = newPtr;
 }
