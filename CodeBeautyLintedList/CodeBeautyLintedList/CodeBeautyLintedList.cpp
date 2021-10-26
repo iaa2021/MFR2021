@@ -9,8 +9,8 @@ int main()
 {
 	srand(time(0));
 	List list;
-	int choice; int num;
-	cout << "1 - insert at front;\n2 - insert at back;\n3 - remove from front;\n4 - remove from back;\n0 - to stop operations; " << endl;
+	int choice; int num; int border; 
+	cout << "1 - insert at front;\n2 - insert at back;\n3 - remove from front;\n4 - remove from back;\n5 - to insert after defined number;\n0 - to stop operations; " << endl;
 	cout << "Input your choice:  ";
 	cin >> choice;
 	while (choice != 0)
@@ -32,6 +32,12 @@ int main()
 			break;
 		case 4:
 			list.removeFromBack();
+			break;
+		case 5:
+			list.printList();
+			cout << "Input number, after which you'd like to insert & number for inserting: ";
+			cin >> border >> num;
+			list.insertAfter(border, num);
 			break;
 		default:
 			cout << "You've entered wrong choice.\n";

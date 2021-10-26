@@ -12,6 +12,7 @@ public:
 	~List();
 	void insertAtFront(int);
 	void insertAtBack(int);
+	void insertAfter(int, int);
 	bool removeFromFront();
 	bool removeFromBack();
 	void printList() const;
@@ -41,7 +42,7 @@ List::~List()
 			currentPtr = currentPtr->nextPtr;
 			delete tempPtr;
 		}
-		firstPtr = firstPtr->nextPtr;
+		
 	}
 	cout << "\nAll nodes are destroyed.\n";
 }
@@ -128,4 +129,16 @@ bool List::isEmpty() const
 Node* List::getNewNode(int num)
 {
 	return new Node(num);
+}
+void List::insertAfter(int num, int pst)
+{
+	//num is the number, after which we are going to insert pst
+	Node* newPtr = new Node(pst);//node for paiste
+	Node* tempPtr = firstPtr;
+	while (tempPtr->value != num)
+	{
+		tempPtr = tempPtr->nextPtr;
+		newPtr->nextPtr = tempPtr->nextPtr;
+		tempPtr->nextPtr = newPtr;
+	}
 }
