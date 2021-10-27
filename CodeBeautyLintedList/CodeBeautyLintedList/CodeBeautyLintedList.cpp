@@ -1,6 +1,6 @@
 ﻿// CodeBeautyLintedList.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-#include "conio.h"
+#include <conio.h>
 #include <iostream>
 #include <cstdlib>
 #include<ctime>
@@ -38,7 +38,7 @@ int main()
 			cin >> choice;
 		}
 		cout << "The work is over.\n";
-		cin.get();
+		system("pause");
 		return 0;
 	
 }
