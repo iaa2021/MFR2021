@@ -1,15 +1,52 @@
 ﻿// CodeBeautyLintedList.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
+#include "conio.h"
 #include <iostream>
 #include <cstdlib>
 #include<ctime>
+#include <string>
 using namespace std;
 #include "List.h"
+template<class T>
+void testList(List<T>& object, const string& typeName);
 int main()
 {
 	srand(time(0));
-	List list;
-	int choice; int num; int border; 
+	cout << "1 - to operate with integer data;\n2 - to operate with double data;\n3 - to operate with string data;\n0 - to stop operations; " << endl;
+	int choice;
+	cout << "Input your choice:  ";
+	cin >> choice;
+		if (choice == 1)
+		{
+			List<int> list;
+			testList(list, "integer");
+		}
+		if (choice == 2)
+		{
+			List<double> list;
+			testList(list, "double");
+		}
+		if (choice == 3)
+		{
+			List<string> list;
+			testList(list, "string");
+		}
+		if( choice > 3 || choice < 0 )
+		{
+			cout << "You've entered wrong choice.\n";
+			cout << "Input your choice:  ";
+			cin >> choice;
+		}
+		cout << "The work is over.\n";
+		cin.get();
+		return 0;
+	
+}
+template<class T>
+void testList(List< T >& object, const string& typeName)
+{
+	cout << "The list of " << typeName << " objects is handling.\n";
+	int choice; T num; T border;
 	cout << "1 - insert at front;\n2 - insert at back;\n3 - remove from front;\n4 - remove from back;\n5 - to insert after defined number;\n0 - to stop operations; " << endl;
 	cout << "Input your choice:  ";
 	cin >> choice;
@@ -18,41 +55,36 @@ int main()
 		switch (choice)
 		{
 		case 1:
-			cout << "Input number, you'd like to operate with\n";
+			cout << "Input value, you'd like to operate with\n";
 			cin >> num;
-			list.insertAtFront(num);
+			object.insertAtFront(num);
 			break;
 		case 2:
-			cout << "Input number, you'd like to operate with\n";
+			cout << "Input value, you'd like to operate with\n";
 			cin >> num;
-			list.insertAtBack(num);
+			object.insertAtBack(num);
 			break;
 		case 3:
-			list.removeFromFront();
+			object.removeFromFront();
 			break;
 		case 4:
-			list.removeFromBack();
+			object.removeFromBack();
 			break;
 		case 5:
-			list.printList();
-			cout << "Input number, after which you'd like to insert & number for inserting: ";
+			object.printList();
+			cout << "Input value, after which you'd like to insert & value for inserting: ";
 			cin >> border >> num;
-			list.insertAfter(border, num);
+			object.insertAfter(border, num);
 			break;
 		default:
 			cout << "You've entered wrong choice.\n";
 			break;
 		}
-		
 		cout << "Input your choice\n";
 		cin >> choice;
 	}
-	
-	list.printList();
-
-	return 0;
+	object.printList();
 }
-
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"

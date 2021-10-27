@@ -1,20 +1,24 @@
 #include <iostream>
 using namespace std;
+template < class NODETYPE >
 class List;
+template < class NODETYPE >
 class Node
 {
-	friend class List;
+	friend class List<NODETYPE>;
 public:
-	Node(int);
-	int getValue() const;
+	Node(const NODETYPE &);
+	NODETYPE getValue() const;
 private:
-	int value;
-	Node* nextPtr;
+	NODETYPE value;
+	Node<NODETYPE>* nextPtr;
 };
-Node::Node( int num )
-	: value( num ), nextPtr( 0 )
+template < class NODETYPE >
+Node<NODETYPE>::Node( const NODETYPE &info  )
+	: value( info ), nextPtr( 0 )
 {}
-int Node::getValue() const
+template < class NODETYPE >
+NODETYPE Node<NODETYPE>::getValue() const
 {
 	return value;
 }

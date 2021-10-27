@@ -5,37 +5,39 @@
 #include <iostream>
 using namespace std;
 #include "Node.h"
+template < class NODETYPE >
 class List
 {
 public:
 	List();
 	~List();
-	void insertAtFront(int);
-	void insertAtBack(int);
-	void insertAfter(int, int);
+	void insertAtFront(const NODETYPE&);
+	void insertAtBack(const NODETYPE&);
+	void insertAfter(const NODETYPE&, const NODETYPE&);
 	bool removeFromFront();
 	bool removeFromBack();
 	void printList() const;
 	bool isEmpty() const;
 private:
-	Node* firstPtr;
-	Node* lastPtr;
-	Node* getNewNode(int);
+	Node<NODETYPE>* firstPtr;
+	Node<NODETYPE>* lastPtr;
+	Node<NODETYPE>* getNewNode(const NODETYPE&);
 };
-
-List::List()
+template < class NODETYPE >
+List<NODETYPE>::List()
 	: firstPtr(0), lastPtr(0)
 {
 }
 
-List::~List()
+template < class NODETYPE >
+List<NODETYPE>::~List()
 {
 	if (isEmpty())
 		cout << "The array is empty.\n";
 	else
 	{
-		Node* currentPtr = firstPtr;
-		Node* tempPtr;
+		Node<NODETYPE>* currentPtr = firstPtr;
+		Node<NODETYPE>* tempPtr;
 		while ( currentPtr->nextPtr != 0 )
 		{
 			tempPtr = currentPtr;
@@ -45,9 +47,10 @@ List::~List()
 	}
 	cout << "\nAll nodes are destroyed.\n";
 }
-void List::insertAtFront(int num)
+template < class NODETYPE >
+void List<NODETYPE>::insertAtFront(const NODETYPE& num)
 {
-	Node* newPtr = new Node(num);
+	Node<NODETYPE>* newPtr = new Node<NODETYPE>(num);
 	if (isEmpty())
 		firstPtr = lastPtr = newPtr;
 	else
@@ -56,9 +59,10 @@ void List::insertAtFront(int num)
 		firstPtr = newPtr;
 	}
 }
-void List::insertAtBack(int num)
+template < class NODETYPE >
+void List<NODETYPE>::insertAtBack(const NODETYPE& num)
 {
-	Node* newPtr = new Node(num);
+	Node<NODETYPE>* newPtr = new Node<NODETYPE>(num);
 	if (isEmpty())
 		firstPtr = lastPtr = newPtr;
 	else
@@ -66,7 +70,9 @@ void List::insertAtBack(int num)
 		lastPtr->nextPtr = newPtr;
 		lastPtr = newPtr;
 	}
-}bool List::removeFromFront()
+}
+template < class NODETYPE >
+bool List<NODETYPE>::removeFromFront()
 {
 	if (isEmpty())
 		return false;
@@ -76,25 +82,26 @@ void List::insertAtBack(int num)
 			firstPtr = lastPtr = 0;
 		else
 		{
-			Node* newPtr = firstPtr;
+			Node<NODETYPE>* newPtr = firstPtr;
 			firstPtr = firstPtr->nextPtr;
 			delete newPtr;
 		}
 		return true;
 	}
 }
-bool List::removeFromBack()
+template < class NODETYPE >
+bool List<NODETYPE>::removeFromBack()
 {
 	if (isEmpty())
 		return false;
 	else
 	{
-		Node* newPtr = lastPtr;//for removing
+		Node<NODETYPE>* newPtr = lastPtr;//for removing
 		if (firstPtr == lastPtr)
 			firstPtr = lastPtr = 0;
 		else
 		{
-			Node* currentPtr = firstPtr;//for moving throw the list
+			Node<NODETYPE>* currentPtr = firstPtr;//for moving throw the list
 			while (currentPtr->nextPtr != lastPtr)
 				currentPtr = currentPtr->nextPtr;
 
@@ -105,14 +112,16 @@ bool List::removeFromBack()
 		return true;
 	}
 }
-void List::printList() const
+
+template < class NODETYPE >
+void List<NODETYPE>::printList() const
 {
 	if (isEmpty())
 		cout << "The list is empty.\n";
 	else
 	{
 		cout << "\nThe list is:\n";
-		Node* currentPtr = firstPtr;
+		Node<NODETYPE>* currentPtr = firstPtr;
 		while (currentPtr != 0)
 		{
 			cout << currentPtr->value << ' ';
@@ -121,19 +130,22 @@ void List::printList() const
 		cout << endl;
 	}
 }
-bool List::isEmpty() const
+template < class NODETYPE >
+bool List<NODETYPE>::isEmpty() const
 {
 	return firstPtr == 0;
 }
-Node* List::getNewNode(int num)
+template < class NODETYPE >
+Node<NODETYPE>* List<NODETYPE>::getNewNode(const NODETYPE& num)
 {
-	return new Node(num);
+	return new Node<NODETYPE>(num);
 }
-void List::insertAfter(int num, int pst)
+template < class NODETYPE >
+void List<NODETYPE>::insertAfter(const NODETYPE& num, const NODETYPE& pst)
 {
 	//num is the number, after which we are going to insert pst
-	Node* newPtr = new Node(pst);//node for paiste
-	Node* tempPtr = firstPtr;
+	Node<NODETYPE>* newPtr = new Node<NODETYPE>(pst);//node for paiste
+	Node<NODETYPE>* tempPtr = firstPtr;
 	while (tempPtr->value != num)
 	{
 		tempPtr = tempPtr->nextPtr;
