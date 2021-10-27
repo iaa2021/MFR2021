@@ -42,7 +42,6 @@ List::~List()
 			currentPtr = currentPtr->nextPtr;
 			delete tempPtr;
 		}
-		
 	}
 	cout << "\nAll nodes are destroyed.\n";
 }
@@ -100,7 +99,7 @@ bool List::removeFromBack()
 				currentPtr = currentPtr->nextPtr;
 
 			lastPtr = currentPtr;
-			currentPtr->nextPtr = 0;
+			lastPtr->nextPtr = 0;
 		}
 		delete newPtr;
 		return true;
