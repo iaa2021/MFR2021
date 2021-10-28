@@ -38,7 +38,7 @@ int main()
 			cin >> choice;
 		}
 		cout << "The work is over.\n";
-		system("pause");
+		system("pause>0");
 		return 0;
 	
 }
