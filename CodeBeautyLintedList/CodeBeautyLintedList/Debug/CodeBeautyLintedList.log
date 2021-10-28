@@ -1,3 +1,0 @@
-﻿  CodeBeautyLintedList.cpp
-C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CodeBeautyLintedList\CodeBeautyLintedList\CodeBeautyLintedList.cpp(14,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  CodeBeautyLintedList.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CodeBeautyLintedList\Debug\CodeBeautyLintedList.exe
