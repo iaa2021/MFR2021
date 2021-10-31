@@ -1,2 +1,24 @@
 ﻿  CBMthread.cpp
-  CBMthread.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\Debug\CBMthread.exe
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(23,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(27,9): error C2059: синтаксическая ошибка: for
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(27,9): error C2143: синтаксическая ошибка: отсутствие ")" перед ";"
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(27,25): error C2065: i: необъявленный идентификатор
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(27,32): error C2065: i: необъявленный идентификатор
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(27,35): error C2059: синтаксическая ошибка: )
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(29,14): error C2065: i: необъявленный идентификатор
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(29,36): error C2065: i: необъявленный идентификатор
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(29,40): error C2065: i: необъявленный идентификатор
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(29,19): error C2672: "std::make_pair": не найдена соответствующая перегруженная функция
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(29,42): error C2059: синтаксическая ошибка: ;
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(31,5): error C2059: синтаксическая ошибка: }
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(31,5): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(34,5): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(34,5): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(39,34): error C2065: fMap: необъявленный идентификатор
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(40,8): error C3927: "->": конечный тип возвращаемого значения недопустим после оператора объявления, не относящегося к функции.
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(40,8): error C3484: синтаксическая ошибка: требуется "->" перед возвращающим типом
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(40,9): error C3613: отсутствует тип возвращаемого значения после "->" (предполагается int)
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(40,12): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(40,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "get"
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(41,1): error C2059: синтаксическая ошибка: }
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(41,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"

@@ -3,6 +3,8 @@
 #include <map>
 #include <thread>
 #include <chrono>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 void refreshfMap(map <string, int> fMap)
 {
@@ -10,7 +12,7 @@ void refreshfMap(map <string, int> fMap)
     {
         for (auto &item : fMap)
         {
-            item.second++;
+            item.second = 1 + rand()%30;
             cout << item.first << " - " << item.second << endl;
         }
         this_thread::sleep_for(2000ms);
@@ -18,7 +20,9 @@ void refreshfMap(map <string, int> fMap)
 }
 int main()
 {
-    map <string, int> fMap =
+    srand(time(0));
+    string cities[] = { "New York", "Mumbai", "Berlin", "Oslo", "London", "Paris", "Bruselle" };
+    map <string, int> fMap1 =
     {
         { "New York", 19 },
         { "Mumbai", 21 },
