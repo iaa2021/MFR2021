@@ -4,7 +4,7 @@ template<class NODETYPE> class Tree;
 template<class NODETYPE>
 class TreeNode	
 {
-	friend class Tree;
+	friend class Tree<NODETYPE>;
 public:
 		TreeNode( const NODETYPE &d )
 			: data(d), leftPtr(0), rightPtr(0)

@@ -6,10 +6,12 @@
 //
 
 #include <iostream>
-
+#include <iomanip>
+#include "Tree.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "Hello, tree." << endl;
+    return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
