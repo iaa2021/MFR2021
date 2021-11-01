@@ -12,7 +12,7 @@ void refreshfMap(map <string, int> fMap)
     {
         for (auto &item : fMap)
         {
-            item.second = 1 + rand()%30;
+            item.second = 5 + rand()%30;
             cout << item.first << " - " << item.second << endl;
         }
         this_thread::sleep_for(2000ms);
