@@ -12,5 +12,6 @@ int main()
     cout << " *ptr1 = " << *ptr1 << endl;
     cout << " **ptr1 = " << **ptr1 << endl;
     cout << " &ptr1 = " << &ptr1 << endl;
+    cin.get();
     return 0;
 }
