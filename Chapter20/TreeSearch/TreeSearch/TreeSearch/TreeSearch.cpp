@@ -21,6 +21,10 @@ int main()
     }
     cout << "Preorder traversal: \n";
     intTree.preOrderTraversal();
+    cout << "\nInorder traversal: \n";
+    intTree.inOrderTraversal();
+    cout << "\nPostorder traversal: \n";
+    intTree.postOrderTraversal();
     return 0;
 }
 

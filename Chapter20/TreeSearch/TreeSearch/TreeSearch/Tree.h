@@ -15,7 +15,7 @@ public:
 	void inOrderTraversal() const;
 	void postOrderTraversal() const;
 private:
-	TreeNode<NODETYPE> rootPtr;
+	TreeNode<NODETYPE> *rootPtr;
 	void insertNodeHelper(TreeNode<NODETYPE>**, const NODETYPE&);
 	void preOrderHelper( TreeNode<NODETYPE>* ) const;
 	void inOrderHelper(TreeNode<NODETYPE>*) const;
@@ -63,13 +63,18 @@ void Tree<NODETYPE>::preOrderHelper(TreeNode<NODETYPE>* ptr) const
 	}
 }
 template<class NODETYPE>
+void Tree<NODETYPE>::inOrderTraversal() const
+{
+	inOrderHelper(rootPtr);
+}
+template<class NODETYPE>
 void Tree<NODETYPE>::inOrderHelper(TreeNode<NODETYPE>* ptr) const
 {
 	if (ptr != 0)
 	{
 		inOrderHelper(ptr->leftPtr);
 		cout << ptr->data << "  ";
-		inOrderHelper(ptr->rigtPtr);
+		inOrderHelper(ptr->rightPtr);
 	}
 }
 template<class NODETYPE>
@@ -83,7 +88,7 @@ void Tree<NODETYPE>::postOrderHelper(TreeNode<NODETYPE>* ptr) const
 	if (ptr != 0)
 	{
 		postOrderHelper(ptr->leftPtr);
-		postOrderHelper(ptr->rigtPtr);
+		postOrderHelper(ptr->rightPtr);
 		cout << ptr->data << "  ";
 	}
 }
