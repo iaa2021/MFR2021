@@ -38,10 +38,10 @@ void Tree<NODETYPE>::insertNodeHelper(TreeNode<NODETYPE>**ptr, const NODETYPE&va
 		*ptr = new TreeNode<NODETYPE>(value);
 	else
 	{
-		if ((*ptr)->data > value)
+		if ((*ptr)->data < value)
 			insertNodeHelper((&(*ptr)->leftPtr), value);
 		else
-			if ((*ptr)->data < value)
+			if ((*ptr)->data > value)
 				insertNodeHelper((&(*ptr)->rightPtr), value);
 			else
 				cout << value << "duplicate." << endl;

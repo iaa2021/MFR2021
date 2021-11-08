@@ -7,10 +7,20 @@
 
 #include <iostream>
 #include <iomanip>
+using namespace std;
 #include "Tree.h"
 int main()
 {
-    cout << "Hello, tree." << endl;
+    Tree<int> intTree;
+    int intValue;
+    cout << "Input 10 integer values: " << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cin >> intValue;
+        intTree.insertNode(intValue);
+    }
+    cout << "Preorder traversal: \n";
+    intTree.preOrderTraversal();
     return 0;
 }
 
