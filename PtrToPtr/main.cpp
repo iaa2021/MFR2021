@@ -8,6 +8,7 @@ int main()
     int **ptr1 = &ptr;
     cout << " ptr = " << ptr << endl;
     cout << " *ptr = " << *ptr << endl;
+    cout << " &ptr = " << &ptr << endl;
     cout << " ptr1 = " << ptr1 << endl;
     cout << " *ptr1 = " << *ptr1 << endl;
     cout << " **ptr1 = " << **ptr1 << endl;

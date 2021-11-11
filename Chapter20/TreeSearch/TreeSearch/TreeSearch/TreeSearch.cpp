@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <string>
 using namespace std;
 #include "Tree.h"
 int main()
@@ -25,6 +26,20 @@ int main()
     intTree.inOrderTraversal();
     cout << "\nPostorder traversal: \n";
     intTree.postOrderTraversal();
+    Tree <string> sTree;
+    string sValue;
+    cout << "Input 10 string values: " << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cin >> sValue;
+        sTree.insertNode(sValue);
+    }
+    cout << "Preorder traversal: \n";
+    sTree.preOrderTraversal();
+    cout << "\nInorder traversal: \n";
+    sTree.inOrderTraversal();
+    cout << "\nPostorder traversal: \n";
+    sTree.postOrderTraversal();
     return 0;
 }
 
