@@ -6,6 +6,7 @@ int main()
     int a = 7;
     int *ptr = &a;
     int **ptr1 = &ptr;
+    cout << " int a = 7;\nint *ptr = &a;\nint **ptr1 = &ptr;\n\n";
     cout << " ptr = " << ptr << "  Address of variavle." << endl;
     cout << " *ptr = " << *ptr << "  Value of variavle." << endl;
     cout << " &ptr = " << &ptr << "  Address of pointer." << endl;
