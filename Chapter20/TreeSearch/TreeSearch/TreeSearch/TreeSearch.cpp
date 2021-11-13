@@ -28,7 +28,7 @@ int main()
     intTree.postOrderTraversal();
     Tree <string> sTree;
     string sValue;
-    cout << "Input 10 string values: " << endl;
+    cout << "\nInput 10 string values: " << endl;
     for (int i = 0; i < 10; i++)
     {
         cin >> sValue;

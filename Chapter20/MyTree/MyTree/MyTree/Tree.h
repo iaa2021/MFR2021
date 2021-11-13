@@ -14,9 +14,13 @@ public:
 		rootPtr = 0;
 	}
 	void insertNode(const NODETYPE &);
+	void preOrderTraversal() const;
+	void inOrderTraversal() const;
 private:
 	NODETYPE* rootPtr;
-	void insertNodeHelper( TreeNode<NODETYPE> **ptr, const NODETYPE & )
+	void insertNodeHelper(TreeNode<NODETYPE>**, const NODETYPE&);
+	void preOrderHelper(TreeNode<NODETYPE>*) const;
+	void inOrderHelper(TreeNode<NODETYPE>*) const;
 };
 template <class NODETYPE>
 void Tree<NODETYPE>::insertNode(const NODETYPE& data)
@@ -38,6 +42,37 @@ void Tree<NODETYPE>::insertNodeHelper(TreeNode<NODETYPE>** ptr, const NODETYPE& 
 			cout << "Duplicate value" << endl;
 	}
 }
+template <class NODETYPE>
+void Tree<NODETYPE>::preOrderTraversal() const
+{
+	preOrderHelper(rootPtr);
+}
+template <class NODETYPE>
+void Tree<NODETYPE>::preOrderHelper(TreeNode<NODETYPE>*ptr) const
+{
+	if (ptr != 0)
+	{
+		cout << ptr->value;
+		preOrderHelper(ptr->leftPtr);
+		preOrderHelper(ptr->rigtPtr);
+	}
+}
+template <class NODETYPE>
+void Tree<NODETYPE>::inOrderTraversal() const
+{
+	inOrderHelper(rootPtr);
+}
+template <class NODETYPE>
+void Tree<NODETYPE>::inOrderHelper(TreeNode<NODETYPE>* ptr) const
+{
+	if (ptr != 0)
+	{
+		preOrderHelper(ptr->leftPtr);
+		cout << ptr->value;
+		preOrderHelper(ptr->rigtPtr);
+	}
+}
+
 #endif // !TREE_H
 
 
