@@ -4,10 +4,10 @@ class Tree;
 template <class NODETYPE>
 class TreeNode
 {
-	friend class Tree;
+	friend class Tree<NODETYPE>;
 public:
 	TreeNode( const NODETYPE &data )
-		: value(data), leftPtr(0), rigtPtr(0)
+		: value(data), leftPtr(0), rightPtr(0)
 	{
 	}
 
@@ -18,5 +18,5 @@ public:
 private:
 	NODETYPE value;
 	TreeNode <NODETYPE>* leftPtr;
-	TreeNode <NODETYPE>* rigtPtr;
+	TreeNode <NODETYPE>* rightPtr;
 };

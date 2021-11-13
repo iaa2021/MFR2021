@@ -2,10 +2,24 @@
 //
 
 #include <iostream>
+using namespace std;
+#include "Tree.h"
 
 int main()
 {
-    std::cout << "Hello my World!\n";
+    Tree<int> tree;
+    int a;
+    cout << "Input values: \n";
+    for (int i = 0; i < 7; i++)
+    {
+        cin >> a;
+        tree.insertNode(a);
+    }
+    cout << "Output by preOrder traversal: \n";
+    tree.preOrderTraversal();
+    cout << "\nOutput by inOrder traversal: \n";
+    tree.inOrderTraversal();
+    return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
