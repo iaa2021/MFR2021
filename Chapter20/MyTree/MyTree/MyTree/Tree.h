@@ -16,11 +16,13 @@ public:
 	void insertNode(const NODETYPE &);
 	void preOrderTraversal() const;
 	void inOrderTraversal() const;
+	void postOrderTraversal() const;
 private:
 	TreeNode<NODETYPE>* rootPtr;
 	void insertNodeHelper(TreeNode<NODETYPE>**, const NODETYPE&);
 	void preOrderHelper(TreeNode<NODETYPE>*) const;
 	void inOrderHelper(TreeNode<NODETYPE>*) const;
+	void postOrderHelper(TreeNode<NODETYPE>*) const;
 };
 template <class NODETYPE>
 void Tree<NODETYPE>::insertNode(const NODETYPE& data)
@@ -70,12 +72,26 @@ void Tree<NODETYPE>::inOrderHelper(TreeNode<NODETYPE>* ptr) const
 {
 	if (ptr != 0)
 	{
-		preOrderHelper(ptr->leftPtr);
+		inOrderHelper(ptr->leftPtr);
 		cout << ptr->value << ", ";
-		preOrderHelper(ptr->rightPtr);
+		inOrderHelper(ptr->rightPtr);
 	}
 }
 
 #endif // !TREE_H
-
+template <class NODETYPE>
+void Tree<NODETYPE>::postOrderTraversal() const
+{
+	postOrderHelper(rootPtr);
+}
+template <class NODETYPE>
+void Tree<NODETYPE>::postOrderHelper(TreeNode<NODETYPE>* ptr) const
+{
+	if (ptr != 0)
+	{
+		postOrderHelper(ptr->leftPtr);
+		postOrderHelper(ptr->rightPtr);
+		cout << ptr->value << ", ";
+	}
+}
 

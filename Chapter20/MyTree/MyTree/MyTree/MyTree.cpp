@@ -19,6 +19,8 @@ int main()
     tree.preOrderTraversal();
     cout << "\nOutput by inOrder traversal: \n";
     tree.inOrderTraversal();
+    cout << "\nOutput by postOrder traversal: \n";
+    tree.postOrderTraversal();
     return 0;
 }
 
