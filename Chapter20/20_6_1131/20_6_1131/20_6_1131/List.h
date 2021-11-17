@@ -16,7 +16,7 @@ public:
 	void addToEndOfList(const NODETYPE&);
 	void printList() const;
 	void concatenate(List<NODETYPE>&);
-	void merge(NODETYPE, NODETYPE);
+	
 private:
 	ListNode <NODETYPE>* firstPtr;
 	ListNode <NODETYPE>* lastPtr;
@@ -72,13 +72,6 @@ void List<NODETYPE>::concatenate(List<NODETYPE>& list1)
 	}
 	lastPtr = ptr;
 }
-template<class NODETYPE>
-void List<NODETYPE>::merge(NODETYPE, NODETYPE)
-{
-	NODETYPE a, b;
-	cout << "Input values, you'd like to merge:\n";
-	cin >> a >> b;
-	ListNode<NODETYPE>* tempPtr = firstPtr;
-}
+
 
 #endif

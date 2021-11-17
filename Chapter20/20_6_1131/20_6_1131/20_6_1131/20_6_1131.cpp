@@ -32,7 +32,7 @@ int main()
     list2.concatenate(list1);
     cout << "\nAfter concatenation list2 consist of:\n ";
     list2.printList();
-    system("pause > 0");
+    
     return 0;
 }
 
