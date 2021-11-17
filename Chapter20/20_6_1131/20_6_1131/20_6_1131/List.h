@@ -2,8 +2,8 @@
 
 // PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
 
-#ifndef LISTNODE_H
-#define LISTNODE_H
+#ifndef LIST_H
+#define LIST_H
 #include<iostream>
 using std::cout;
 using std::endl;
@@ -15,7 +15,7 @@ public:
 	List();
 	void addToEndOfList(const NODETYPE&);
 	void printList() const;
-
+	void concatenate(List<NODETYPE>&);
 private:
 	ListNode <NODETYPE>* firstPtr;
 	ListNode <NODETYPE>* lastPtr;
@@ -32,7 +32,7 @@ void List<NODETYPE>::addToEndOfList(const NODETYPE& value)
 	ListNode<NODETYPE>* ptr = new ListNode<NODETYPE>(value);
 	if (firstPtr == 0)
 	{
-		ptr = firstPtr = lastPtr;
+		 firstPtr = lastPtr = ptr;
 	}
 	else
 	{
@@ -44,17 +44,32 @@ void List<NODETYPE>::addToEndOfList(const NODETYPE& value)
 template<class NODETYPE>
 void List<NODETYPE>::printList() const
 {
-	ListNode<NODETYPE>* tempPtr = new ListNode();
-	tempPtr = firstPtr;
+	ListNode<NODETYPE>* tempPtr = firstPtr;
 	if (firstPtr == 0)
 		cout << "\nThe list is empty.\n";
 	else
 	{
 		while (tempPtr != 0)
 		{
+			if (tempPtr->nextPtr == 0)
+				cout << tempPtr->data << endl;
+			else
 			cout << tempPtr->data << ", ";
 			tempPtr = tempPtr->nextPtr;
 		}
 	}
 }
+template<class NODETYPE>
+void List<NODETYPE>::concatenate(List<NODETYPE>& list1)
+{
+	lastPtr->nextPtr = list1.firstPtr;
+	ListNode<NODETYPE>* ptr = list1.firstPtr;
+	while (ptr != 0)
+	{
+		addToEndOfList(ptr->data);
+		ptr = ptr->nextPtr;
+	}
+	lastPtr = ptr;
+}
+
 #endif

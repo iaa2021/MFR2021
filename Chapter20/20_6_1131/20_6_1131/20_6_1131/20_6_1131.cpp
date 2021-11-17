@@ -9,14 +9,30 @@ using std::endl;
 int main()
 {
     List<int> list1; int a;
-    cout << "Input value: ";
+    cout << "Input 5 values in list1:\n";
     for (int i = 0; i < 5; i++)
     {
         cin >> a;
         list1.addToEndOfList(a);
     }
+    cout << "\nList1 consist of:\n";
     list1.printList();
-
+    List<int> list2;
+    cout << "\nInput 5 values in list2:\n";
+    for (int i = 0; i < 5; i++)
+    {
+        cin >> a;
+        list2.addToEndOfList(a);
+    }
+    cout << "\nList2 consist of:\n";
+    list2.printList();
+    list1.concatenate(list2);
+    cout << "\nAfter concatenation list1 consist of:\n ";
+    list1.printList();
+    list2.concatenate(list1);
+    cout << "\nAfter concatenation list2 consist of:\n ";
+    list2.printList();
+    system("pause > 0");
     return 0;
 }
 
