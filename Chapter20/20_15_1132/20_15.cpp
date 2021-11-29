@@ -11,6 +11,7 @@ int main()
     {
     shop.buyerArrive( 720 );
     shop.servise( 720 );
+    shop.countMax();
     }
     return 0;
 }

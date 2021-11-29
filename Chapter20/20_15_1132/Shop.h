@@ -1,6 +1,7 @@
 
 #include <iostream>
-using namespace std;
+using std::cout;
+using std::endl;
 #include "Visitor.h"
 class Shop
 {
@@ -13,6 +14,7 @@ public:
     void buyerArrive( int );
     void servise( int );
     bool isEmpty() const;
+    void countMax();
 };
 
 Shop::Shop()
@@ -68,4 +70,17 @@ void Shop::servise( int limit )
      }
      cout << "During " << limit/60 <<  " hours, in shop were servised " << count << " buyers.\n";
 }
- 
+void Shop::countMax()
+{
+    Visitor *current = first;
+    int max = 0;
+    while (current !=0)
+    {
+        if( ( current ->leaveTime - current ->tirnTime ) > max )
+            max = current ->leaveTime - current ->tirnTime;
+
+        current = current ->next;
+    }
+    cout << "Maximum indwelling time of client in the shop is " << max << " minutes.\n\n";
+
+}

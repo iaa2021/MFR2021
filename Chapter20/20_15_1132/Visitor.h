@@ -13,7 +13,7 @@ private:
     int leaveTime;//time, when buyer leaved shop
 public:
     Visitor()
-    : tirnInterval( rand()%3 + 1 ), serviseInterval( rand()%7 + 1 )
+    : tirnInterval( rand()%4 + 1 ), serviseInterval( rand()%7 + 1 )
     {}
 };
 
