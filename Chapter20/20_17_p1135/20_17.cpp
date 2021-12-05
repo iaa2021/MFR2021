@@ -2,6 +2,7 @@
 #include <string>
 #include <cstring>
 using namespace std;
+#include "Tree.h"
 
 int main()
 {
