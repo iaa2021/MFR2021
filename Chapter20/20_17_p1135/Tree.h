@@ -8,7 +8,7 @@ class Tree
 {
 private:
     TreeNode<NT> *root;
-    void  insertNodeHelper( TreeNode<NT> **, const NT );
+    void  insertNodeHelper( TreeNode<NT> **, const NT & );
 public:
     Tree();
     ~Tree();
@@ -28,4 +28,23 @@ void Tree<NT>::insertNode( const NT &value)
 {
     insertNodeHelper( &root, value );
 }
+template <class NT>
+void Tree<NT>::insertNodeHelper( TreeNode<NT> **ptr, const NT &value )
+{
+    if( *ptr == 0 )
+    *ptr = new TreeNode<NT>( value );
+    else
+    {
+        if( (*ptr) -> data < value )
+        insertNodeHelper( &( (*ptr) -> right ), value );
+        else 
+        {
+            if( (*ptr) -> data  > value )
+            insertNodeHelper( &( ( *ptr -> left ), value  ) );
+            else
+            cout << "This is duplicate value.\n";
+        }
+    }
+}
 
+#endif
