@@ -11,14 +11,14 @@ private:
     TreeNode<NT> *left;
     TreeNode<NT> *right;
 public:
-    TreeNode();
+    TreeNode( const NT );
     NT getData() const
     {
         return data;
     }
 };
 template <class NT>
-TreeNode<NT>::TreeNode()
-    : data(0), left(0), right(0)
+TreeNode<NT>::TreeNode( const NT d)
+    : data(d), left(0), right(0)
 {}
 #endif
