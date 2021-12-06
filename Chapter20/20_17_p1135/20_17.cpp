@@ -31,6 +31,11 @@ int main()
         cout << ptr2 << endl;
         ptr2 = strtok( 0, ".,() " );
     }
-    
+    Tree<int> intTree;
+    for( int i = 1; i < 11; i++ )
+    {
+        intTree.insertNode(i);
+    }
+    intTree.preOrderTraversal();
     return 0;
 }
