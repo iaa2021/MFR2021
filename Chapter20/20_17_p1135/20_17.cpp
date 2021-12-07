@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <cstring>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 #include "Tree.h"
 
@@ -25,17 +27,28 @@ int main()
     char *sent2 = new char[ sentence2.size() + 1 ];
     strcpy( sent2, sentence2.c_str() );
     cout << sent2 << endl;
+    
     char *ptr2 = strtok( sent2, ".,() " );
     while (ptr2 != 0)
     {
         cout << ptr2 << endl;
         ptr2 = strtok( 0, ".,() " );
     }
-    Tree<int> intTree;
+    srand( time(0) );
+    Tree<int> intTree; int a;
     for( int i = 1; i < 11; i++ )
     {
-        intTree.insertNode(i);
+        a = rand()%100 + 1;
+        intTree.insertNode( a );
     }
+    cout << "Detour of tree by pre order traversal.\n";
     intTree.preOrderTraversal();
+    cout << endl;
+    cout << "Detour of tree by in order traversal.\n";
+    intTree.inOrderTraversal();
+    cout << endl;
+    cout << "Detour of tree by post order traversal.\n";
+    intTree.postOrderTraversal();
+    cout << endl;
     return 0;
 }
