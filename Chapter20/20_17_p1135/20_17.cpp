@@ -35,7 +35,7 @@ int main()
         ptr2 = strtok( 0, ".,() " );
     }
     srand( time(0) );
-    Tree<int> intTree; int a;
+    Tree<double> intTree; double a;
     for( int i = 1; i < 11; i++ )
     {
         a = rand()%100 + 1;
@@ -50,5 +50,26 @@ int main()
     cout << "Detour of tree by post order traversal.\n";
     intTree.postOrderTraversal();
     cout << endl;
+    Tree<string> stringTree;
+    string sentence3 = "Notice that this string is modified by being broken into smaller strings (tokens).";
+    cout << endl << sentence3 << endl;
+    char* sent3 = new char [sentence3.size() + 1];
+    char *ptr3 = strtok(sent3, ".,() ");
+    while ( ptr3 != 0 )
+    {
+        stringTree.insertStringNode( ptr3 );
+        ptr3 = strtok( 0, ".,() " );
+    }
+    cout << "Detour of tree by pre order traversal.\n";
+    stringTree.preOrderTraversal();
+    cout << endl;
+    cout << "Detour of tree by in order traversal.\n";
+    stringTree.inOrderTraversal();
+    cout << endl;
+    cout << "Detour of tree by post order traversal.\n";
+    stringTree.postOrderTraversal();
+    cout << endl;
+    cout << sentence.compare( sentence2 ) << endl;
+    cout << "\nThe data type is " << typeid(sentence3).name() << endl;
     return 0;
 }
