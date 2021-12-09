@@ -53,11 +53,14 @@ int main()
     Tree<string> stringTree;
     string sentence3 = "Notice that this string is modified by being broken into smaller strings (tokens).";
     cout << endl << sentence3 << endl;
-    char* sent3 = new char [sentence3.size() + 1];
+    char* sent3 = new char [sentence3.size()];
+    strcpy( sent3, sentence3.c_str() );
     char *ptr3 = strtok(sent3, ".,() ");
+    string sentence4;
     while ( ptr3 != 0 )
     {
-        stringTree.insertStringNode( ptr3 );
+       sentence4.assign(ptr3);
+        stringTree.insertStringNode( sentence4 );
         ptr3 = strtok( 0, ".,() " );
     }
     cout << "Detour of tree by pre order traversal.\n";
