@@ -10,18 +10,19 @@ using std::time;
 int main()
 {
     srand(time(0));
-    int array[20] = {-1}; int a;
+    int array[20] = {0}; int a, i=0;
     int check[20] = {0};
-    for( int i = 0; i < 20; i++ )
+    while( i < 20 )
     {
-        do
+        a = rand()%20;
+        if( check[a] == 0 )
         {
-            a= rand()%20;
+            array[i] = a;
             check[a] = 1;
+            i++;
         }
-         while( check[a] != 1 );  
-         array[i] = a;
     }
+    
     for( int i = 0; i < 20; i++ )
     {
         cout << array[i] << ", ";
