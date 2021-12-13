@@ -5,7 +5,6 @@
 #include <ctime>
 using namespace std;
 #include "Tree.h"
-
 int main()
 {
     //1 way to convert string into char
@@ -74,5 +73,9 @@ int main()
     cout << endl;
     cout << sentence.compare( sentence2 ) << endl;
     cout << "\nThe data type is " << typeid(sentence3).name() << endl;
+    Tree<string> stringTree1;
+    cout << "Depth function's launch:\n";
+    cout << stringTree1.depth(stringTree1) << endl;
+    
     return 0;
 }
