@@ -134,54 +134,14 @@ bool Tree<NT>::isEmpty()
 template <class NT>
 int Tree<NT>::depth( const Tree &object )
 {
-    int level = 0;
-    map<Tree<NT> *, int> node; 
-    if( isEmpty() )
-    cout << "\nThe tree is empty.\n";
-    else
-    {
-        TreeNode<NT> *temp = new TreeNode<NT>( object.root -> data );
-         temp = object.root;
-        if( node.empty() )
-        {
-            level ++;
-            node.insert( pair<TreeNode<NT> *, int > ( temp, level ));
-            if( temp ->left != 0 || temp ->right != 0 )
-            {
-                level++;
-                if( temp ->left != 0 )
-                node.insert( pair<TreeNode<NT> *, int>( temp ->left, level ));
-                if( temp ->right != 0 )
-                node.insert( pair< TreeNode<NT> *, int >( temp ->right, level ) );
-            }
-        }
-        else
-        {
-            depthHelper( temp ->left );
-            if( temp != 0 )
-            for( auto pair : node )
-            {
-                if( temp == pair.first )
-                level = pair.second;
-            }
-
-        }
-         
-    }
-    return level;
+    depthHelper( object.root );
 }
 template <class NT>
 void Tree<NT>::depthHelper( TreeNode<NT> *ptr, map <TreeNode<NT> *, int >mapName )
 {
-    int level = 0;
     if( ptr != 0 )
-    for( auto pair : mapName )
-            {
-                if( ptr == pair.first )
-                level = pair.second;
-            }
-    mapName.insert( <TreeNode<NT> *, int>( ptr, level ) );
-    level++;
-
+    //make pair
+    depthHelper( ptr ->left );
+    depthHelper( ptr ->right );
 }
 #endif
