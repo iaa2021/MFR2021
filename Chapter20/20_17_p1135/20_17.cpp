@@ -74,8 +74,6 @@ int main()
     cout << sentence.compare( sentence2 ) << endl;
     cout << "\nThe data type is " << typeid(sentence3).name() << endl;
     Tree<string> stringTree1;
-    cout << "Depth function's launch:\n";
-    cout << stringTree1.depth(stringTree1) << endl;
-    
+    stringTree1.inOrderTraversal();
     return 0;
 }
