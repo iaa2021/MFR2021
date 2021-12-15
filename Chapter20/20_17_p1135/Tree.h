@@ -17,7 +17,6 @@ private:
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
-    void  depthHelper( TreeNode<NT> *, map <TreeNode<NT> *, int >  );
 public:
     Tree();
     void preOrderTraversal() const;
@@ -27,7 +26,6 @@ public:
     void postOrderTraversal() const;
     TreeNode<NT> *getNewNode( const NT & );
     bool isEmpty();
-    int depth( const Tree & );
 };
 template <class NT>
 Tree<NT>::Tree()
@@ -131,17 +129,5 @@ bool Tree<NT>::isEmpty()
 {
     return root == 0;
 }
-template <class NT>
-int Tree<NT>::depth( const Tree &object )
-{
-    depthHelper( object.root );
-}
-template <class NT>
-void Tree<NT>::depthHelper( TreeNode<NT> *ptr, map <TreeNode<NT> *, int >mapName )
-{
-    if( ptr != 0 )
-    //make pair
-    depthHelper( ptr ->left );
-    depthHelper( ptr ->right );
-}
+
 #endif
