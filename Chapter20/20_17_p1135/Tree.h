@@ -138,6 +138,10 @@ void Tree<NT>::depth( const Tree &object )
     TreeNode<NT> *ptr = object.root;
     map< NT, int > mapName;
     depthHelper( ptr, level, mapName );
+    for( auto pair : mapName )
+           {
+               cout << pair.first << "  " << pair.second << endl;
+           } 
 }
 template <class NT>
 void Tree<NT>::depthHelper( TreeNode<NT> *ptr, int level, map<NT, int> mapObj )
@@ -155,33 +159,35 @@ void Tree<NT>::depthHelper( TreeNode<NT> *ptr, int level, map<NT, int> mapObj )
             {
                   temp = ptr ->left;
                  mapObj.insert( pair< NT, int >( temp ->data, level ) );
-             }
+            }
+            if( ptr ->right != 0 )
+            {
+                temp = ptr ->right;
+                mapObj.insert( pair< NT, int >( temp ->data, level ) );
+            }
+        }  
+        else
+        {
+            for( auto pair : mapObj )
+            {
+                if( ptr ->data == pair.first )
+                level = pair.second + 1;
+            }
+            if( ptr ->left != 0 )
+            {
+                  temp = ptr ->left;
+                 mapObj.insert( pair< NT, int >( temp ->data, level ) );
+            }
             if( ptr ->right != 0 )
             {
                 temp = ptr ->right;
                 mapObj.insert( pair< NT, int >( temp ->data, level ) );
             }
         }
-       else
-       {
-           for( auto pair : mapObj )
-           {
-               if( pair.first == ptr ->data )
-               level = pair.second + 1;
-           }
-            if( ptr ->left != 0 )
-            {
-                  temp = ptr ->left;
-                 mapObj.insert( pair< NT, int >( temp ->data, level ) );
-             }
-            if( ptr ->right != 0 )
-            {
-                temp = ptr ->right;
-                mapObj.insert( pair< NT, int >( temp ->data, level ) );
-            } 
-       } 
     }
+    if( ptr ->left != 0 )
     depthHelper( ptr ->left, level, mapObj );
+    if( ptr ->right != 0 )
     depthHelper( ptr ->right, level, mapObj );
 }
 
