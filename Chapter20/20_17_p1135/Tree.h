@@ -12,6 +12,7 @@ class Tree
 {
 private:
     TreeNode<NT> *root;
+    map<NT, int> mapThing;
     void  insertNodeHelper( TreeNode<NT> **, const NT & );
     void  insertStringHelper( TreeNode<string> **, const string & );
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
@@ -136,12 +137,11 @@ void Tree<NT>::depth( const Tree &object )
 {
     int level = 0;
     TreeNode<NT> *ptr = object.root;
-    map< NT, int > mapName;
-    depthHelper( ptr, level, mapName );
-    for( auto pair : mapName )
-           {
-               cout << pair.first  << "  " << pair.second << endl;
-           } 
+    depthHelper( ptr, level, object.mapThing );
+    for( auto pair:object.mapThing )
+    {
+        cout << pair.first << "  " << pair.second << endl;
+    }
 }
 template <class NT>
 void Tree<NT>::depthHelper( TreeNode<NT> *ptr, int level, map<NT, int> mapObj )
@@ -153,12 +153,40 @@ void Tree<NT>::depthHelper( TreeNode<NT> *ptr, int level, map<NT, int> mapObj )
         if( mapObj.empty() )
         {
             mapObj.insert( pair<NT, int> (ptr ->data, level) );
+            if( ptr ->left != 0 || ptr ->right != 0 )
+            level++;
+            if( ptr ->left != 0)
+            {
+                temp = ptr ->left;
+                mapObj.insert( pair<NT, int> (temp ->data, level) );
+            }
+            if( ptr ->right != 0)
+            {
+                temp = ptr ->right;
+                mapObj.insert( pair<NT, int> (temp ->data, level) );
+            }
+        }
+        else
+        {
+            for( auto pair:mapObj )
+            {
+                if( pair.first == ptr ->data )
+                level = 1 + pair.second;
+            } 
+            if( ptr ->left != 0)
+            {
+                temp = ptr ->left;
+                mapObj.insert( pair<NT, int> (temp ->data, level) );
+            }
+            if( ptr ->right != 0)
+            {
+                temp = ptr ->right;
+                mapObj.insert( pair<NT, int> (temp ->data, level) );
+            }
         }
     }
-  for( auto pair : mapObj )
-           {
-               cout << pair.first  << "  " << pair.second << endl;
-           } 
+    depthHelper( ptr ->left, level, mapObj );
+    depthHelper( ptr ->right, level, mapObj ); 
 }
 
 #endif
