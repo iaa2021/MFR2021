@@ -140,7 +140,7 @@ void Tree<NT>::depth( const Tree &object )
     depthHelper( ptr, level, mapName );
     for( auto pair : mapName )
            {
-               cout << pair.first << "  " << pair.second << endl;
+               cout << pair.first  << "  " << pair.second << endl;
            } 
 }
 template <class NT>
@@ -152,43 +152,13 @@ void Tree<NT>::depthHelper( TreeNode<NT> *ptr, int level, map<NT, int> mapObj )
     {
         if( mapObj.empty() )
         {
-            mapObj.insert( pair< NT, int >( ptr ->data, level ) );
-            if( ptr ->left != 0 || ptr ->right != 0 )
-            level++;
-            if( ptr ->left != 0 )
-            {
-                  temp = ptr ->left;
-                 mapObj.insert( pair< NT, int >( temp ->data, level ) );
-            }
-            if( ptr ->right != 0 )
-            {
-                temp = ptr ->right;
-                mapObj.insert( pair< NT, int >( temp ->data, level ) );
-            }
-        }  
-        else
-        {
-            for( auto pair : mapObj )
-            {
-                if( ptr ->data == pair.first )
-                level = pair.second + 1;
-            }
-            if( ptr ->left != 0 )
-            {
-                  temp = ptr ->left;
-                 mapObj.insert( pair< NT, int >( temp ->data, level ) );
-            }
-            if( ptr ->right != 0 )
-            {
-                temp = ptr ->right;
-                mapObj.insert( pair< NT, int >( temp ->data, level ) );
-            }
+            mapObj.insert( pair<NT, int> (ptr ->data, level) );
         }
     }
-    if( ptr ->left != 0 )
-    depthHelper( ptr ->left, level, mapObj );
-    if( ptr ->right != 0 )
-    depthHelper( ptr ->right, level, mapObj );
+  for( auto pair : mapObj )
+           {
+               cout << pair.first  << "  " << pair.second << endl;
+           } 
 }
 
 #endif
