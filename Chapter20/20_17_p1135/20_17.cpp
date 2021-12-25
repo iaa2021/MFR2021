@@ -71,16 +71,6 @@ int main()
     cout << "Detour of tree by post order traversal.\n";
     stringTree.postOrderTraversal();
     cout << endl;
-    cout << "\nMaking map:\n";
-    map<int, int>intMap;
-    for( int i = 0; i < 10; i++ )
-    {
-        intMap.insert( pair<int, int>( i, rand()%100 ) );
-    }
-    for( auto pair:intMap )
-    {
-        cout << pair.first << "  " << pair.second << endl;
-    }
     stringTree.depth(stringTree);
     return 0;
 }
