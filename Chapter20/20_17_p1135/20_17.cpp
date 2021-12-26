@@ -71,6 +71,6 @@ int main()
     cout << "Detour of tree by post order traversal.\n";
     stringTree.postOrderTraversal();
     cout << endl;
-    stringTree.depth(stringTree);
+    intTree.depth(intTree);
     return 0;
 }

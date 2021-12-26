@@ -186,6 +186,10 @@ void Tree<NT>::depthHelper( TreeNode<NT> *ptr, int level, map<NT, int> mapObj )
           depthHelper( ptr ->left, level, mapObj );
           depthHelper( ptr ->right, level, mapObj ); 
     }
+       for( auto pair:mapObj )
+       {
+           cout << pair.first << "  " << pair.second << endl;
+       }
 }
 
 #endif
