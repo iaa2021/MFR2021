@@ -71,6 +71,11 @@ int main()
     cout << "Detour of tree by post order traversal.\n";
     stringTree.postOrderTraversal();
     cout << endl;
-    intTree.depth(intTree);
+    map< string, int> strMap;
+    strMap = stringTree.depth(stringTree, strMap);
+    if( strMap.empty() )
+    cout << "\nstrMap is empty.\n";
+    for( auto pair:strMap )
+    cout << pair.first << "  " << pair.second << endl;
     return 0;
 }
