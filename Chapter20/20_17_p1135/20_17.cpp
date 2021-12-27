@@ -71,11 +71,27 @@ int main()
     cout << "Detour of tree by post order traversal.\n";
     stringTree.postOrderTraversal();
     cout << endl;
-    map< string, int> strMap;
-    stringTree.depth( stringTree, strMap, stringTree.root  );
-    if( strMap.empty() )
+    
+    stringTree.depth( stringTree,  stringTree.root  );
+    if( stringTree.mapObj.empty() )
     cout << "\nstrMap is empty.\n";
-    for( auto pair:strMap )
-    cout << pair.first << "  " << pair.second << endl;
+    int maxLevel = 0;
+    for( auto pair:stringTree.mapObj )
+    {
+        if( pair.second > maxLevel )
+        maxLevel = pair.second;
+    }
+    for( int i = 0; i <= maxLevel; i++ )
+    {
+        for( auto pair:stringTree.mapObj )
+        {
+                if ( pair.second == i )
+            {
+                cout << pair.first << " " << pair.second << "  ";
+            }
+            
+        }
+        cout << endl;
+    }
     return 0;
 }
