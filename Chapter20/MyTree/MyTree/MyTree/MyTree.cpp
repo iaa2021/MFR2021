@@ -9,7 +9,7 @@ int main()
 {
     Tree<int> tree;
     int a;
-    cout << "Input values: \n";
+    cout << "Input 7 values: \n";
     for (int i = 0; i < 7; i++)
     {
         cin >> a;
