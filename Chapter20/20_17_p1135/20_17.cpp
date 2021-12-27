@@ -72,7 +72,7 @@ int main()
     stringTree.postOrderTraversal();
     cout << endl;
     map< string, int> strMap;
-    strMap = stringTree.depth(stringTree, strMap);
+    stringTree.depth( stringTree, strMap, stringTree.root  );
     if( strMap.empty() )
     cout << "\nstrMap is empty.\n";
     for( auto pair:strMap )
