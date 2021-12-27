@@ -1,3 +1,4 @@
 ﻿  CodeBeautyLintedList.cpp
 C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter20\CodeBeautyLintedList\CodeBeautyLintedList\CodeBeautyLintedList.cpp(14,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  LINK : не найден или не выполнена сборка C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter20\CodeBeautyLintedList\Debug\CodeBeautyLintedList.exe при последней инкрементной компоновке; выполняется полная компоновка
   CodeBeautyLintedList.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter20\CodeBeautyLintedList\Debug\CodeBeautyLintedList.exe
