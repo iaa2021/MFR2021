@@ -35,7 +35,7 @@ int main()
     }
     srand( time(0) );
     Tree<double> intTree; double a;
-    for( int i = 1; i < 11; i++ )
+    for( int i = 1; i < 20; i++ )
     {
         a = rand()%100 + 1;
         intTree.insertNode( a );
@@ -48,6 +48,10 @@ int main()
     cout << endl;
     cout << "Detour of tree by post order traversal.\n";
     intTree.postOrderTraversal();
+    cout << "\n Demonstration of levelTraversal function on intTree:\n";
+    TreeNode<double> *ptr5 = intTree.getRoot();
+    intTree.depth( intTree, ptr5 );
+    intTree.levelTraversal( intTree );
     cout << endl;
     Tree<string> stringTree;
     string sentence3 = "Notice that this string is modified by being broken into smaller strings (tokens).";
@@ -58,7 +62,7 @@ int main()
     string sentence4;
     while ( ptr3 != 0 )
     {
-       sentence4.assign(ptr3);
+        sentence4.assign(ptr3);
         stringTree.insertStringNode( sentence4 );
         ptr3 = strtok( 0, ".,() " );
     }
@@ -71,27 +75,10 @@ int main()
     cout << "Detour of tree by post order traversal.\n";
     stringTree.postOrderTraversal();
     cout << endl;
+    TreeNode<string> *ptr4 = stringTree.getRoot();
+    stringTree.depth( stringTree,  ptr4  );
+    cout << "\n Demonstration of levelTraversal function:\n";
+    stringTree.levelTraversal( stringTree );
     
-    stringTree.depth( stringTree,  stringTree.root  );
-    if( stringTree.mapObj.empty() )
-    cout << "\nstrMap is empty.\n";
-    int maxLevel = 0;
-    for( auto pair:stringTree.mapObj )
-    {
-        if( pair.second > maxLevel )
-        maxLevel = pair.second;
-    }
-    for( int i = 0; i <= maxLevel; i++ )
-    {
-        for( auto pair:stringTree.mapObj )
-        {
-                if ( pair.second == i )
-            {
-                cout << pair.first << " " << pair.second << "  ";
-            }
-            
-        }
-        cout << endl;
-    }
     return 0;
 }

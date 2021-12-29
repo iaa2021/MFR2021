@@ -1,6 +1,7 @@
 #ifndef TREE_H
 #define TREE_H
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <cstring>
 #include <typeinfo>
@@ -11,7 +12,8 @@ template <class NT>
 class Tree
 {
 private:
-    
+    map<NT, int>mapObj;
+    TreeNode<NT> *root;
     void  insertNodeHelper( TreeNode<NT> **, const NT & );
     void  insertStringHelper( TreeNode<string> **, const string & );
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
@@ -19,8 +21,7 @@ private:
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
 public:
     Tree();
-    TreeNode<NT> *root;
-    map<NT, int>mapObj;
+    
     void preOrderTraversal() const;
     void insertNode( const NT & );
     void insertStringNode( const string & );
@@ -29,6 +30,9 @@ public:
     TreeNode<NT> *getNewNode( const NT & );
     bool isEmpty();
     void depth( const Tree &, TreeNode<NT> *ptr );
+    map<NT, int> getMap() const;
+    void levelTraversal( const Tree & ) const;
+    TreeNode<NT> *getRoot() const;
 };
 template <class NT>
 Tree<NT>::Tree()
@@ -177,5 +181,34 @@ void Tree<NT>::depth( const Tree &object, TreeNode<NT> *ptr )
         depth( object, ptr ->right );
     }
 }
-
+template <class NT>
+map<NT, int> Tree<NT>::getMap() const
+{
+    return mapObj;
+}
+template <class NT>
+void Tree<NT>::levelTraversal( const Tree &object ) const
+{
+    int maxLevel = 0;
+    for( auto pair:mapObj )
+    {
+        if( pair.second > maxLevel )
+        maxLevel = pair.second;
+    }
+    cout << "Object has " << maxLevel + 1 << " levels.\n";
+    for( int i = 0; i <= maxLevel; i++ )
+    {
+        for( auto pair:mapObj )
+        {
+            if( pair.second == i )
+            cout << setw( maxLevel ) << pair.first << "  " <<  pair.second << "  ";
+        }
+        cout << endl;
+    }
+}
+template <class NT>
+TreeNode<NT> * Tree<NT>::getRoot() const
+{
+    return root;
+}
 #endif
