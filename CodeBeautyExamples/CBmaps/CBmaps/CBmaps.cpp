@@ -12,6 +12,7 @@ int main()
     list<int> intAct2{ 5, 6 };
     list<int> intAct3{ 7, 8, 9 };
     list<int>::iterator pos_begin, pos_end;
+    cout << "Demonstration of map< string, list<int> > object\n";
     map1.insert(pair<string, list<int>>("Andrey", intAct1));
     map1.insert(pair<string, list<int>>("Kolia", intAct2));
     map1.insert(pair<string, list<int>>("Vasia", intAct3));
@@ -36,6 +37,7 @@ int main()
 
         cout << endl;
     }
+    cout << "Demonstration of map< string, vector<int> > object\n";
     map< string, vector<int> > map2;
     vector<int> v1 = { 11, 12, 13, 14, 15 };
     vector<int> v2 = { 21, 22, 23, 24 };
