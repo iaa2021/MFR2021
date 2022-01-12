@@ -22,6 +22,7 @@ public:
     bool removeFromBack();
     void print() const;
     void reverse();
+    void removeConcreteValue( const LT & );
 };
 template <class LT>
 List<LT>::List()
@@ -152,6 +153,23 @@ void List<LT>::reverse()
         cout << *iterator << ", ";
         
     }
-    cout << endl;
-    
+    cout << endl;  
+}
+template <class LT>
+void List<LT>::removeConcreteValue( const LT &value )
+{
+    if( isEmpty() )
+    cout << "The list is empty.\n";
+    else
+    {
+        ListNode<LT> *ptr = first;
+        ListNode<LT> *temp;
+        while ( (ptr ->next) ->data != value )
+        {
+            ptr = ptr ->next;
+        }
+        temp = ptr ->next;
+        ptr ->next = temp ->next;
+        delete temp;
+    }
 }

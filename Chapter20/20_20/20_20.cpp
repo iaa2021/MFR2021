@@ -35,5 +35,9 @@ int main()
     cout << "Removing element from front.\n";
     intList.removeFromFront();
     intList.print();
+    cout << "Input value, you'd like to remove:\n";
+    cin >> number;
+    intList.removeConcreteValue( number );
+    intList.print();
     return 0;
 }
