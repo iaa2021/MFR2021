@@ -1,6 +1,10 @@
 #include <iostream>
 using std::cout;
 using std::endl;
+#include <vector>
+using std::vector;
+#include <iterator>
+using std::reverse_iterator;
 #include "ListNode.h"
 template <class LT>
 class List
@@ -17,6 +21,7 @@ public:
     bool removeFromFront();
     bool removeFromBack();
     void print() const;
+    void reverse();
 };
 template <class LT>
 List<LT>::List()
@@ -126,4 +131,27 @@ void List<LT>::print() const
         }
     }
     cout << endl;
+}
+template <class LT>
+void List<LT>::reverse()
+{
+    if( isEmpty() )
+    cout << "The list is empty.\n";
+    else
+    {
+        vector<LT>v;
+        
+        cout << "The reverse list is:\n";
+        ListNode<LT> *ptr = first;
+        while ( ptr != 0 ) 
+        {
+            v.push_back( ptr ->data );
+            ptr = ptr ->next;
+        }
+        for( auto iterator = v.rbegin(); iterator != v.rend(); ++iterator )
+        cout << *iterator << ", ";
+        
+    }
+    cout << endl;
+    
 }

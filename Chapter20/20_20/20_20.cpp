@@ -19,6 +19,7 @@ int main()
         intList.insertAtBack( rand()%50 + 1 );
     }
     intList.print(); 
+    intList.reverse();
     int number;
     cout << "Input number and insert it at front:\n";
     cin >> number;
