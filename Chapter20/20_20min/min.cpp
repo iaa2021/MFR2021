@@ -27,6 +27,10 @@ int main()
     cout << "\nList in descending order:\n";
     copy( intList.rbegin(), intList.rend(), ostream_iterator< int >( cout, ", " ) );
     cout << endl;
+    cout << "Trying to remove duplicates.\n";
+    intList.unique();
+    cout << "List in ascending order:\n";
+    copy( intList.begin(), intList.end(), ostream_iterator< int >( cout, ", " ) );
     int number;
     cout << "Input number, you'd like to search.\n";
     cin >> number;
@@ -37,7 +41,7 @@ void searchList( int number, list<int>intList )
 {
     
     int count = 1;
-    for( auto it = intList.begin(); it != intList.end(); it++  )
+    for( auto it = intList.begin(); it != intList.end(); ++it  )
     {
         if( *it == number )
         cout << "Desired value " << number << " is situated in " << count << " position.\n";
@@ -46,5 +50,4 @@ void searchList( int number, list<int>intList )
             count++;
         }
     }
-
 }
