@@ -14,7 +14,7 @@ using std::list;
 #include <iterator>
 using std::iterator;
 using std::ostream_iterator;
-void searchList( int, list<int> );
+bool searchList( int, list<int> );
 int main()
 {
     srand( time( 0 ) );
@@ -32,22 +32,27 @@ int main()
     cout << "List in ascending order:\n";
     copy( intList.begin(), intList.end(), ostream_iterator< int >( cout, ", " ) );
     int number;
-    cout << "Input number, you'd like to search.\n";
+    cout << "\nInput number, you'd like to search.\n";
     cin >> number;
     searchList( number, intList );
     return 0;
 }
-void searchList( int number, list<int>intList )
+bool searchList( int number, list<int>intList )
 {
     
     int count = 1;
     for( auto it = intList.begin(); it != intList.end(); ++it  )
     {
         if( *it == number )
-        cout << "Desired value " << number << " is situated in " << count << " position.\n";
+        {
+            cout << "Desired value " << number << " is situated in " << count << " position.\n";
+            return true;
+        }
         else
         {
             count++;
         }
     }
+    cout << "There isn't such value in the list.\n";
+    return false;
 }
