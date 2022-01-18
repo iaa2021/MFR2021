@@ -19,9 +19,9 @@ private:
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
+    void  deleteNodeHelper( TreeNode<NT> *, NT );
 public:
     Tree();
-    
     void preOrderTraversal() const;
     void insertNode( const NT & );
     void insertStringNode( const string & );
@@ -33,6 +33,7 @@ public:
     map<NT, int> getMap() const;
     void levelTraversal( const Tree & ) const;
     TreeNode<NT> *getRoot() const;
+    void deleteNode( NT );
 };
 template <class NT>
 Tree<NT>::Tree()
@@ -210,5 +211,37 @@ template <class NT>
 TreeNode<NT> * Tree<NT>::getRoot() const
 {
     return root;
+}
+template <class NT>
+void Tree<NT>::deleteNode( NT value )
+{
+    deleteNodeHelper( root, value );
+}
+template <class NT>
+void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
+{
+    TreeNode<NT> *temp;
+    if( (ptr ->left) ->data == value )
+    {
+        temp = ptr ->left;
+        if( temp ->left == 0 && temp ->right == 0 )
+        {
+            ptr ->left = 0;
+            delete temp;
+        }
+    }
+    if( (ptr ->right) ->data == value )
+    {
+        temp = ptr ->right;
+        if( temp ->left == 0 && temp ->right == 0 )
+        {
+            ptr ->right = 0;
+            delete temp;
+        }
+    }
+    if( ptr ->right != 0 )
+    deleteNodeHelper( ptr ->right, value );
+    if( ptr ->left != 0 )
+    deleteNodeHelper( ptr ->left, value );
 }
 #endif

@@ -79,6 +79,11 @@ int main()
     stringTree.depth( stringTree,  ptr4  );
     cout << "\n Demonstration of levelTraversal function:\n";
     stringTree.levelTraversal( stringTree );
-    
+    cout << "\n Demonstration of levelTraversal functionf on intTree:\n";
+    intTree.levelTraversal( intTree );
+    int value;
+    cout << "\nInput value, you'd like to delete;\n";
+    cin >> value;
+    intTree.deleteNode(value);
     return 0;
 }
