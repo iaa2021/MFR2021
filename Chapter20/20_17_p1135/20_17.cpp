@@ -79,6 +79,8 @@ int main()
     stringTree.depth( stringTree,  ptr4  );
     cout << "\n Demonstration of levelTraversal function:\n";
     stringTree.levelTraversal( stringTree );
-    
+    cout << "\n Demonstration of levelTraversal function:\n";
+    intTree.levelTraversal( intTree );
+    intTree.makeVector();
     return 0;
 }
