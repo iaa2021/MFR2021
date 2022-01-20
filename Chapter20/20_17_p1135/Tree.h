@@ -22,7 +22,7 @@ private:
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
-    void  deleteNodeHelper( TreeNode<NT> *, NT );
+    bool  deleteNodeHelper( TreeNode<NT> *, NT );
 public:
     Tree();
     void preOrderTraversal() const;
@@ -221,16 +221,31 @@ void Tree<NT>::deleteNode( NT value )
     deleteNodeHelper( root, value );
 }
 template <class NT>
-void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
+bool Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
 {
     TreeNode<NT> *temp;
     if( ptr != 0 )
     {
-        cout << ptr ->data << ", ";
-    
+        if(  ptr ->left != 0 )
+        {
+            if( (ptr ->left) ->data == value )
+            {
+                ( ptr ->left ) = nullptr;
+                return true;
+            }
+        }
+        if( ptr ->right != 0 )
+        {
+            if( ( ptr ->right ) ->data == value  )
+            {
+                ( ptr ->right ) = nullptr;
+                return true;
+            }
+        }
         deleteNodeHelper( ptr ->right, value );
         deleteNodeHelper( ptr ->left, value );
     }
+    return false;
 }
 
 #endif
