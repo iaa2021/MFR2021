@@ -10,15 +10,16 @@ private:
     NT data;
     TreeNode<NT> *left;
     TreeNode<NT> *right;
+    TreeNode<NT> *parent;
 public:
-    TreeNode( const NT );
+    TreeNode( const NT, TreeNode<NT> * );
     NT getData() const
     {
         return data;
     }
 };
 template <class NT>
-TreeNode<NT>::TreeNode( const NT d)
-    : data(d), left(0), right(0)
+TreeNode<NT>::TreeNode( const NT d, TreeNode<NT> *prt )
+    : data(d), left(0), right(0), parent(prt)
 {}
 #endif

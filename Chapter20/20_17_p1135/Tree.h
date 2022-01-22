@@ -17,8 +17,9 @@ private:
     vector <NT> vct;
     map<NT, int>mapObj;
     TreeNode<NT> *root;
-    void  insertNodeHelper( TreeNode<NT> **, const NT & );
-    void  insertStringHelper( TreeNode<string> **, const string & );
+    int count;
+    void  insertNodeHelper( TreeNode<NT> **, const NT &, TreeNode<NT> * );
+    void  insertStringHelper( TreeNode<string> **, const string &, TreeNode<string> * );
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
@@ -40,48 +41,65 @@ public:
 };
 template <class NT>
 Tree<NT>::Tree()
-    : root(0)
+    : root(0), count(0)
 {
 }
 template <class NT>
 void Tree<NT>::insertNode( const NT &value)
 {
-    insertNodeHelper( &root, value );
+    insertNodeHelper( &root, value, 0 );
 }
 template <class NT>
 void Tree<NT>::insertStringNode( const string &value)
 {
-    insertStringHelper( &root, value );
+    insertStringHelper( &root, value, 0 );
 }
 template <class NT>
-void Tree<NT>::insertNodeHelper( TreeNode<NT> **ptr, const NT &value )
+void Tree<NT>::insertNodeHelper( TreeNode<NT> **ptr, const NT &value, TreeNode<NT> *prt )
 {
     if( *ptr == 0 )
-    *ptr = new TreeNode<NT>( value );
+    {
+        count++;
+        if( count == 1 )
+        {
+            *ptr = new TreeNode<NT>( value, nullptr );
+        }
+        else
+        *ptr = new TreeNode<NT>( value, prt );
+    }
+    
     else
     {
         if( (*ptr) -> data < value )
-        insertNodeHelper( &( (*ptr) -> right ), value );
+        insertNodeHelper( &( (*ptr) -> right ), value, (*ptr) );
         else 
         {
             if( (*ptr) -> data  > value )
-            insertNodeHelper( &( ( *ptr) -> left ), value  );
+            insertNodeHelper( &( ( *ptr) -> left ), value, (*ptr) );
             else
             cout << "This is duplicate value.\n";
         }
     }
 }
 template <class NT>
-void Tree<NT>::insertStringHelper( TreeNode<string> **ptr, const string &value )
+void Tree<NT>::insertStringHelper( TreeNode<string> **ptr, const string &value, TreeNode<string> *prt )
 {
     if( *ptr == 0 )
-    *ptr = new TreeNode<string>( value );
+    {
+        count++;
+        if( count == 1 )
+        {
+            *ptr = new TreeNode<string>( value, 0 );
+        }
+        else
+        *ptr = new TreeNode<string>( value, prt );
+    }
     else
     {
         if( ( (*ptr) -> data ).compare( value ) < 0 )
-        insertNodeHelper( &( (*ptr) -> right ), value );
+        insertNodeHelper( &( (*ptr) -> right ), value, (*ptr) );
         else 
-            insertNodeHelper( &( ( *ptr) -> left ), value  );
+            insertNodeHelper( &( ( *ptr) -> left ), value, (*ptr)  );
     }
 }
 template <class NT>
@@ -230,7 +248,7 @@ bool Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
         {
             if( (ptr ->left) ->data == value )
             {
-                ( ptr ->left ) = nullptr;
+                cout << ( ptr ->left ) ->data << " and it's parent is " << ( ptr -> parent ) ->data << endl;
                 return true;
             }
         }
@@ -238,7 +256,7 @@ bool Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
         {
             if( ( ptr ->right ) ->data == value  )
             {
-                ( ptr ->right ) = nullptr;
+                cout << ( ptr ->right ) ->data << " and it's parent is " << ( ptr -> parent ) ->data << endl;
                 return true;
             }
         }
