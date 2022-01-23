@@ -59,13 +59,18 @@ void Tree<NT>::insertNodeHelper( TreeNode<NT> **ptr, const NT &value, TreeNode<N
 {
     if( *ptr == 0 )
     {
-        count++;
-        if( count == 1 )
+        
+        if( count == 0 )
         {
-            *ptr = new TreeNode<NT>( value, nullptr );
+            *ptr = new TreeNode<NT>( value, 0 );
+            count++;
         }
         else
-        *ptr = new TreeNode<NT>( value, prt );
+        {
+            *ptr = new TreeNode<NT>( value, prt );
+            count++;
+        }
+        
     }
     
     else
@@ -86,13 +91,17 @@ void Tree<NT>::insertStringHelper( TreeNode<string> **ptr, const string &value, 
 {
     if( *ptr == 0 )
     {
-        count++;
-        if( count == 1 )
+        
+        if( count == 0 )
         {
             *ptr = new TreeNode<string>( value, 0 );
+            count++;
         }
         else
-        *ptr = new TreeNode<string>( value, prt );
+        {
+            *ptr = new TreeNode<string>( value, prt );
+            count++;
+        }
     }
     else
     {
@@ -244,24 +253,21 @@ bool Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
     TreeNode<NT> *temp;
     if( ptr != 0 )
     {
-        if(  ptr ->left != 0 )
+        if( ptr ->data == value )
         {
-            if( (ptr ->left) ->data == value )
+            if( ptr ->data == root ->data )
             {
-                cout << ( ptr ->left ) ->data << " and it's parent is " << ( ptr -> parent ) ->data << endl;
+                cout << "\nThis is root ptr. It hasn't parent.\n";
+                return true;
+            }
+            else
+            {
+                cout << ptr ->data << " & it's parent is: " << (ptr ->parent) ->data << endl;
                 return true;
             }
         }
-        if( ptr ->right != 0 )
-        {
-            if( ( ptr ->right ) ->data == value  )
-            {
-                cout << ( ptr ->right ) ->data << " and it's parent is " << ( ptr -> parent ) ->data << endl;
-                return true;
-            }
-        }
-        deleteNodeHelper( ptr ->right, value );
-        deleteNodeHelper( ptr ->left, value );
+        deleteNodeHelper( ptr ->right, value ); 
+        deleteNodeHelper( ptr ->left, value ); 
     }
     return false;
 }
