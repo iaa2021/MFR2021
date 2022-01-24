@@ -23,7 +23,7 @@ private:
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
-    void  deleteNodeHelper( TreeNode<NT> **, NT );
+    void  deleteNodeHelper( TreeNode<NT> *, NT );
 public:
     Tree();
     void preOrderTraversal() const;
@@ -245,27 +245,32 @@ TreeNode<NT> * Tree<NT>::getRoot() const
 template <class NT>
 void Tree<NT>::deleteNode( NT value )
 {
-    deleteNodeHelper( &root, value );
+    deleteNodeHelper( root, value );
 }
 template <class NT>
-void Tree<NT>::deleteNodeHelper( TreeNode<NT> **ptr, NT value )
+void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
 {
     TreeNode<NT> *temp;
-    if( (*ptr) ->data < value )
-        deleteNodeHelper( &((*ptr) ->right), value ); 
+    if( ptr ->data < value )
+        deleteNodeHelper( ptr ->right, value ); 
 
-    if( (*ptr) ->data > value ) 
-        deleteNodeHelper( &((*ptr) ->left), value ); 
+    if( ptr ->data > value ) 
+        deleteNodeHelper( ptr ->left, value ); 
 
-    if( (*ptr) ->data == value )
+    if( ptr ->data == value )
     {
-        temp = (*ptr);
-        (*ptr) = (*ptr) ->parent;
-        cout << "Value is " << temp ->data << " & it's parent  is " << (*ptr) ->data;
-        if( (*ptr) ->left  == temp  )
-        cout << "by left pointer\n";
-        if( (*ptr) ->right  == temp )
-        cout << "by right pointer\n";
+        cout << "The value is " << ptr ->data << " & it's parent is " << ptr -> parent -> data << endl;
+        if( ptr-> parent -> left == ptr )
+        {
+            cout << " by left branch.\n";
+            ptr -> parent -> left = NULL;
+        }
+        if( ptr -> parent -> right == ptr )
+        {
+            cout << " by right branch.\n";
+            ptr -> parent -> right = NULL;
+        }
+        delete ptr;
     }
 }
 
