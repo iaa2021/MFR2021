@@ -18,17 +18,17 @@ private:
     map<NT, int>mapObj;
     TreeNode<NT> *root;
     int count;
-    void  insertNodeHelper( TreeNode<NT> **, const NT &, TreeNode<NT> * );
-    void  insertStringHelper( TreeNode<string> **, const string &, TreeNode<string> * );
+    void  insertNodeHelper( TreeNode<NT> **, NT &, TreeNode<NT> * );
+    void  insertStringHelper( TreeNode<string> **, string &, TreeNode<string> * );
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
-    void  deleteNodeHelper( TreeNode<NT> *, NT );
+    void  deleteNodeHelper( TreeNode<NT> **, NT );
 public:
     Tree();
     void preOrderTraversal() const;
-    void insertNode( const NT & );
-    void insertStringNode( const string & );
+    void insertNode( NT & );
+    void insertStringNode( string & );
     void inOrderTraversal() const;
     void postOrderTraversal() const;
     TreeNode<NT> *getNewNode( const NT & );
@@ -45,17 +45,17 @@ Tree<NT>::Tree()
 {
 }
 template <class NT>
-void Tree<NT>::insertNode( const NT &value)
+void Tree<NT>::insertNode( NT &value)
 {
     insertNodeHelper( &root, value, 0 );
 }
 template <class NT>
-void Tree<NT>::insertStringNode( const string &value)
+void Tree<NT>::insertStringNode( string &value )
 {
     insertStringHelper( &root, value, 0 );
 }
 template <class NT>
-void Tree<NT>::insertNodeHelper( TreeNode<NT> **ptr, const NT &value, TreeNode<NT> *prt )
+void Tree<NT>::insertNodeHelper( TreeNode<NT> **ptr, NT &value, TreeNode<NT> *prt )
 {
     if( *ptr == 0 )
     {
@@ -87,7 +87,7 @@ void Tree<NT>::insertNodeHelper( TreeNode<NT> **ptr, const NT &value, TreeNode<N
     }
 }
 template <class NT>
-void Tree<NT>::insertStringHelper( TreeNode<string> **ptr, const string &value, TreeNode<string> *prt )
+void Tree<NT>::insertStringHelper( TreeNode<string> **ptr, string &value, TreeNode<string> *prt )
 {
     if( *ptr == 0 )
     {
@@ -245,32 +245,34 @@ TreeNode<NT> * Tree<NT>::getRoot() const
 template <class NT>
 void Tree<NT>::deleteNode( NT value )
 {
-    deleteNodeHelper( root, value );
+    deleteNodeHelper( &root, value );
 }
 template <class NT>
-void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
+void Tree<NT>::deleteNodeHelper( TreeNode<NT> **ptr, NT value )
 {
     TreeNode<NT> *temp;
-    if( ptr ->data < value )
-        deleteNodeHelper( ptr ->right, value ); 
+    if( (*ptr) ->data < value )
+        deleteNodeHelper( &((*ptr) ->right), value ); 
+    if( (*ptr) ->data > value )
+        deleteNodeHelper( &((*ptr) ->left), value );
 
-    if( ptr ->data > value ) 
-        deleteNodeHelper( ptr ->left, value ); 
-
-    if( ptr ->data == value )
+    if( (*ptr) ->data == value )
     {
-        cout << "The value is " << ptr ->data << " & it's parent is " << ptr -> parent -> data << endl;
-        if( ptr-> parent -> left == ptr )
+        temp = (*ptr) ->parent;
+        if( temp -> left == (*ptr) )
         {
-            cout << " by left branch.\n";
-            ptr -> parent -> left = NULL;
+            cout << endl << (*ptr) -> data << " is left child of parent " << temp ->data  << endl;
+            temp  -> left = NULL;
         }
-        if( ptr -> parent -> right == ptr )
+        if( temp -> right == (*ptr) )
         {
-            cout << " by right branch.\n";
-            ptr -> parent -> right = NULL;
+            cout << endl << (*ptr) -> data << " is right child of parent " << temp -> data  << endl;
+            temp  -> right = NULL;
         }
-        delete ptr;
+        free( *ptr );
+        *ptr = NULL;
+        delete (*ptr);
+        cout << "\n ptr has to be deleted.\n";
     }
 }
 
