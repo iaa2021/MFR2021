@@ -1,5 +1,0 @@
-﻿  MergeSort.cpp
-C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\MFR2021\p1075MergeSort\p1075MergeSort\MergeSort.cpp(16,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  p1075MergeSort.cpp
-  Создание кода...
-  p1075MergeSort.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\MFR2021\p1075MergeSort\Debug\p1075MergeSort.exe

@@ -1,0 +1,3 @@
+﻿  CBMthread.cpp
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\CBMthread\CBMthread.cpp(24,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  CBMthread.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\CBMthread\CBMthread\Debug\CBMthread.exe

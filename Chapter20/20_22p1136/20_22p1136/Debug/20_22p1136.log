@@ -1,0 +1,3 @@
+﻿  20_22p1136.cpp
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter20\20_22p1136\20_22p1136\20_22p1136.cpp(11,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  20_22p1136.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter20\20_22p1136\Debug\20_22p1136.exe
