@@ -86,6 +86,7 @@ int main()
     cin >> value;
     intTree.deleteNode( value );
     cout << "\n Demonstration of levelTraversal function:\n";
+    intTree.depth( intTree, ptr5 );
     intTree.levelTraversal( intTree );
     return 0;
 }
