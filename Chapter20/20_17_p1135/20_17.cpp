@@ -88,5 +88,7 @@ int main()
     cout << "\n Demonstration of levelTraversal function:\n";
     intTree.depth( intTree, ptr5 );
     intTree.levelTraversal( intTree );
+    cout << "Detour of integer tree by in order traversal.\n";
+    intTree.inOrderTraversal();
     return 0;
 }

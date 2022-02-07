@@ -23,7 +23,7 @@ private:
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
-    void  deleteNodeHelper( TreeNode<NT> **, NT );
+    void  deleteNodeHelper( TreeNode<NT> *, NT );
 public:
     Tree();
     void preOrderTraversal() const;
@@ -245,35 +245,36 @@ TreeNode<NT> * Tree<NT>::getRoot() const
 template <class NT>
 void Tree<NT>::deleteNode( NT value )
 {
-    deleteNodeHelper( &root, value );
+    deleteNodeHelper( root, value );
 }
 template <class NT>
-void Tree<NT>::deleteNodeHelper( TreeNode<NT> **ptr, NT value )
+void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
 {
     TreeNode<NT> *temp;
-    if( (*ptr) ->data < value )
-        deleteNodeHelper( &((*ptr) ->right), value ); 
-    if( (*ptr) ->data > value )
-        deleteNodeHelper( &((*ptr) ->left), value );
+    if( ptr ->data < value )
+        deleteNodeHelper( ptr ->right, value ); 
+    if( ptr ->data > value )
+        deleteNodeHelper( ptr ->left, value );
 
-    if( (*ptr) ->data == value )
+    if( ptr ->data == value )
     {
-        temp = (*ptr) ->parent;
-        if( temp -> left == (*ptr) )
+        temp = ptr ->parent;
+        if( temp -> left == ptr )
         {
-            cout << endl << (*ptr) -> data << " is left child of parent " << temp ->data  << endl;
+            cout << endl << ptr -> data << " is left child of parent " << temp ->data  << endl;
             temp  -> left = NULL;
         }
-        if( temp -> right == (*ptr) )
+        if( temp -> right == ptr )
         {
-            cout << endl << (*ptr) -> data << " is right child of parent " << temp -> data  << endl;
+            cout << endl << ptr -> data << " is right child of parent " << temp -> data  << endl;
             temp  -> right = NULL;
         }
-        free( *ptr );
-        *ptr = NULL;
-        delete (*ptr);
+        free( ptr );
+        ptr = NULL;
+        delete ptr;
         cout << "\n ptr has to be deleted.\n";
     }
 }
+
 
 #endif
