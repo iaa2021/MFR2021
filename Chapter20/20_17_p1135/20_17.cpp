@@ -90,5 +90,6 @@ int main()
     intTree.levelTraversal( intTree );
     cout << "Detour of integer tree by in order traversal.\n";
     intTree.inOrderTraversal();
+    cout << endl;
     return 0;
 }

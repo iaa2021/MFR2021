@@ -250,7 +250,7 @@ void Tree<NT>::deleteNode( NT value )
 template <class NT>
 void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
 {
-    TreeNode<NT> *temp;
+    TreeNode<NT> *temp;//for searching largest in left subtree, or smallest in right subtree
     if( ptr ->data < value )
         deleteNodeHelper( ptr ->right, value ); 
     if( ptr ->data > value )
@@ -258,21 +258,54 @@ void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
 
     if( ptr ->data == value )
     {
-        temp = ptr ->parent;
-        if( temp -> left == ptr )
+        if( ptr -> left == 0 && ptr ->right == 0 )
         {
-            cout << endl << ptr -> data << " is left child of parent " << temp ->data  << endl;
-            temp  -> left = NULL;
+            if( ptr -> parent -> left == ptr )
+            {
+                cout << endl << ptr -> data << " is left child of parent " << ptr -> parent ->data  << endl;
+                ptr -> parent  -> left = NULL;
+            }
+            if( ptr -> parent -> right == ptr )
+            {
+                cout << endl << ptr -> data << " is right child of parent " << ptr -> parent -> data  << endl;
+                ptr -> parent  -> right = NULL;
+            }
+            free( ptr );
+            ptr = NULL;
+            delete ptr;
+            cout << "\n ptr has to be deleted.\n";
         }
-        if( temp -> right == ptr )
+        else
         {
-            cout << endl << ptr -> data << " is right child of parent " << temp -> data  << endl;
-            temp  -> right = NULL;
+            if( ptr -> left != 0 )
+            {
+                temp = ptr ->left;
+                while ( temp ->right != 0 )
+                {
+                    temp = temp ->right;
+                }
+                cout << "Desired ptr is" << temp ->data << endl;
+            }
+            if( ptr -> left == 0 && ptr ->right != 0 )
+            {
+                temp = ptr ->right;
+                while ( temp ->left != 0 )
+                {
+                    temp = temp ->left;
+                }
+                cout << "Desired ptr is" << temp ->data << endl;
+            }
+                if( temp ->parent ->left == temp )
+                temp ->parent ->left = 0;
+                if( temp ->parent ->right == temp )
+                temp ->parent ->right = 0;
+
+                ptr ->data = temp ->data;
+                free( temp );
+                temp = NULL;
+                delete temp;
+                cout << "\n ptr has to be deleted.\n";   
         }
-        free( ptr );
-        ptr = NULL;
-        delete ptr;
-        cout << "\n ptr has to be deleted.\n";
     }
 }
 
