@@ -68,6 +68,7 @@ void Tree<NT>::insertNodeHelper( TreeNode<NT> **ptr, NT &value, TreeNode<NT> *pr
         else
         {
             *ptr = new TreeNode<NT>( value, prt );
+            (*ptr) -> level = ( prt ->level ) + 1;
             count++;
         }
         
@@ -100,6 +101,7 @@ void Tree<NT>::insertStringHelper( TreeNode<string> **ptr, string &value, TreeNo
         else
         {
             *ptr = new TreeNode<string>( value, prt );
+            (*ptr) ->level = ( prt ->level ) + 1;
             count++;
         }
     }
@@ -122,7 +124,7 @@ void Tree<NT>::preOrderHelper( TreeNode<NT> *ptr ) const
 {
     if( ptr != 0 )
     {
-    cout << ptr ->data << ' ';
+    cout << ptr ->data << ' ' << ptr ->level << ", ";
     preOrderHelper( ptr ->left );
     preOrderHelper( ptr ->right );
     }

@@ -11,6 +11,7 @@ private:
     TreeNode<NT> *left;
     TreeNode<NT> *right;
     TreeNode<NT> *parent;
+    int level;
 public:
     TreeNode( NT &, TreeNode<NT> * );
     NT getData() const
@@ -20,6 +21,6 @@ public:
 };
 template <class NT>
 TreeNode<NT>::TreeNode( NT &d, TreeNode<NT> *prt )
-    : data(d), left(0), right(0), parent(prt)
+    : data(d), left(0), right(0), parent(prt), level(0)
 {}
 #endif

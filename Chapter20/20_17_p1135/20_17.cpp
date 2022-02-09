@@ -91,5 +91,8 @@ int main()
     cout << "Detour of integer tree by in order traversal.\n";
     intTree.inOrderTraversal();
     cout << endl;
+    cout << "Detour of integer tree by pre order traversal.\n";
+    intTree.preOrderTraversal();
+    cout << endl;
     return 0;
 }
