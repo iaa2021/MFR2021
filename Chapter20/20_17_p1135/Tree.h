@@ -8,6 +8,7 @@
 #include <map>
 #include <vector>
 #include <iterator>
+#include <algorithm>
 using namespace std;
 #include "TreeNode.h"
 template <class NT>
@@ -25,6 +26,7 @@ private:
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
     void  deleteNodeHelper( TreeNode<NT> *, NT );
+    void  levelOutputHelper( TreeNode<NT> *, map< NT, int > );
 public:
     Tree();
     void preOrderTraversal() const;
@@ -39,6 +41,7 @@ public:
     void levelTraversal( const Tree & ) const;
     TreeNode<NT> *getRoot() const;
     void deleteNode( NT );
+    void levelOutput();
 };
 template <class NT>
 Tree<NT>::Tree()
@@ -292,7 +295,7 @@ void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
                 {
                     temp = temp ->right;
                 }
-                cout << "Desired ptr is" << temp ->data << endl;
+                cout << "Desired ptr is " << temp ->data << endl;
             }
             if( ptr -> left == 0 && ptr ->right != 0 )
             {
@@ -301,7 +304,7 @@ void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
                 {
                     temp = temp ->left;
                 }
-                cout << "Desired ptr is" << temp ->data << endl;
+                cout << "Desired ptr is " << temp ->data << endl;
             }
                 if( temp ->parent ->left == temp )
                 temp ->parent ->left = 0;
@@ -316,6 +319,30 @@ void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
         }
     }
 }
-
-
+template <class NT>
+void Tree<NT>::levelOutput() 
+{
+    map< NT, int > mp;
+    levelOutputHelper( root, mp );
+    int max = 0;
+    for( auto pair:mp )
+    {
+        if( pair.second > max )
+        max = pair.second;
+    }
+    cout << "\nNow tree has " << max << " levels." << endl;
+    for( auto pair:mp )
+    cout << pair.first << " " << pair.second << ", ";
+    cout << endl;
+}
+template <class NT>
+void Tree<NT>::levelOutputHelper( TreeNode<NT> *ptr, map< NT, int >mp ) 
+{
+    if( ptr != 0 )
+    {
+        mp.insert( make_pair( ptr ->data, ptr ->level ) );
+        preOrderHelper( ptr ->left );
+        preOrderHelper( ptr ->right );
+    }
+}
 #endif
