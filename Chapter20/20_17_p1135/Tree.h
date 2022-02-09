@@ -18,6 +18,7 @@ private:
     map<NT, int>mapObj;
     TreeNode<NT> *root;
     int count;
+    int maxLevel;
     void  insertNodeHelper( TreeNode<NT> **, NT &, TreeNode<NT> * );
     void  insertStringHelper( TreeNode<string> **, string &, TreeNode<string> * );
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
@@ -41,7 +42,7 @@ public:
 };
 template <class NT>
 Tree<NT>::Tree()
-    : root(0), count(0)
+    : root(0), count(0), maxLevel(0)
 {
 }
 template <class NT>
@@ -70,6 +71,8 @@ void Tree<NT>::insertNodeHelper( TreeNode<NT> **ptr, NT &value, TreeNode<NT> *pr
             *ptr = new TreeNode<NT>( value, prt );
             (*ptr) -> level = ( prt ->level ) + 1;
             count++;
+            if( maxLevel < (*ptr) -> level )
+            maxLevel = (*ptr) -> level;       
         }
         
     }
@@ -103,6 +106,8 @@ void Tree<NT>::insertStringHelper( TreeNode<string> **ptr, string &value, TreeNo
             *ptr = new TreeNode<string>( value, prt );
             (*ptr) ->level = ( prt ->level ) + 1;
             count++;
+            if( maxLevel < (*ptr) -> level )
+            maxLevel = (*ptr) -> level;      
         }
     }
     else
@@ -117,6 +122,7 @@ template <class NT>
 void Tree<NT>::preOrderTraversal() const
 {
     cout << "\nThe data type is " << typeid(root ->data).name() << endl;
+    cout << "\nThe tree has " << maxLevel + 1 << " levels.\n";
     preOrderHelper( root );
 }
 template <class NT>
