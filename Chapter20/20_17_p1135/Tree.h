@@ -15,7 +15,7 @@ template <class NT>
 class Tree
 {
 private:
-    vector <NT> vct;
+    vector <TreeNode<NT> *> vct;
     map<NT, int>mapObj;
     TreeNode<NT> *root;
     int count;
@@ -26,7 +26,6 @@ private:
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
     void  deleteNodeHelper( TreeNode<NT> *, NT );
-    void  levelOutputHelper( TreeNode<NT> *, map< NT, int > );
 public:
     Tree();
     void preOrderTraversal() const;
@@ -42,6 +41,7 @@ public:
     TreeNode<NT> *getRoot() const;
     void deleteNode( NT );
     void levelOutput();
+    void makeVector( TreeNode<NT> * );
 };
 template <class NT>
 Tree<NT>::Tree()
@@ -322,27 +322,35 @@ void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
 template <class NT>
 void Tree<NT>::levelOutput() 
 {
-    map< NT, int > mp;
-    levelOutputHelper( root, mp );
     int max = 0;
-    for( auto pair:mp )
+    for( size_t i = 0; i < vct.size(); i++ )
     {
-        if( pair.second > max )
-        max = pair.second;
+        if( max < vct.at( i ) ->level )
+        max = vct.at( i ) ->level;
     }
     cout << "\nNow tree has " << max << " levels." << endl;
-    for( auto pair:mp )
-    cout << pair.first << " " << pair.second << ", ";
+    for( int j = 0; j <= max; j++ )
+    {
+            for( size_t i = 0; i < vct.size(); i++ )
+        {
+            if( vct.at(i) ->level == j )
+            cout << setw( 2*max - 2*j ) << vct.at(i) ->data << " " << vct.at( i ) ->level << ", ";
+        }
+            cout << endl;
+    }
+    
     cout << endl;
 }
+
+    
 template <class NT>
-void Tree<NT>::levelOutputHelper( TreeNode<NT> *ptr, map< NT, int >mp ) 
+void Tree<NT>::makeVector( TreeNode<NT> *ptr )
 {
     if( ptr != 0 )
     {
-        mp.insert( make_pair( ptr ->data, ptr ->level ) );
-        preOrderHelper( ptr ->left );
-        preOrderHelper( ptr ->right );
+        vct.push_back( ptr );
+        makeVector( ptr ->left );
+        makeVector( ptr ->right );
     }
 }
 #endif
