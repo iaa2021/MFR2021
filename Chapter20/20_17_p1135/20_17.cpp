@@ -94,7 +94,7 @@ int main()
     cout << "Detour of integer tree by pre order traversal.\n";
     intTree.preOrderTraversal();
     cout << endl;
-    intTree.makeVector( ptr5 );
+    
     cout << "Detour of tree by levelOutput function traversal.\n";
     intTree.levelOutput();
     return 0;

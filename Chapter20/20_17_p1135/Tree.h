@@ -322,6 +322,7 @@ void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
 template <class NT>
 void Tree<NT>::levelOutput() 
 {
+    makeVector( root );
     int max = 0;
     for( size_t i = 0; i < vct.size(); i++ )
     {
@@ -334,12 +335,13 @@ void Tree<NT>::levelOutput()
             for( size_t i = 0; i < vct.size(); i++ )
         {
             if( vct.at(i) ->level == j )
-            cout << setw( 2*max - 2*j ) << vct.at(i) ->data << " " << vct.at( i ) ->level << ", ";
+            cout << setw( 3*max - 2*j ) << vct.at(i) ->data << " " << vct.at( i ) ->level << ", ";
         }
             cout << endl;
     }
-    
-    cout << endl;
+    vct.clear();
+    if( vct.empty() )
+    cout << "\nThe vector is empty.\n" << endl;
 }
 
     
