@@ -80,7 +80,7 @@ int main()
     cout << "\n Demonstration of levelTraversal function:\n";
     stringTree.levelTraversal( stringTree );
     cout << "\n Demonstration of levelTraversal function on intTree:\n";
-    intTree.levelTraversal( intTree );
+    intTree.levelOutput();
     double value;
     cout << "\nInput value, you'd like to delete;\n";
     cin >> value;
