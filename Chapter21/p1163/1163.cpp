@@ -7,6 +7,13 @@ using std::setw;
 void displayBits( unsigned );
 int main()
 {
+    const int SHIFT = 8 * sizeof( unsigned ) - 1;
+    cout << "unsignedSHIFT = " << SHIFT << "   " << ( SHIFT + 1 ) / 8 << " bytes, " << 8 * sizeof( unsigned ) << " bits." << endl;
+    const int charSHIFT = 8 * sizeof( char ) - 1;
+    cout << "charSHIFT = " << charSHIFT << "   " << ( charSHIFT + 1 ) / 8 << " bytes, " << 8 * sizeof( char ) << " bits." << endl;
+    const int doubleSHIFT = 8 * sizeof( double ) - 1;
+    cout << "doubleSHIFT = " << doubleSHIFT << "   " << ( SHIFT + 1 ) / 8 << " bytes. " << 8 * sizeof( double ) << " bits." << endl;
+    cout << " MASK = 1 << SHIFT is " << ( 1 << SHIFT ) << endl;
     unsigned a;
     cout << "Enter unsigned integer:\n";
     cin >> a;
