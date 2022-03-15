@@ -17,6 +17,16 @@ int main()
     cout << "\nDemonstration of bitwize & operation. Input value1: ";
     cin >> iV1;
     displayBits( iV & iV1 );
+    cout << "\nDemonstration of bitwize shift operation. Input value1: ";
+    unsigned number1 = 960;
+    cout << "\nThe result of left shifting\n";
+    displayBits( number1 );
+    cout << "\n8bit positions using the left shift operator is:\n";
+    displayBits( number1 << 8 );
+    cout << "\nThe result of right shifting\n";
+    displayBits( number1 );
+    cout << "\n8bit positions using the right shift operator is:\n";
+    displayBits( number1 >> 8 );
     return 0;
 }
 void displayBits( unsigned value )
