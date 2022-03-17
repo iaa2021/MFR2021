@@ -1,6 +1,8 @@
 #include<iostream>
 using std::cout;
 using std::endl;
+using std::left;
+using std::right;
 #include<iomanip>
 using std::setw;
 using std::rand;
@@ -22,10 +24,10 @@ void DeskOfCards::deal()
 {
     for ( int i1 = 0, i2 = i1 + 26; i1 <= 25; i1++, i2++ )
     {
-        cout << setw( 8 ) << face[ desk[ i1 ].face ] << " of " << setw( 8 ) << suit[ desk[ i1 ].suit ];
-        cout << "  " << setw( 2 ) << colour[ desk[ i1 ].color ];
-        cout << setw( 8 ) << face[ desk[ i2 ].face ] << " of " << setw( 8 ) << suit[ desk[ i2 ].suit ];
-        cout << "  " << setw( 2 ) << colour[ desk[ i2 ].color ] << endl;
+        cout << left << setw( 8 ) << face[ desk[ i1 ].face ] << " of " << setw( 8 ) << suit[ desk[ i1 ].suit ];
+        cout << "  " << setw( 2 ) << right << colour[ desk[ i1 ].color ];
+        cout << "   " << right << setw( 8 ) << face[ desk[ i2 ].face ] << " of " << setw( 8 ) << suit[ desk[ i2 ].suit ];
+        cout << "  " << right << setw( 2 ) << colour[ desk[ i2 ].color ] << endl;
     }
 }
 void DeskOfCards::shuffle()
