@@ -20,14 +20,15 @@ struct Customer
 
 int main()
 {
-    Customer c1 = { "John", "Smith", 123456 };
-    c1.personal.phonenumber = "123-456-789";
-    c1.personal.address = "Main street, 11";
-    c1.personal.city = "New York";
-    c1.personal.state = "USA";
-    c1.personal.zipCode = "987456213";
-    cout << c1.firstName << "  " << c1.lastName << "  " << c1.customerNumber << endl;
-    cout << c1.personal.phonenumber << "  " << c1.personal.address << "   " << c1.personal.city << endl;
-    cout << customerRecord.firstName << endl;
+    Customer customerRecord = { "John", "Smith", 123456 };
+    Customer *customerPtr = &customerRecord;
+    customerRecord.personal.phonenumber = "123-456-789";
+    customerRecord.personal.address = "Main street, 11";
+    customerRecord.personal.city = "New York";
+    customerRecord.personal.state = "USA";
+    customerRecord.personal.zipCode = "987456213";
+    cout << customerRecord.firstName << "  " << customerRecord.lastName << "  " << customerRecord.customerNumber << endl;
+    cout << customerRecord.personal.phonenumber << "  " << customerRecord.personal.address << "   " << customerRecord.personal.city << endl;
+    cout << customerPtr -> firstName << "  " << customerPtr ->lastName << endl;
     return 0;
 }
