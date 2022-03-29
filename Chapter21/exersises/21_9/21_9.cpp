@@ -18,6 +18,7 @@ int main()
 }
 void displayBits( int value )
 {
+    cout << "The value = " << value << endl;
     const int Shift = 8 * sizeof( int ) - 1;
     const unsigned Mask = 1 << Shift;
     for( int i = 1; i <= Shift + 1; i++ )
