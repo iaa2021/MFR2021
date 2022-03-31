@@ -51,7 +51,7 @@ void packCharacters( char a, char b )
     c <<= 8;
     cout << "a <<= 8 : " <<  c << endl;
     displayBits( c );
-    c += static_cast<unsigned>( b );
+    c |= static_cast<unsigned>( b );
     cout << "a + b = : " <<  c << endl;
     displayBits( c );
 }
