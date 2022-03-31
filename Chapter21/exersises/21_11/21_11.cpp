@@ -5,6 +5,7 @@ using std::endl;
 void displayBits( char );
 void displayBits( unsigned );
 void packCharacters( char, char );
+void unpackCharacters( unsigned );
 int main()
 {
     char a, b;
@@ -13,6 +14,10 @@ int main()
     displayBits( a );
     displayBits ( b );
     packCharacters( a, b );
+    unsigned c;
+    cout << "\nInput c\n";
+    cin >> c;
+    unpackCharacters( c );
     return 0;
 }
 void displayBits( char value )
@@ -54,5 +59,23 @@ void packCharacters( char a, char b )
     c |= static_cast<unsigned>( b );
     cout << "a + b = : " <<  c << endl;
     displayBits( c );
+}
+void unpackCharacters( unsigned d )
+{
+    displayBits( d );
+    char a, b;
+    unsigned c = d >> 8;
+    cout << "d >>= 8 " << endl;
+    displayBits( c );
+    a = static_cast< char >( c );
+    cout << "\na = " << a << endl;
+    c = d << 24;
+    cout << " c = d <<= 24 " << c << endl;
+    displayBits( c );
+    c >>= 24;
+    displayBits( c );
+    b = static_cast< char >( c );
+    cout << "\nb = " << b << endl;
+    cout << "So, in unsigned value " << d << " were packed " << a << " and " << b << " characters.\n";
 }
   
