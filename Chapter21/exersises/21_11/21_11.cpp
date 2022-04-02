@@ -6,6 +6,7 @@ void displayBits( char );
 void displayBits( unsigned );
 void packCharacters( char, char );
 void unpackCharacters( unsigned );
+void unpackCharacters1( unsigned );
 int main()
 {
     char a, b;
@@ -18,6 +19,8 @@ int main()
     cout << "\nInput c\n";
     cin >> c;
     unpackCharacters( c );
+    cout << "\nDemonstration of unpackCharacters1, using & option with 255 & 65280:\n";
+    unpackCharacters1( c );
     return 0;
 }
 void displayBits( char value )
@@ -73,6 +76,21 @@ void unpackCharacters( unsigned d )
     cout << " c = d <<= 24 " << c << endl;
     displayBits( c );
     c >>= 24;
+    displayBits( c );
+    b = static_cast< char >( c );
+    cout << "\nb = " << b << endl;
+    cout << "So, in unsigned value " << d << " were packed " << a << " and " << b << " characters.\n";
+}
+void unpackCharacters1( unsigned d )
+{
+    displayBits( d );
+    char a, b;
+    unsigned c = d & 65280;// 65280 = 11111111 00000000
+    c >>= 8;
+    displayBits( c );
+    a = static_cast< char >( c );
+    cout << "\na = " << a << endl;
+    c = d & 255;// 255 = 00000000 11111111
     displayBits( c );
     b = static_cast< char >( c );
     cout << "\nb = " << b << endl;
