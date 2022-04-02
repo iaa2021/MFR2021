@@ -6,6 +6,7 @@ void displayBits( char );
 void displayBits( unsigned );
 void reverseBits( unsigned );
 void reverseBits( char );
+void unpackCharacters( unsigned );
 
 int main()
 {
@@ -61,6 +62,25 @@ void reverseBits( char value)
     displayBits( value );
     cout << "The value after reverse: ";
     displayBits( ~a);
-    char value2 = static_cast<char>( ~a );
-    cout << "\nThe character after reverse is " << value2 << endl;
+}
+void unpackCharacters( unsigned d )
+{
+    displayBits( d );
+    char a, b, e, f;
+    unsigned c = d & 4278190080;// 11111111 00000000 00000000 00000000 is 4278190080
+    c >>= 24;
+    a = static_cast< char >( c );
+    cout << " 1 letter is " << a << endl;
+    c = d & 16711680; // 00000000 11111111 00000000 00000000 is 16711680
+    c >>= 16;
+    b = static_cast< char >( c );
+    cout << " 2 letter is " << b << endl;
+    c = d & 65280;// 65280 = 00000000 00000000 11111111 00000000
+    c >>= 8;
+    e = static_cast< char >( c );
+    cout << " 3 letter is " << e << endl;
+    c = d & 255;// 255 = 00000000 00000000 00000000 11111111
+    f = static_cast< char >( c );
+    cout << " 4 letter is " << f << endl;
+    cout << "In value " << d << " were packed " << a << ", " << b << ", " << e << ", " << f << " characters.\n";
 }
