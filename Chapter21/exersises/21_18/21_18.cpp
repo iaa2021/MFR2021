@@ -18,7 +18,7 @@ int main()
     }
     else
     cout << number << " is not a multiply of X.\n";
-    
+    //number = 1024 & it's multiply of X, because of 1024 = 00000100 00000000 in binary size
     return 0;
 }
 bool multiply( unsigned value )
@@ -29,6 +29,7 @@ bool multiply( unsigned value )
         if ( ( value & mask ) != 0 )
         {
             mult = false;
+            break;
         }
     }
     return mult;
