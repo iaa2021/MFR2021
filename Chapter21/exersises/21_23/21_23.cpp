@@ -15,12 +15,18 @@ int main()
     cout << "Input part of text, you'd like to find.\n";
     getline( cin, line1 );
     size_t n = line.size();
-    cout << "Line's size is " << n << endl;
     const char *chLine = line.c_str();
     const char *chLine1 = line1.c_str();
-    cout << "The result of first search is:\n" << strstr( chLine, chLine1 ) << endl;
     const char *searchPtr = strstr( chLine, chLine1 );
-    cout << "The result of second search is:\n" << strstr( searchPtr + 1, chLine1 ) << endl;
+    cout << "The result of first search is:\n" << searchPtr << endl;
+    cout << "The result of second search is:\n" << strstr( searchPtr +1, chLine1 ) << endl;
+    cout << "\nLine's size is:\n" << n << endl;
+    cout << "Now we count the entry of desired fragment:\n";
+    int i = 0, count = 0;
+    const char *sPtr = new const char();
+    sPtr = strstr( searchPtr +1, chLine1 );
+    cout << "The result of third search is:\n" << strstr( sPtr + 1, chLine1 ) << endl;
+    
 
     return 0;
 }
