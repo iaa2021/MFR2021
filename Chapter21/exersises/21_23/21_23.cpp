@@ -6,6 +6,8 @@ using std::endl;
 using std::strstr;
 #include <string>
 using std::string;
+#include <vector>
+using std::vector;
 int main()
 {
     string line;
@@ -22,11 +24,15 @@ int main()
     cout << "The result of second search is:\n" << strstr( searchPtr +1, chLine1 ) << endl;
     cout << "\nLine's size is:\n" << n << endl;
     cout << "Now we count the entry of desired fragment:\n";
-    int i = 0, count = 0;
-    const char *sPtr = new const char();
-    sPtr = strstr( searchPtr +1, chLine1 );
-    cout << "The result of third search is:\n" << strstr( sPtr + 1, chLine1 ) << endl;
-    
+    int i = 0;
+    vector< const char * > v;
+    v.push_back( searchPtr );
+    while ( v[i] != 0 )
+    {
+        v.push_back( strstr( v[ i ] + 1, chLine1 ) );
+        i++;
+    }
+    cout << "The number of desired fragment's entry is:\n" << v.size() << endl;
 
     return 0;
 }
