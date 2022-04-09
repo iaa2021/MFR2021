@@ -16,8 +16,7 @@ using std::transform;
 using std::map;
 int main()
 {
-    string line; const char * chLine; 
-    const char *alphabet = "abcdefghijklmnopqrstuvwxyz";
+    string line; const char * chLine; int j = 0;
     string alphabet1 = "abcdefghijklmnopqrstuvwxyz";
     cout << "Input text for character's seach.\n";
     getline( cin, line );
@@ -29,9 +28,24 @@ int main()
     cout << "\nThe size of chLine is " << strlen( chLine ) << endl;
     cout << "\nThe text in lower case is:\n";
     cout << line1 << endl;
-    const char *array[ 2 ][ strlen( alphabet ) ];// 0  - const char *ptr
-   
-        
-    map< const char *, int > result;// 0 - letter, 1 - number of it's entry in the text
+    vector <const char *> array[ alphabet1.size() ];//array of vectors for letter's entry count
+    const char *ptrArray[ alphabet1.size() ];//array for const char * pointers
+    for (size_t i = 0; i < alphabet1.size() ; i++)
+    {
+        ptrArray[ i ] = strchr( chLine, alphabet1.at(i) );
+        j = 0;
+        if( ptrArray[ i ] != 0 )
+        {
+            array[ i ].push_back( ptrArray[ i ] );
+            while ( array[i][j] != 0 )
+            {
+                array[i].push_back( strchr( array[i][j] + 1, alphabet1.at(i) ) );
+                j++;
+            }
+        }
+    }
+    cout << "\nThe letter's frequency is:\n";
+    for (size_t i = 0; i < alphabet1.size() ; i++)
+    cout << alphabet1.at(i) << "   " << static_cast<int>(array[ i ].size()) << endl;
     return 0;
 }
