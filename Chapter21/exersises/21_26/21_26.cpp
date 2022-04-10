@@ -39,8 +39,13 @@ int main()
             array[ i ].push_back( ptrArray[ i ] );
             while ( array[i][j] != 0 )
             {
-                array[i].push_back( strchr( array[i][j] + 1, alphabet1.at(i) ) );
-                j++;
+                if( strchr( array[i][j] + 1, alphabet1.at(i) ) != 0 )
+                {
+                    array[i].push_back( strchr( array[i][j] + 1, alphabet1.at(i) ) );
+                    j++;
+                }
+                else
+                break;
             }
         }
     }
