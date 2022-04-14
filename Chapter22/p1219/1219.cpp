@@ -16,5 +16,6 @@ int main()
     cout << "\nThe sum is: ";
     *outputInt = number1 + number2;
     cout << endl;
+    cout << "\nSome unnesessary changes.\n";
     return 0;
 }
