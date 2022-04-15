@@ -16,5 +16,11 @@ int main()
     cout << "\nThe sum is: ";
     *outputInt = number1 + number2;
     cout << endl;
+    cout << "\nThe numbers are: ";
+    *outputInt = number1;
+    cout << ", ";
+    outputInt++;
+    outputInt = number2;
+    cout << endl;
     return 0;
 }
