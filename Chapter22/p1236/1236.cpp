@@ -39,6 +39,30 @@ int main()
     values.merge( otherValues );
     cout << "\nThe values list after merging otherValues list contains:\n";
     printList( values );
+    cout << "\nThe otherValues list after mergining with values list contains:\n";
+    printList( otherValues );
+    values.pop_back();
+    values.pop_front();
+    cout << "\nThe values list after pop_back and pop_front contains:\n";
+    printList( values );
+    values.unique();
+    cout << "\nThe values list after unique contains:\n";
+    printList( values );
+    values.swap( otherValues );
+    cout << "\nThe values list after swap with otherValues contains:\n";
+    printList( values );
+    cout << "\nThe otherValues list after swap with values list contains:\n";
+    printList( otherValues );
+    values.assign( otherValues.begin(), otherValues.end() );
+    cout << "\nThe values list after assign with otherValues contains:\n";
+    printList( values );
+    values.merge( otherValues );
+    cout << "\nThe values list after merging otherValues list contains:\n";
+    printList( values );
+    values.remove( 4 );
+    cout << "\nThe values list after removing ( 4 ) contains:\n";
+    printList( values );
+    
     cout << endl;
     return 0;
 }
