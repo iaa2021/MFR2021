@@ -18,7 +18,10 @@ int main()
     pairs.insert( mMid::value_type( 25, 33.33 ) );
     pairs.insert( mMid::value_type( 20, 9.345 ) );
     pairs.insert( mMid::value_type( 5, 77.54 ) );
-    cout << "\nMultimap contains key\t value\n";
-    for( mMid::const_iterator )
+    cout << "\nMultimap contains\nkey\tvalue\n";
+    for( mMid::const_iterator it = pairs.begin(); it != pairs.end(); ++it )
+    {
+        cout << it ->first << '\t' << it ->second << endl;
+    }
     return 0;
 }
