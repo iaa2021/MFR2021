@@ -24,10 +24,10 @@ int main()
     iMs::const_iterator result;
     result = intM.find( 15 );
     if( result != intM.end() )
-    cout << "Find 15 value.\n";
+    cout << "Find " << *result << " value.\n";
     result = intM.find( 20 );
     if( result == intM.end() )
-    cout << "Didn't found 20 value.\n";
+    cout << "Didn't found " << *result << " value.\n";
     intM.insert( array, array + Size );
     cout << "\nMultiset after inserting an array is:\n";
     copy( intM.begin(), intM.end(), output );
