@@ -20,7 +20,6 @@ int main()
     for (size_t i = 0; i < 10; i++)
     {
         values.push( static_cast< double >( rand()%100 + 1 ) );
-        cout << values.front() << ' ';
     }
     cout << "\nPopping elements from values.\n";
     while ( !values.empty() )
