@@ -1,0 +1,3 @@
+﻿  p1266mathAlgVS.cpp
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter22\p1266mathAlgVS\p1266mathAlgVS\p1266mathAlgVS.cpp(23,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  p1266mathAlgVS.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter22\p1266mathAlgVS\Debug\p1266mathAlgVS.exe
