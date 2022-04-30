@@ -1,0 +1,3 @@
+﻿  p1269mathAlgorithmsVS.cpp
+C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter22\p1269mathAlgorithmsVS\p1269mathAlgorithmsVS\p1269mathAlgorithmsVS.cpp(20,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  p1269mathAlgorithmsVS.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter22\p1269mathAlgorithmsVS\Debug\p1269mathAlgorithmsVS.exe
