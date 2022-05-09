@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset'
  
 g++ -std=c++11 -Wall -o obj/1290.o -c /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp

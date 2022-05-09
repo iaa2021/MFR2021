@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May  9 10:20:13 2022
+# Make data base, printed on Mon May  9 10:37:13 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ RM = rm
 # environment
 SNAP_DATA = /var/snap/code/95
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"2b7693ea843d12cbb2e09a3b62281ac8.ru","_translationsConfigFile":"/home/iaa/.config/Code/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru/tcf.json","_cacheRoot":"/home/iaa/.config/Code/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru","_resolvedLanguagePackCoreLocation":"/home/iaa/.config/Code/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru/57fd6d0195bb9b9d1b49f6da5db789060795de47","_corruptedFile":"/home/iaa/.config/Code/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"a5c54860d8a11b20deefe52cf526a299.ru","_translationsConfigFile":"/home/iaa/.config/Code/clp/a5c54860d8a11b20deefe52cf526a299.ru/tcf.json","_cacheRoot":"/home/iaa/.config/Code/clp/a5c54860d8a11b20deefe52cf526a299.ru","_resolvedLanguagePackCoreLocation":"/home/iaa/.config/Code/clp/a5c54860d8a11b20deefe52cf526a299.ru/57fd6d0195bb9b9d1b49f6da5db789060795de47","_corruptedFile":"/home/iaa/.config/Code/clp/a5c54860d8a11b20deefe52cf526a299.ru/corrupted.info","_languagePackSupport":true}
 # environment
 JOURNAL_STREAM = 8:51093
 # environment
@@ -131,7 +131,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 18617
+GIO_LAUNCHED_DESKTOP_FILE_PID = 25609
 # automatic
 %F = $(notdir $%)
 # environment
@@ -165,7 +165,7 @@ VSCODE_CODE_CACHE_PATH = /home/iaa/.config/Code/CachedData/57fd6d0195bb9b9d1b49f
 # environment
 LOGNAME = iaa
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # makefile (from 'Makefile', line 22)
 DELOBJ = $(OBJ)
 # environment
@@ -201,7 +201,7 @@ CC = g++
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-be27b87c-56ec-408c-a5b0-2ad117199460.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-abf3f5ea-9545-4f67-a066-c211751d1d29.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -282,9 +282,9 @@ EXE = .exe
 # environment
 LANG = C
 # environment
-VSCODE_PID = 18667
+VSCODE_PID = 25660
 # variable set hash-table stats:
-# Load=136/1024=13%, Rehash=0, Collisions=36/191=19%
+# Load=136/1024=13%, Rehash=0, Collisions=36/186=19%
 
 # Pattern-specific Variable Values
 
@@ -292,10 +292,10 @@ VSCODE_PID = 18667
 
 # Directories
 
-# /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset (device 2054, inode 8654466): 8 files, no impossibilities.
-# . (device 2054, inode 8654466): 8 files, no impossibilities.
+# /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset (device 2054, inode 8654466): 9 files, no impossibilities.
+# . (device 2054, inode 8654466): 9 files, no impossibilities.
 
-# 16 files, no impossibilities in 2 directories.
+# 18 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -314,7 +314,7 @@ obj/%.o: /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/%.cpp
 1290.d: /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '1290'
-#  Last modified 2022-05-09 10:20:13.481967485
+#  Last modified 2022-05-09 10:37:12.796231527
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -325,9 +325,7 @@ all: 1290
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  Successfully updated.
 
 .PHONY: clean cleandep cleanw cleandepw
 #  Implicit rule search has not been done.
@@ -337,17 +335,15 @@ all: 1290
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-09 10:20:09.477985203
+#  Last modified 2022-05-09 10:36:24.124688714
 #  File has been updated.
 #  Successfully updated.
 
 1290: obj/1290.o
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Last modified 2022-05-09 10:36:24.124688714
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 36):
 	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
@@ -392,34 +388,16 @@ clean:
 # Not a target:
 /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-09 10:18:20.334472618
+#  Last modified 2022-05-09 10:36:24.124688714
 #  File has been updated.
 #  Successfully updated.
 
 obj/1290.o: /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '1290'
-#  File does not exist.
+#  Last modified 2022-05-09 10:36:24.124688714
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := obj/1290.o
-# automatic
-# % := 
-# automatic
-# * := 1290
-# automatic
-# + := /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp
-# automatic
-# | := 
-# automatic
-# < := /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp
-# automatic
-# ^ := /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp
-# automatic
-# ? := /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 47):
 	$(CC) $(CXXFLAGS) -o $@ -c $<
 
@@ -434,9 +412,9 @@ obj/1290.o: /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1290bitset/1290.cpp /h
 # strcache buffers: 1 (0) / strings = 25 / storage = 354 B / avg = 14 B
 # current buf: size = 8162 B / used = 354 B / count = 25 / avg = 14 B
 
-# strcache performance: lookups = 59 / hit rate = 57%
+# strcache performance: lookups = 60 / hit rate = 58%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=1/59=2%
-# Finished Make data base on Mon May  9 10:20:13 2022
+# Load=25/8192=0%, Rehash=0, Collisions=1/60=2%
+# Finished Make data base on Mon May  9 10:37:13 2022
 
  
