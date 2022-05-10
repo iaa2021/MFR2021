@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1294'
+ 
+g++ -std=c++11 -Wall -o obj/1294.o -c /home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1294/1294.cpp
+g++ -std=c++11 -Wall -o 1294 obj/1294.o 
+make: Leaving directory '/home/iaa/Desktop/gitStore/MFR2021/Chapter22/p1294'
+ 
