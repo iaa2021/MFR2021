@@ -63,5 +63,6 @@ int main()
         cin >> c;
     }
     cout << "\nThe task is complete." << endl;
+    cin.get();
     return 0;
 }
