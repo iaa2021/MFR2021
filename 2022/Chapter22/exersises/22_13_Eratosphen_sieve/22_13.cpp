@@ -64,5 +64,6 @@ int main()
     }
     cout << "\nThe task is complete." << endl;
     cin.get();
+    system("PAUSE");
     return 0;
 }
