@@ -15,11 +15,11 @@ int main()
     cout << "Object derived contains:\n" << derived << endl;
     cout << "Data members of Derived can be accessed individually:\n";
     cout << "Integer: " << derived.Base1::getData() << endl;
-    //cout << "Letter: " << derived.Base2::getData() << endl;
+    cout << "Letter: " << derived.Base2::getData() << endl;
     cout << "Real number: " << derived.getReal() << endl;
     base1Ptr = &derived;
     cout << "base1Ptr -> getData() yields " << base1Ptr -> getData() << endl;
-    //base2Ptr = &derived;
-    //cout << "base2Ptr -> getData() yields " << base2Ptr -> getData() << endl;
+    base2Ptr = &derived;
+    cout << "base2Ptr -> getData() yields " << base2Ptr -> getData() << endl;
     return 0;
 }

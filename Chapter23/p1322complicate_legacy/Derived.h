@@ -4,7 +4,7 @@
 using std::ostream;
 #include "Base1.h"
 #include "Base2.h"
-class Derived : public Base1, Base2
+class Derived : public Base1, public Base2
 {
     friend ostream &operator << ( ostream &, const Derived & );
 public:
