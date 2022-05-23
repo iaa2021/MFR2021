@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/iaa/Desktop/gitStore/MFR2021/Chapter23/p1322complicate_legacy'
+ 
+g++ -std=c++11 -Wall -o obj/1322.o -c /home/iaa/Desktop/gitStore/MFR2021/Chapter23/p1322complicate_legacy/1322.cpp
+g++ -std=c++11 -Wall -o obj/Derived.o -c /home/iaa/Desktop/gitStore/MFR2021/Chapter23/p1322complicate_legacy/Derived.cpp
+g++ -std=c++11 -Wall -o 1322 obj/1322.o obj/Derived.o 
+make: Leaving directory '/home/iaa/Desktop/gitStore/MFR2021/Chapter23/p1322complicate_legacy'
+ 
