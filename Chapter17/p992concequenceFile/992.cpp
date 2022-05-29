@@ -10,7 +10,7 @@ using std::ofstream;
 using std::exit;
 int main()
 {
-    ofstream outClientFile( "clients.txt", ios::out );
+    ofstream outClientFile( "clients.txt", ios::app );
     if( !outClientFile )
     {
         cerr << "File couldn't be opened.\n";
