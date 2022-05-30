@@ -8,7 +8,7 @@ CXXFLAGS = -std=c++11 -Wall
 LDFLAGS = 
 
 # Makefile settings - Can be customized.
-APPNAME = 1009
+APPNAME = myapp
 EXT = .cpp
 SRCDIR = /home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1007voluntaryAccess
 OBJDIR = obj

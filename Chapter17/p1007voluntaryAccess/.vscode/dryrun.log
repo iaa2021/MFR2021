@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1007voluntaryAccess'
+g++ -std=c++11 -Wall -o myapp obj/1010.o obj/ClientData.o obj/1009.o 
+make: Leaving directory '/home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1007voluntaryAccess'
+ 
