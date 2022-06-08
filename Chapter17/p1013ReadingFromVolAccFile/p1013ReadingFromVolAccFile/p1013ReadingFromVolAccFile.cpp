@@ -32,7 +32,7 @@ int main()
     inCredit.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
     while ( inCredit && !inCredit.eof() )
     {
-        if (client.getAccNumber() != 0)
+        if (client.getAccNumber() > 0)
             outputLine(cout, client);
  
         inCredit.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
