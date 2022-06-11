@@ -36,7 +36,7 @@ void ClientData::setFirstName(string fnString)
 {
     const char* fnValue = fnString.data();
     int length = fnString.size();
-    length = (length < 15 ? length : 14);
+    length = (length < 10 ? length : 9);
     strncpy_s(firstName, fnValue, length);
     firstName[length] = '\0';
 }

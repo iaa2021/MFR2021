@@ -28,12 +28,17 @@ int getAccount(const char*const);
 enum Choices { PRINT = 1, UPDATE, NEW, DELETE, END };
 int main()
 {
-    fstream inOutCredit("credit.txt", ios::in | ios::app);
+    fstream inOutCredit("credit.txt", ios::in | ios::app | ios::binary);
     if (!inOutCredit)
     {
         cerr << "File cannot be opened.\n";
         exit(1);
     }
+    ClientData client;
+    inOutCredit.seekp(0);
+    for (int i = 0; i < 100; i++)
+        inOutCredit.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
+
     int choice;
     cout << "Input your choice" << endl;
     while ( (choice = enterChoice()) != END  )
@@ -91,7 +96,8 @@ void createTextFile(fstream& readFromFile)
 }
 void newRecord(fstream& insertInFile)
 {
-    int accNmb = getAccount("Enter account to insert:\n");
+    int accNmb; cout << "Enter account to insert:\n";
+    cin >> accNmb;
     ClientData client;
     insertInFile.seekg((accNmb - 1) * sizeof(ClientData));
     insertInFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
@@ -154,7 +160,7 @@ int getAccount(const char* const prompt)
     {
         cout << prompt << " 1 - 100, 0 to end input\n";
         cin >> accNmb;
-    } while (accNmb > 0 && accNmb <= 100);
+    } while (accNmb < 1 || accNmb > 100);
     return accNmb;
 }
 void outputLine( ostream& output, const ClientData& record )
