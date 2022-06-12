@@ -29,44 +29,17 @@ int getAccount(const char*const);
 enum Choices { PRINT = 1, UPDATE, NEW, DELETE, END };
 int main()
 {
-    ifstream inCredit("credit.txt", ios::in | ios::binary);
-    if (!inCredit)
+    fstream inOutCredit("credit.txt", ios::in | ios::app | ios::binary);
+    if (!inOutCredit)
     {
-        cerr << "File by inCredit cannot be opened.\n";
-        exit(1);
-    }
-    ofstream onCredit("credit.txt", ios::app | ios::binary);
-    if (!onCredit)
-    {
-        cerr << "File by onCredit cannot be opened.\n";
+        cerr << "File cannot be opened.\n";
         exit(1);
     }
     ClientData client;
-    
-
-    int choice;
-    cout << "Input your choice" << endl;
-    while ( (choice = enterChoice()) != END  )
+    inOutCredit.seekp(0);
+    for (int i = 0; i < 100; i++)
     {
-        switch (choice)
-        {
-        case PRINT:
-            createTextFile(inCredit);
-            break;
-        case UPDATE:
-            updateRecord(inCredit, onCredit);
-            break;
-        case NEW:
-            newRecord(inCredit, onCredit);
-            break;
-        case DELETE:
-            deleteRecord(inCredit, onCredit);
-            break;
-        default:
-            cerr << "You've entered wrong choice.\n";
-            break;
-        }
-        inCredit.clear(); onCredit.clear();
+        inOutCredit.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
     }
     return 0;
 }
