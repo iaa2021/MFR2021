@@ -19,45 +19,64 @@ using std::setprecision;
 #include <cstdlib>
 using std::exit;
 #include "ClientData.h"
+
 int enterChoice();
-void createTextFile(ifstream&);
-void newRecord(ifstream&, ofstream&);
-void updateRecord(ifstream&, ofstream&);
-void deleteRecord(ifstream&, ofstream&);
+void createTextFile(fstream&);
+void newRecord(fstream&);
+void updateRecord(fstream&);
+void deleteRecord(fstream&);
 void outputLine(ostream&, const ClientData&);
 int getAccount(const char*const);
 enum Choices { PRINT = 1, UPDATE, NEW, DELETE, END };
 int main()
 {
-    fstream inOutCredit("credit.txt", ios::in | ios::app | ios::binary);
+    fstream inOutCredit("credit.txt", ios::app | ios::in | ios::binary);
     if (!inOutCredit)
     {
-        cerr << "File cannot be opened.\n";
+        cerr << "File credin.txt cannot be opened.\n";
         exit(1);
     }
     ClientData client;
-    inOutCredit.seekp(0);
-    for (int i = 0; i < 100; i++)
+    int choice;
+    cout << "Input your choice" << endl;
+    while ((choice = enterChoice()) != END)
     {
-        inOutCredit.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
+        switch (choice)
+        {
+        case PRINT:
+            createTextFile(inOutCredit);
+            break;
+        case UPDATE:
+            updateRecord(inOutCredit);
+            break;
+        case NEW:
+            newRecord(inOutCredit);
+            break;
+        case DELETE:
+            deleteRecord(inOutCredit);
+            break;
+        default:
+            cerr << "You've entered wrong choice.\n";
+            break;
+        }
+        
     }
     return 0;
 }
 int enterChoice()
 {
-    //to output availiable options
-    cout << "Enter your choice:\n1 - store a formatted text of accounts.\ncalled \"print.txt\" for printing.\n";
+    cout << "Enter your choice:\n1 - store a formatted text of accounts.\ncalled \"print.txt\" for printing.\n"; //to output availiable options
     cout << "2 - update an account.\n" << "3 - add a new account.\n" << "4 - delete an account.\n" << "5 - end program.\n? ";
     int menuChoice;
     cin >> menuChoice;
     return menuChoice;
 }
-void createTextFile(ifstream& readFromFile)
+void createTextFile(fstream& readFromFile)
 {
     ofstream outPrintFile("print.txt", ios::out); //create formatted text file for printing
     if (!outPrintFile)
     {
-        cerr << "File cannot be opened.\n";
+        cerr << "File print.txt cannot be opened.\n";
         exit(1);
     }
     outPrintFile << left << setw(10) << "Account" << setw(16) << "Last name" << setw(11) << "First name" << right << setw(10) << "Balance" << endl;
@@ -72,34 +91,33 @@ void createTextFile(ifstream& readFromFile)
         readFromFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
     }
 }
-void newRecord(ifstream& inFile, ofstream& onFile)
+void newRecord(fstream& newFile)
 {
-    int accNmb = getAccount("Enter account number to create:\n");
+    int accNmb = getAccount("Enter account number to create:\n"); 
     cin >> accNmb;
     ClientData client;
-    inFile.seekg((accNmb - 1) * sizeof(ClientData));
-    inFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
-    inFile.close(); inFile.clear();
+    newFile.seekg((accNmb - 1) * sizeof(ClientData));
+    newFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
     if (client.getAccNumber() == 0)
     {
         char lName[15]; char fName[10]; double balance;
         cout << "Enter last name, first name, balance:\n";
         cin >> setw(16) >> lName >> setw(11) >> fName >> balance;
         client.setAccNumber(accNmb); client.setLastName(lName); client.setFirstName(fName); client.setBalance(balance);
-        onFile.seekp((accNmb - 1) * sizeof(ClientData));
-        onFile.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
+        newFile.seekp((accNmb - 1) * sizeof(ClientData));
+        newFile.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
         cout << "Created account is:\n";
         outputLine(cout, client);
     }
     else
         cerr << "Account already contains information.\n";
 }
-void updateRecord(ifstream& inFile, ofstream& onFile)
+void updateRecord(fstream& updateFile)
 {
     int accNmb = getAccount("Enter account to update:\n");
     ClientData client;
-    inFile.seekg((accNmb - 1) * sizeof(ClientData));
-    inFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
+    updateFile.seekg((accNmb - 1) * sizeof(ClientData));
+    updateFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
     if (client.getAccNumber() != 0)
     {
         cout << "The state of an account # " << accNmb << " is:\n";
@@ -108,25 +126,25 @@ void updateRecord(ifstream& inFile, ofstream& onFile)
         cout << "Input your transaction (+) to top up your account, (-) to withdraw money from account:\n";
         cin >> transaction;
         client.setBalance(oldBalance + transaction);
-        onFile.seekp((accNmb - 1) * sizeof(ClientData));
-        onFile.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
+        updateFile.seekp((accNmb - 1) * sizeof(ClientData));
+        updateFile.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
         cout << "The state of updated account # " << accNmb << " is:\n";
         outputLine(cout, client);
     }
     else
         cerr << "Account # " << accNmb << " doesn't exist.\n";
 }
-void deleteRecord(ifstream& inFile, ofstream& onFile)
+void deleteRecord(fstream& deleteFile)
 {
     int accNmb = getAccount("Enter account to delete:\n");
     ClientData client;
-    inFile.seekg((accNmb - 1) * sizeof(ClientData));
-    inFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
+    deleteFile.seekg((accNmb - 1) * sizeof(ClientData));
+    deleteFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
     if (client.getAccNumber() != 0)
     {
         ClientData blank;
-        onFile.seekp((accNmb - 1) * sizeof(ClientData));
-        onFile.write(reinterpret_cast<const char*>(&blank), sizeof(ClientData));
+        deleteFile.seekp((accNmb - 1) * sizeof(ClientData));
+        deleteFile.write(reinterpret_cast<const char*>(&blank), sizeof(ClientData));
         cout << "Account # " << accNmb << " deleted.\n";
     }
     else
@@ -137,12 +155,12 @@ int getAccount(const char* const prompt)
     int accNmb;
     do
     {
-        cout << prompt << " 1 - 100, 0 to end input\n";
+        cout << prompt << " 1 - 100: ";
         cin >> accNmb;
     } while (accNmb < 1 || accNmb > 100);
     return accNmb;
 }
-void outputLine( ostream& output, const ClientData& record )
+void outputLine(ostream& output, const ClientData& record)
 {
     output << left << setw(10) << record.getAccNumber() << setw(16) << record.getLastName() << setw(11) << record.getFirstName();
     output << setw(10) << setprecision(2) << right << fixed << showpoint << record.getBalance() << endl;

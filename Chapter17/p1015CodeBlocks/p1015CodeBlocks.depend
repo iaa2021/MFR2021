@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1655109836 source:c:\users\ivano\onedrive\Рабочий стол\universalgit\chapter17\p1015codeblocks\main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	"ClientData.h"
+
+1655109836 c:\users\ivano\onedrive\Рабочий стол\universalgit\chapter17\p1015codeblocks\include\clientdata.h
+	<string>
+
+1655109992 source:c:\users\ivano\onedrive\Рабочий стол\universalgit\chapter17\p1015codeblocks\src\clientdata.cpp
+	<string>
+	<cstring>
+	"ClientData.h"
+
