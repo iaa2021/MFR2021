@@ -21,45 +21,44 @@ using std::exit;
 #include "ClientData.h"
 
 int enterChoice();
-void createTextFile(fstream&);
-void newRecord(fstream&);
-void updateRecord(fstream&);
-void deleteRecord(fstream&);
+void createTextFile(ifstream&);
+void newRecord(ifstream&, ofstream&);
+void updateRecord(ifstream&, ofstream&);
+void deleteRecord(ifstream&, ofstream&);
 void outputLine(ostream&, const ClientData&);
 int getAccount(const char*const);
 enum Choices { PRINT = 1, UPDATE, NEW, DELETE, END };
 int main()
 {
-    fstream inOutCredit("credit.txt", ios::app | ios::in | ios::binary);
-    if (!inOutCredit)
-    {
-        cerr << "File credin.txt cannot be opened.\n";
-        exit(1);
-    }
+    ofstream onCredit; ifstream inCredit;
     ClientData client;
     int choice;
-    cout << "Input your choice" << endl;
-    while ((choice = enterChoice()) != END)
+    cout << "sizeof(long long) is " << sizeof(long long) << endl;
+    cout << "Enter your choice:\n1 - store a formatted text of accounts.\ncalled \"print.txt\" for printing.\n"; //to output availiable options
+    cout << "2 - update an account.\n" << "3 - add a new account.\n" << "4 - delete an account.\n" << "5 - end program.\n? ";
+    cin >> choice;
+    while (choice != END)
     {
         switch (choice)
         {
         case PRINT:
-            createTextFile(inOutCredit);
+            createTextFile(inCredit);
             break;
         case UPDATE:
-            updateRecord(inOutCredit);
+            updateRecord(inCredit, onCredit);
             break;
         case NEW:
-            newRecord(inOutCredit);
+            newRecord(inCredit, onCredit);
             break;
         case DELETE:
-            deleteRecord(inOutCredit);
+            deleteRecord(inCredit, onCredit);
             break;
         default:
             cerr << "You've entered wrong choice.\n";
             break;
         }
-        
+        cout << "Input your choice" << endl;
+        cin >> choice;
     }
     return 0;
 }
@@ -71,8 +70,14 @@ int enterChoice()
     cin >> menuChoice;
     return menuChoice;
 }
-void createTextFile(fstream& readFromFile)
+void createTextFile(ifstream& readFromFile)
 {
+    readFromFile.open("credit.txt", ios::in | ios::binary);
+    if (!readFromFile)
+    {
+        cerr << "File credit.txt cannot be opened.\n";
+        exit(1);
+    }
     ofstream outPrintFile("print.txt", ios::out); //create formatted text file for printing
     if (!outPrintFile)
     {
@@ -90,62 +95,80 @@ void createTextFile(fstream& readFromFile)
 
         readFromFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
     }
+    readFromFile.close();
 }
-void newRecord(fstream& newFile)
+void newRecord(ifstream& inFile, ofstream& onFile)
 {
-    int accNmb = getAccount("Enter account number to create:\n"); 
+    long long accNmb;
+    cout << "Enter account number to create, 1 - 100:\n";
     cin >> accNmb;
     ClientData client;
-    newFile.seekg((accNmb - 1) * sizeof(ClientData));
-    newFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
+    inFile.open("credit.txt", ios::in | ios::binary);
+    inFile.seekg((accNmb - 1) * sizeof(ClientData));
+    inFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
     if (client.getAccNumber() == 0)
     {
+        inFile.close(); onFile.open("credit.txt", ios::app | ios::binary);
         char lName[15]; char fName[10]; double balance;
         cout << "Enter last name, first name, balance:\n";
         cin >> setw(16) >> lName >> setw(11) >> fName >> balance;
         client.setAccNumber(accNmb); client.setLastName(lName); client.setFirstName(fName); client.setBalance(balance);
-        newFile.seekp((accNmb - 1) * sizeof(ClientData));
-        newFile.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
+        onFile.seekp((accNmb - 1) * sizeof(ClientData));
+        onFile.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
         cout << "Created account is:\n";
         outputLine(cout, client);
+        cout << "client.getAccNumber() = " << client.getAccNumber() << endl;
+        onFile.close();
     }
     else
         cerr << "Account already contains information.\n";
+    inFile.close();
 }
-void updateRecord(fstream& updateFile)
+void updateRecord(ifstream& inFile, ofstream& onFile)
 {
-    int accNmb = getAccount("Enter account to update:\n");
+    long long accNmb;
+    cout << "Enter account number to update, 1 - 100:\n";
+    cin >> accNmb;
     ClientData client;
-    updateFile.seekg((accNmb - 1) * sizeof(ClientData));
-    updateFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
+    inFile.open("credit.txt", ios::in | ios::binary);
+    inFile.seekg((accNmb - 1) * sizeof(ClientData));
+    inFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
+    inFile.close();
+    cout << "client.getAccNumber() = " << client.getAccNumber() << endl;
     if (client.getAccNumber() != 0)
     {
+        onFile.open("credit.txt", ios::app | ios::binary);
         cout << "The state of an account # " << accNmb << " is:\n";
         outputLine(cout, client);
         double transaction; double oldBalance = client.getBalance();
         cout << "Input your transaction (+) to top up your account, (-) to withdraw money from account:\n";
         cin >> transaction;
         client.setBalance(oldBalance + transaction);
-        updateFile.seekp((accNmb - 1) * sizeof(ClientData));
-        updateFile.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
+        onFile.seekp((accNmb - 1) * sizeof(ClientData));
+        onFile.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
         cout << "The state of updated account # " << accNmb << " is:\n";
         outputLine(cout, client);
+        onFile.close();
     }
     else
         cerr << "Account # " << accNmb << " doesn't exist.\n";
 }
-void deleteRecord(fstream& deleteFile)
+void deleteRecord(ifstream& inFile, ofstream& onFile)
 {
     int accNmb = getAccount("Enter account to delete:\n");
     ClientData client;
-    deleteFile.seekg((accNmb - 1) * sizeof(ClientData));
-    deleteFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
+    inFile.open("credit.txt", ios::in | ios::binary);
+    inFile.seekg((static_cast<long long>(accNmb) - 1)  * sizeof(ClientData));
+    inFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
+    inFile.close();
     if (client.getAccNumber() != 0)
     {
+        onFile.open("credit.txt", ios::app | ios::binary);
         ClientData blank;
-        deleteFile.seekp((accNmb - 1) * sizeof(ClientData));
-        deleteFile.write(reinterpret_cast<const char*>(&blank), sizeof(ClientData));
+        onFile.seekp((static_cast<long long>(accNmb) - 1)  * sizeof(ClientData));
+        onFile.write(reinterpret_cast<const char*>(&blank), sizeof(ClientData));
         cout << "Account # " << accNmb << " deleted.\n";
+        onFile.close();
     }
     else
         cerr << "Account # " << accNmb << " doesn't exist.\n";
@@ -155,7 +178,7 @@ int getAccount(const char* const prompt)
     int accNmb;
     do
     {
-        cout << prompt << " 1 - 100: ";
+        cout << prompt << " 1 - 100:\n";
         cin >> accNmb;
     } while (accNmb < 1 || accNmb > 100);
     return accNmb;
