@@ -1,5 +1,4 @@
 ﻿  ClientData.cpp
   p1015transactionsHandlingProgram.cpp
-C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\p1015transactionsHandlingProgram\p1015transactionsHandlingProgram\p1015transactionsHandlingProgram.cpp(115,29): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
   Generating Code...
-  p1015transactionsHandlingProgram.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\p1015transactionsHandlingProgram\Debug\p1015transactionsHandlingProgram.exe
+  p1015transactionsHandlingProgram.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\TempGit\MFR2021\Chapter17\p1015transactionsHandlingProgram\Debug\p1015transactionsHandlingProgram.exe
