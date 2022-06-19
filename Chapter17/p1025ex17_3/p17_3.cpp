@@ -18,50 +18,58 @@ using std::string;
 using std::setw;
 using std::setprecision;
 void outputLine( int, const string, double );
+void inputClientsDataBase(fstream &);
+int enterChoice(string);
 int main()
 {
-    ifstream inOldMaster( "oldmast.txt", ios::in );
-    if (!inOldMaster)
+    fstream OldMaster( "oldmast.odt", ios::out | ios::in );
+    if (!OldMaster)
     {
-        cerr << "File oldmast.txt cannot be opened.\n";
+        cerr << "File oldmast.odt cannot be opened.\n";
         exit(1);
     }
-    ifstream inTransaction( "trams.txt", ios::in );
-     if (!inTransaction)
+    ofstream Transaction( "trams.odt", ios::out );
+     if (!Transaction)
     {
-        cerr << "File trans.txt cannot be opened.\n";
+        cerr << "File trans.odt cannot be opened.\n";
         exit(1);
     }
-    ofstream outNewMaster( "newmast.txt", ios::app );
-     if (!outNewMaster)
+    fstream NewMaster( "newmast.odt", ios::out );
+     if (!NewMaster)
     {
-        cerr << "File newmast.txt cannot be opened.\n";
+        cerr << "File newmast.odt cannot be opened.\n";
         exit(1);
     }
-    cout << setw(10) << left <<  "Account" << setw(13) << "Name" << setw(7)  << right << "Balance" << endl;
-    cout << fixed << showpoint;
-    int accNum; string name; double balance; double dollarAmount;
-    while (inOldMaster >> accNum >> name >> balance)
-    {
-        outputLine( accNum, name, balance );
-    }
-    while ( inTransaction >> accNum >> dollarAmount )
-    {
-        cout << accNum << " " << dollarAmount << endl;
-    }
-    cout << "Enter account, 0 to end input:\n? ";
-    cin >> accNum;
-    while ( accNum != 0 )
-    {
-        cout << "\nInput name & balance:\n? "
-        cin >> name >> balance;
-        outNewMaster << accNum << name << balance << endl;
-        cin >> accNum ;
-    }
- 
+    cout << "Work started.\n";
+    cin.get();
     return 0;
 }
 void outputLine( int acc, const string name, double balance )
 {
   cout << setw(10) << left <<  acc << setw(13) << name << setw(7) << setprecision(2) << right << balance << endl;
+}
+int enterChoice()
+{
+    cout  << "Input your choice:\n1 - to fulfill client's accounts database;\n";
+    cout << "2 - to fulfill transactions database;\n3 - to update new client's accounts database.\n";
+    int choice;
+    do
+    {
+        cin >> choice;
+    } while (choice <= 0);
+    return choice;
+}
+void inputClientsDataBase(fstream &dBase, int a, string n, double b)
+{
+    dBase << left << setw(10) << "Account" << setw(13) << "Name" << setw(10) << "Balance" << endl;
+    cout << "Input account's number, 0 to end input:\n? ";
+    cin >> a;
+    while (a >= 0)
+    {
+        cout << "Input name, balance:\n? ";
+        cin >> setw(13) >> n >> setw(10) >> b;
+        dBase << setw(10) << a << setw(13) << n << setw(10) << b << endl;
+        cout << "Input account's number, 0 to end input:\n? ";
+    }
+    
 }
