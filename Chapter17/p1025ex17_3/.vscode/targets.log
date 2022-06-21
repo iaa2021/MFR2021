@@ -5,8 +5,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Mon Jun 20 10:42:31 2022
+# Make data base, printed on Tue Jun 21 12:00:36 2022
 
 # Variables
 
@@ -55,7 +56,7 @@ SNAP_DATA = /var/snap/code/99
 # environment
 VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"4165c719fdf7a78444ed970b4565033b.ru","_translationsConfigFile":"/home/iaa/.config/Code/clp/4165c719fdf7a78444ed970b4565033b.ru/tcf.json","_cacheRoot":"/home/iaa/.config/Code/clp/4165c719fdf7a78444ed970b4565033b.ru","_resolvedLanguagePackCoreLocation":"/home/iaa/.config/Code/clp/4165c719fdf7a78444ed970b4565033b.ru/30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"/home/iaa/.config/Code/clp/4165c719fdf7a78444ed970b4565033b.ru/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:43427
+JOURNAL_STREAM = 8:41882
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -99,7 +100,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # makefile (from 'Makefile', line 19)
 DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # environment
-SESSION_MANAGER = local/iaa-Inspiron-7720:@/tmp/.ICE-unix/1648,unix/iaa-Inspiron-7720:/tmp/.ICE-unix/1648
+SESSION_MANAGER = local/iaa-Inspiron-7720:@/tmp/.ICE-unix/1657,unix/iaa-Inspiron-7720:/tmp/.ICE-unix/1657
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -117,7 +118,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = ebc805b1befa421ba6972881caa7edbf
+INVOCATION_ID = c4e15e8192564b98b252bba33f91822a
 # makefile (from 'Makefile', line 8)
 LDFLAGS = 
 # environment
@@ -131,7 +132,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4542
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4439
 # automatic
 %F = $(notdir $%)
 # environment
@@ -147,7 +148,7 @@ PWD = /home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1025ex17_3
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1612
+SSH_AGENT_PID = 1621
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -178,6 +179,7 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 SNAP_USER_COMMON = /home/iaa/snap/code/common
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+ 
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
@@ -201,7 +203,7 @@ CC = g++
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-cda6b998-93a5-48b0-89c6-61d04806ef36.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-cd76171d-18fd-4fbc-ab43-b096b0e9d64f.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -281,21 +283,20 @@ EXE = .exe
 # environment
 LANG = C
 # environment
-VSCODE_PID = 4590
+VSCODE_PID = 4488
 # variable set hash-table stats:
 # Load=136/1024=13%, Rehash=0, Collisions=36/186=19%
 
- 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (device 2054, inode 8654707): 14 files, no impossibilities.
-# /home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1025ex17_3 (device 2054, inode 8654707): 14 files, no impossibilities.
+# . (device 2054, inode 8654707): 13 files, no impossibilities.
+# /home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1025ex17_3 (device 2054, inode 8654707): 13 files, no impossibilities.
 
-# 28 files, no impossibilities in 2 directories.
+# 26 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -326,6 +327,7 @@ all: ex17_7
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-06-19 19:52:48.687870196
 #  File has been updated.
 #  Successfully updated.
@@ -340,7 +342,7 @@ cleanw:
 
 ex17_7: obj/p17_3.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-20 10:40:56.978044319
+#  Last modified 2022-06-20 12:20:18.362728214
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 36):
@@ -371,7 +373,7 @@ cleandepw:
 obj/p17_3.o: /home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1025ex17_3/p17_3.cpp /home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1025ex17_3/p17_3.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'p17_3'
-#  Last modified 2022-06-20 10:40:56.850045037
+#  Last modified 2022-06-20 12:20:18.362728214
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 47):
@@ -388,14 +390,14 @@ clean:
 # Not a target:
 /home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1025ex17_3/p17_3.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-20 10:40:38.102150018
+#  Last modified 2022-06-20 12:20:18.362728214
 #  File has been updated.
 #  Successfully updated.
 
 p17_3.d: /home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1025ex17_3/p17_3.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'p17_3'
-#  Last modified 2022-06-20 10:42:30.44551776
+#  Last modified 2022-06-21 12:00:35.709561438
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -409,12 +411,12 @@ p17_3.d: /home/iaa/Desktop/gitStore/MFR2021/Chapter17/p1025ex17_3/p17_3.cpp
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 31 / storage = 430 B / avg = 13 B
-# current buf: size = 8162 B / used = 430 B / count = 31 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 30 / storage = 420 B / avg = 14 B
+# current buf: size = 8162 B / used = 420 B / count = 30 / avg = 14 B
 
-# strcache performance: lookups = 65 / hit rate = 52%
+# strcache performance: lookups = 64 / hit rate = 53%
 # hash-table stats:
-# Load=31/8192=0%, Rehash=0, Collisions=2/65=3%
-# Finished Make data base on Mon Jun 20 10:42:31 2022
+# Load=30/8192=0%, Rehash=0, Collisions=2/64=3%
+# Finished Make data base on Tue Jun 21 12:00:36 2022
 
  
