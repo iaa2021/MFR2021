@@ -1,0 +1,4 @@
+﻿  ex17_7.cpp
+C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\ex17_7\ex17_7\ex17_7.cpp(19,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\ex17_7\ex17_7\ex17_7.cpp(47,23): warning C4018: '<': signed/unsigned mismatch
+  ex17_7.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\ex17_7\Debug\ex17_7.exe
