@@ -42,10 +42,12 @@ int main()
     }
     else
         cout << "File cannot be opened by ios::app object.\n";
-    oldMaster.open("oldmast.txt", ios::in);
-    if (oldMaster.is_open())
+    ifstream inOldMaster;
+    inOldMaster.open("oldmast.txt", ios::in);
+    if (inOldMaster.is_open())
     {
-        while (oldMaster >> accNmb >> fN >> lN >> balance)
+        cout << "File is opened by ios::in object.\n";
+        while (inOldMaster >> accNmb >> fN >> lN >> balance)
         {
             outputLine( accNmb, fN, lN, balance);
             cout << left << setw(5) << accNmb << setw(11) << fN << setw(16) << lN << setw(10) << right << balance << endl;
