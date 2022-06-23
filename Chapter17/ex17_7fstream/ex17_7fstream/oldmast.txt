@@ -1,0 +1,6 @@
+Account   First Name Lirst Name         Balance
+100  Alan       Jones               348.17
+300  Mary       Smith                27.19
+500  Sam        Sharp                    0
+700  Susy       Green               -14.22
+
