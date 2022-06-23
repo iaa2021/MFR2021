@@ -20,49 +20,45 @@ using std::setw;
 using std::setprecision;
 #include<vector>
 using std::vector;
-void outputLine(ostream &, int, char*, char*, double);
+void outputLine( int, string, string, double);
 
 int main()
 {
-    int accNmb; char fN[10]; char lN[15]; double balance;
-    ofstream oldMaster("oldmast.txt", ios::app);
-    if (!oldMaster)
+    int accNmb; string fN; string lN; double balance;
+    fstream oldMaster;
+    oldMaster.open("oldmast.txt", ios::app);
+    if (oldMaster.is_open())
     {
-        cerr << "File oldmast.txt cannot be opened by oldMaster.\n";
-        exit(1);
-    }
-    
-    cout << "Input account number, 0 to end input:\n? ";
-    cin >> accNmb;
-    while (accNmb != 0)
-    {
-        cout << "Input first name, last name, balance:\n? ";
-        cin >> setw(10) >> fN >> setw(15) >> lN >> setw(10) >> balance;
-        oldMaster << left << setw(5) << accNmb << setw(11) << fN << setw(16) << lN << setw(10) << right << balance << endl;
-        cout << "Input account number, 0 to end input:\n? ";
+        cout << "Input account number, 0 to end input:|n? ";
         cin >> accNmb;
-    }
-    oldMaster.close();
-    ifstream inOldMaster("oldmast.txt", ios::in);
-    if (!inOldMaster)
-    {
-        cerr << "File oldmast.txt cannot be opened by inOldMaster.\n";
-        exit(1);
+        while (accNmb != 0)
+        {
+            cout << "Input first name, last name, balance:|n? ";
+            cin >> fN >> lN >> balance;
+            cout << "Input account number, 0 to end input:|n? ";
+            cin >> accNmb;
+        }
+        oldMaster.close();
     }
     else
-        cout << "File oldmast.txt is opened by inOldMaster.\n";
-
-    cout << "Account " << " First name " << " Last name " << " Balance " << endl;
-    cout << fixed << showpoint;
-
-    while (inOldMaster >> accNmb >> fN >> lN >> balance)
+        cout << "File cannot be opened by ios::app object.\n";
+    oldMaster.open("oldmast.txt", ios::in);
+    if (oldMaster.is_open())
     {
-        outputLine( cout, accNmb, fN, lN, balance);
+        while (oldMaster >> accNmb >> fN >> lN >> balance)
+        {
+            outputLine( accNmb, fN, lN, balance);
+            cout << left << setw(5) << accNmb << setw(11) << fN << setw(16) << lN << setw(10) << right << balance << endl;
+        }
+        oldMaster.close();
     }
+    else
+        cout << "File cannot be opened by ios::in object.\n";
+    
 
     return 0;
 }
-void outputLine( ostream &output, int a, char* f, char* l, double b)
+void outputLine( int a, string f, string l, double b)
 {
-    output << left << setw(5) << a << setw(11) << f << setw(16) << l << setw(10) << right << b << endl;
+    cout << left << setw(5) << a << setw(11) << f << setw(16) << l << setw(10) << right << b << endl;
 }
