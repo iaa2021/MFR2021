@@ -32,7 +32,7 @@ void Tools::setName(string sNm)
 {
 	const char* chN = sNm.data();
 	int length = sNm.length();
-	length = (length < 50 ? length : 49);
+	length = (length < 30 ? length : 29);
 	strncpy_s(name, chN, length);
 	name[length] = '\0';
 }

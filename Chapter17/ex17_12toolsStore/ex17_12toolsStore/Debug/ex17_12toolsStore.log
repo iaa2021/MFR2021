@@ -1,6 +1,4 @@
-﻿  ex17_12toolsStore.cpp
-C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\ex17_12toolsStore\ex17_12toolsStore\ex17_12toolsStore.cpp(27,9): warning C4101: 'gNumber': unreferenced local variable
-C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\ex17_12toolsStore\ex17_12toolsStore\ex17_12toolsStore.cpp(27,18): warning C4101: 'gQuantity': unreferenced local variable
-C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\ex17_12toolsStore\ex17_12toolsStore\ex17_12toolsStore.cpp(27,58): warning C4101: 'gPrice': unreferenced local variable
-C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\ex17_12toolsStore\ex17_12toolsStore\ex17_12toolsStore.cpp(57,29): warning C4101: 'choice': unreferenced local variable
+﻿  Tools.cpp
+  ex17_12toolsStore.cpp
+  Generating Code...
   ex17_12toolsStore.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\UniversalGit\Chapter17\ex17_12toolsStore\Debug\ex17_12toolsStore.exe

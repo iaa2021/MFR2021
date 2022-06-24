@@ -17,7 +17,7 @@ public:
 	double getPrice() const;
 private:
 	int number;
-	char name[50];
+	char name[30];
 	int quantity;
 	double price;
 };
