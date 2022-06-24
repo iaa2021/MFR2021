@@ -61,7 +61,7 @@ int main()
     while (!onStore.eof())
     {
         if (good.getNumber() != 0)
-            cout << good.getNumber() << "  " << good.getName() << "  " << good.getPrice() << "  " << good.getQuantity() << endl;
+            outputLine(cout, good);
         onStore.read(reinterpret_cast<char*>(&good), sizeof(Tools));
     }
     cin.get();
@@ -71,23 +71,28 @@ int main()
 void writeDownGoods(fstream& wareHouse)
 {
     int gNumber; int gQuantity; string gName; double gPrice; Tools store;
-    cout << "Input tool's number, 0 - to end input:\n? ";
+    cout << "Input tool's number:\n? ";
     cin >> gNumber;
-    wareHouse.seekg((static_cast<long long>(gNumber) + 1) * sizeof(Tools));
+    wareHouse.seekg((gNumber - 1) * sizeof(Tools));
     wareHouse.read(reinterpret_cast<char*>(&store), sizeof(Tools));
     if (store.getNumber() == 0)
     {
         cout << "Input good's name:\n? ";
         cin >> gName;
-        cout << "Input quantity\n? "; 
+        cout << "Input quantity\n? ";
         cin >> gQuantity;
         cout << "Input price:\n";
         cin >> gPrice;
         store.setNumber(gNumber); store.setName(gName); store.setQuantity(gQuantity); store.setPrice(gPrice);
-        wareHouse.seekp((static_cast<long long>(gNumber) + 1) * sizeof(Tools));
+        wareHouse.seekp((gNumber - 1) * sizeof(Tools));
         cout << "You've entered such product:\n";
         outputLine(cout, store);
         wareHouse.write(reinterpret_cast<const char*>(&store), sizeof(Tools));
+        cout << "Checking entered object:\n";
+        Tools blank;
+        wareHouse.seekg((gNumber - 1) * sizeof(Tools));
+        wareHouse.read(reinterpret_cast<char*>(&blank), sizeof(Tools));
+        outputLine(cout, blank);
     }
     else
         cout << "Position # " << gNumber << " is already occupied.\n";
@@ -122,7 +127,7 @@ void deleteRecord(fstream& delFile)
     int number; Tools good;
     cout << "Input position's number, you'd like to delete:\n? ";
     cin >> number;
-    delFile.seekg((static_cast<long long>( number  ) - 1) * sizeof(Tools));
+    delFile.seekg((number - 1) * sizeof(Tools));
     delFile.read(reinterpret_cast<char*>(&good), sizeof(Tools));
     cout << "Position is " << good.getNumber() << endl;
     if (good.getNumber() != 0)
@@ -130,7 +135,7 @@ void deleteRecord(fstream& delFile)
         cout << "You'd like to delete such record:\n";
         outputLine(cout, good);
         Tools emptyLine;
-        delFile.seekp((static_cast<long long>(number) - 1) * sizeof(Tools));
+        delFile.seekp((number - 1) * sizeof(Tools));
         delFile.write(reinterpret_cast<const char*>(&emptyLine), sizeof(Tools));
     }
     else
