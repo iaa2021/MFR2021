@@ -70,13 +70,14 @@ int main()
 }
 void writeDownGoods(fstream& wareHouse)
 {
-    int gNumber; int gQuantity; string gName; double gPrice; Tools store;
+    int gNumber; Tools store;
     cout << "Input tool's number:\n? ";
     cin >> gNumber;
     wareHouse.seekg((gNumber - 1) * sizeof(Tools));
     wareHouse.read(reinterpret_cast<char*>(&store), sizeof(Tools));
     if (store.getNumber() == 0)
     {
+        char gName[29]; double gPrice; int gQuantity;
         cout << "Input good's name:\n? ";
         cin >> gName;
         cout << "Input quantity\n? ";
