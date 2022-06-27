@@ -2,8 +2,16 @@
 #include <iostream>
 using std::cout;
 using std::endl;
+using std::left;
+using std::right;
+using std::fixed;
+using std::showpoint;
 #include<string>
 using std::string;
+#include <iomanip>
+using std::setw;
+using std::setprecision;
+
 Tools::Tools(int nmb, string nm, int qw, double pr)
 {
 	setNumber(nmb);
@@ -31,7 +39,7 @@ int Tools::getQuantity() const
 void Tools::setName(string sNm)
 {
 	const char* chN = sNm.data();
-	int length = sNm.length();
+	int length = sNm.size();
 	length = (length < 30 ? length : 29);
 	strncpy_s(name, chN, length);
 	name[length] = '\0';
@@ -47,4 +55,8 @@ void Tools::setPrice(double pr)
 double Tools::getPrice() const
 {
 	return price;
+}
+void Tools::print(ostream &output) const
+{
+	output << left << setw(10) << getNumber() << setw(30) << getName() << setw(10) << setprecision(2) << fixed << showpoint << getPrice() << right << setw(5) << getQuantity() << endl;
 }

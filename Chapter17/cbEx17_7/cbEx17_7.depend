@@ -6,11 +6,11 @@
 	<iomanip>
 	"Tools.h"
 
-1656160120 c:\users\ivano\onedrive\Рабочий стол\universalgit\chapter17\cbex17_7\include\tools.h
+1656162171 c:\users\ivano\onedrive\Рабочий стол\universalgit\chapter17\cbex17_7\include\tools.h
 	<iostream>
 	<string>
 
-1656160306 source:c:\users\ivano\onedrive\Рабочий стол\universalgit\chapter17\cbex17_7\src\tools.cpp
+1656162171 source:c:\users\ivano\onedrive\Рабочий стол\universalgit\chapter17\cbex17_7\src\tools.cpp
 	"Tools.h"
 	<iostream>
 	<string>

@@ -1,4 +1,9 @@
 Number    Name                          Price     Quantity
-3         Grinding_mashine              57.98         7
-1744830464ummer                         0.00      2063597568
-1778384896igsaw                         0.00          0
+3         Grinding_mashine              57.98        14
+17        hummer                        11.99        76
+24        jigsaw                        11.25        21
+39        lawn_mover                    79.50         3
+56        electricSaw                   99.99        18
+68        Screwdriver                   6.99        331
+77        Sledgehammer                  21.50         4
+83        Wrench                        7.50         34

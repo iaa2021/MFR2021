@@ -3,6 +3,11 @@ using std::cout;
 using std::endl;
 #include<string>
 using std::string;
+#include<fstream>
+using std::fstream;
+using std::ostream;
+using std::ofstream;
+using std::istream;
 class Tools
 {
 public:
@@ -15,6 +20,7 @@ public:
 	int getQuantity() const;
 	void setPrice(double);
 	double getPrice() const;
+	void print(ostream &) const;
 private:
 	int number;
 	char name[30];

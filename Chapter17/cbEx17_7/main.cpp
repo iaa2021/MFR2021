@@ -77,7 +77,7 @@ void writeDownGoods(fstream& wareHouse)
     wareHouse.read(reinterpret_cast<char*>(&store), sizeof(Tools));
     if (store.getNumber() == 0)
     {
-        char gName[29]; double gPrice; int gQuantity;
+        string gName; double gPrice; int gQuantity;
         cout << "Input good's name:\n? ";
         cin >> gName;
         cout << "Input quantity\n? ";
