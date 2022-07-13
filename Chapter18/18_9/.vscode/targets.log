@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul 13 18:47:19 2022
+# Make data base, printed on Wed Jul 13 18:46:16 2022
 
 # Variables
 
@@ -43,7 +43,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/iaa/Desktop/universalGit/Chapter18/ex18_7
+CURDIR := /home/iaa/Desktop/universalGit/Chapter18/18_9
 # makefile
 SHELL = /bin/sh
 # makefile (from 'Makefile', line 21)
@@ -60,8 +60,8 @@ XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 SNAP_INSTANCE_NAME = code
 # environment
 SNAP_ARCH = amd64
-# makefile (from '18_7.d', line 1)
-MAKEFILE_LIST :=  Makefile 18_7.d
+# makefile (from '18_9.d', line 1)
+MAKEFILE_LIST :=  Makefile 18_9.d
 # automatic
 @F = $(notdir $@)
 # environment
@@ -131,11 +131,11 @@ GIO_LAUNCHED_DESKTOP_FILE_PID = 4044
 # environment
 DISPLAY = :0
 # makefile (from 'Makefile', line 13)
-SRCDIR = /home/iaa/Desktop/universalGit/Chapter18/ex18_7
+SRCDIR = /home/iaa/Desktop/universalGit/Chapter18/18_9
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-PWD = /home/iaa/Desktop/universalGit/Chapter18/ex18_7
+PWD = /home/iaa/Desktop/universalGit/Chapter18/18_9
 # default
 .LOADED := 
 # environment
@@ -231,7 +231,7 @@ GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # makefile (from 'Makefile', line 11)
-APPNAME = 18_7
+APPNAME = 18_9
 # environment
 QT_ACCESSIBILITY = 1
 # default
@@ -275,25 +275,25 @@ VSCODE_PID = 4093
 # variable set hash-table stats:
 # Load=131/1024=13%, Rehash=0, Collisions=35/181=19%
 
+ 
 # Pattern-specific Variable Values
 
- 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (device 2054, inode 7739970): 9 files, no impossibilities.
-# /home/iaa/Desktop/universalGit/Chapter18/ex18_7 (device 2054, inode 7739970): 9 files, no impossibilities.
+# . (device 2054, inode 7752515): 9 files, no impossibilities.
+# /home/iaa/Desktop/universalGit/Chapter18/18_9 (device 2054, inode 7752515): 9 files, no impossibilities.
 
 # 18 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
-%.d: /home/iaa/Desktop/universalGit/Chapter18/ex18_7/%.cpp
+%.d: /home/iaa/Desktop/universalGit/Chapter18/18_9/%.cpp
 #  recipe to execute (from 'Makefile', line 40):
 	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
 
-obj/%.o: /home/iaa/Desktop/universalGit/Chapter18/ex18_7/%.cpp
+obj/%.o: /home/iaa/Desktop/universalGit/Chapter18/18_9/%.cpp
 #  recipe to execute (from 'Makefile', line 47):
 	$(CC) $(CXXFLAGS) -o $@ -c $<
 
@@ -301,7 +301,7 @@ obj/%.o: /home/iaa/Desktop/universalGit/Chapter18/ex18_7/%.cpp
 
 # Files
 
-all: 18_7
+all: 18_9
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -313,20 +313,28 @@ all: 18_7
 #  Modification time never checked.
 #  File has not been updated.
 
-18_7: obj/18_7.o
-#  Implicit rule search has not been done.
-#  Last modified 2022-07-12 19:18:27.005648868
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 36):
-	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
-
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-11 13:29:33.551228883
+#  Last modified 2022-07-12 20:14:20.417672895
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+/home/iaa/Desktop/universalGit/Chapter18/18_9/18_9.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 20:14:20.417672895
+#  File has been updated.
+#  Successfully updated.
+
+obj/18_9.o: /home/iaa/Desktop/universalGit/Chapter18/18_9/18_9.cpp /home/iaa/Desktop/universalGit/Chapter18/18_9/18_9.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '18_9'
+#  Last modified 2022-07-12 20:14:20.417672895
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 47):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
 
 cleanw:
 #  Phony target (prerequisite of .PHONY).
@@ -335,6 +343,15 @@ cleanw:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 64):
 	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
+
+18_9.d: /home/iaa/Desktop/universalGit/Chapter18/18_9/18_9.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '18_9'
+#  Last modified 2022-07-13 18:46:16.681480196
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
 
 # Not a target:
 .DEFAULT:
@@ -366,30 +383,13 @@ clean:
 #  recipe to execute (from 'Makefile', line 53):
 	$(RM) $(DELOBJ) $(DEP) $(APPNAME)
 
-obj/18_7.o: /home/iaa/Desktop/universalGit/Chapter18/ex18_7/18_7.cpp /home/iaa/Desktop/universalGit/Chapter18/ex18_7/18_7.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: '18_7'
-#  Last modified 2022-07-12 19:18:27.005648868
+18_9: obj/18_9.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-12 20:14:20.417672895
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 47):
-	$(CC) $(CXXFLAGS) -o $@ -c $<
-
-18_7.d: /home/iaa/Desktop/universalGit/Chapter18/ex18_7/18_7.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: '18_7'
-#  Last modified 2022-07-13 18:47:19.205117958
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 40):
-	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
-
-# Not a target:
-/home/iaa/Desktop/universalGit/Chapter18/ex18_7/18_7.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-07-12 19:18:27.005648868
-#  File has been updated.
-#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 36):
+	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
 # files hash-table stats:
 # Load=13/1024=1%, Rehash=0, Collisions=0/46=0%
@@ -399,12 +399,13 @@ obj/18_7.o: /home/iaa/Desktop/universalGit/Chapter18/ex18_7/18_7.cpp /home/iaa/D
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 327 B / avg = 13 B
-# current buf: size = 8162 B / used = 327 B / count = 25 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 25 / storage = 321 B / avg = 12 B
+# current buf: size = 8162 B / used = 321 B / count = 25 / avg = 12 B
 
 # strcache performance: lookups = 60 / hit rate = 58%
+ 
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=1/60=2%
-# Finished Make data base on Wed Jul 13 18:47:19 2022
+# Finished Make data base on Wed Jul 13 18:46:16 2022
 
  

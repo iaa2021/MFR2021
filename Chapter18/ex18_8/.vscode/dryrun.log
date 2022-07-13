@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/iaa/Desktop/universalGit/Chapter18/ex18_8'
+ 
+g++ -std=c++11 -Wall -o obj/18_8.o -c /home/iaa/Desktop/universalGit/Chapter18/ex18_8/18_8.cpp
+g++ -std=c++11 -Wall -o 18_8 obj/18_8.o 
+make: Leaving directory '/home/iaa/Desktop/universalGit/Chapter18/ex18_8'
+ 
