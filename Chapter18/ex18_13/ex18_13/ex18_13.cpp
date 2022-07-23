@@ -25,6 +25,7 @@ int main()
     {
         cout << text.at(i);
     }
+    cout << "\nThe task is complete.\n";
     cin.get();
     return 0;
 }
