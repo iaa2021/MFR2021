@@ -12,9 +12,14 @@ using std::copy;
 using std::vector;
 #include <iterator>
 using std::ostream_iterator;
+#include <set>
+using std::multiset;
+#include <cctype>
+using std::isupper;
+using std::tolower;
 int main()
 {
-    string text; vector <string> v;
+    string text; vector <string> v; multiset <string> mS1; char c;
     ostream_iterator <string> it(cout, ", ");
     cout << "Input text:\n";
     getline( cin, text );
@@ -23,13 +28,22 @@ int main()
     {
         ptr[i] = text.at(i);
     }
+    for (size_t i = 0; i < text.size(); i++)
+    {
+        c = ptr[i];
+        if (isupper(c))
+        c = tolower(c);
+
+        ptr[i] = c;
+    }
     char *point = strtok( ptr, " ,.-" );
     while (point != NULL)
     {
-        v.push_back( point );
+        mS1.insert( point );
         point = strtok( NULL, " ,.-)(" );
     }
-    cout << "Vector consist of:\n";
-    copy(v.begin(), v.end(), it);
+    cout << "Multiset consist of:\n";
+    copy(mS1.begin(), mS1.end(), it);
+    cout << endl;
     return 0;
 }
