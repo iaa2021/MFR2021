@@ -12,6 +12,7 @@ using std::copy;
 using std::vector;
 #include <iterator>
 using std::ostream_iterator;
+using std::back_inserter;
 #include <cctype>
 using std::tolower;
 using std::isupper;
@@ -19,7 +20,7 @@ using std::isupper;
 using std::deque;
 int main()
 {
-    string text; char c; vector <string> v, p; int l = 0; deque <char> word;
+    string text; char c; vector <string> v, p; int l = 0; string word;
     ostream_iterator <string> it(cout, ", ");
     cout << "Input text:\n";
     getline( cin, text );
@@ -47,15 +48,16 @@ int main()
     cout << endl;
     for (size_t i = 0; i < v.size(); i++)
     {
-        for( size_t j = 0; j < v[i].size(); j++ )
-        word.push_front(v[i].at(j));
-        for (size_t k = 0; k < v[i].size(); k++)
+        copy( v.at(i).rbegin(), v.at(i).rend(), back_inserter(word) );
+        for (size_t j = 0; j < v.at(i).size(); j++)
         {
-            if (word.at(k) != v.at(i).at(k))
-                l++;
+            if (word.at(j) != v.at(i).at(j))
+            l++;
         }
-        if (l == 0)
+        if( l == 0 )
         p.push_back(v.at(i));
+        word.clear();
+        l = 0;
     }
     if (p.empty())
     cout << "\nThere are no palindroms in this text.\n";

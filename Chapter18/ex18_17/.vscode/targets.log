@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug  4 10:11:15 2022
+# Make data base, printed on Thu Aug  4 13:23:35 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ SNAP_DATA = /var/snap/code/102
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:47517
+JOURNAL_STREAM = 8:46686
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -79,7 +79,7 @@ _ = /snap/code/102/usr/share/code/code
 # makefile (from 'Makefile', line 24)
 DEL = del
 # environment
-MANAGERPID = 1592
+MANAGERPID = 1548
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -95,7 +95,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # makefile (from 'Makefile', line 19)
 DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # environment
-SESSION_MANAGER = local/iaa-Inspiron-7720:@/tmp/.ICE-unix/1813,unix/iaa-Inspiron-7720:/tmp/.ICE-unix/1813
+SESSION_MANAGER = local/iaa-Inspiron-7720:@/tmp/.ICE-unix/1768,unix/iaa-Inspiron-7720:/tmp/.ICE-unix/1768
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -111,7 +111,7 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 139ca12bc7b048f5a42be4fc378750bf
+INVOCATION_ID = efd49e811e824bd3af94b5159c7a64c6
 # makefile (from 'Makefile', line 8)
 LDFLAGS = 
 # environment
@@ -125,7 +125,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2484
+GIO_LAUNCHED_DESKTOP_FILE_PID = 3528
 # automatic
 %F = $(notdir $%)
 # environment
@@ -139,7 +139,7 @@ PWD = /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1778
+SSH_AGENT_PID = 1733
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -271,9 +271,9 @@ EXE = .exe
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2531
+VSCODE_PID = 3574
 # variable set hash-table stats:
-# Load=131/1024=13%, Rehash=0, Collisions=35/181=19%
+# Load=131/1024=13%, Rehash=0, Collisions=35/186=19%
 
 # Pattern-specific Variable Values
 
@@ -288,6 +288,7 @@ VSCODE_PID = 2531
 
 # Implicit Rules
 
+ 
 %.d: /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/%.cpp
 #  recipe to execute (from 'Makefile', line 40):
 	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
@@ -305,7 +306,9 @@ all: 18_17
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 
 .PHONY: clean cleandep cleanw cleandepw
 #  Implicit rule search has not been done.
@@ -315,9 +318,27 @@ all: 18_17
 obj/18_17.o: /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/18_17.cpp /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/18_17.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '18_17'
-#  Last modified 2022-08-03 17:39:16.301730836
+#  Last modified 2022-08-04 11:06:16.246843146
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/18_17.o
+# automatic
+# % := 
+# automatic
+# * := 18_17
+# automatic
+# + := /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/18_17.cpp /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/18_17.cpp
+# automatic
+# | := 
+# automatic
+# < := /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/18_17.cpp
+# automatic
+# ^ := /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/18_17.cpp
+# automatic
+# ? := /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/18_17.cpp
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
 #  recipe to execute (from 'Makefile', line 47):
 	$(CC) $(CXXFLAGS) -o $@ -c $<
 
@@ -329,10 +350,9 @@ Makefile:
 #  Successfully updated.
 
 18_17.d: /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/18_17.cpp
- 
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '18_17'
-#  Last modified 2022-08-04 10:11:15.112053734
+#  Last modified 2022-08-04 13:23:35.209482598
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -354,9 +374,11 @@ cleanw:
 
 18_17: obj/18_17.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-03 17:39:16.301730836
+#  Last modified 2022-08-04 11:06:16.246843146
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 #  recipe to execute (from 'Makefile', line 36):
 	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
@@ -387,7 +409,7 @@ clean:
 # Not a target:
 /home/iaa/Desktop/gitStore/MFR2021/Chapter18/ex18_17/18_17.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-03 17:39:16.301730836
+#  Last modified 2022-08-04 13:18:18.304108509
 #  File has been updated.
 #  Successfully updated.
 
@@ -405,6 +427,6 @@ clean:
 # strcache performance: lookups = 61 / hit rate = 57%
 # hash-table stats:
 # Load=26/8192=0%, Rehash=0, Collisions=1/61=2%
-# Finished Make data base on Thu Aug  4 10:11:15 2022
+# Finished Make data base on Thu Aug  4 13:23:35 2022
 
  
