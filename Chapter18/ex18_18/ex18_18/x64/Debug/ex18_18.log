@@ -1,0 +1,3 @@
+﻿  ex18_18.cpp
+C:\Users\ivano\OneDrive\Рабочий стол\GitStore\MFR2021\Chapter18\ex18_18\ex18_18\ex18_18.cpp(30,26): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  ex18_18.vcxproj -> C:\Users\ivano\OneDrive\Рабочий стол\GitStore\MFR2021\Chapter18\ex18_18\x64\Debug\ex18_18.exe
