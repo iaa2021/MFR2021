@@ -13,6 +13,7 @@ using std::back_inserter;
 using std::copy;
 #include <vector>
 using std::vector;
+void reverse(string);
 int main()
 {
     string text; int l; 
@@ -28,7 +29,16 @@ int main()
     {
         cout << ptr[i];
     }
-    cout << endl;
+    cout << "Exersize 18.23\n";
+    reverse(text);
+    cin.get();
     return 0;
+}
+void reverse(string t)
+{
+    for ( size_t i = 0; i < t.size(); i++)
+    {
+        cout << t.at( t.size() - 1 - i);
+    }
 }
 
