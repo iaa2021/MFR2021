@@ -1,5 +1,8 @@
 ﻿#include <iostream>
 #include <string>
+#include <algorithm>
+#include <iterator>
+using std::ostream_iterator;
 using namespace std;
 int main()
 {
@@ -16,5 +19,12 @@ int main()
         cout << "The word " << word << " is palindrom.\n";
     else
         cout << "The word " << word << " is not palindrom.\n";
+    cout << "Exersize 18.22\n";
+    string text;
+    cout << "Input text\n";
+    getline(cin, text);
+    ostream_iterator<char> it(cout, "");
+    cout << "Text in reverse direction is:\n";
+    copy(text.rbegin(), text.rend(), it);
     return 0;
 }
