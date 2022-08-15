@@ -10,7 +10,7 @@ LDFLAGS =
 # Makefile settings - Can be customized.
 APPNAME = pal
 EXT = .cpp
-SRCDIR = C:\Users\ivano\OneDrive\Рабочий стол\GitStore\MFR2021\Chapter18\PalindromVScode
+SRCDIR = C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\Chapter18\PalindromVScode
 OBJDIR = obj
 
 ############## Do not change anything from here downwards! #############
