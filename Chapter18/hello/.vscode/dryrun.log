@@ -1,8 +1,5 @@
 make.exe --dry-run --always-make --keep-going --print-directory
-make: Entering directory 'c:/Users/ivano/Desktop/GitStore/MFR2021/Chapter18/hello'
- 
-g++ -std=c++11 -Wall -o obj/hello.o -c C:\Users\ivano\Desktop\GitStore\MFR2021\Chapter18\hello/hello.cpp
-g++ -std=c++11 -Wall -o hello obj/hello.o 
- 
-make: Leaving directory 'c:/Users/ivano/Desktop/GitStore/MFR2021/Chapter18/hello'
+make: Entering directory 'c:/Users/ivano/OneDrive/������� ����/GitStore/MFR2021/Chapter18/hello'
+g++ -std=c++11 -Wall -o hello  
+make: Leaving directory 'c:/Users/ivano/OneDrive/������� ����/GitStore/MFR2021/Chapter18/hello'
  

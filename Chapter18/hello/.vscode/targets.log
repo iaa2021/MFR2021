@@ -5,12 +5,13 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Tue Jul 26 09:39:23 2022
+# Make data base, printed on Mon Aug 15 10:59:03 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # makefile (from 'Makefile', line 18)
@@ -23,7 +24,8 @@ SRC = $(wildcard $(SRCDIR)/*$(EXT))
 EXT = .cpp
 # makefile (from 'Makefile', line 26)
 WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
-# makefile (from 'Makefile', line 14)
+# makefile (from 'Makefile', 
+ line 14)
 OBJDIR = obj
 # environment
 USERPROFILE = C:\Users\ivano
@@ -44,7 +46,9 @@ MAKE_COMMAND := make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6468_SFJUKQHVEBJKUSWS
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7172_HTBPYDVUATESOVTU
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -56,7 +60,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\ivano\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = C:\Users\ivano\AppData\Roaming\Code\CachedData\6d9b74a70ca9c7733b29f0456fd8195364076dda
 # environment
 LANG = C
 # default
@@ -72,9 +76,9 @@ ONEDRIVE = C:\Users\ivano\OneDrive
 # makefile (from 'Makefile', line 19)
 DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # makefile
-CURDIR := c:/Users/ivano/Desktop/GitStore/MFR2021/Chapter18/hello
+CURDIR := c:/Users/ivano/OneDrive/������� ����/GitStore/MFR2021/Chapter18/hello
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -87,12 +91,12 @@ MFLAGS = -pqrR
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
-# makefile (from 'hello.d', line 1)
-MAKEFILE_LIST := Makefile hello.d
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 6468
+VSCODE_PID = 7172
 # makefile (from 'Makefile', line 11)
 APPNAME = hello
 # automatic
@@ -126,7 +130,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Users\ivano\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;
+PATH = C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Users\ivano\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;;C:\Users\ivano\AppData\Local\Programs\Microsoft VS Code\bin
 # environment
 COMPUTERNAME = DESKTOP-9UPBT8K
 # default
@@ -157,8 +161,6 @@ USERDOMAIN = DESKTOP-9UPBT8K
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
-# environment
-__COMPAT_LAYER = DetectorsAppHealth
 # makefile (from 'Makefile', line 25)
 EXE = .exe
 # makefile
@@ -194,7 +196,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\ivano\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\2c52848d046d9803e03a256afc6ea315-1.69.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\2c52848d046d9803e03a256afc6ea315-1.70.1-main-sock
 # makefile (from 'Makefile', line 13)
 SRCDIR = C:\Users\ivano\Desktop\GitStore\MFR2021\Chapter18\hello
 # default
@@ -218,7 +220,7 @@ CC = g++
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
 # variable set hash-table stats:
-# Load=103/1024=10%, Rehash=0, Collisions=11/161=7%
+# Load=104/1024=10%, Rehash=0, Collisions=12/160=8%
 
 # Pattern-specific Variable Values
 
@@ -226,10 +228,10 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
 
 # Directories
 
-# C:\Users\ivano\Desktop\GitStore\MFR2021\Chapter18\hello (key C:/Users/ivano/Desktop/GitStore/MFR2021/Chapter18/hello, mtime 1658817453): 9 files, no impossibilities.
-# . (key c:/Users/ivano/Desktop/GitStore/MFR2021/Chapter18/hello, mtime 1658817453): 9 files, no impossibilities.
+# C:\Users\ivano\Desktop\GitStore\MFR2021\Chapter18\hello: could not be stat'd.
+# . (key c:/Users/ivano/OneDrive/������� ����/GitStore/MFR2021/Chapter18/hello, mtime 1659949023): 9 files, no impossibilities.
 
-# 18 files, no impossibilities in 2 directories.
+# 9 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -263,18 +265,9 @@ cleandep:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-26 09:35:16
+#  Last modified 2022-08-08 11:57:03
 #  File has been updated.
 #  Successfully updated.
-
-obj/hello.o: C:\Users\ivano\Desktop\GitStore\MFR2021\Chapter18\hello/hello.cpp C:\Users\ivano\Desktop\GitStore\MFR2021\Chapter18\hello/hello.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'hello'
-#  Last modified 2022-07-26 09:37:33
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 47):
-	$(CC) $(CXXFLAGS) -o $@ -c $<
 
 clean:
 #  Phony target (prerequisite of .PHONY).
@@ -307,14 +300,7 @@ cleanw:
 #  recipe to execute (from 'Makefile', line 64):
 	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
 
-# Not a target:
-C:\Users\ivano\Desktop\GitStore\MFR2021\Chapter18\hello/hello.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-07-26 09:37:25
-#  File has been updated.
-#  Successfully updated.
-
-hello: obj/hello.o
+hello:
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
 #  File does not exist.
@@ -325,15 +311,15 @@ hello: obj/hello.o
 # automatic
 # * := 
 # automatic
-# < := obj/hello.o
+# < := 
 # automatic
-# + := obj/hello.o
+# + := 
 # automatic
 # % := 
 # automatic
-# ^ := obj/hello.o
+# ^ := 
 # automatic
-# ? := obj/hello.o
+# ? := 
 # automatic
 # | := 
 # variable set hash-table stats:
@@ -352,29 +338,20 @@ hello: obj/hello.o
 #  Modification time never checked.
 #  File has not been updated.
 
-hello.d: C:\Users\ivano\Desktop\GitStore\MFR2021\Chapter18\hello/hello.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'hello'
-#  Last modified 2022-07-26 09:39:22
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 40):
-	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
-
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/47=0%
+# Load=10/1024=1%, Rehash=0, Collisions=0/35=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 334 B / avg = 13 B
-# current buf: size = 8162 B / used = 334 B / count = 24 / avg = 13 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 256 B / avg = 11 B
+# current buf: size = 8162 B / used = 256 B / count = 22 / avg = 11 B
 
-# strcache performance: lookups = 68 / hit rate = 64%
+# strcache performance: lookups = 47 / hit rate = 53%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=0/68=0%
-# Finished Make data base on Tue Jul 26 09:39:23 2022
+# Load=22/8192=0%, Rehash=0, Collisions=0/47=0%
+# Finished Make data base on Mon Aug 15 10:59:03 2022
 
  
