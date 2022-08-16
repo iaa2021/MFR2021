@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Aug 16 11:46:39 2022
+# Make data base, printed on Tue Aug 16 18:41:00 2022
 
 # Variables
 
@@ -24,8 +24,7 @@ SRC = $(wildcard $(SRCDIR)/*$(EXT))
 EXT = .cpp
 # makefile (from 'Makefile', line 26)
 WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
-# makefile (from 'Makefile', 
- line 14)
+# makefile (from 'Makefile', line 14)
 OBJDIR = obj
 # environment
 USERPROFILE = C:\Users\ivano
@@ -46,7 +45,7 @@ MAKE_COMMAND := make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2604_OVRVQWNOUHKKHKKY
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1084_LATQBSANSUUVUBBR
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -96,7 +95,7 @@ MAKEFILE_LIST := Makefile 1159.d DeskOfCards.d
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2604
+VSCODE_PID = 1084
 # makefile (from 'Makefile', line 11)
 APPNAME = dok
 # automatic
@@ -149,7 +148,8 @@ COMMONPROGRAMFILES = C:\Program Files\Common Files
 ?F = $(notdir $?)
 # environment
 PROGRAMW6432 = C:\Program Files
-# environment
+# env 
+ironment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # automatic
 +F = $(notdir $+)
@@ -228,8 +228,8 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159, mtime 1660639595): 15 files, no impossibilities.
-# C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159 (key C:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159, mtime 1660639595): 15 files, no impossibilities.
+# . (key c:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159, mtime 1660640209): 15 files, no impossibilities.
+# C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159 (key C:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159, mtime 1660640209): 15 files, no impossibilities.
 
 # 30 files, no impossibilities in 2 directories.
 
@@ -257,7 +257,7 @@ cleandepw:
 DeskOfCards.d: C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/DeskOfCards.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'DeskOfCards'
-#  Last modified 2022-08-16 11:46:37
+#  Last modified 2022-08-16 18:40:58
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -301,7 +301,7 @@ cleandep:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-16 11:24:28
+#  Last modified 2022-08-16 11:56:49
 #  File has been updated.
 #  Successfully updated.
 
@@ -316,14 +316,14 @@ clean:
 # Not a target:
 C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/DeskOfCards.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-16 10:56:56
+#  Last modified 2022-08-16 11:56:49
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/DeskOfCards.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-16 11:20:04
+#  Last modified 2022-08-16 11:56:49
 #  File has been updated.
 #  Successfully updated.
 
@@ -345,7 +345,7 @@ all: dok
 obj/DeskOfCards.o: C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/DeskOfCards.cpp C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/DeskOfCards.cpp C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/DeskOfCards.h
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'DeskOfCards'
-#  Last modified 2022-08-16 11:24:36
+#  Last modified 2022-08-16 11:56:49
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 47):
@@ -354,7 +354,7 @@ obj/DeskOfCards.o: C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter
 obj/1159.o: C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/1159.cpp C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/1159.cpp C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/DeskOfCards.h
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '1159'
-#  Last modified 2022-08-16 11:24:35
+#  Last modified 2022-08-16 11:56:49
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 47):
@@ -371,7 +371,7 @@ cleanw:
 1159.d: C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/1159.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '1159'
-#  Last modified 2022-08-16 11:46:38
+#  Last modified 2022-08-16 18:40:59
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -391,7 +391,7 @@ cleanw:
 # Not a target:
 C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/1159.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-16 11:23:30
+#  Last modified 2022-08-16 11:56:49
 #  File has been updated.
 #  Successfully updated.
 
@@ -409,6 +409,6 @@ C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159/1159.cpp:
 # strcache performance: lookups = 94 / hit rate = 62%
 # hash-table stats:
 # Load=35/8192=0%, Rehash=0, Collisions=0/94=0%
-# Finished Make data base on Tue Aug 16 11:46:39 2022
+# Finished Make data base on Tue Aug 16 18:41:00 2022
 
  

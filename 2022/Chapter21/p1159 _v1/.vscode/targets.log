@@ -8,7 +8,7 @@ make: *** No rule to make target 'C:\Users\ivano\OneDrive\Desktop\GitStore\MFR20
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Aug 16 12:41:23 2022
+# Make data base, printed on Tue Aug 16 18:20:37 2022
 
 # Variables
 
@@ -47,7 +47,7 @@ MAKE_COMMAND := make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6472_STLNYQPJOXNHCJXV
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1084_LATQBSANSUUVUBBR
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -79,7 +79,7 @@ DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # makefile
 CURDIR := c:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159 _v1
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -97,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 6472
+VSCODE_PID = 1084
 # makefile (from 'Makefile', line 11)
 APPNAME = dok
 # automatic
@@ -230,9 +230,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
 # Directories
 
 # _v1: could not be stat'd.
-# . (key c:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159 _v1, mtime 1660642579): 12 files, no impossibilities.
+# . (key c:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159 _v1, mtime 1660642947): 13 files, no impossibilities.
 
-# 12 files, no impossibilities in 2 directories.
+# 13 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -325,12 +325,12 @@ cleanw:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 263 B / avg = 10 B
-# current buf: size = 8162 B / used = 263 B / count = 26 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 270 B / avg = 10 B
+# current buf: size = 8162 B / used = 270 B / count = 27 / avg = 10 B
 
-# strcache performance: lookups = 54 / hit rate = 51%
+# strcache performance: lookups = 55 / hit rate = 50%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=0/54=0%
-# Finished Make data base on Tue Aug 16 12:41:23 2022
+# Load=27/8192=0%, Rehash=0, Collisions=0/55=0%
+# Finished Make data base on Tue Aug 16 18:20:37 2022
 
  
