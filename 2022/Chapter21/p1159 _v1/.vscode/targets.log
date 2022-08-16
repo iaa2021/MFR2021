@@ -8,7 +8,7 @@ make: *** No rule to make target 'C:\Users\ivano\OneDrive\Desktop\GitStore\MFR20
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Aug 16 12:36:20 2022
+# Make data base, printed on Tue Aug 16 12:41:23 2022
 
 # Variables
 
@@ -331,6 +331,6 @@ cleanw:
 # strcache performance: lookups = 54 / hit rate = 51%
 # hash-table stats:
 # Load=26/8192=0%, Rehash=0, Collisions=0/54=0%
-# Finished Make data base on Tue Aug 16 12:36:20 2022
+# Finished Make data base on Tue Aug 16 12:41:23 2022
 
  
