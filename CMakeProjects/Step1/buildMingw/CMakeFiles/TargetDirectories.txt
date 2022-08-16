@@ -1,0 +1,3 @@
+C:/Users/ivano/OneDrive/Desktop/Step1/buildMingw/CMakeFiles/hello.dir
+C:/Users/ivano/OneDrive/Desktop/Step1/buildMingw/CMakeFiles/edit_cache.dir
+C:/Users/ivano/OneDrive/Desktop/Step1/buildMingw/CMakeFiles/rebuild_cache.dir
