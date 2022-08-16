@@ -1,0 +1,5 @@
+g++ -std=c++11 -Wall -o obj/1163.o -c C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1163/1163.cpp
+g++ -std=c++11 -Wall -o bits obj/1163.o 
+ 
+make: Leaving directory 'c:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1163'
+ 
