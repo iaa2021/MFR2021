@@ -1,0 +1,10 @@
+^C:\USERS\IVANO\DESKTOP\GITSTORE\MFR2021\2022\CHAPTER21\P1165\BUILD\CMAKEFILES\DC8328DBB55BA93D4B325003B4E516AB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter21/p1165 -BC:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter21/p1165/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter21/p1165/build/bits.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

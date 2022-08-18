@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter21/p1165/buildB/CMakeFiles/bits.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter21/p1165/buildB/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter21/p1165/buildB/CMakeFiles/rebuild_cache.dir
