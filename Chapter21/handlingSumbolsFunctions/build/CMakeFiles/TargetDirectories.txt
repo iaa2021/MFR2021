@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/Chapter21/handlingSumbolsFunctions/build/CMakeFiles/1177.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter21/handlingSumbolsFunctions/build/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter21/handlingSumbolsFunctions/build/CMakeFiles/rebuild_cache.dir
