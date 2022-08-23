@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1165/build/CMakeFiles/p1165.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1165/build/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1165/build/CMakeFiles/rebuild_cache.dir
