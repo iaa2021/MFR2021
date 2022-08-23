@@ -1,8 +1,14 @@
 #include <iostream>
 using std::cout;
 using std::endl;
+using std :: left;
 #include <iomanip>
 using std::setw;
+#include <cstdlib>
+using std::rand;
+using std::srand;
+#include <ctime>
+using std::time;
 #include "DeskOfCards.h"
 DeskOfCards::DeskOfCards()
 {
@@ -12,14 +18,28 @@ DeskOfCards::DeskOfCards()
         desk[i].suit = i/13;
         desk[i].colour = i/26;
     }
+    srand( time( 0 ) );
 }
 void DeskOfCards::deal()
 {
-    for( int k1 = 0, k2 = k1 + 26; k1 <= 25; k1++, k2++ )
+    for( int k1 = 0; k1 < 52; k1++ )
     {
-        cout << " card " << setw(3) << desk[k1].face << " suit " << setw(2) << desk[k1].suit;
-        cout << " colour " << setw(2) << desk[k1].colour;
-        cout << "   card " << setw(3) << desk[k2].face << " suit " << setw(2) << desk[k2].suit;
-        cout << " colour " << setw(2) << desk[k2].colour << endl;
+        char *suit[4] = { "spades", "clubs", "diamonds", "hearts"  };
+        char *face[13] = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King" };
+        char *colour[2] = { "black", "red" };
+        cout << setw(6) << left << face[desk[k1].face] << " of " << setw(10) << suit[desk[k1].suit];
+        cout << " " << setw(5) << colour[desk[k1].colour] << ( ( k1 + 1 ) % 4 == 0 ? '\n' : '\t' );
     }
+}
+void DeskOfCards::shuffle()
+{
+    bitCard temp;
+    for (size_t i = 0; i < 52; i++)
+    {
+        int j = rand()%52;
+        temp = desk[j];
+        desk[j] = desk[i];
+        desk[i] = temp;
+    }
+    
 }

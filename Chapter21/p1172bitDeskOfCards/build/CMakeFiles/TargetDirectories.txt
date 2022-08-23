@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1172bitDeskOfCards/build/CMakeFiles/doc.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1172bitDeskOfCards/build/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1172bitDeskOfCards/build/CMakeFiles/rebuild_cache.dir

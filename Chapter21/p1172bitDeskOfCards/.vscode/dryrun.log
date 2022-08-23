@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1172bitDeskOfCards'
+ 
+g++ -std=c++11 -Wall -o obj/doc.o -c /home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1172bitDeskOfCards/doc.cpp
+g++ -std=c++11 -Wall -o obj/DeskOfCards.o -c /home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1172bitDeskOfCards/DeskOfCards.cpp
+g++ -std=c++11 -Wall -o doc obj/doc.o obj/DeskOfCards.o 
+make: Leaving directory '/home/iaa/Desktop/gitStore/MFR2021/Chapter21/p1172bitDeskOfCards'
+ 

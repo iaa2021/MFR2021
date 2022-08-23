@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/doc.dir/DeskOfCards.cpp.o CMakeFiles/doc.dir/doc.cpp.o -o doc 

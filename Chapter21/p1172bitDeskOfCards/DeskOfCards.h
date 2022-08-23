@@ -11,4 +11,5 @@ private:
 public:
     DeskOfCards();
     void deal();
+    void shuffle();
 };
