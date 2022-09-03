@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/session2/bildMinGW/CMakeFiles/test_regression.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/session2/bildMinGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/session2/bildMinGW/CMakeFiles/rebuild_cache.dir
