@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/ivano/OneDrive/Desktop/Step1/hello.cpp" "CMakeFiles/hello.dir/hello.cpp.obj" "gcc" "CMakeFiles/hello.dir/hello.cpp.obj.d"
+  "C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Step1/hello.cpp" "CMakeFiles/hello.dir/hello.cpp.obj" "gcc" "CMakeFiles/hello.dir/hello.cpp.obj.d"
   )
 
 # Targets to which this target links.

@@ -1,5 +1,5 @@
 CMakeFiles/hello.dir/hello.cpp.obj: \
- C:\Users\ivano\OneDrive\Desktop\Step1\hello.cpp \
+ C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\Step1\hello.cpp \
  c:\mingw\include\c++\11.2.0\iostream \
  c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++config.h \
  c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\os_defines.h \

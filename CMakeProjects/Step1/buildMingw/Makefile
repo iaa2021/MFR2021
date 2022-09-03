@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\ivano\OneDrive\Desktop\Step1
+CMAKE_SOURCE_DIR = C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\Step1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\ivano\OneDrive\Desktop\Step1\buildMingw
+CMAKE_BINARY_DIR = C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\Step1\buildMinGW
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\OneDrive\Desktop\Step1\buildMingw\CMakeFiles C:\Users\ivano\OneDrive\Desktop\Step1\buildMingw\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\Step1\buildMinGW\CMakeFiles C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\Step1\buildMinGW\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\OneDrive\Desktop\Step1\buildMingw\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\Step1\buildMinGW\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
