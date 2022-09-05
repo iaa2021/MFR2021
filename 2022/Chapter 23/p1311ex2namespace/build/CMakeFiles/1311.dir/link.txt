@@ -1,3 +1,1 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\1311.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\1311.dir/objects.a @CMakeFiles\1311.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -Wl,--whole-archive CMakeFiles\1311.dir/objects.a -Wl,--no-whole-archive -o 1311.exe -Wl,--out-implib,lib1311.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\1311.dir\linklibs.rsp
+/usr/bin/c++ CMakeFiles/1311.dir/1311.cpp.o -o 1311 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter 23/p1311ex2namespace/1311.cpp" "CMakeFiles/1311.dir/1311.cpp.obj" "gcc" "CMakeFiles/1311.dir/1311.cpp.obj.d"
+  "/home/iaa/Desktop/gitStore/MFR2021/2022/Chapter 23/p1311ex2namespace/1311.cpp" "CMakeFiles/1311.dir/1311.cpp.o" "gcc" "CMakeFiles/1311.dir/1311.cpp.o.d"
   )
 
 # Targets to which this target links.
