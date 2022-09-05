@@ -1,0 +1,3 @@
+C:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159 _v1/buildB/CMakeFiles/dok.dir
+C:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159 _v1/buildB/CMakeFiles/ALL_BUILD.dir
+C:/Users/ivano/OneDrive/Desktop/GitStore/MFR2021/2022/Chapter21/p1159 _v1/buildB/CMakeFiles/ZERO_CHECK.dir

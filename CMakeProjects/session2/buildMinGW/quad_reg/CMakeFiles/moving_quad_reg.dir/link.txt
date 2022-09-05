@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libmoving_quad_reg.a CMakeFiles/moving_quad_reg.dir/MovingQuadReg.cpp.obj
+C:\MinGW\bin\ranlib.exe libmoving_quad_reg.a

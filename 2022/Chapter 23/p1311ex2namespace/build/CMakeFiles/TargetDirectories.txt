@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter 23/p1311ex2namespace/build/CMakeFiles/1311.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter 23/p1311ex2namespace/build/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter 23/p1311ex2namespace/build/CMakeFiles/rebuild_cache.dir

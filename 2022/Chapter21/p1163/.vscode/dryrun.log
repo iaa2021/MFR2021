@@ -1,0 +1,5 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter21/p1163'
+g++ -std=c++11 -Wall -o bits  
+make: Leaving directory 'c:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter21/p1163'
+ 

@@ -1,0 +1,10 @@
+^C:\USERS\IVANO\DESKTOP\GITSTORE\MFR2021\CMAKEPROJECTS\SESSION2\QUAD_REG\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/session2 -BC:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/session2/build --check-stamp-file C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/session2/build/quad_reg/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

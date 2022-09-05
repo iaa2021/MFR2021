@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ivano\Desktop\GitStore\MFR2021\2022\Chapter 23\p1311namespace\1311.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ivano\Desktop\GitStore\MFR2021\2022\Chapter 23\p1311namespace\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1DD9B53A-1D11-33E0-8CC6-87CC15E27EE9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

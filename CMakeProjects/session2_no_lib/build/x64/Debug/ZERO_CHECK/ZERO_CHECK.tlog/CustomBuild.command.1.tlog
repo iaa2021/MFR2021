@@ -1,0 +1,10 @@
+^C:\USERS\IVANO\DESKTOP\GITSTORE\MFR2021\CMAKEPROJECTS\SESSION2_NO_LIB\BUILD\CMAKEFILES\7037F08D6B938EB561EF7DA3FD3E1C10\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/session2_no_lib -BC:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/session2_no_lib/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/session2_no_lib/build/TestQuadReg.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Step1/buildMinGW/CMakeFiles/hello.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Step1/buildMinGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Step1/buildMinGW/CMakeFiles/rebuild_cache.dir

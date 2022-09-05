@@ -10,7 +10,11 @@ LDFLAGS =
 # Makefile settings - Can be customized.
 APPNAME = 1311
 EXT = .cpp
+<<<<<<< HEAD
 SRCDIR = /home/iaa/Desktop/gitStore/MFR2021/2022/Chapter 23/p1311namespace
+=======
+SRCDIR = C:\Users\ivano\Desktop\GitStore\MFR2021\2022\Chapter 23\p1311namespace
+>>>>>>> 98e5c0ec1ed949e43b6d116bd031fb224a568a2c
 OBJDIR = obj
 
 ############## Do not change anything from here downwards! #############

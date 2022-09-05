@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159\DeskOfCards.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159\1159.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159\DeskOfCards.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C20FB857-DCD3-3CB6-81FF-9B4F480615A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5CA13543-BC3F-329F-A78D-1827DE4CF2A2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

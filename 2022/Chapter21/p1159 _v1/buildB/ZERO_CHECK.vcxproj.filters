@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ivano\OneDrive\Desktop\GitStore\MFR2021\2022\Chapter21\p1159 _v1\buildB\CMakeFiles\5b9322d2efe69c8146f86fbaca5c76a7\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CF75CD43-AEA1-36F1-A0D7-DAF4DE5CCF86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

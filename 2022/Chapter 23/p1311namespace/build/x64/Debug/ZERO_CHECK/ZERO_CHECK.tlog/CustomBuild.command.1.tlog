@@ -1,0 +1,10 @@
+^C:\USERS\IVANO\DESKTOP\GITSTORE\MFR2021\2022\CHAPTER 23\P1311NAMESPACE\BUILD\CMAKEFILES\27E47377FCCB5EE054EA4BE0CCEB9C6D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter 23/p1311namespace" "-BC:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter 23/p1311namespace/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/ivano/Desktop/GitStore/MFR2021/2022/Chapter 23/p1311namespace/build/1311.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
