@@ -1,0 +1,6 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/session2/buildUbi/CMakeFiles/test_regression.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/session2/buildUbi/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/session2/buildUbi/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/session2/buildUbi/quad_reg/CMakeFiles/moving_quad_reg.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/session2/buildUbi/quad_reg/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/session2/buildUbi/quad_reg/CMakeFiles/rebuild_cache.dir

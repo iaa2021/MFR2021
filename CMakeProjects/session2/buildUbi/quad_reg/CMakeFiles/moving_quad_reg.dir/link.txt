@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmoving_quad_reg.a CMakeFiles/moving_quad_reg.dir/MovingQuadReg.cpp.o
+/usr/bin/ranlib libmoving_quad_reg.a

@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/session2_no_lib/buildUbi/CMakeFiles/test_regression.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/session2_no_lib/buildUbi/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/session2_no_lib/buildUbi/CMakeFiles/rebuild_cache.dir
