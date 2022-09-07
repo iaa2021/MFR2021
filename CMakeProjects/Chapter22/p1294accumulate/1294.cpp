@@ -36,6 +36,9 @@ int main()
     copy( integers.begin(), integers.end(), output );
     result = accumulate( integers.begin(), integers.end(), 0, sumSquares );
     cout << "\nSum of squares of integers using SumSquares function is " << result << endl;
+    SumSquaresClass<int> ssq;
+    result = accumulate( integers.begin(), integers.end(), 0, ssq );
+    cout << "\nSum of squares of integers using SumSquaresClass is " << result << endl;
     cin.get();
     return 0;
 }
