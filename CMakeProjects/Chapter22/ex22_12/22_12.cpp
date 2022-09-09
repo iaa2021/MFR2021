@@ -74,6 +74,33 @@ int main()
         if( i == deleters.size() - 1 )
         cout << deleters.at( i ) << endl; 
     }
+    cout << "Now, checking Eratosphene's sieve:\n";
+    cout << "Input number: ";
+    cin >> value;
+    int *ptr = new int[ value ];
+    for ( int i = 0; i < value; i++ )
+    {
+        ptr[ i ] = 0;
+    }
+    vector< int > er;
+    for ( int i = 2; i < value / 2; i++)
+    {
+        for ( int j = i + 1; j < value; j++)
+        {
+            if( j % i == 0 )
+            ptr[ j ] = 1;
+        }
+    }
     
+    
+    for ( int i = 0; i < value; i++ )
+    {
+        if ( ptr[ i ] == 0 ) 
+            { 
+                er.push_back( i );
+            }
+    }
+    cout << "\nIn diapason from 1 to " << value << " there are such odd numbers:\n";
+    copy( er.begin(), er.end(), it );
     return 0;
 }
