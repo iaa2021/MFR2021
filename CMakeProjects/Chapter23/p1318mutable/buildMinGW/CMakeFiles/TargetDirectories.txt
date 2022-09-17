@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1318mutable/buildMinGW/CMakeFiles/1318.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1318mutable/buildMinGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1318mutable/buildMinGW/CMakeFiles/rebuild_cache.dir

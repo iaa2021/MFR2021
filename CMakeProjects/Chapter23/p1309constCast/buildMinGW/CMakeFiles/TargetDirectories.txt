@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1309constCast/buildMinGW/CMakeFiles/1309.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1309constCast/buildMinGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1309constCast/buildMinGW/CMakeFiles/rebuild_cache.dir
