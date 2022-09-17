@@ -1,0 +1,18 @@
+cmake_minimum_required( VERSION 3.5 )
+
+project( hello VERSION 0.0.1 )
+
+configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
+
+set( SOURCES hello.cpp version.cpp )
+
+set( HEADERS version.h )
+
+add_executable( hello ${SOURCES} ${HEADERS} )
+
+set_target_properties( hello PROPERTIES
+    CXX_STANDARD 11
+    CXX_STANDARD_REQUIRED ON
+)
+
+target_include_directories( hello PUBLIC ${CMAKE_CURRENT_BINARY_DIR} )
