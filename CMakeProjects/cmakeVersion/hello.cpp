@@ -2,6 +2,7 @@
 using std::cout;
 using std::endl;
 #include "version.h"
+
 #include "config.h"
 int getVersion1()
 {
