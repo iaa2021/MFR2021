@@ -1,4 +1,4 @@
-#include "C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\otusEx4\build\src\config.h"
+#include "config.h"
 #include "C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\otusEx4\lib\lib.h"
 using namespace example;
 #include <iostream>

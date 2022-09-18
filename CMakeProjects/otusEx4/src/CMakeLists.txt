@@ -11,8 +11,8 @@ set_target_properties( hello PROPERTIES
     CXX_STANDARD_REQUIRED ON
 )
 
-target_include_directories( hello PUBLIC ${CURRENT_SOURSE_DIR}/../lib )
+target_include_directories( hello PUBLIC ${CMAKE_CURRENT_SOURSE_DIR}/../lib )
 
-target_include_directories( hello PUBLIC ${CURRENT_BINARY_DIR} )
+target_include_directories( hello PUBLIC ${CMAKE_CURRENT_BINARY_DIR} )
 
 target_link_libraries( hello lib )
