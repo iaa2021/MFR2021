@@ -1,0 +1,4 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/build/CMakeFiles/sumLib.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/build/CMakeFiles/INSTALL.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/build/CMakeFiles/ZERO_CHECK.dir

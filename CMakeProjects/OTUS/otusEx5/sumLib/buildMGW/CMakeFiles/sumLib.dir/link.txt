@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libsumLib.a CMakeFiles/sumLib.dir/sumLib.cpp.obj
+C:\MinGW\bin\ranlib.exe libsumLib.a

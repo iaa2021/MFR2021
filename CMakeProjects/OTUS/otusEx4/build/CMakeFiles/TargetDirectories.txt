@@ -1,0 +1,8 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx4/build/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx4/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx4/build/lib/CMakeFiles/lib.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx4/build/lib/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx4/build/lib/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx4/build/src/CMakeFiles/hello.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx4/build/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx4/build/src/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,7 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/buildMGW/CMakeFiles/sumLib.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/buildMGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/buildMGW/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/buildMGW/CMakeFiles/list_install_components.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/buildMGW/CMakeFiles/install.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/buildMGW/CMakeFiles/install/local.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/buildMGW/CMakeFiles/install/strip.dir

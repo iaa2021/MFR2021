@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\OTUS\otusEx5\sumLib\sumLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\OTUS\otusEx5\sumLib\sumLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\OTUS\otusEx5\sumLib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D25238B1-C138-3963-B0CE-53BE6E935179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6FEA3235-BD3F-3994-ACF1-29A3BE98CBB0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

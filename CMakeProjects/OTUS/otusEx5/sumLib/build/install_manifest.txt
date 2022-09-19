@@ -1,0 +1,4 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/build/install/lib/sumLib.lib
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/build/install/include/sumLib.h
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/build/install/lib/cmake/sumLib/sumLibConfig.cmake
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/sumLib/build/install/lib/cmake/sumLib/sumLibConfig-debug.cmake
