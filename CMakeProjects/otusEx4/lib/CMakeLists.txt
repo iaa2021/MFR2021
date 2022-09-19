@@ -11,4 +11,4 @@ set_target_properties( lib PROPERTIES
     CXX_STANDARD_REQUIRED ON
 )
 
-target_include_directories( lib PUBLIC ${CMAKE_CURRENT_BINARY_DIR} )
+target_include_directories( lib PRIVATE ${CMAKE_CURRENT_BINARY_DIR} )

@@ -1,5 +1,5 @@
 #include "config.h"
-#include "C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\otusEx4\lib\lib.h"
+#include "lib.h"
 using namespace example;
 #include <iostream>
 using std::cout;

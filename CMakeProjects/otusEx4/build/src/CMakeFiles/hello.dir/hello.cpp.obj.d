@@ -1,7 +1,7 @@
 src/CMakeFiles/hello.dir/hello.cpp.obj: \
  C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\otusEx4\src\hello.cpp \
  C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/otusEx4/build/src/config.h \
- C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\otusEx4\lib\lib.h \
+ c:\users\ivano\desktop\gitstore\mfr2021\cmakeprojects\otusex4\lib\lib.h \
  c:\mingw\include\c++\11.2.0\iostream \
  c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++config.h \
  c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\os_defines.h \
