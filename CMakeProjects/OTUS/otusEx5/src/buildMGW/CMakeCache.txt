@@ -229,7 +229,7 @@ mainLib_IS_TOP_LEVEL:STATIC=ON
 mainLib_SOURCE_DIR:STATIC=C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/OTUS/otusEx5/src
 
 //No help, variable specified on the command line.
-sumLibDIR:UNINITIALIZED=C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\OTUS\otusEx5\sumLib\buildMGW\install\lib\cmake
+sumLibDIR:UNINITIALIZED=C:\Users\ivano\Desktop\GitStore\MFR2021\CMakeProjects\OTUS\otusEx5\sumLib\buildMGW\install\lib\cmake\SumLib
 
 //The directory containing a CMake configuration file for sumLib.
 sumLib_DIR:PATH=sumLib_DIR-NOTFOUND
