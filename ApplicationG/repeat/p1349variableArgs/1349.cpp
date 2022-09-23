@@ -9,9 +9,11 @@ using std::setprecision;
 using std::fixed;
 #include <cstdarg>
 using std::va_list;
+#include "config.h"
 double average( int, ... );
 int main()
 {
+    cout << "Project version is: " << (PROJECT_VERSION) << endl;
     double d1 = 3.25;
     double d2 = 4.73;
     double d3 = 7.28;
