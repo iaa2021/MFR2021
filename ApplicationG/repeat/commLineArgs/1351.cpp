@@ -5,6 +5,8 @@ using std::ios;
 #include <fstream>
 using std::ifstream;
 using std::ofstream;
+#include <string>
+using std::string;
 #include "configure.h"
 int main( int argc, char *argv[] )
 {
