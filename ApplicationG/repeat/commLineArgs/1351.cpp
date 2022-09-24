@@ -5,9 +5,10 @@ using std::ios;
 #include <fstream>
 using std::ifstream;
 using std::ofstream;
-
+#include "configure.h"
 int main( int argc, char *argv[] )
 {
+    cout << "Project version is " << (PROJECT_VERSION) << endl;
     if( argc != 3 )
     cout << "Usage copyFile inFile_name outFile_name.\n";
     else
