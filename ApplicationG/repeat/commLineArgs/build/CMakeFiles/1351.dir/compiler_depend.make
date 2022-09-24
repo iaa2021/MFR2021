@@ -176,8 +176,11 @@ CMakeFiles/1351.dir/1351.cpp.o: /home/iaa/Desktop/gitStore/MFR2021/ApplicationG/
   /usr/include/c++/9/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
-  /usr/include/c++/9/bits/fstream.tcc
+  /usr/include/c++/9/bits/fstream.tcc \
+  configure.h
 
+
+configure.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
 

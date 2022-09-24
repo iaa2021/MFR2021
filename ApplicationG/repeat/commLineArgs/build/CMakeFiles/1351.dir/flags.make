@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/repeat/commLineArgs/build
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS = --std=c++11 -std=gnu++11
 
