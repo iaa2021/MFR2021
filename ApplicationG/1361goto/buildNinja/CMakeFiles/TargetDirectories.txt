@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/1361goto/buildNinja/CMakeFiles/1361.dir
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/1361goto/buildNinja/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/1361goto/buildNinja/CMakeFiles/rebuild_cache.dir
