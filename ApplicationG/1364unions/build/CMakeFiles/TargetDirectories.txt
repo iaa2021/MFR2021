@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/1364unions/build/CMakeFiles/1364.dir
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/1364unions/build/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/1364unions/build/CMakeFiles/rebuild_cache.dir
