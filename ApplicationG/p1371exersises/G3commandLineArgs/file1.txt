@@ -1,0 +1,2 @@
+Quick Install Instructions of ninja-build on Ubuntu Server. It’s Super Easy! simply click on Copy button to copy the command and paste into your command line terminal using built-in APT package manager.
+
