@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/ApplicationG/p1371exersises/G4commLine/buildMGW/CMakeFiles/1371.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/ApplicationG/p1371exersises/G4commLine/buildMGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/ApplicationG/p1371exersises/G4commLine/buildMGW/CMakeFiles/rebuild_cache.dir

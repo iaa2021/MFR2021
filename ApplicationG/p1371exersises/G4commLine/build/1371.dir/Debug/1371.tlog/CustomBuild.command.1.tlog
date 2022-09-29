@@ -1,0 +1,10 @@
+^C:\USERS\IVANO\DESKTOP\GITSTORE\MFR2021\APPLICATIONG\P1371EXERSISES\G4COMMLINE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ivano/Desktop/GitStore/MFR2021/ApplicationG/p1371exersises/G4commLine -BC:/Users/ivano/Desktop/GitStore/MFR2021/ApplicationG/p1371exersises/G4commLine/build --check-stamp-file C:/Users/ivano/Desktop/GitStore/MFR2021/ApplicationG/p1371exersises/G4commLine/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
