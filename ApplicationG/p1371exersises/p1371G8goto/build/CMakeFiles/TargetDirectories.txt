@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/p1371exersises/p1371G8goto/build/CMakeFiles/1371.dir
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/p1371exersises/p1371G8goto/build/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationG/p1371exersises/p1371G8goto/build/CMakeFiles/rebuild_cache.dir
