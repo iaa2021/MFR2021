@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationD/p1386D4/build/CMakeFiles/1386.dir
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationD/p1386D4/build/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/ApplicationD/p1386D4/build/CMakeFiles/rebuild_cache.dir
