@@ -1,3 +1,7 @@
 #pragma once
 
 #define PROJECT_VERSION 8
+
+#define PROJECT_VERSION_MINOR 2
+
+#define PROJECT_VERSION_MAJOR 1

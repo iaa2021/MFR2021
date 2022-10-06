@@ -24,7 +24,8 @@ int sumArray( int *, int );
 #include "config.h"
 int main()
 {
-    cout << "Project version is: " << (PROJECT_VERSION) << endl;
+    cout << "Project version is: " << (PROJECT_VERSION_MAJOR) << ".";
+    cout << (PROJECT_VERSION_MINOR) << "." << (PROJECT_VERSION) << endl;
     srand( time( 0 ) );
     cout << "List of sphere's volumes with radius from 1 till 10:\n";
     for (size_t i = 1; i < 11; i++)
