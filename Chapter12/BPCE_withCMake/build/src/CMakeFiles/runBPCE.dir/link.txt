@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/runBPCE.dir/p771.cpp.o -o runBPCE  ../libCE/liblibCE.a ../libBPCE/liblibBPCE.a 

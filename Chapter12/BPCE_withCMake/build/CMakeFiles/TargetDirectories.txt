@@ -1,0 +1,11 @@
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/libBPCE/CMakeFiles/libBPCE.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/libBPCE/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/libBPCE/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/libCE/CMakeFiles/libCE.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/libCE/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/libCE/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/src/CMakeFiles/runBPCE.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/src/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/src/CMakeFiles/rebuild_cache.dir
