@@ -63,52 +63,34 @@ CMAKE_BINARY_DIR = /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/b
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: libBPCE/all
-all: libCE/all
+all: lib/all
 all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: libBPCE/preinstall
-preinstall: libCE/preinstall
+preinstall: lib/preinstall
 preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: libBPCE/clean
-clean: libCE/clean
+clean: lib/clean
 clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory libBPCE
+# Directory level rules for directory lib
 
 # Recursive "all" directory target.
-libBPCE/all: libBPCE/CMakeFiles/libBPCE.dir/all
-.PHONY : libBPCE/all
+lib/all: lib/CMakeFiles/libCE.dir/all
+.PHONY : lib/all
 
 # Recursive "preinstall" directory target.
-libBPCE/preinstall:
-.PHONY : libBPCE/preinstall
+lib/preinstall:
+.PHONY : lib/preinstall
 
 # Recursive "clean" directory target.
-libBPCE/clean: libBPCE/CMakeFiles/libBPCE.dir/clean
-.PHONY : libBPCE/clean
-
-#=============================================================================
-# Directory level rules for directory libCE
-
-# Recursive "all" directory target.
-libCE/all: libCE/CMakeFiles/libCE.dir/all
-.PHONY : libCE/all
-
-# Recursive "preinstall" directory target.
-libCE/preinstall:
-.PHONY : libCE/preinstall
-
-# Recursive "clean" directory target.
-libCE/clean: libCE/CMakeFiles/libCE.dir/clean
-.PHONY : libCE/clean
+lib/clean: lib/CMakeFiles/libCE.dir/clean
+.PHONY : lib/clean
 
 #=============================================================================
 # Directory level rules for directory src
@@ -126,71 +108,44 @@ src/clean: src/CMakeFiles/runBPCE.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
-# Target rules for target libBPCE/CMakeFiles/libBPCE.dir
+# Target rules for target lib/CMakeFiles/libCE.dir
 
 # All Build rule for target.
-libBPCE/CMakeFiles/libBPCE.dir/all:
-	$(MAKE) $(MAKESILENT) -f libBPCE/CMakeFiles/libBPCE.dir/build.make libBPCE/CMakeFiles/libBPCE.dir/depend
-	$(MAKE) $(MAKESILENT) -f libBPCE/CMakeFiles/libBPCE.dir/build.make libBPCE/CMakeFiles/libBPCE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles --progress-num=1,2 "Built target libBPCE"
-.PHONY : libBPCE/CMakeFiles/libBPCE.dir/all
+lib/CMakeFiles/libCE.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libCE.dir/build.make lib/CMakeFiles/libCE.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libCE.dir/build.make lib/CMakeFiles/libCE.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles --progress-num=1,2,3 "Built target libCE"
+.PHONY : lib/CMakeFiles/libCE.dir/all
 
 # Build rule for subdir invocation for target.
-libBPCE/CMakeFiles/libBPCE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libBPCE/CMakeFiles/libBPCE.dir/all
+lib/CMakeFiles/libCE.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/libCE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles 0
-.PHONY : libBPCE/CMakeFiles/libBPCE.dir/rule
+.PHONY : lib/CMakeFiles/libCE.dir/rule
 
 # Convenience name for target.
-libBPCE: libBPCE/CMakeFiles/libBPCE.dir/rule
-.PHONY : libBPCE
-
-# clean rule for target.
-libBPCE/CMakeFiles/libBPCE.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libBPCE/CMakeFiles/libBPCE.dir/build.make libBPCE/CMakeFiles/libBPCE.dir/clean
-.PHONY : libBPCE/CMakeFiles/libBPCE.dir/clean
-
-#=============================================================================
-# Target rules for target libCE/CMakeFiles/libCE.dir
-
-# All Build rule for target.
-libCE/CMakeFiles/libCE.dir/all:
-	$(MAKE) $(MAKESILENT) -f libCE/CMakeFiles/libCE.dir/build.make libCE/CMakeFiles/libCE.dir/depend
-	$(MAKE) $(MAKESILENT) -f libCE/CMakeFiles/libCE.dir/build.make libCE/CMakeFiles/libCE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles --progress-num=3,4 "Built target libCE"
-.PHONY : libCE/CMakeFiles/libCE.dir/all
-
-# Build rule for subdir invocation for target.
-libCE/CMakeFiles/libCE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libCE/CMakeFiles/libCE.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles 0
-.PHONY : libCE/CMakeFiles/libCE.dir/rule
-
-# Convenience name for target.
-libCE: libCE/CMakeFiles/libCE.dir/rule
+libCE: lib/CMakeFiles/libCE.dir/rule
 .PHONY : libCE
 
 # clean rule for target.
-libCE/CMakeFiles/libCE.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libCE/CMakeFiles/libCE.dir/build.make libCE/CMakeFiles/libCE.dir/clean
-.PHONY : libCE/CMakeFiles/libCE.dir/clean
+lib/CMakeFiles/libCE.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libCE.dir/build.make lib/CMakeFiles/libCE.dir/clean
+.PHONY : lib/CMakeFiles/libCE.dir/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/runBPCE.dir
 
 # All Build rule for target.
-src/CMakeFiles/runBPCE.dir/all: libBPCE/CMakeFiles/libBPCE.dir/all
-src/CMakeFiles/runBPCE.dir/all: libCE/CMakeFiles/libCE.dir/all
+src/CMakeFiles/runBPCE.dir/all: lib/CMakeFiles/libCE.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/runBPCE.dir/build.make src/CMakeFiles/runBPCE.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/runBPCE.dir/build.make src/CMakeFiles/runBPCE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles --progress-num=5,6 "Built target runBPCE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles --progress-num=4,5 "Built target runBPCE"
 .PHONY : src/CMakeFiles/runBPCE.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/runBPCE.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/runBPCE.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/runBPCE.dir/rule

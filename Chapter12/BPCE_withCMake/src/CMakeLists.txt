@@ -6,10 +6,9 @@ configure_filE( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
 add_executable( runBPCE p771.cpp )
 
-target_include_directories( runBPCE PUBLIC ${CMAKE_CURRENT_BINARY_DIR}
-    ./../libBPCE
-    ./../libCE
-)
+target_include_directories( runBPCE PUBLIC ${CMAKE_CURRENT_BINARY_DIR} )
+
+target_include_directories( runBPCE PUBLIC ./../lib )
 
 set_target_properties( runBPCE PROPERTIES
     CXX_STANDARD 11
@@ -17,5 +16,3 @@ set_target_properties( runBPCE PROPERTIES
 )
 
 target_link_libraries( runBPCE PUBLIC libCE )
-
-target_link_libraries( runBPCE PUBLIC libBPCE )

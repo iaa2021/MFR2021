@@ -11,10 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.24.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.24.2/CMakeSystem.cmake"
-  "/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/libBPCE/CMakeLists.txt"
-  "/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/libBPCE/libBPCE"
-  "/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/libCE/CMakeLists.txt"
-  "/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/libCE/config.h.in"
+  "/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/lib/CMakeLists.txt"
   "/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/src/CMakeLists.txt"
   "/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/src/config.h.in"
   "/snap/cmake/1156/share/cmake-3.24/Modules/CMakeCInformation.cmake"
@@ -45,17 +42,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libBPCE/config.h"
-  "libBPCE/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libCE/config.h"
-  "libCE/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/config.h"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "libBPCE/CMakeFiles/libBPCE.dir/DependInfo.cmake"
-  "libCE/CMakeFiles/libCE.dir/DependInfo.cmake"
+  "lib/CMakeFiles/libCE.dir/DependInfo.cmake"
   "src/CMakeFiles/runBPCE.dir/DependInfo.cmake"
   )

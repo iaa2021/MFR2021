@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named libBPCE
-
-# Build rule for target.
-libBPCE: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libBPCE
-.PHONY : libBPCE
-
-# fast build rule for target.
-libBPCE/fast:
-	$(MAKE) $(MAKESILENT) -f libBPCE/CMakeFiles/libBPCE.dir/build.make libBPCE/CMakeFiles/libBPCE.dir/build
-.PHONY : libBPCE/fast
-
-#=============================================================================
 # Target rules for targets named libCE
 
 # Build rule for target.
@@ -139,7 +126,7 @@ libCE: cmake_check_build_system
 
 # fast build rule for target.
 libCE/fast:
-	$(MAKE) $(MAKESILENT) -f libCE/CMakeFiles/libCE.dir/build.make libCE/CMakeFiles/libCE.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/libCE.dir/build.make lib/CMakeFiles/libCE.dir/build
 .PHONY : libCE/fast
 
 #=============================================================================
@@ -163,7 +150,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... libBPCE"
 	@echo "... libCE"
 	@echo "... runBPCE"
 .PHONY : help

@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblibBPCE.a CMakeFiles/libBPCE.dir/BPCE.cpp.o
-/usr/bin/ranlib liblibBPCE.a

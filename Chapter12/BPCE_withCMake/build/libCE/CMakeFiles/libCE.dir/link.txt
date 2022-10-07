@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblibCE.a CMakeFiles/libCE.dir/ComissionEmployee.cpp.o
-/usr/bin/ranlib liblibCE.a

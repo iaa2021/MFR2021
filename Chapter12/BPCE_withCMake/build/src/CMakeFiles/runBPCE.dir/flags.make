@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/src -I/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/src/./../libBPCE -I/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/src/./../libCE -I/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/libCE -I/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/libBPCE -I/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/libBPCE/./../libCE
+CXX_INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/src -I/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/src/./../lib -I/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/lib/.
 
 CXX_FLAGS = -std=gnu++11
 

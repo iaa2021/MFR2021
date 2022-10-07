@@ -92,8 +92,7 @@ runBPCE_EXTERNAL_OBJECTS =
 
 src/runBPCE: src/CMakeFiles/runBPCE.dir/p771.cpp.o
 src/runBPCE: src/CMakeFiles/runBPCE.dir/build.make
-src/runBPCE: libCE/liblibCE.a
-src/runBPCE: libBPCE/liblibBPCE.a
+src/runBPCE: lib/liblibCE.a
 src/runBPCE: src/CMakeFiles/runBPCE.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable runBPCE"
 	cd /home/iaa/Desktop/gitStore/MFR2021/Chapter12/BPCE_withCMake/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runBPCE.dir/link.txt --verbose=$(VERBOSE)
