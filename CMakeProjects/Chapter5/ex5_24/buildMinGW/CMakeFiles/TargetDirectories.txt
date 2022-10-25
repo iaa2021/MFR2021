@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter5/ex5_24/buildMinGW/CMakeFiles/5_24.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter5/ex5_24/buildMinGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter5/ex5_24/buildMinGW/CMakeFiles/rebuild_cache.dir

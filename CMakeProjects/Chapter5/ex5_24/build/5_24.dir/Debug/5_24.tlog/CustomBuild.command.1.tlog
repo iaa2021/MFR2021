@@ -1,0 +1,10 @@
+^C:\USERS\IVANO\DESKTOP\GITSTORE\MFR2021\CMAKEPROJECTS\CHAPTER5\EX5_24\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter5/ex5_24 -BC:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter5/ex5_24/build --check-stamp-file C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter5/ex5_24/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
