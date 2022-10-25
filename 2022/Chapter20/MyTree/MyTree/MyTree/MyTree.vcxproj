@@ -142,8 +142,14 @@
     <ClCompile Include="MyTree.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD:2022/Chapter20/MyTree/MyTree/MyTree/MyTree.vcxproj
     <ClInclude Include="Tree.h" />
     <ClInclude Include="TreeNode.h" />
+=======
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="ListNode.h" />
+>>>>>>> cf8f550 (continue with LNWindows):Chapter20/ListNodeWindows/ListNodeWindows/ListNodeWindows.vcxproj
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
