@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter5/ex5_29/buildMGW/CMakeFiles/5_29.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter5/ex5_29/buildMGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter5/ex5_29/buildMGW/CMakeFiles/rebuild_cache.dir
