@@ -1,0 +1,10 @@
+^C:\USERS\IVANO\DESKTOP\GITSTORE\MFR2021\CMAKEPROJECTS\CHAPTER6\EX6_34\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter6/ex6_34 -BC:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter6/ex6_34/buildMGW --check-stamp-file C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter6/ex6_34/buildMGW/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
