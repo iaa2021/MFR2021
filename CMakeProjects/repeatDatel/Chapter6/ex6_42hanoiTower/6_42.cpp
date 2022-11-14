@@ -4,11 +4,11 @@ using std::cin;
 using std::endl;
 #include <stack>
 using std::stack;
-
+void hanoi( stack <int> *, int );
 int main()
 {
-    stack< int > array[ 3 ];// array[ 1 ] - primary store, array[ 2 ] - temporary store, 
-    //array[ 3 ] - ultimate store;
+    stack< int > array[ 3 ];// array[ 0 ] - primary store, array[ 1 ] - temporary store, 
+    //array[ 2 ] - ultimate store;
     int n;
     cout << "Input tail's number: ";
     cin >> n;
@@ -25,4 +25,22 @@ int main()
     }
     
     return 0;
+}
+void hanoi( stack <int> *ptr, int number )
+{
+    if( number == 1 && ptr[ 2 ].empty() )
+    {
+        ptr[ 2 ].push( ptr[ 0 ].top() );
+        ptr[ 0 ].pop();
+        number--;
+        cout << " 1 -> 3 " << " (" << ptr[ 2 ].top() << ") " << endl;
+    }
+    else if( number > 1 && ptr[ 1 ].empty() )
+    {
+        ptr[ 1 ].push( ptr[ 0 ].top() );
+        ptr[ 0 ].pop();
+        number--;
+        cout << " 1 -> 2 " << "( " << ptr[ 1 ].top() << endl;
+    }
+
 }
