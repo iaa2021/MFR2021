@@ -6,28 +6,55 @@ using std::cin;
 using std::stack;
 #include <cmath>
 using std::pow;
-int operationNumber( int );
+#include <string>
+using std::string;
+struct peg
+{
+    stack <int>st;
+    string name;
+    int number;
+};
+void khanoi( int, peg, peg, peg );
+
 int main()
 {
-    stack<int>a; //primary stack
-    stack<int>b;// temporary stack
-    stack<int>c;//ultimate stack
-    int aCount = 0; int bCount = 0; int cCount = 0; int number;
-    cout << "Input plate's number: ";
+    peg a, b, c;
+    a.name = "a"; b.name = "b"; c.name = "c";
+    a.number = 0; b.number = 0; c.number = 0;
+    int number;
+    cout << "Input number: ";
     cin >> number;
-    for (int i = 0; i < number; i++)
+    if( number > 0 )
     {
-        a.push( i );
-        aCount++;
+        for (int i = 1; i <= number; i++)
+        {
+            a.st.push( i );
+        }
+        a.number = number;
     }
-    unsigned long n = operationNumber( number );
-    cout << "Operation's number is " << n << endl;
+    khanoi( number, a, b, c );
     return 0;
 }
-int operationNumber( int number )
+void khanoi( int number, peg a, peg b, peg c )
 {
+    number = a.number;
     if( number == 1 )
-    return 1;
-    else
-    return operationNumber( number - 1 ) + pow( 2, number - 1 );
+    {
+        b.st.push( a.st.top() );
+        a.st.pop();
+        a.number--; b.number++;
+        cout << a.name << " -> " << b.name << endl;
+    }
+    while( number > 1 )
+    {
+        if( number % 2 == 0 )
+        c.st.push( a.st.top() );
+        a.st.pop();
+        a.number--; c.number++;
+        cout << a.name << " -> " << c.name << endl;
+        b.st.push( a.st.top() );
+        a.st.pop();
+        a.number--; b.number++;
+        cout << a.name << " -> " << b.name << endl;
+    }
 }
