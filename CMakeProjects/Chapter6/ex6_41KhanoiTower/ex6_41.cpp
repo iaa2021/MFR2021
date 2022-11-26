@@ -26,7 +26,7 @@ int main()
     cin >> number;
     if( number > 0 )
     {
-        for (int i = 1; i <= number; i++)
+        for (int i = number; i >= 1; i--)
         {
             a.st.push( i );
         }
@@ -41,58 +41,17 @@ int main()
 }
 void khanoi( int number, int odd, peg a, peg b, peg c )
 {
-    while( a.number == 0 && b.number == 0 && c.number == number )
-    {
-    if( number == 1 && c.st.empty() )
-    {
-        c.st.push( a.st.top() );
-        a.st.pop();
-        a.number--; c.number++;
-        cout << a.name << " -> " << c.name << endl;
-    }
-   else
+   if( c.st.empty() && b.st.empty() )
    {
-    if( b.st.empty() && c.st.empty() )//first move
-    {
-        if( a.st.top() % 2 == 0 )
+        if( a.st.top() + odd == 0 )
         {
-            b.st.push( a.st.top() );
-            a.st.pop();
-            a.number--; b.number++;
-            cout << a.name << " -> " << b.name << endl;
+            b.st.push( a.st.top() ); a.st.pop(); b.number++; a.number--; number--;
+            cout << a.name << " -> " << b.name() << endl; 
         }
         else
         {
-            c.st.push( a.st.top() );
-            a.st.pop();
-            a.number--; c.number++;
-            cout << a.name << " -> " << c.name << endl;
+            c.st.push( a.st.top() ); a.st.pop(); c.number++; a.number--; number--;
+            cout << a.name << " -> " << c.name() << endl;
         }
-    }
-    else if( c.st.empty() && !b.st.empty() )//second move
-    {
-            c.st.push( a.st.top() );
-            a.st.pop();
-            a.number--; c.number++;
-            cout << a.name << " -> " << c.name << endl;
-    }
-    else if( !c.st.empty() && b.st.empty() )
-    {
-            b.st.push( a.st.top() );
-            a.st.pop();
-            a.number--; b.number++;
-            cout << a.name << " -> " << b.name << endl;
-    }
-    else if ( !c.st.empty() && !b.st.empty() )
-    {
-        if( b.st.top() < c.st.top() )
-        {
-            c.st.push( b.st.top() );
-            b.st.pop();
-            b.number--; c.number++;
-            cout << a.name << " -> " << c.name << endl;
-        }
-    }
-    }
-    }
+   }
 }
