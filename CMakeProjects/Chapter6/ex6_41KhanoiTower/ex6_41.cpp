@@ -36,7 +36,7 @@ int main()
     odd = 1;
     else 
     odd = 0;
-    cout << "\nodd is: " << odd << endl;
+    cout << "odd is: " << odd << endl;
     khanoi( number, odd, a, b, c );
     return 0;
 }
@@ -54,7 +54,7 @@ void khanoi( int number, int odd, peg a, peg b, peg c )
                 cout << a.name << " -> " << c.name << endl;
                 
             }
-            else if( a.st.top() > b.st.top() && a.st.top() > b.st.top() )
+            else if( a.st.top() > b.st.top() && a.st.top() > c.st.top() )
             {
                 if( odd == 1 )
                 {
@@ -67,6 +67,7 @@ void khanoi( int number, int odd, peg a, peg b, peg c )
                     cout << c.name << " -> " << b.name << endl;
                 }
             }
+           
            number += b.number;
    khanoi( number, odd, a, b, c );
 }
