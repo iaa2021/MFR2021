@@ -36,22 +36,37 @@ int main()
     odd = 1;
     else 
     odd = 0;
+    cout << "\nodd is: " << odd << endl;
     khanoi( number, odd, a, b, c );
     return 0;
 }
 void khanoi( int number, int odd, peg a, peg b, peg c )
 {
-   if( c.st.empty() && b.st.empty() )
-   {
-        if( a.st.top() + odd == 0 )
-        {
-            b.st.push( a.st.top() ); a.st.pop(); b.number++; a.number--; number--;
-            cout << a.name << " -> " << b.name() << endl; 
-        }
-        else
-        {
-            c.st.push( a.st.top() ); a.st.pop(); c.number++; a.number--; number--;
-            cout << a.name << " -> " << c.name() << endl;
-        }
-   }
+            if( ( a.st.top() + odd ) % 2 == 0 && ( b.st.empty() || b.st.top() > a.st.top() ) )
+            {
+                b.st.push( a.st.top() ); a.st.pop(); b.number++; a.number--; number--;
+                cout << a.name << " -> " << b.name << endl;
+
+            }
+            else if( ( a.st.top() + odd ) % 2 != 0 && ( c.st.empty() || c.st.top() > a.st.top() ) )
+            {
+                c.st.push( a.st.top() ); c.number++; a.st.pop(); a.number--; number--;
+                cout << a.name << " -> " << c.name << endl;
+                
+            }
+            else if( a.st.top() > b.st.top() && a.st.top() > b.st.top() )
+            {
+                if( odd == 1 )
+                {
+                    c.st.push( b.st.top() ); c.number++; b.st.pop(); b.number--; 
+                    cout << b.name << " -> " << c.name << endl;
+                }
+                else if( odd == 0 )
+                {
+                    b.st.push( c.st.top() ); c.st.pop(); b.number++; c.number--; 
+                    cout << c.name << " -> " << b.name << endl;
+                }
+            }
+           number += b.number;
+   khanoi( number, odd, a, b, c );
 }
