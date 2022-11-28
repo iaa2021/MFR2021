@@ -10,7 +10,7 @@ LDFLAGS =
 # Makefile settings - Can be customized.
 APPNAME = 6_45
 EXT = .cpp
-SRCDIR = C:\Users\ivano\Desktop\gitStore\MFR2021\CMakeProjects\Chapter6\ex6_45
+SRCDIR = C:\Users\ivano\Desktop\gitStore\MFR2021\CMakeProjects\Chapter6\ex6_45greaterCommonDeleter
 OBJDIR = obj
 
 ############## Do not change anything from here downwards! #############
