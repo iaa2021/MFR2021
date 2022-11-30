@@ -4,43 +4,51 @@ using std::cin;
 using std::endl;
 #include <stack>
 using std::stack;
-void hanoi( stack <int> *, int );
+struct peg
+{
+    stack <int> st;
+    int number;
+    char name;
+};
+void hanoi( peg, peg, peg, int );
 int main()
 {
-    stack< int > array[ 3 ];// array[ 0 ] - primary store, array[ 1 ] - temporary store, 
-    //array[ 2 ] - ultimate store;
-    int n;
+    peg a; a.name = 'a'; a.number = 0;// a - primary store
+    peg b; b.name = 'b'; b.number = 0;//b - temporary store
+    peg c; c.name = 'c'; c.number = 0;//c - ultimate store
+    int n, odd;//tale's number, odd number
     cout << "Input tail's number: ";
     cin >> n;
     for (int i = n; i >= 1; i--)
     {
-        array[ 1 ].push( i );
+        a.st.push( i );
+        a.number++;
     }
-    cout << "\narray[ 1 ].top() = " << array[ 1 ].top() << endl;
-    cout << "\narray[ 1 ] contains :\n";
-    while ( !array[1].empty() )
+    if ( n % 2 == 0 )
     {
-        cout << array[ 1 ].top() << endl;
-        array[ 1 ].pop();
+        odd = 1;
     }
-    
+    else
+    odd = 0;
+    hanoi( a, b, c, odd );
+    cout << "Tail's number in a stack after one move is: " << a.number << endl;
+    cout << "in b stask is: " << b.number << endl;
+    cout << "in c stask is: " << c.number << endl;
     return 0;
 }
-void hanoi( stack <int> *ptr, int number )
+void hanoi( peg a, peg b, peg c, int odd )
 {
-    if( number == 1 && ptr[ 2 ].empty() )
+    if( b.st.empty() && c.st.empty() )
     {
-        ptr[ 2 ].push( ptr[ 0 ].top() );
-        ptr[ 0 ].pop();
-        number--;
-        cout << " 1 -> 3 " << " (" << ptr[ 2 ].top() << ") " << endl;
+        if( ( a.st.top() + odd ) % 2 == 0 )
+        {
+            b.st.push( a.st.top() ); a.st.pop(); a.number--; b.number++;
+            cout << a.name << " -> " << b.name << endl;
+        }
+        else
+        {
+            c.st.push( a.st.top() ); a.st.pop(); a.number--; c.number++;
+            cout << a.name << " -> " << c.name << endl;
+        }
     }
-    else if( number > 1 && ptr[ 1 ].empty() )
-    {
-        ptr[ 1 ].push( ptr[ 0 ].top() );
-        ptr[ 0 ].pop();
-        number--;
-        cout << " 1 -> 2 " << "( " << ptr[ 1 ].top() << endl;
-    }
-
 }
