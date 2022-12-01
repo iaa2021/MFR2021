@@ -38,36 +38,62 @@ int main()
     odd = 0;
     cout << "odd is: " << odd << endl;
     khanoi( number, odd, a, b, c );
+    cout << " Stack a contains " << a.number << endl;
+    cout << " Stack b contains " << b.number << endl;
+    cout << " Stack c contains " << c.number << endl;
     return 0;
 }
 void khanoi( int number, int odd, peg a, peg b, peg c )
 {
-            if( ( a.st.top() + odd ) % 2 == 0 && ( b.st.empty() || b.st.top() > a.st.top() ) )
+            if( c.st.empty() && b.st.empty() )//move 1
             {
-                b.st.push( a.st.top() ); a.st.pop(); b.number++; a.number--; number--;
-                cout << a.name << " -> " << b.name << endl;
-
-            }
-            else if( ( a.st.top() + odd ) % 2 != 0 && ( c.st.empty() || c.st.top() > a.st.top() ) )
-            {
-                c.st.push( a.st.top() ); c.number++; a.st.pop(); a.number--; number--;
-                cout << a.name << " -> " << c.name << endl;
-                
-            }
-            else if( a.st.top() > b.st.top() && a.st.top() > c.st.top() )
-            {
-                if( odd == 1 )
+                if( ( a.st.top() + odd ) % 2 == 0 )
                 {
-                    c.st.push( b.st.top() ); c.number++; b.st.pop(); b.number--; 
+                    b.st.push( a.st.top() ); a.st.pop(); a.number--; b.number++; number--;
+                    cout << a.name << " -> " << b.name << endl;
+                    c.st.push( a.st.top() ); a.st.pop(); a.number--; c.number++; number--;//2 move
+                    cout << a.name << " -> " << c.name << endl;
+                    c.st.push( b.st.top() ); b.st.pop(); b.number--; c.number++;//3 move
                     cout << b.name << " -> " << c.name << endl;
                 }
-                else if( odd == 0 )
+                else
                 {
-                    b.st.push( c.st.top() ); c.st.pop(); b.number++; c.number--; 
+                    c.st.push( a.st.top() ); a.st.pop(); a.number--; c.number++; number--;
+                    cout << a.name << " -> " << c.name << endl;
+                    b.st.push( a.st.top() ); a.st.pop(); a.number--; b.number++; number--;//2 move
+                    cout << a.name << " -> " << b.name << endl;
+                    b.st.push( c.st.top() ); c.st.pop(); c.number--; b.number++;//3 move
                     cout << c.name << " -> " << b.name << endl;
                 }
             }
+            else if( ( a.st.top() + odd ) % 2 != 0 )
+            {
+                if( c.st.empty() || c.st.top() > a.st.top() )
+                {
+                    c.st.push( a.st.top() ); a.st.pop(); a.number--; c.number++; number--;
+                    cout << a.name << " -> " << c.name << endl;
+                    a.st.push( b.st.top() ); b.st.pop(); b.number--; a.number++; number++;
+                    cout << b.name << " -> " << a.name << endl;
+                    c.st.push( b.st.top() ); b.st.pop(); b.number--; c.number++;
+                    cout << b.name << " -> " << c.name << endl;
+                }
+                
+            }
+            else if( ( ( a.st.top() + odd ) ) % 2 == 0 )
+            {
+                if( b.st.empty() || b.st.top() > a.st.top() )
+                {
+                    b.st.push( a.st.top() ); a.st.pop(); a.number--; b.number++; number--;
+                    cout << a.name << " -> " << b.name << endl;
+                    a.st.push( c.st.top() ); c.st.pop(); c.number--; a.number++; number++;
+                    cout << c.name << " -> " << a.name << endl;
+                    b.st.push( c.st.top() ); c.st.pop(); c.number--; b.number++;
+                    cout << c.name << " -> " << b.name << endl;
+                }
+            }
+            
+            else if( b.number > 0 )
+            number += b.number;
            
-           number += b.number;
-   khanoi( number, odd, a, b, c );
+    khanoi( number, odd, a, b, c );
 }
