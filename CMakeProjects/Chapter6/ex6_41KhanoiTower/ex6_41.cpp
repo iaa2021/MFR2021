@@ -72,10 +72,7 @@ void khanoi( int number, int odd, peg a, peg b, peg c )
                 {
                     c.st.push( a.st.top() ); a.st.pop(); a.number--; c.number++; number--;
                     cout << a.name << " -> " << c.name << endl;
-                    a.st.push( b.st.top() ); b.st.pop(); b.number--; a.number++; number++;
-                    cout << b.name << " -> " << a.name << endl;
-                    c.st.push( b.st.top() ); b.st.pop(); b.number--; c.number++;
-                    cout << b.name << " -> " << c.name << endl;
+                    
                 }
                 
             }
@@ -85,13 +82,15 @@ void khanoi( int number, int odd, peg a, peg b, peg c )
                 {
                     b.st.push( a.st.top() ); a.st.pop(); a.number--; b.number++; number--;
                     cout << a.name << " -> " << b.name << endl;
-                    a.st.push( c.st.top() ); c.st.pop(); c.number--; a.number++; number++;
-                    cout << c.name << " -> " << a.name << endl;
-                    b.st.push( c.st.top() ); c.st.pop(); c.number--; b.number++;
-                    cout << c.name << " -> " << b.name << endl;
+                   
                 }
+                 if( b.st.top() == 1 )
+                    {
+                        a.st.push( b.st.top() ); b.st.pop(); b.number--; a.number++; number++;//3 move
+                        cout << b.name << " -> " << a.name << endl;
+                    }
             }
-            
+
             else if( b.number > 0 )
             number += b.number;
            
