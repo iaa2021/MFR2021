@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter7/ex7.17/buildNinja/CMakeFiles/7_17.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter7/ex7.17/buildNinja/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter7/ex7.17/buildNinja/CMakeFiles/rebuild_cache.dir
