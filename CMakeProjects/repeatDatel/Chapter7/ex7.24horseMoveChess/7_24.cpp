@@ -15,60 +15,42 @@ int main()
     int desk[ 8 ][ 8 ] = { 0 };
     int horizontal[ 8 ] = { 2, 1, -1, -2, -2, -1, 1, 2 };
     int vertical[ 8 ] =  { -1, -2, -2, -1, 1, 2, 2, 1 };
-    int currentRow, currentColumn, count = 1, min;
+    int currentRow, currentColumn, count = 1, min = 10;
     bool stop = false;//continue game if false or not if true
-    vector< vector<int> > moves;
+    vector< vector<int> > moves( 2 );
     cout << "\nPrimary accessibility for horse move for chess desk via function is:\n";
     access( desk, accessibility, currentRow, currentColumn, vertical, horizontal );
     print( accessibility );
     cout << "\nInput primary point, row, than column:\n";
     cin >> currentRow >> currentColumn;
     desk[ currentRow ][ currentColumn ] = count;
-    cout << "\nPrimary accessibility for horse move for chess desk via function is:\n";
+    cout << "\nSecondary accessibility for horse move for chess desk via function is:\n";
     access( desk, accessibility, currentRow, currentColumn, vertical, horizontal );
     print( accessibility );
-    while( stop != true )
+    cout << endl;
+    print( desk );
+    while( count < 2 )
     {
         int cR = currentRow, cC = currentColumn;
-        for (int k = 0; k < 8; k++)//seeking for possible moves 
+        for (int i = 0; i < 8; i++)//seeking for moves
         {
-            cR += horizontal[ k ];
-            cC += vertical[ k ];
-            if( cR < 8 && cC < 8 && cC >= 0 && cR >= 0 && desk[ cR ][ cC ] == 0 )
+            cR += horizontal[ i ]; cC += vertical[ i ];
+            if( cR >= 0 && cC >= 0 && cR < 8 && cC < 8 && desk[ cR ][ cC ] == 0 )
             {
-                min = accessibility[ cR ][ cC ];
-                moves[ 0 ].push_back( k );
-                moves[ 1 ].push_back( accessibility[ cR ][ cC ] );
-                if( min > accessibility[ cR ][ cC ] )
-                min = accessibility[ currentRow ][ currentColumn ];
-            }  
+            moves[ 0 ].push_back( i ); moves[ 1 ].push_back( accessibility[ cR ][ cC ] );
+            }
+            cR = currentRow; cC = currentColumn;
         }
-        if( !moves.empty() )
+        if( !moves[ 0 ].empty() )
         {
             count++;
-            stop = false;
+            cout << "Vector is not empty.\n";
         }
-        else
-        stop = true;
-        if( stop == false )
-        {
-            for( size_t i = 0; i < moves[ 1 ]. size(); i++ )//make move
-        {
-            if( moves[ 1 ].at( i ) == min )
-            {
-                currentRow += horizontal[ moves[ 0 ].at( i ) ];
-                currentColumn += vertical[ moves[ 0 ].at( i ) ];
-                desk[ currentRow ][ currentColumn ] = count;
-                break;
-            }
-        }
-        for( int i = 0; i < 2; i++ )
-        moves[ i ].clear();
-        }
-        print( desk );
-        cout << endl;
-    }
-    cout << endl;
+        moves[ 0 ].clear(); moves[ 1 ].clear();
+        if( moves[ 0 ].empty() && moves[ 1 ].empty() )
+        cout << "\nVector is already empty.\n";
+    } 
+    cout << "\nDesk is:\n";
     print( desk );
     cout << "\nProject version is " << (PROJECT_VERSION_MAJOR) << '.' << (PROJECT_VERSION_MINOR);
     cout << '.' << (PROJECT_VERSION_PATCH) << endl;
