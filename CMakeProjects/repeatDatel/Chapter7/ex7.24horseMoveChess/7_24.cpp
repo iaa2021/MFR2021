@@ -4,8 +4,11 @@ using std::cin;
 using std::endl;
 void access( int[ 8 ][ 8 ], int[ 8 ][ 8 ], int, int, int[ 8 ], int[ 8 ] );
 void print( int [ 8 ][ 8 ] );
+#include "config.h"
 int main()
 {
+    cout << "Project version is " << (PROJECT_VERSION_MAJOR) << '.' << (PROJECT_VERSION_MINOR);
+    cout << '.' << (PROJECT_VERSION_PATCH) << endl;
     int accessibility[ 8 ][ 8 ] = { 0 };
     int desk[ 8 ][ 8 ] = { 0 };
     int horizontal[ 8 ] = { 2, 1, -1, -2, -2, -1, 1, 2 };
@@ -41,6 +44,8 @@ int main()
     cout << "\nPrimary accessibility for horse move for chess desk via function is:\n";
     access( desk, accessibility, currentRow, currentColumn, vertical, horizontal );
     print( accessibility );
+    cout << "\nProject version is " << (PROJECT_VERSION_MAJOR) << '.' << (PROJECT_VERSION_MINOR);
+    cout << '.' << (PROJECT_VERSION_PATCH) << endl;
     return 0;
 }
 void access( int desk[ 8 ][ 8 ], int accessibility[ 8 ][ 8 ], int currentRow, int currentColumn, int vertical[ 8 ], int horizontal[ 8 ] )
