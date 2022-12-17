@@ -6,19 +6,25 @@ using std::endl;
 using std::vector;
 #include <iomanip>
 using std::setw;
+#include <cstdlib>
+using std::rand;
+using std::srand;
+#include <ctime>
+using std::time;
 void access( int[ 8 ][ 8 ], int[ 8 ][ 8 ], int, int, int[ 8 ], int[ 8 ] );
 void print( int [ 8 ][ 8 ] );
 #include "config.h"
 int main()
 {
+    srand( time( 0 ) );
     cout << "Project version is " << (PROJECT_VERSION_MAJOR) << '.' << (PROJECT_VERSION_MINOR);
     cout << '.' << (PROJECT_VERSION_PATCH) << endl;
     int accessibility[ 8 ][ 8 ] = { 0 };
     int desk[ 8 ][ 8 ] = { 0 };
     int horizontal[ 8 ] = { 2, 1, -1, -2, -2, -1, 1, 2 };
     int vertical[ 8 ] =  { -1, -2, -2, -1, 1, 2, 2, 1 };
-    int currentRow, currentColumn, count = 1, min = 10;
-    bool stop = false;//variable for game's continue
+    int currentRow, currentColumn, count = 1, min = 10, desision;
+    int stop = 0;//variable for game's continue
     vector< vector<int> > moves( 2 );
     cout << "\nPrimary accessibility for horse move for chess desk via function is:\n";
     access( desk, accessibility, currentRow, currentColumn, vertical, horizontal );
@@ -29,61 +35,48 @@ int main()
     cout << "\nSecondary accessibility for horse move for chess desk via function is:\n";
     access( desk, accessibility, currentRow, currentColumn, vertical, horizontal );
     print( accessibility );
-    cout << endl;
-    while( stop == false )
+    while( stop == 0 && count <= 64 )
     {
-        int cR = currentRow, cC = currentColumn;
-        for (int i = 0; i < 8; i++)//seeking for moves
+        int cR = currentRow; int cC = currentColumn;
+        for ( int i = 0; i < 8; i++ )
         {
             cR += horizontal[ i ]; cC += vertical[ i ];
-            if( cR >= 0 && cC >= 0 && cR < 8 && cC < 8 && accessibility[ cR ][ cC ] != 0 && desk[ cR ][ cC ] == 0 )
+            if( cR >= 0 && cC >= 0 && cR < 8 && cC < 8 && desk[ cR ][ cC ] == 0 )
             {
-            moves[ 0 ].push_back( i );//keeping move's variant
-            moves[ 1 ].push_back( accessibility[ cR ][ cC ] );//keeping move's accessibility
+                moves[ 0 ].push_back( i );//keeping move's variant
+                moves[ 1 ].push_back( accessibility[ cR ][ cC ] );//keeping accessibility
             }
             cR = currentRow; cC = currentColumn;
         }
         if( moves[ 0 ].empty() && moves[ 1 ].empty() )
         {
-            stop = true;
-            cout << "\n On count " << count << " array is empty.\n";
-        } 
+            stop = 1;
+            cout << "\nVector moves is empty on " << count << " count\n";
+        }
         else
         {
-            count++; stop = false;
-            for ( int i = 0; i < 8; i++ )//seeking minimum
+            count++; stop = 0;
+            for (size_t i = 0; i < moves[ 0 ].size(); i++)
             {
                 if( min > moves[ 1 ][ i ] && moves[ 1 ][ i ] > 0 )
-                min = moves[ 1 ][ i ];
-            }
-            cout << "\nMin accessibility on " << count << "move is: " << min << endl;
-            if( min == 1 )
-            print( accessibility );
-            for ( int i = 0; i < 8; i++)
-            {
-                if( moves[ 1 ][ i ] == min )
                 {
-                    currentColumn += vertical[ moves[ 0 ][ i ] ];
-                    currentRow += horizontal[ moves[ 0 ][ i ] ];
-                    desk[ currentRow ][ currentColumn ] = count;
-                    access( desk, accessibility, currentRow, currentColumn, vertical, horizontal );
-                    break;
+                    min = moves[ 1 ][ i ];
+                    desision = moves[ 0 ][ i ];
                 }
             }
+            currentRow += horizontal[ desision ]; currentColumn += vertical[ desision ];
+            desk[ currentRow ][ currentColumn ] = count;
+            moves[ 0 ].clear(); moves[ 1 ].clear();
+            access( desk, accessibility, currentRow, currentColumn, vertical, horizontal );
         }
-        moves[ 0 ].clear(); moves[ 1 ].clear(); min = 10;
-    } 
-    cout << "\nDesk is:\n";
+        
+    }   
+    
+    
+    cout << "\nDesk is\n";
     print( desk );
-    if( moves[ 0 ].empty() )
-    cout << "\nArray is empty.\n";
-    else
-    cout << "\nMassive moves is:\n";
-    for (size_t i = 0; i < moves[ 0 ].size(); i++)
-    {
-        cout << moves[ 0 ][ i ] << "  " << moves[ 1 ][ i ] << endl;
-    }
-    cout << "Accessibility is:\n";
+    cout << "\nFinally accessibility for horse move for chess desk via function is:\n";
+    access( desk, accessibility, currentRow, currentColumn, vertical, horizontal );
     print( accessibility );
     cout << "\nProject version is " << (PROJECT_VERSION_MAJOR) << '.' << (PROJECT_VERSION_MINOR);
     cout << '.' << (PROJECT_VERSION_PATCH) << endl;
