@@ -36,7 +36,7 @@ int main()
         for (int i = 0; i < 8; i++)//seeking for moves
         {
             cR += horizontal[ i ]; cC += vertical[ i ];
-            if( cR >= 0 && cC >= 0 && cR < 8 && cC < 8 && desk[ cR ][ cC ] == 0 )
+            if( cR >= 0 && cC >= 0 && cR < 8 && cC < 8 && accessibility[ cR ][ cC ] != 0 && desk[ cR ][ cC ] == 0 )
             {
             moves[ 0 ].push_back( i );//keeping move's variant
             moves[ 1 ].push_back( accessibility[ cR ][ cC ] );//keeping move's accessibility
@@ -47,8 +47,7 @@ int main()
         {
             stop = true;
             cout << "\n On count " << count << " array is empty.\n";
-        }
-        
+        } 
         else
         {
             count++; stop = false;
@@ -57,6 +56,9 @@ int main()
                 if( min > moves[ 1 ][ i ] && moves[ 1 ][ i ] > 0 )
                 min = moves[ 1 ][ i ];
             }
+            cout << "\nMin accessibility on " << count << "move is: " << min << endl;
+            if( min == 1 )
+            print( accessibility );
             for ( int i = 0; i < 8; i++)
             {
                 if( moves[ 1 ][ i ] == min )
@@ -65,14 +67,11 @@ int main()
                     currentRow += horizontal[ moves[ 0 ][ i ] ];
                     desk[ currentRow ][ currentColumn ] = count;
                     access( desk, accessibility, currentRow, currentColumn, vertical, horizontal );
-                    moves[ 0 ].clear(); moves[ 1 ].clear(); min = 10;
-                    continue;
+                    break;
                 }
             }
-            
-            
         }
-        continue;
+        moves[ 0 ].clear(); moves[ 1 ].clear(); min = 10;
     } 
     cout << "\nDesk is:\n";
     print( desk );
