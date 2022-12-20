@@ -6,6 +6,7 @@ using std::endl;
 using std::setw;
 void access( int [ 8 ][ 8 ] );
 void print( int [ 8 ][ 8 ] );
+void move( int[ 8 ][ 8 ], int, int, int );
 int main()
 {
     int desk[ 8 ][ 8 ] = { 0 };
@@ -16,9 +17,9 @@ int main()
     int count = 1, row, column;
     cout << "Input initial row, than column:\n";//Plasing first qween
     cin >> row >> column;
-    desk[ row ][ column ] = count;
+    move( desk, row, column, count );
     count++;
-    cout << "\nFirst move is:\n";
+    cout << "\nCount is: " << count << ", first move is:\n";
     print( desk );
     return 0;
 }
@@ -58,4 +59,17 @@ void print( int acc[ 8 ][ 8 ] )
         }
         cout << endl;
     }
+}
+void move( int desk[ 8 ][ 8 ], int row, int column, int count )
+{
+    desk[ row ][ column ] = count;
+    for ( int i = 0; i < 8; i++ )
+    {
+        desk[ i ][ column ] = count;
+        for ( int j = 0; j < 8; j++ )
+        {
+            desk[ row ][ j ] = count;
+        }
+    }    
+    
 }
