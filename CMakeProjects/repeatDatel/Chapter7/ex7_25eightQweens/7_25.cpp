@@ -7,43 +7,66 @@ using std::setw;
 void access( int [ 8 ][ 8 ] );
 void print( int [ 8 ][ 8 ] );
 void move( int[ 8 ][ 8 ], int, int, int );
+#include "config.h"
 int main()
 {
+    cout << "Project version is " << (PROJECT_VERSION_MAJOR) << '.' << (PROJECT_VERSION_MINOR) << '.';
+    cout << (PROJECT_VERSION_PATCH) << endl;
     int desk[ 8 ][ 8 ] = { 0 };
     int accessibility[ 8 ][ 8 ] = { 0 };
     access( accessibility );
     print( accessibility );
     cout << "\nPrimary accessibility is:\n";
-    int count = 1, row, column;
-    cout << "Input initial row, than column:\n";//Plasing first qween
+    int count = 1, row, column, max = 0;
+    cout << "Input primary row, than column:\n";
     cin >> row >> column;
-    move( desk, row, column, count );
-    count++;
-    cout << "\nCount is: " << count << ", first move is:\n";
-    print( desk );
+    move( desk, row, column, count ); count++;
+    for( int a = 22; a <= 28; a += 2 )
+    {
         for (int i = 0; i < 8; i++)
         {
             for (int j = 0; j < 8; j++)
             {
-                if( desk[ i ][ j ] == 0 && count < 9 )
+                if( desk[ i ][ j ] == 0 && count <= 8 && accessibility[ i ][ j ] == a )
                 {
                     move( desk, i, j, count );
                     count++;
                 }
             }
         }
+    } 
     cout << "\nDesk is:\n";
     for ( int i = 0; i < 8; i++ )
     {
         for ( int j = 0; j < 8; j++ )
         {
             if( desk[ i ][ j ] >= 10 )
-            cout << setw( 2 ) << desk[ i ][ j ] / 10 << " ";
+            {
+                cout << setw( 2 ) << desk[ i ][ j ] / 10 << " ";
+                if( max < desk[ i ][ j ] / 10 )
+                max = desk[ i ][ j ] / 10;
+            }
             else
             cout << setw( 2 ) << 0 << " ";
         }
         cout << endl;
     }
+    cout << "There are " << max << " qeens on the desk.\n";
+    cout <<  max << "'s qween is on the ";
+    for (int i = 0; i < 8; i++)
+    {
+        for (int j = 0; j < count; j++)
+        {
+            if( desk[ i ][ j ] == max * 10 )
+            {
+                cout << i << " row, " << j << " column\n";
+            }
+        }
+        
+    }
+    cout << endl;
+    cout << "Project version is " << (PROJECT_VERSION_MAJOR) << '.' << (PROJECT_VERSION_MINOR) << '.';
+    cout << (PROJECT_VERSION_PATCH) << endl;
     return 0;
 }
 void access( int acc[ 8 ][ 8 ] )

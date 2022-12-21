@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter7/ex7_25eightQweens/build/CMakeFiles/7_25.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter7/ex7_25eightQweens/build/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter7/ex7_25eightQweens/build/CMakeFiles/rebuild_cache.dir
