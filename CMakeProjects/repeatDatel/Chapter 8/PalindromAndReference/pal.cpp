@@ -37,5 +37,8 @@ int main()
     cout << "Text is not palindrom.\n";
     else
     cout << "Text is palindrom.\n";
+    int &b = value;
+    b += 10;
+    cout << "\nValue is " << value << endl;
     return 0;
 }
