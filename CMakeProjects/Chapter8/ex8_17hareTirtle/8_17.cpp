@@ -12,6 +12,7 @@ int hare( int );
 void print( char [ 7 ][ 10 ] );
 int main()
 {
+    srand( time( 0 ) );
     char line[ 7 ][ 10 ] = { '.' };
     int hCount = 0, tCount = 0;//variables for keeping partner's location
     int tChoice, hChoice;
@@ -20,47 +21,53 @@ int main()
         for (int j = 0; j < 10; j++)
         {
             line[ i ][ j ] = '.';
-            cout << line[ i ][ j ] << ' ';
         }
-        cout << endl;
     }
-    while( tCount < 70 || hCount < 70 )
-    {
-        srand( time( 0 ) );
-        tChoice = rand()%9; hChoice = rand()%9;
-        tChoice = (tChoice < 0? 0: tChoice); hChoice = (hChoice < 0? 0: hChoice);
-        tCount += tirtle( tChoice ); hCount += hare( hChoice );
-        if( tCount == hCount )
-        {
-            for (int i = 0; i < 7; i++)
-            {
-                for (int j = 0; j < 10; j++)
-                {
-                    if( i == tCount / 10 && j == tCount % 10 )
-                    line[ i ][ j ] = '!';
-                    else
-                    line[ i ][ j ] = '.';
-                }
-            }
-        }
+    cout << "BANG !!!!! AND THE'RE OFF MM!\n";
+    tChoice = rand()%9;//first move
+    tCount += tirtle( tChoice );
+    tCount = ( tCount < 0? 0: tCount );
+    hChoice = rand()%9;
+    hCount += hare( hChoice );
+    hCount = (hCount < 0? 0: hCount );
+    if( tCount == hCount )
+        line[ tCount / 10 ][ tCount % 10 ] = '!';
         else
         {
-            for (int i = 0; i < 7; i++)
+            line[ tCount / 10 ][ tCount % 10 ] = 't';
+            line[ hCount / 10 ][ hCount % 10 ] = 'h';
+        }
+    print( line );
+    while( tCount < 70 && hCount < 70 )
+    {
+        for (int i = 0; i < 7; i++)
+        {
+            for (int j = 0; j < 10; j++)
             {
-                for (int j = 0; j < 10; j++)
-                {
-                    if( i == tCount / 10 && j == tCount % 10 )
-                    line[ i ][ j ] = 't';
-                    if( i == hCount / 10 && j == hCount % 10 )
-                    line[ i ][ j ] = 'h';
-                    else
-                    line[ i ][ j ] = '.';
-                }
+                line[ i ][ j ] = '.';
             }
         }
-        cout << "\ntirle's choice " << tChoice << " count " << tCount;
-        cout << "\nhare's choice " << hChoice << " count " << hCount << endl;
+        tChoice = rand()%9;
+        tCount += tirtle( tChoice );
+        tCount = ( tCount < 0? 0: tCount );
+        hChoice = rand()%9;
+        hCount += hare( hChoice );
+        hCount = (hCount < 0? 0: hCount );
+        if( tCount == hCount )
+        line[ tCount / 10 ][ tCount % 10 ] = '!';
+        else
+        {
+            if( tCount >= 70 )
+            line[ 6 ][ 9 ] = 't';
+            else
+            line[ tCount / 10 ][ tCount % 10 ] = 't';
+            if( hCount >= 70 )
+            line[ 6 ][ 9 ] = 'h';
+            else
+            line[ hCount / 10 ][ hCount % 10 ] = 'h';
+        }
         print( line );
+        
     }
 
     cout << "tCount is " << tCount << " hCount is " << hCount << endl;
