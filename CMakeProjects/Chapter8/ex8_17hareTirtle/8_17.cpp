@@ -1,3 +1,9 @@
+#ifdef WIN32
+#include <windows.h>
+using std::sleep;
+#else
+#include <unistd.h>
+#endif
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -54,7 +60,11 @@ int main()
         hCount += hare( hChoice );
         hCount = (hCount < 0? 0: hCount );
         if( tCount == hCount )
-        line[ tCount / 10 ][ tCount % 10 ] = '!';
+        {
+            line[ tCount / 10 ][ tCount % 10 ] = '!';
+            cout << "OUCH!!!\n";
+        }
+        
         else
         {
             if( tCount >= 70 )
@@ -67,10 +77,15 @@ int main()
             line[ hCount / 10 ][ hCount % 10 ] = 'h';
         }
         print( line );
-        
+        usleep( 1500 );// if we need to sleep for miliseconds
+        //sleep( 1 ); if we need to sleep for seconds
     }
-
-    cout << "tCount is " << tCount << " hCount is " << hCount << endl;
+    if( tCount >= 70 && hCount < 69 )
+    cout << "Turtle wins, way! With count " << tCount << endl;
+    if( hCount >= 70 && tCount < 69 )
+    cout << "Hare wins. Youch. With count " << hCount << endl;
+    if( tCount >= 70 && hCount > 70 )
+    cout << "It's draw.\n";
     return 0;
 }
 int tirtle( int number )
