@@ -1,6 +1,5 @@
 #ifdef WIN32
 #include <windows.h>
-using std::sleep;
 #else
 #include <unistd.h>
 #endif
@@ -13,6 +12,7 @@ using std::rand;
 using std::srand;
 #include <ctime>
 using std::time;
+#include "config.h"
 int tirtle( int );
 int hare( int );
 void print( char [ 7 ][ 10 ] );
@@ -77,7 +77,7 @@ int main()
             line[ hCount / 10 ][ hCount % 10 ] = 'h';
         }
         print( line );
-        usleep( 1500 );// if we need to sleep for miliseconds
+        usleep( 1000 );// if we need to sleep for miliseconds else there is usleep() function
         //sleep( 1 ); if we need to sleep for seconds
     }
     if( tCount >= 70 && hCount < 69 )
@@ -86,6 +86,9 @@ int main()
     cout << "Hare wins. Youch. With count " << hCount << endl;
     if( tCount >= 70 && hCount > 70 )
     cout << "It's draw.\n";
+
+    cout << "Project version is " << (PROJECT_VERSION_MAJOR) << '.' << (PROJECT_VERSION_MINOR) << '.';
+    cout << (PROJECT_VERSION_PATCH) << endl;
     return 0;
 }
 int tirtle( int number )

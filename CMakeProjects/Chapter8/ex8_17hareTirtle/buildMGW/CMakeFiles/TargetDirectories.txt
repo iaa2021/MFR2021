@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter8/ex8_17hareTirtle/buildMGW/CMakeFiles/8_17.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter8/ex8_17hareTirtle/buildMGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter8/ex8_17hareTirtle/buildMGW/CMakeFiles/rebuild_cache.dir
