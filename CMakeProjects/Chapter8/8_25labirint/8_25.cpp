@@ -45,17 +45,25 @@ int main()
     int horisontal[ 4 ] = { -1, 0, 0, 1 }, vertical[ 4 ] = {  0, -1, 1, 0 };//west, nord, south, east
     int hCorrection[ 4 ] = { 0, 1, -1, 0 }, vCorrection[ 4 ] = { -1, 0, 0, 1 };// right hand's correction
     int cR = curRow, cC = curColumn, count = 1;
+    for (size_t a = 0; a < 20; a++)
+    {
         for (int i = 0; i < 4; i++)
+    {
+        cR += vertical[ i ]; cC += horisontal[ i ];
+        if( lab[ cR ][ cC ] == '.' && intLab[ cR ][ cC ] == 0 )
         {
-            cR += vertical[ i ]; cC += horisontal[ i ];
-            if( intLab[ cR ][ cC ] == 0 && lab[ cR ][ cC ] == '.' )
-            {
-                moves.push_back( i );
-            }
-            cR = curRow; cC = curColumn;
+            lab[ curRow ][ curColumn ] = '.';
+            lab[ cR ][ cC ] = '0';
+            intLab[ cR ][ cC ] = 1;
+            curRow += vertical[ i ]; curColumn += horisontal[ i ];
+            break;
         }
-        cout <<  count << " move is \n";
-        print( lab ); print( intLab );
+        cR = curRow; cC = curColumn;
+    }
+    print( lab ); print( intLab );
+    }
+    
+    
     return 0;
 }
 template< class T >
