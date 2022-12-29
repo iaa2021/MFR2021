@@ -4,6 +4,8 @@ using std::cin;
 using std::endl;
 #include <iomanip>
 using std::setw;
+#include <vector>
+using std::vector;
 template< class T >
 void print( T [ 12 ][ 12] );
 int main()
@@ -37,32 +39,23 @@ int main()
     int curRow = 2, curColumn = 0;
     lab[ curRow ][ curColumn ] = '0';
     intLab[ curRow ][ curColumn ] = 1;
+    vector< int >moves;//move's variants
     cout << "First move \n";
     print( lab ); print( intLab );
     int horisontal[ 4 ] = { -1, 0, 0, 1 }, vertical[ 4 ] = {  0, -1, 1, 0 };//west, nord, south, east
     int hCorrection[ 4 ] = { 0, 1, -1, 0 }, vCorrection[ 4 ] = { -1, 0, 0, 1 };// right hand's correction
     int cR = curRow, cC = curColumn, count = 1;
-    for (int a = 0; a < 10; a++)
-    {
-        lab[ curRow ][ curColumn ] = '.';
         for (int i = 0; i < 4; i++)
         {
             cR += vertical[ i ]; cC += horisontal[ i ];
-            if( lab[ cR ][ cC ] == '.' && intLab[ cR ][ cC ] == 0 )
+            if( intLab[ cR ][ cC ] == 0 && lab[ cR ][ cC ] == '.' )
             {
-                curRow += vertical[ i ]; curColumn += horisontal[ i ];
-                lab[ curRow ][ curColumn ] = '0';
-                intLab[ curRow ][ curColumn ] = 1;
-                count++;
+                moves.push_back( i );
             }
-            else
-            {
-                cR = curRow; cC = curColumn;
-            }
+            cR = curRow; cC = curColumn;
         }
         cout <<  count << " move is \n";
         print( lab ); print( intLab );
-    }
     return 0;
 }
 template< class T >
