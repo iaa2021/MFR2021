@@ -18,6 +18,7 @@ using std::rand;
 using namespace std;
 template< class T >
 void print( T [ 12 ][ 12] );
+#include "config.h"
 int main()
 {
     char lab[ 12 ][ 12 ] = {
@@ -70,7 +71,7 @@ int main()
         {
             lab[ curRow ][ curColumn ] = '.';
             curRow += vertical[ moves.at( 0 ) ]; curColumn += horisontal[ moves.at( 0 ) ];
-            lab[ curRow ][ curColumn ] = '0'; intLab[ curRow ][ curColumn ] = 1;
+            lab[ curRow ][ curColumn ] = '@'; intLab[ curRow ][ curColumn ] = 1;
         }
         else
         {
@@ -81,24 +82,27 @@ int main()
                 if( cR == 4 && cC == 11 )
                 {
                     lab[ curRow ][ curColumn ] = '.';
-                    curRow += vertical[ moves.at( 0 ) ]; curColumn += horisontal[ moves.at( 0 ) ];
-                    lab[ curRow ][ curColumn ] = '0'; intLab[ curRow ][ curColumn ] = 1;
+                    curRow = cR; curColumn = cC;
+                    lab[ curRow ][ curColumn ] = '@'; intLab[ curRow ][ curColumn ] = 1;
                     cout << "\nGame over.\n"; break;
                 }
                 cR = curRow; cC = curColumn;
             }
-            int point = rand()%count;
-            lab[ curRow ][ curColumn ] = '.';
-            curRow += vertical[ point ]; curColumn += horisontal[ point ];
-            lab[ curRow ][ curColumn ] = '0'; intLab[ curRow ][ curColumn ] = 1;
+            if( cR != 4 && cC != 11 )
+            {
+                int point = rand()%count;
+                lab[ curRow ][ curColumn ] = '.';
+                curRow += vertical[ point ]; curColumn += horisontal[ point ];
+                lab[ curRow ][ curColumn ] = '@'; intLab[ curRow ][ curColumn ] = 1;
+            }
+            
         }
     sleep( 1 );
     print( lab ); 
-    if( count > 1 )
-    cout << endl << count << "  " << moves.size() << endl;
-
     count = 0; moves.clear();
     }
+    cout << "\nProject version is " << (PROJECT_VERSION_MAJOR) << '.' << (PROJECT_VERSION_MINOR) << '.';
+    cout << (PROJECT_VERSION_PATCH) << endl;
     return 0;
 }
 template< class T >
