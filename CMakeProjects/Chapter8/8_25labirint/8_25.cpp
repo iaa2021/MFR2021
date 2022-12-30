@@ -1,3 +1,10 @@
+#ifdef WIN32
+#include <windows.h>
+#else
+#include <unistd.h>
+#endif
+#include <chrono>
+
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -8,6 +15,7 @@ using std::setw;
 using std::vector;
 #include <cstdlib>
 using std::rand;
+using namespace std;
 template< class T >
 void print( T [ 12 ][ 12] );
 int main()
@@ -47,9 +55,9 @@ int main()
     int horisontal[ 4 ] = { -1, 0, 0, 1 }, vertical[ 4 ] = {  0, -1, 1, 0 };//west, nord, south, east
     int hCorrection[ 4 ] = { 0, 1, -1, 0 }, vCorrection[ 4 ] = { -1, 0, 0, 1 };// right hand's correction
     int cR = curRow, cC = curColumn, count = 0;
-    for (size_t a = 0; a < 25; a++)
+    for (size_t i = 0; i < 30; i++)
     {
-        for (int i = 0; i < 4; i++)//checking move's variants
+            for (int i = 0; i < 4; i++)//checking move's variants
     {
         cR += vertical[ i ]; cC += horisontal[ i ];
         if( lab[ cR ][ cC ] == '.' && intLab[ cR ][ cC ] == 0 )
@@ -71,14 +79,13 @@ int main()
             curRow += vertical[ point ]; curColumn += horisontal[ point ];
             lab[ curRow ][ curColumn ] = '0'; intLab[ curRow ][ curColumn ] = 1;
         }
-    print( lab ); print( intLab );
+    sleep( 1 );
+    print( lab ); 
     if( count > 1 )
     cout << endl << count << "  " << moves.size() << endl;
 
     count = 0; moves.clear();
     }
-    
-    
     return 0;
 }
 template< class T >
