@@ -6,6 +6,8 @@ using std::endl;
 using std::setw;
 #include <vector>
 using std::vector;
+#include <cstdlib>
+using std::rand;
 template< class T >
 void print( T [ 12 ][ 12] );
 int main()
@@ -44,23 +46,36 @@ int main()
     print( lab ); print( intLab );
     int horisontal[ 4 ] = { -1, 0, 0, 1 }, vertical[ 4 ] = {  0, -1, 1, 0 };//west, nord, south, east
     int hCorrection[ 4 ] = { 0, 1, -1, 0 }, vCorrection[ 4 ] = { -1, 0, 0, 1 };// right hand's correction
-    int cR = curRow, cC = curColumn, count = 1;
-    for (size_t a = 0; a < 20; a++)
+    int cR = curRow, cC = curColumn, count = 0;
+    for (size_t a = 0; a < 25; a++)
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)//checking move's variants
     {
         cR += vertical[ i ]; cC += horisontal[ i ];
         if( lab[ cR ][ cC ] == '.' && intLab[ cR ][ cC ] == 0 )
         {
-            lab[ curRow ][ curColumn ] = '.';
-            lab[ cR ][ cC ] = '0';
-            intLab[ cR ][ cC ] = 1;
-            curRow += vertical[ i ]; curColumn += horisontal[ i ];
-            break;
+            moves.push_back( i ); count++;
         }
         cR = curRow; cC = curColumn;
     }
+        if( count == 1 )// single move variant
+        {
+            lab[ curRow ][ curColumn ] = '.';
+            curRow += vertical[ moves.at( 0 ) ]; curColumn += horisontal[ moves.at( 0 ) ];
+            lab[ curRow ][ curColumn ] = '0'; intLab[ curRow ][ curColumn ] = 1;
+        }
+        else
+        {
+            int point = rand()%count;
+            lab[ curRow ][ curColumn ] = '.';
+            curRow += vertical[ point ]; curColumn += horisontal[ point ];
+            lab[ curRow ][ curColumn ] = '0'; intLab[ curRow ][ curColumn ] = 1;
+        }
     print( lab ); print( intLab );
+    if( count > 1 )
+    cout << endl << count << "  " << moves.size() << endl;
+
+    count = 0; moves.clear();
     }
     
     
