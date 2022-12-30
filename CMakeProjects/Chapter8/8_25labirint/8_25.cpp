@@ -74,6 +74,19 @@ int main()
         }
         else
         {
+            cR = curRow; cC = curColumn;
+            for (size_t i = 0; i < moves.size(); i++)
+            {
+                cR += vertical[ moves.at( i ) ]; cC += horisontal[ moves.at( i ) ];
+                if( cR == 4 && cC == 11 )
+                {
+                    lab[ curRow ][ curColumn ] = '.';
+                    curRow += vertical[ moves.at( 0 ) ]; curColumn += horisontal[ moves.at( 0 ) ];
+                    lab[ curRow ][ curColumn ] = '0'; intLab[ curRow ][ curColumn ] = 1;
+                    cout << "\nGame over.\n"; break;
+                }
+                cR = curRow; cC = curColumn;
+            }
             int point = rand()%count;
             lab[ curRow ][ curColumn ] = '.';
             curRow += vertical[ point ]; curColumn += horisontal[ point ];
