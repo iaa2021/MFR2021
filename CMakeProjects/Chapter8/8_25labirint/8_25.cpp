@@ -58,44 +58,30 @@ int main()
     int cR = curRow, cC = curColumn, count = 0;
     for (size_t i = 0; i < 30; i++)
     {
-            for (int i = 0; i < 4; i++)//checking move's variants
-    {
+        for (int i = 0; i < 4; i++)//checking move's variants
+        {
         cR += vertical[ i ]; cC += horisontal[ i ];
         if( lab[ cR ][ cC ] == '.' && intLab[ cR ][ cC ] == 0 )
         {
             moves.push_back( i ); count++;
         }
         cR = curRow; cC = curColumn;
-    }
+        }
         if( count == 1 )// single move variant
         {
             lab[ curRow ][ curColumn ] = '.';
             curRow += vertical[ moves.at( 0 ) ]; curColumn += horisontal[ moves.at( 0 ) ];
             lab[ curRow ][ curColumn ] = '@'; intLab[ curRow ][ curColumn ] = 1;
         }
-        else
+        else//multimove variant
         {
             cR = curRow; cC = curColumn;
-            for (size_t i = 0; i < moves.size(); i++)
-            {
-                cR += vertical[ moves.at( i ) ]; cC += horisontal[ moves.at( i ) ];
-                if( cR == 4 && cC == 11 )
-                {
-                    lab[ curRow ][ curColumn ] = '.';
-                    curRow = cR; curColumn = cC;
-                    lab[ curRow ][ curColumn ] = '@'; intLab[ curRow ][ curColumn ] = 1;
-                    cout << "\nGame over.\n"; break;
-                }
-                cR = curRow; cC = curColumn;
-            }
-            if( cR != 4 && cC != 11 )
-            {
-                int point = rand()%count;
-                lab[ curRow ][ curColumn ] = '.';
-                curRow += vertical[ point ]; curColumn += horisontal[ point ];
-                lab[ curRow ][ curColumn ] = '@'; intLab[ curRow ][ curColumn ] = 1;
-            }
-            
+            int point = rand()%count;
+            lab[ curRow ][ curColumn ] = '.';
+            curRow += vertical[ point ]; curColumn += horisontal[ point ];
+            lab[ curRow ][ curColumn ] = '@'; intLab[ curRow ][ curColumn ] = 1;
+            if( curRow == 4 && curColumn == 11 )
+            break;
         }
     sleep( 1 );
     print( lab ); 
