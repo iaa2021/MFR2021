@@ -15,6 +15,10 @@ using std::copy;
 using std::sort;
 #include <iterator>
 using std::ostream_iterator;
+#include <cctype>
+using std::tolower;
+#include <map>
+using std::map;
 #include "config.h"
 int main()
 {
@@ -37,6 +41,8 @@ int main()
     sort( v.begin(), v.end() );
     cout << "\nSorted vector is:\n";
     copy( v.begin(), v.end(), it );
-    cout << endl;
+    cout << endl << "Now handling ex8.41.\n";
+    string alphabet = "abcdefghijklmnopqrstuvwxyz";
+    map <char, int>frequency;
     return 0;
 }

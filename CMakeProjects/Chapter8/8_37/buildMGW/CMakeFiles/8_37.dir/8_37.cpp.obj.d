@@ -148,4 +148,13 @@ CMakeFiles/8_37.dir/8_37.cpp.obj: \
  c:\mingw\include\c++\11.2.0\bits\uniform_int_dist.h \
  c:\mingw\include\c++\11.2.0\iterator \
  c:\mingw\include\c++\11.2.0\bits\stream_iterator.h \
+ c:\mingw\include\c++\11.2.0\map \
+ c:\mingw\include\c++\11.2.0\bits\stl_tree.h \
+ c:\mingw\include\c++\11.2.0\ext\aligned_buffer.h \
+ c:\mingw\include\c++\11.2.0\bits\stl_map.h \
+ c:\mingw\include\c++\11.2.0\tuple c:\mingw\include\c++\11.2.0\array \
+ c:\mingw\include\c++\11.2.0\bits\uses_allocator.h \
+ c:\mingw\include\c++\11.2.0\bits\invoke.h \
+ c:\mingw\include\c++\11.2.0\bits\stl_multimap.h \
+ c:\mingw\include\c++\11.2.0\bits\erase_if.h \
  C:\Users\ivano\Desktop\gitStore\MFR2021\CMakeProjects\Chapter8\8_37\config.h
