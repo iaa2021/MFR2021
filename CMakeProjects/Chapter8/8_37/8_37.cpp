@@ -15,8 +15,11 @@ using std::copy;
 using std::sort;
 #include <iterator>
 using std::ostream_iterator;
+#include "config.h"
 int main()
 {
+    cout << "Project version is " << (PROJECT_VERSION_MAJOR) << '.';
+    cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
     string text; vector <string> v;
     cout << "Input city's names in list:\n";
     getline( cin, text );

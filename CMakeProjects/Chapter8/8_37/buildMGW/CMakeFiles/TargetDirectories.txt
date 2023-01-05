@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter8/8_37/buildMGW/CMakeFiles/8_37.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter8/8_37/buildMGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter8/8_37/buildMGW/CMakeFiles/rebuild_cache.dir
