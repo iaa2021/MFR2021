@@ -44,5 +44,21 @@ int main()
     cout << endl << "Now handling ex8.41.\n";
     string alphabet = "abcdefghijklmnopqrstuvwxyz";
     map <char, int>frequency;
+    int count = 0;
+    for (size_t i = 0; i < alphabet.size(); i++)
+    {
+        for (size_t j = 0; j < text.size(); j++)
+        {
+            if( alphabet.at( i ) == text.at( j ) )
+            count++;  
+        }
+        frequency.insert( { alphabet.at( i ), count } ) ;
+        count = 0;
+    }
+    cout << "\nLetter frequency is:\n";
+    for( auto item : frequency )
+    {
+        cout << item.first << "  " << item.second << endl;
+    }
     return 0;
 }
