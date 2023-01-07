@@ -92,7 +92,7 @@ cmpl_EXTERNAL_OBJECTS =
 
 src/cmpl.exe: src/CMakeFiles/cmpl.dir/9_5.cpp.obj
 src/cmpl.exe: src/CMakeFiles/cmpl.dir/build.make
-src/cmpl.exe: lib/liblib.a
+src/cmpl.exe: lib/libmyLib.a
 src/cmpl.exe: src/CMakeFiles/cmpl.dir/linklibs.rsp
 src/cmpl.exe: src/CMakeFiles/cmpl.dir/objects1.rsp
 src/cmpl.exe: src/CMakeFiles/cmpl.dir/link.txt

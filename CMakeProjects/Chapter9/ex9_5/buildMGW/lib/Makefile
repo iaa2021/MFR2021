@@ -116,18 +116,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-lib/CMakeFiles/lib.dir/rule:
-	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\buildMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/CMakeFiles/lib.dir/rule
-.PHONY : lib/CMakeFiles/lib.dir/rule
+lib/CMakeFiles/myLib.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\buildMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib/CMakeFiles/myLib.dir/rule
+.PHONY : lib/CMakeFiles/myLib.dir/rule
 
 # Convenience name for target.
-lib: lib/CMakeFiles/lib.dir/rule
-.PHONY : lib
+myLib: lib/CMakeFiles/myLib.dir/rule
+.PHONY : myLib
 
 # fast build rule for target.
-lib/fast:
-	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\buildMGW && $(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make lib/CMakeFiles/lib.dir/build
-.PHONY : lib/fast
+myLib/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\buildMGW && $(MAKE) $(MAKESILENT) -f lib\CMakeFiles\myLib.dir\build.make lib/CMakeFiles/myLib.dir/build
+.PHONY : myLib/fast
+
+Complex.obj: Complex.cpp.obj
+.PHONY : Complex.obj
+
+# target to build an object file
+Complex.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\buildMGW && $(MAKE) $(MAKESILENT) -f lib\CMakeFiles\myLib.dir\build.make lib/CMakeFiles/myLib.dir/Complex.cpp.obj
+.PHONY : Complex.cpp.obj
+
+Complex.i: Complex.cpp.i
+.PHONY : Complex.i
+
+# target to preprocess a source file
+Complex.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\buildMGW && $(MAKE) $(MAKESILENT) -f lib\CMakeFiles\myLib.dir\build.make lib/CMakeFiles/myLib.dir/Complex.cpp.i
+.PHONY : Complex.cpp.i
+
+Complex.s: Complex.cpp.s
+.PHONY : Complex.s
+
+# target to generate assembly for a file
+Complex.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\buildMGW && $(MAKE) $(MAKESILENT) -f lib\CMakeFiles\myLib.dir\build.make lib/CMakeFiles/myLib.dir/Complex.cpp.s
+.PHONY : Complex.cpp.s
 
 # Help Target
 help:
@@ -137,7 +161,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... lib
+	@echo ... myLib
+	@echo ... Complex.obj
+	@echo ... Complex.i
+	@echo ... Complex.s
 .PHONY : help
 
 

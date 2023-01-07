@@ -13,7 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_5/buildMGW/lib/CMakeFiles/lib.dir/DependInfo.cmake"
+  "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_5/buildMGW/lib/CMakeFiles/myLib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
