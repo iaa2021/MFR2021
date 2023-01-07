@@ -267,6 +267,15 @@ Library_IS_TOP_LEVEL:STATIC=OFF
 Library_SOURCE_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_5/lib
 
 //Value Computed by CMake
+cmpl_BINARY_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_5/buildMGW/src
+
+//Value Computed by CMake
+cmpl_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+cmpl_SOURCE_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_5/src
+
+//Value Computed by CMake
 complex_BINARY_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_5/buildMGW
 
 //Value Computed by CMake
@@ -274,6 +283,21 @@ complex_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 complex_SOURCE_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_5
+
+//Value Computed by CMake
+myLib_BINARY_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_5/buildMGW/lib
+
+//The directory containing a CMake configuration file for myLib.
+myLib_DIR:PATH=myLib_DIR-NOTFOUND
+
+//Value Computed by CMake
+myLib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+myLib_SOURCE_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_5/lib
+
+//The directory containing a CMake configuration file for sumLib.
+sumLib_DIR:PATH=sumLib_DIR-NOTFOUND
 
 
 ########################

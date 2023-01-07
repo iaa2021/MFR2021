@@ -1,6 +1,6 @@
-src/CMakeFiles/cmpl.dir/9_5.cpp.obj: \
- C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\src\9_5.cpp \
- c:\users\ivano\desktop\gitwatch\cmakeprojects\chapter9\ex9_5\lib\complex.h \
+lib/CMakeFiles/myLib.dir/Complex.cpp.obj: \
+ C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\lib\Complex.cpp \
+ C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter9\ex9_5\lib\Complex.h \
  c:\mingw\include\c++\11.2.0\iostream \
  c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++config.h \
  c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\os_defines.h \

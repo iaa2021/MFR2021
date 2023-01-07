@@ -116,17 +116,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lib
+# Target rules for targets named myLib
 
 # Build rule for target.
-lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lib
-.PHONY : lib
+myLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 myLib
+.PHONY : myLib
 
 # fast build rule for target.
-lib/fast:
-	$(MAKE) $(MAKESILENT) -f lib\CMakeFiles\lib.dir\build.make lib/CMakeFiles/lib.dir/build
-.PHONY : lib/fast
+myLib/fast:
+	$(MAKE) $(MAKESILENT) -f lib\CMakeFiles\myLib.dir\build.make lib/CMakeFiles/myLib.dir/build
+.PHONY : myLib/fast
 
 #=============================================================================
 # Target rules for targets named cmpl
@@ -150,7 +150,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... cmpl
-	@echo ... lib
+	@echo ... myLib
 .PHONY : help
 
 

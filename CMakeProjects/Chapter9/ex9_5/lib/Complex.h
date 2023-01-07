@@ -8,9 +8,9 @@ class Complex
 {
 public:
     Complex( double = 0, double = 0 );
-    void adding( Complex * );
-    void deduction( Complex * );
-    void setComplex();
+    void adding( Complex & );
+    void deduction( Complex & );
+    void setComplex( double, double );
 private:
     double real;
     double complex;   

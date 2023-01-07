@@ -22,7 +22,11 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for linking CXX static library.
 
+<<<<<<< HEAD
 rule CXX_STATIC_LIBRARY_LINKER__lib_Debug
+=======
+rule CXX_STATIC_LIBRARY_LINKER__myLib_Debug
+>>>>>>> temp
   command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\MinGW\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\MinGW\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
