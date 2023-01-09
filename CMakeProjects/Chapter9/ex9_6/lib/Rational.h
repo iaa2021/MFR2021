@@ -10,7 +10,6 @@ class Rational
 private:
     int numerator;
     int denominator;
-    int gcd( int, int );//greater common deleter
 public:
     Rational( int = 0, int = 0 );
     void adding( Rational & );
@@ -19,7 +18,7 @@ public:
     void division( Rational & );
     void setRational( int, int );
     void printVersion() const;
-    
+    int gcd( int, int );//greater common deleter
 };
 
 
