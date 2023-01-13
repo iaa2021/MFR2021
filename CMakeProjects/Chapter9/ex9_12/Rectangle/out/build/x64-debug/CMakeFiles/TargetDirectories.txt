@@ -1,0 +1,5 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/out/build/x64-debug/Rectangle/CMakeFiles/Rectangle.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/out/build/x64-debug/Rectangle/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/out/build/x64-debug/Rectangle/CMakeFiles/rebuild_cache.dir
