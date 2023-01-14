@@ -13,8 +13,10 @@
   },
   "ExpandedNodes": [
     "",
-    "\\lib"
+    "\\build",
+    "\\build\\src\\9_12.dir",
+    "\\build\\src\\9_12.dir\\Debug"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
+  "SelectedNode": "\\build\\Rectangle.sln",
   "PreviewInSolutionExplorer": false
 }
