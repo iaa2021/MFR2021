@@ -21,9 +21,16 @@ void hugeInteger::print() const
 }
 void hugeInteger::printResult() const
 {
+	int sum = 0;
 	for (int i = 0; i < 80; i++)
 	{
-		cout << result[i];
+		if(sum == 0)
+		{
+			sum += result[ i ];
+			cout <<' ';
+		}
+		else
+		cout << result[ i ];
 	}
 	cout << endl;
 }
@@ -57,17 +64,22 @@ void hugeInteger::comparison(hugeInteger& h) const
 }
 void hugeInteger::add(hugeInteger& h)
 {
-	for (int i = 40; i >= 0; i--)
+	int a = 39, b = 79, c;
+	while (a >= 0)
 	{
-		for (int j = 80; j >= 0; j--)
+		c = array[ a ] + h.array[ a ];
+		if( c < 10 )
 		{
-			if (result[j] + array[i] + h.array[i] < 10)
-				result[j] += array[i] + h.array[i];
-			else
-			{
-				result[j] += array[i] + h.array[i] - 10;
-				result[j + 1]++;
-			}
+			result[ b ] = c;
+			c = 0;
+			a--; b--;
+		}
+		else
+		{
+			result[ b ] += c - 10;
+			a--; b--;
+			result[ b ]++;
 		}
 	}
+	
 }
