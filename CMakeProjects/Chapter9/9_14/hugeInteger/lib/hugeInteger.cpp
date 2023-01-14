@@ -24,9 +24,9 @@ void hugeInteger::printResult() const
 	int sum = 0;
 	for (int i = 0; i < 80; i++)
 	{
+		sum += result[i];
 		if(sum == 0)
 		{
-			sum += result[ i ];
 			cout <<' ';
 		}
 		else
@@ -64,22 +64,17 @@ void hugeInteger::comparison(hugeInteger& h) const
 }
 void hugeInteger::add(hugeInteger& h)
 {
-	int a = 39, b = 79, c;
+	int a = 39, d = 79, c;
 	while (a >= 0)
 	{
-		c = array[ a ] + h.array[ a ];
-		if( c < 10 )
-		{
-			result[ b ] = c;
-			c = 0;
-			a--; b--;
-		}
+		c = result[d] + array[a] + h.array[a];
+		if (c < 10)
+			result[d] = c;
 		else
 		{
-			result[ b ] += c - 10;
-			a--; b--;
-			result[ b ]++;
+			result[d] = c - 10;
+			result[d - 1]++;
 		}
+		c = 0; d--; a--;
 	}
-	
 }
