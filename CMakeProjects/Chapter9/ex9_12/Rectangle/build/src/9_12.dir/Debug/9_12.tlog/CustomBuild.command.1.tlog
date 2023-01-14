@@ -1,0 +1,10 @@
+^C:\USERS\IVANO\DESKTOP\GITWATCH\CMAKEPROJECTS\CHAPTER9\EX9_12\RECTANGLE\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle -BC:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/build --check-stamp-file C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

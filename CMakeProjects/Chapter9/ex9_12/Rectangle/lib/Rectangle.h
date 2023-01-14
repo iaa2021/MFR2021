@@ -10,12 +10,13 @@ using std::endl;
 class Rectangle
 {
 public:
-	Rectangle(int[2][4]);
+	Rectangle();
 	bool setRectangle(int[2][4]);
-	int getWidth(int[2][4]);
-	int getLength(int[2][4]);
-	int area(int, int);
-	int perimeter(int, int);
+	void setWidth();
+	void setLength();
+	int area();
+	int perimeter();
+	void print();
 private:
 	int coordinats[2][4];
 	char field[20][20];
