@@ -78,3 +78,26 @@ void hugeInteger::add(hugeInteger& h)
 		c = 0; d--; a--;
 	}
 }
+void hugeInteger::subtract(hugeInteger& h)
+{
+	int a = 39, d = 79, c;
+	while (a >= 0)
+	{
+		c = array[a] - h.array[a];
+		if (c + result[d] >= 0)
+			result[d] += c;
+		else
+		{
+			result[d] += (10 + c);
+			result[d - 1]--;
+		}
+		c = 0; d--; a--;
+	}
+}
+void hugeInteger::clearResult()
+{
+	for (int i = 0; i < 80; i++)
+	{
+		result[i] = 0;
+	}
+}

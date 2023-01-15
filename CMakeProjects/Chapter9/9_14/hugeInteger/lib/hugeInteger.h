@@ -18,6 +18,8 @@ public:
 	void printVersion() const;
 	void comparison(hugeInteger&) const;
 	void add(hugeInteger&);
+	void subtract(hugeInteger&);
+	void clearResult();
 private:
 	int array[40];
 	int result[80];

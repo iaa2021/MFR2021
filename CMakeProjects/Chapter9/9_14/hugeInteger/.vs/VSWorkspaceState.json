@@ -12,10 +12,8 @@
     ]
   },
   "ExpandedNodes": [
-    "",
-    "\\lib",
-    "\\src"
+    ""
   ],
-  "SelectedNode": "\\lib\\hugeInteger.cpp",
+  "SelectedNode": "\\buildMGW",
   "PreviewInSolutionExplorer": false
 }

@@ -13,7 +13,11 @@ int main()
 	h1.print();
 	h.comparison(h1);
 	h.add(h1);
-	cout << "\nResult is:\n";
+	cout << "\nResult of adding is:\n";
+	h.printResult();
+	h.clearResult();
+	h.subtract(h1);
+	cout << "\nResult of substracting is:\n";
 	h.printResult();
 	cin.get();
 	return 0;
