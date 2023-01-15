@@ -67,12 +67,12 @@ void hugeInteger::add(hugeInteger& h)
 	int a = 39, d = 79, c;
 	while (a >= 0)
 	{
-		c = result[d] + array[a] + h.array[a];
-		if (c < 10)
-			result[d] = c;
+		c = array[a] + h.array[a];
+		if (c + result[d] < 10)
+			result[d] += c;
 		else
 		{
-			result[d] = c - 10;
+			result[d] += ( c - 10 );
 			result[d - 1]++;
 		}
 		c = 0; d--; a--;
