@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "lib",
+					"jsonFile" : "directory-lib-Debug-e9069484d90298468a11.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SavAcc"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "myLib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "10_8",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "10_8::@145eef247bfb46b6828c",
+					"jsonFile" : "target-10_8-Debug-b6ae4133deaee71e7c16.json",
+					"name" : "10_8",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "myLib::@306ed2d68c6501e8728f",
+					"jsonFile" : "target-myLib-Debug-ca1ac006051a9cd13799.json",
+					"name" : "myLib",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter10/ex10_8/10_8/out/build/x64-debug",
+		"source" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter10/ex10_8/10_8"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

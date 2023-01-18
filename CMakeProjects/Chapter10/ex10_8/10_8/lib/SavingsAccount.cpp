@@ -18,8 +18,8 @@ double SavingsAccount::calculateMonthlyInterest()
 	cout << "\nInput months for calculation of interest: ";
 	cin >> month;
 	cout << "\nDuring " << month << " months acc increased on ";
-	cout << savBalance * pow( ( 1 + ( static_cast<double>(interestRate) / 12 ) ), month ) - savBalance;
-	return savBalance * pow( ( 1 + ( static_cast<double>(interestRate) ) / 12 ), month );
+	cout << savBalance * pow( ( 1 + ( static_cast<double>(interestRate) / 1200 ) ), month ) - savBalance;
+	return savBalance * pow( ( 1 + ( static_cast<double>(interestRate) ) / 1200 ), month );
 }
 
 void SavingsAccount::modifyInterestRate()
