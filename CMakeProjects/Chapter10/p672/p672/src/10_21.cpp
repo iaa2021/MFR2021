@@ -5,9 +5,12 @@ using std::cout;
 using std::endl;
 int main()
 {
+	cout << "Project version is " << (PROJECT_VERSION_MAJOR) << '.';
+	cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
 	cout << "Number of employees before creating any objects: " << Employee::getCount() << endl;
 	Employee* ptr1; ptr1 = new Employee("Susan", "Baker");
 	Employee* ptr2; ptr2 = new Employee("John", "Smith");
+	ptr2->getVersion();
 	cout << "Number of employees after creating objects: " << ptr1 -> getCount() << endl;
 	cout << "\nEmployee1 is " << ptr1->getFirstName() << ", " << ptr1->getLastName() << endl;
 	cout << "\nEmployee2 is " << ptr2->getFirstName() << ", " << ptr2->getLastName() << endl;

@@ -13,8 +13,9 @@
   },
   "ExpandedNodes": [
     "",
-    "\\out"
+    "\\buildMGW",
+    "\\buildMGW\\src"
   ],
-  "SelectedNode": "\\buildMGW",
+  "SelectedNode": "\\buildMGW\\src\\10_21.exe",
   "PreviewInSolutionExplorer": false
 }
