@@ -86,3 +86,16 @@ void IntegerSet::getVersion()
     cout << "\nLibrary version is: " << (PROJECT_VERSION_MAJOR) << '.';
     cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH)<< endl;
 }
+void IntegerSet::isEqualTo( IntegerSet &h )
+{
+    int a = 0;
+    for (int i = 0; i < 100; i++)
+    {
+        if( array[ i ] != h.array[ i ] )
+        a = 1;
+    }
+    if( a == 0 )
+    cout << "\nArrays are equal.\n";
+    else
+    cout << "\nArrays are not equal.\n";
+}

@@ -14,5 +14,6 @@ int main()
     a2.print();
     a1.unionOfSets( a2 );
     a1.intersectionOfSets( a2 );
+    a1.isEqualTo( a2 );
     return 0;
 }

@@ -19,4 +19,5 @@ public:
     void intersectionOfSets( IntegerSet & );
     void print();
     void getVersion();
+    void isEqualTo( IntegerSet & );
 };
