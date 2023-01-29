@@ -1,0 +1,8 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p699/buildNinja/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p699/buildNinja/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p699/buildNinja/lib/CMakeFiles/myLib.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p699/buildNinja/lib/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p699/buildNinja/lib/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p699/buildNinja/src/CMakeFiles/699.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p699/buildNinja/src/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p699/buildNinja/src/CMakeFiles/rebuild_cache.dir
