@@ -3,6 +3,12 @@
 #include <iostream>
 using std::ostream;
 using std::istream;
+#include <cstdlib> // prototype exit function
+using std::exit;
+using std::rand;
+using std::srand;
+#include <ctime>
+using std::time;
 class Array
 {
 friend ostream &operator<<( ostream &, const Array & );

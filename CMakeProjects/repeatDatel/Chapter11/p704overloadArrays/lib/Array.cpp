@@ -7,6 +7,10 @@ using std::endl;
 using std::setw;
 #include <cstdlib> // prototype exit function
 using std::exit;
+using std::rand;
+using std::srand;
+#include <ctime>
+using std::time;
 #include "Array.h"
 #include "config.h"
 Array::Array( int arraySize )
@@ -21,6 +25,7 @@ Array::Array( int arraySize )
 Array::Array( const Array &arrayToCopy )
     : size( arrayToCopy.size )
 {
+    ptr = new int[ size ];
     for (int i = 0; i < size; i++)
     {
         ptr[ i ] = arrayToCopy.ptr[ i ];
@@ -81,7 +86,7 @@ ostream &operator<<( ostream &output, const Array &a )
     for (int i = 0; i < a.size; i++)
     {
         output << setw( 12 ) << a.ptr[ i ];
-        if( i % 4 == 0 )
+        if( ( i + 1 ) % 4 == 0 )
         output << endl;
     }
     output << endl;

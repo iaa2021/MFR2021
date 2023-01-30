@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.5 )
 
-project( 704 VERSION 4.5.6 )
+project( 704 VERSION 7.8.9 )
 
 configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 

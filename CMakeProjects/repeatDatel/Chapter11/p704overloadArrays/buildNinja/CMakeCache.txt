@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+704_BINARY_DIR:STATIC=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p704overloadArrays/buildNinja/src
+
+//Value Computed by CMake
+704_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+704_SOURCE_DIR:STATIC=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p704overloadArrays/src
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -232,6 +241,15 @@ arrayOverload_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 arrayOverload_SOURCE_DIR:STATIC=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p704overloadArrays
+
+//Value Computed by CMake
+myLib_BINARY_DIR:STATIC=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p704overloadArrays/buildNinja/lib
+
+//Value Computed by CMake
+myLib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+myLib_SOURCE_DIR:STATIC=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter11/p704overloadArrays/lib
 
 
 ########################
