@@ -44,10 +44,10 @@ bool Date::leapYear( int testYear ) const
 }
 bool Date::endOfMonth( int testDay ) const
 {
-    if( month == 2 && leapYear( year ) )
-    return testDay = 29;
-    else
-    return testDay = days[ month ];
+    if( month == 2 && leapYear( year )  )
+    return testDay == 29;
+    else 
+    return testDay == days[ month ];
 }
 void Date::helpIncrement()
 {
