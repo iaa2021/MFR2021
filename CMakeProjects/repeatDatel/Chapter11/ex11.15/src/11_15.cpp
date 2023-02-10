@@ -10,6 +10,6 @@ int main()
     cout << "Input nominator, than denominator, which must be greater than 0:\n";
     cin >> a >> b;
     r1.setRN( a, b );
-    cout << "RN1 is: " << r1.print();
+    cout << "RN1 is: "; r1.print();
     return 0;
 }

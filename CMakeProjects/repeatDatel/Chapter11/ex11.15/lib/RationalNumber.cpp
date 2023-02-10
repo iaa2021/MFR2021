@@ -1,4 +1,5 @@
 #include "RationalNumber.h"
+#include "config.h"
 RationalNumber::RationalNumber( int n, int d )
     : nominator( n ), denominator( d > 0 ? d : 1 )
 {
