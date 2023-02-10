@@ -12,10 +12,10 @@ RationalNumber::RationalNumber( int n, int d )
 }
 int RationalNumber::gcd( int a, int b )
 {
-    if( a == 0 )
-    return b;
+    if( b == 0 )
+    return a;
     else
-    return ( a%b, b );
+    return ( b, a%b );
 }
 void RationalNumber::getVersion() const
 {
@@ -25,7 +25,7 @@ void RationalNumber::getVersion() const
 void RationalNumber::setRN( int n, int d )
 {
     nominator = n;
-    denominator = ( d > 0 ? 1 : d ); 
+    denominator = ( d > 0 ? d : 1 ); 
     int a = gcd( nominator, denominator );
     if( a > 1 )
     {
