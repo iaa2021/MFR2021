@@ -10,6 +10,8 @@ target_include_directories( 11_17 PRIVATE ${CMAKE_CURRENT_BINARY_DIR} )
 
 target_include_directories( 11_17 PRIVATE . )
 
+target_include_directories( 11_17 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/../../lib )
+
 set_target_properties( myLib PROPERTIES
     CXX_STANDARD 11
     CXX_STANDARD_REQUIRED ON

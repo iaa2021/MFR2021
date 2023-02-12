@@ -4,6 +4,8 @@ project( myLib VERSION 2.3.4 )
 
 configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
+configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/../../lib )
+
 add_library( myLib STATIC Polinom.h Polinom.cpp )
 
 target_include_directories( myLib PRIVATE ${CMAKE_CURRENT_BINARY_DIR} )
