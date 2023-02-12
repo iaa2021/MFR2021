@@ -11,6 +11,9 @@ public:
     void setRN( int, int );
     void getVersion() const;
     void print();
+    RationalNumber operator+( const RationalNumber &);
+    RationalNumber operator-( const RationalNumber &);
+    RationalNumber operator*( const RationalNumber &);
 private:
     int nominator, denominator;
 };
