@@ -2,6 +2,7 @@
 Polinom::Polinom( int mp )
     : pw( mp >= 0? mp : 1 )
 {
+    volume = 0;
     srand( time( 0 ) );
     setPolinom( pw );
 }
@@ -30,8 +31,30 @@ void Polinom::print() const
         cout << this->ptr[ i ][ 1 ] << " * x" << this->ptr[ i ][ 0 ] << " + ";
     }
 }
-void Polinom::getVersion() const
+void Polinom::getVersion()
 {
-    cout << "\nLibrary version is: " << (PROJECT_VERSION_MAJOR) << '.';
+    cout << "Library version is: " << (PROJECT_VERSION_MAJOR) << '.';
     cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
+}
+Polinom Polinom::operator+( Polinom &pn )
+{
+    int min = this ->pw; int max = pn.pw; pn.volume = 1;
+    if( min > pn.pw )
+    {
+        min = pn.pw; max = this -> pw; this ->volume = 1; pn.volume = 0;
+    }
+    Polinom p( max );
+    for (int i = 0; i <= max; i++)
+    {
+        if( i <= min )
+        p.ptr[ i ][ 1 ] = this ->ptr[ i ][ 1 ] + pn.ptr[ i ][ 1 ];
+        else
+        {
+            if( pn.volume == 1 )
+            p.ptr[ i ][ 1 ] = pn.ptr[ i ][ 1 ];
+            else
+            p.ptr[ i ][ 1 ] = this ->ptr[ i ][ 1 ];
+        }
+    }
+    return p;
 }

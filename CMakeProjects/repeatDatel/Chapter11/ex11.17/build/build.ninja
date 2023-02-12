@@ -142,7 +142,7 @@ build cmake_object_order_depends_target_11_17: phony || cmake_object_order_depen
 build src/CMakeFiles/11_17.dir/11_17.cpp.obj: CXX_COMPILER__11_17_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter11/ex11.17/src/11_17.cpp || cmake_object_order_depends_target_11_17
   DEP_FILE = src\CMakeFiles\11_17.dir\11_17.cpp.obj.d
   FLAGS = -g
-  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter11/ex11.17/build/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter11/ex11.17/src/.
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter11/ex11.17/build/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter11/ex11.17/src/. -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter11/ex11.17/build/src/../../lib
   OBJECT_DIR = src\CMakeFiles\11_17.dir
   OBJECT_FILE_DIR = src\CMakeFiles\11_17.dir
 

@@ -14,9 +14,11 @@ public:
     Polinom( int = 1 );
     void setPolinom( int );
     void print() const;
-    void getVersion() const;
+    static void getVersion();
+    Polinom operator+( Polinom & );
 private:
     int pw;//pow
     int **ptr;
+    int volume;
 };
 

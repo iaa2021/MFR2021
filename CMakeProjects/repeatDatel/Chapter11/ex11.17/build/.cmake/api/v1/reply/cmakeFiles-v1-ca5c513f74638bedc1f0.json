@@ -152,6 +152,9 @@
 			"path" : "lib/config.h.in"
 		},
 		{
+			"path" : "lib/config.h.in"
+		},
+		{
 			"path" : "src/CMakeLists.txt"
 		},
 		{

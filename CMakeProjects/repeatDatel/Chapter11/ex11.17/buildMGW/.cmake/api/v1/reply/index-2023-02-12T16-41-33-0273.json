@@ -4,7 +4,7 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "Ninja"
+			"name" : "MinGW Makefiles"
 		},
 		"paths" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-71ad0afaf53b80c489f3.json",
+			"jsonFile" : "codemodel-v2-09c4018af49d8122b33e.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-be6941a150b848ec46ae.json",
+			"jsonFile" : "cache-v2-c019d8ca0423ac1b7ba2.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-c6a2b7efe126b6009eac.json",
+			"jsonFile" : "cmakeFiles-v1-fb0c3e6db1383c2b8a65.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -55,39 +55,6 @@
 	],
 	"reply" : 
 	{
-		"client-integration-vscode" : 
-		{
-			"cache-v2" : 
-			{
-				"jsonFile" : "cache-v2-be6941a150b848ec46ae.json",
-				"kind" : "cache",
-				"version" : 
-				{
-					"major" : 2,
-					"minor" : 0
-				}
-			},
-			"cmakeFiles-v1" : 
-			{
-				"jsonFile" : "cmakeFiles-v1-c6a2b7efe126b6009eac.json",
-				"kind" : "cmakeFiles",
-				"version" : 
-				{
-					"major" : 1,
-					"minor" : 0
-				}
-			},
-			"codemodel-v2" : 
-			{
-				"jsonFile" : "codemodel-v2-71ad0afaf53b80c489f3.json",
-				"kind" : "codemodel",
-				"version" : 
-				{
-					"major" : 2,
-					"minor" : 4
-				}
-			}
-		},
 		"client-vscode-cmake-lite" : 
 		{
 			"query.json" : 
@@ -125,7 +92,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "codemodel-v2-71ad0afaf53b80c489f3.json",
+						"jsonFile" : "codemodel-v2-09c4018af49d8122b33e.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
@@ -134,7 +101,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cache-v2-be6941a150b848ec46ae.json",
+						"jsonFile" : "cache-v2-c019d8ca0423ac1b7ba2.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -143,7 +110,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-c6a2b7efe126b6009eac.json",
+						"jsonFile" : "cmakeFiles-v1-fb0c3e6db1383c2b8a65.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{
