@@ -49,6 +49,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/config.h"
+  "../lib/config.h"
   "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/config.h"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
