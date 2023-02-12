@@ -12,12 +12,10 @@ RationalNumber::RationalNumber( int n, int d )
 }
 int RationalNumber::gcd( int a, int b )
 {
-<<<<<<< HEAD
     if( b == 0 )
     return a;
     else
     return ( b, a%b );
-=======
     int min = ( a < b ? a : b );
     int d = 1;
     for (int i = 1; i <= min; i++)
@@ -26,7 +24,6 @@ int RationalNumber::gcd( int a, int b )
         d = i;
     }
     return d;
->>>>>>> 6e34fd9 (ex11.15 is handling)
 }
 void RationalNumber::getVersion() const
 {
