@@ -10,12 +10,12 @@ public:
     int gcd( int, int );
     void setRN( int, int );
     void getVersion() const;
-    void print();
+    void print() const;
     RationalNumber operator+( const RationalNumber &);
     RationalNumber operator-( const RationalNumber &);
     RationalNumber operator*( const RationalNumber &);
+    RationalNumber operator/( const RationalNumber &);
+    void compareRN( const RationalNumber & );
 private:
     int nominator, denominator;
 };
-
-

@@ -17,6 +17,7 @@ int main()
     r2.setRN( a, b );
     cout << "RN2 is: "; r2.print();
     cout << endl;
+    r1.compareRN( r2 );
     r3 = r1 + r2;
     r1.print(); cout << " + "; r2.print(); cout << " = "; r3.print();
     cout << endl;
@@ -25,6 +26,9 @@ int main()
     cout << endl;
     r3 = r1 * r2;
     r1.print(); cout << " * "; r2.print(); cout << " = "; r3.print();
+    cout << endl;
+    r3 = r1 / r2;
+    r1.print(); cout << " / "; r2.print(); cout << " = "; r3.print();
     cout << endl;
     return 0;
 }
