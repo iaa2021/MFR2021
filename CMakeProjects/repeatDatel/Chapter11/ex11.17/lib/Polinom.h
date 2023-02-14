@@ -16,9 +16,10 @@ public:
     void print() const;
     static void getVersion();
     Polinom operator+( Polinom & );
+    Polinom operator-( Polinom & );
 private:
     int pw;//pow
-    int **ptr;
-    int volume;
+    int **ptr;//2 dimensional array
+    int volume;//means bigger number of members
 };
 

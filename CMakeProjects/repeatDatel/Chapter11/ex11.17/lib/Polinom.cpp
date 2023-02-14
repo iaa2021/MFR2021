@@ -24,9 +24,9 @@ void Polinom::print() const
     for (int i = this ->pw; i >= 0; i--)
     {
         if( i == 0 )
-        cout << this ->ptr[ i ][ 1 ] << endl;
+        cout << this ->ptr[ i ][ 1 ] << endl;//end of polinom
         else if( i == 1 )
-        cout << this->ptr[ i ][ 1 ] << " * x" << " + ";
+        cout << this->ptr[ i ][ 1 ] << " * x" << " + ";//if x in pow 1, just x
         else
         cout << this->ptr[ i ][ 1 ] << " * x" << this->ptr[ i ][ 0 ] << " + ";
     }
@@ -52,6 +52,28 @@ Polinom Polinom::operator+( Polinom &pn )
         {
             if( pn.volume == 1 )
             p.ptr[ i ][ 1 ] = pn.ptr[ i ][ 1 ];
+            else
+            p.ptr[ i ][ 1 ] = this ->ptr[ i ][ 1 ];
+        }
+    }
+    return p;
+}
+Polinom Polinom::operator-( Polinom &pn )
+{
+    int min = this ->pw; int max = pn.pw; pn.volume = 1;
+    if( min > pn.pw )
+    {
+        min = pn.pw; max = this -> pw; this ->volume = 1; pn.volume = 0;
+    }
+    Polinom p( max );
+    for (int i = 0; i <= max; i++)
+    {
+        if( i <= min )
+        p.ptr[ i ][ 1 ] = this ->ptr[ i ][ 1 ] - pn.ptr[ i ][ 1 ];
+        else
+        {
+            if( pn.volume == 1 )
+            p.ptr[ i ][ 1 ] = -1 * pn.ptr[ i ][ 1 ];
             else
             p.ptr[ i ][ 1 ] = this ->ptr[ i ][ 1 ];
         }

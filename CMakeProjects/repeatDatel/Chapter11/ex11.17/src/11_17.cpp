@@ -16,5 +16,8 @@ int main()
     p3 = p1 + p2;
     cout << "\nPolinom1 + polinom2 =\n";
     p3.print();
+    p3 = p1 - p2;
+    cout << "\nPolinom1 - polinom2 =\n";
+    p3.print();
     return 0;
 }
