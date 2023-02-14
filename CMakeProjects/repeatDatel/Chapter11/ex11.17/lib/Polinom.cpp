@@ -100,3 +100,79 @@ void Polinom::operator=( Polinom &pn )
         this ->ptr[ i ][ 1 ] = pn.ptr[ i ][ 1 ];
     }
 }
+void Polinom::operator+=( Polinom &pn )
+{
+    int min = this ->pw; int max = pn.pw; pn.volume = 1;
+    if( min > pn.pw )
+    {
+        min = pn.pw; max = this -> pw; this ->volume = 1; pn.volume = 0;
+    }
+    Polinom p( max );
+    for (int i = 0; i <= max; i++)
+    {
+        if( i <= min )
+        p.ptr[ i ][ 1 ] = this ->ptr[ i ][ 1 ] + pn.ptr[ i ][ 1 ];
+        else
+        {
+            if( pn.volume == 1 )
+            p.ptr[ i ][ 1 ] = pn.ptr[ i ][ 1 ];
+            else
+            p.ptr[ i ][ 1 ] = this ->ptr[ i ][ 1 ];
+        }
+    }
+    if( this ->pw != p.pw )
+    {
+        for (int i = 0; i <= this ->pw; i++)
+        {
+            delete [] ptr[ i ];
+        }
+        ptr = new int*[ p.pw ];
+        for (int i = 0; i <= p.pw; i++)
+        {
+            ptr[ i ] = new int[ 2 ];
+        }
+    }
+    for (int i = 0; i <= this ->pw; i++)
+    {
+        this ->ptr[ i ][ 0 ] = p.ptr[ i ][ 0 ];
+        this ->ptr[ i ][ 1 ] = p.ptr[ i ][ 1 ];
+    }
+}
+void Polinom::operator-=( Polinom &pn )
+{
+    int min = this ->pw; int max = pn.pw; pn.volume = 1;
+    if( min > pn.pw )
+    {
+        min = pn.pw; max = this -> pw; this ->volume = 1; pn.volume = 0;
+    }
+    Polinom p( max );
+    for (int i = 0; i <= max; i++)
+    {
+        if( i <= min )
+        p.ptr[ i ][ 1 ] = this ->ptr[ i ][ 1 ] - pn.ptr[ i ][ 1 ];
+        else
+        {
+            if( pn.volume == 1 )
+            p.ptr[ i ][ 1 ] = -1 * pn.ptr[ i ][ 1 ];
+            else
+            p.ptr[ i ][ 1 ] = this ->ptr[ i ][ 1 ];
+        }
+    }
+    if( this ->pw != p.pw )
+    {
+        for (int i = 0; i <= this ->pw; i++)
+        {
+            delete [] ptr[ i ];
+        }
+        ptr = new int*[ p.pw ];
+        for (int i = 0; i <= p.pw; i++)
+        {
+            ptr[ i ] = new int[ 2 ];
+        }
+    }
+    for (int i = 0; i <= this ->pw; i++)
+    {
+        this ->ptr[ i ][ 0 ] = p.ptr[ i ][ 0 ];
+        this ->ptr[ i ][ 1 ] = p.ptr[ i ][ 1 ];
+    }
+}

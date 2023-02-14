@@ -19,5 +19,11 @@ int main()
     p1 = p2;
     cout << "\nPolinom1 = polinom2\n";
     p1.print();
+    cout << "\nPolinom1 += polinom2:\n";
+    p1 += p2;
+    p1.print();
+    cout << "\nPolinom1 -= polinom2:\n";
+    p1 -= p2;
+    p1.print();
     return 0;
 }

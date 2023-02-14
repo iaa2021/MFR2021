@@ -18,6 +18,8 @@ public:
     Polinom operator+( Polinom & );
     Polinom operator-( Polinom & );
     void operator=( Polinom & );
+    void operator+=( Polinom & );
+    void operator-=( Polinom & );
 private:
     int pw;//pow
     int **ptr;//2 dimensional array
