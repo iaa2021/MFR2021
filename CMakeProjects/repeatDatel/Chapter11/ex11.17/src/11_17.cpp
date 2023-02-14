@@ -12,12 +12,12 @@ int main()
     cout << "Input maximum pow for polinom: "; cin >> a;
     Polinom p2( a );
     p2.print();
-    Polinom p3;
-    p3 = p1 + p2;
     cout << "\nPolinom1 + polinom2 =\n";
-    p3.print();
-    p3 = p1 - p2;
+    (p1 + p2).print();
     cout << "\nPolinom1 - polinom2 =\n";
-    p3.print();
+    (p1 - p2).print();
+    p1 = p2;
+    cout << "\nPolinom1 = polinom2\n";
+    p1.print();
     return 0;
 }

@@ -24,7 +24,7 @@ void Polinom::print() const
     for (int i = this ->pw; i >= 0; i--)
     {
         if( i == 0 )
-        cout << this ->ptr[ i ][ 1 ] << endl;//end of polinom
+        cout << this ->ptr[ i ][ 1 ] << endl;//end of polinom, x in pow 0
         else if( i == 1 )
         cout << this->ptr[ i ][ 1 ] << " * x" << " + ";//if x in pow 1, just x
         else
@@ -79,4 +79,24 @@ Polinom Polinom::operator-( Polinom &pn )
         }
     }
     return p;
+}
+void Polinom::operator=( Polinom &pn )
+{
+    if( this ->pw != pn.pw )//different sizes of arrays
+    {
+        for (int i = 0; i <= this ->pw; i++)
+        {
+            delete [] ptr[ i ];
+        }
+        ptr = new int*[ pn.pw ];
+        for (int i = 0; i <= pn.pw; i++)
+        {
+            ptr[ i ] = new int[ 2 ];
+        }
+    }
+    for (int i = 0; i <= pn.pw; i++)
+    {
+        this ->ptr[ i ][ 0 ] = pn.ptr[ i ][ 0 ];
+        this ->ptr[ i ][ 1 ] = pn.ptr[ i ][ 1 ];
+    }
 }
