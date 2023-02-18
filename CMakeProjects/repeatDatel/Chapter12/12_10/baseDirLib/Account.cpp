@@ -21,7 +21,10 @@ void Account::creditAcc( double c )
     if( c > balance )
     cout << "Debit amount exceeds account balance." << endl;
     else
-    balance -= c;
+    {
+        balance -= c;
+        cout << "\nNew balance is: " << balance << endl;
+    }
 }
 void Account::getVersion()
 {

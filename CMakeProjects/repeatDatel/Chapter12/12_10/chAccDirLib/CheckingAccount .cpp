@@ -17,7 +17,7 @@ void CheckingAccount::credit(double c)
 void CheckingAccount::debit(double d)
 {
     cout << "\nTransaction payment is: " << ( ( trPay * d ) + 0.15 ) << "$\n";
-    balance += ( d - ( ( trPay * c ) + 0.15 ) );
+    balance += ( d - ( ( trPay * d ) + 0.15 ) );
     cout << "New balance is: " << balance << endl;
 }
 void CheckingAccount::getVersion()

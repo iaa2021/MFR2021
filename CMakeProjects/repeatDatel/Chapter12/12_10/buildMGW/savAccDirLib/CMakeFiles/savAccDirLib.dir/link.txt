@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libsavAccDirLib.a CMakeFiles/savAccDirLib.dir/SavingAccount.cpp.obj
+C:\MinGW\bin\ranlib.exe libsavAccDirLib.a

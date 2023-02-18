@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libbaseDirLib.a CMakeFiles/baseDirLib.dir/Account.cpp.obj
+C:\MinGW\bin\ranlib.exe libbaseDirLib.a

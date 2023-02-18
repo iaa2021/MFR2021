@@ -29,5 +29,6 @@ void SavingAccount::debit(double d)
 }
 void SavingAccount::getVersion()
 {
-    Account::getVersion();
+    cout << "SavingAccount library version is: " << (PROJECT_VERSION_MAJOR) << '.';
+    cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
 }
