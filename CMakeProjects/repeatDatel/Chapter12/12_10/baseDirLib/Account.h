@@ -14,12 +14,10 @@ class Account
 public:
     Account( double = 0 );
     void setBalance( double );
-    double getBalance( double );
-    void debit( double );//to put money into the account
-    void credit( double );//cash withdrawal
+    double getBalance() const;
+    void debitAcc();//to put money into the account
+    void creditAcc();//cash withdrawal
 private:
     double balance;
-    double credit;
-    double debit;
 };
 #endif
