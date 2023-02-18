@@ -9,14 +9,18 @@ using std::fixed;
 #include <iomanip>
 using std::setprecision;
 using std::setw;
+#include <cmath>
+using std::pow;
+#include "config.h"
 class Account
 {
 public:
     Account( double = 0 );
     void setBalance( double );
     double getBalance() const;
-    void debitAcc();//to put money into the account
-    void creditAcc();//cash withdrawal
+    void debitAcc(double);//to put money into the account
+    void creditAcc(double);//cash withdrawal
+    static void getVersion();
 private:
     double balance;
 };

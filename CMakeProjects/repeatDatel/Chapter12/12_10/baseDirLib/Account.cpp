@@ -12,13 +12,19 @@ double Account::getBalance() const
 {
     return balance;
 }
-void Account::debitAcc()
+void Account::debitAcc( double d )
 {
-    double d;
-    cout << "\nInput debit sum, i.e. sum, you'd like to put onto account:\n";
-    cin >> d;
     balance += d;
 }
-Account::~Account()
+void Account::creditAcc( double c )
 {
+    if( c > balance )
+    cout << "Debit amount exceeds account balance." << endl;
+    else
+    balance -= c;
+}
+void Account::getVersion()
+{
+    cout << "Account library version is: " << (PROJECT_VERSION_MAJOR) << '.';
+    cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
 }

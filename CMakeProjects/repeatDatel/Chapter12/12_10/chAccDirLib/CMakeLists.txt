@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.5 )
 
-project( chAccDirLib VERSION 2.3.4 )
+project( chAccDirLib VERSION 4.5.6 )
 
 configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
@@ -14,8 +14,8 @@ set_target_properties( chAccDirLib PROPERTIES
 
 target_include_directories( chAccDirLib PRIVATE ${CMAKE_CURRENT_BINARY_DIR} )
 
-target_link_directories( chAccDirLib PRIVATE ./../baseDirLib )
+target_include_directories( chAccDirLib PRIVATE ./../baseDirLib )
 
-target_include_directories( chAccDirLib PRIVATE . )
+target_include_directories( chAccDirLib PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} )
 
 target_link_libraries( chAccDirLib baseDirLib )

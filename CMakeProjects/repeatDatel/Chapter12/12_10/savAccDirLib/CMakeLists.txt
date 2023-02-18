@@ -14,8 +14,8 @@ set_target_properties( savAccDirLib PROPERTIES
 
 target_include_directories( savAccDirLib PRIVATE ${CMAKE_CURRENT_BINARY_DIR} )
 
-target_link_directories( savAccDirLib PRIVATE ./../baseDirLib )
+target_include_directories( savAccDirLib PRIVATE ./../baseDirLib )
 
-target_include_directories( chAccDirLib PRIVATE . )
+target_include_directories( savAccDirLib PRIVATE . )
 
 target_link_libraries( savAccDirLib baseDirLib )

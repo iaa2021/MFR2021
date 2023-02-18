@@ -13,5 +13,3 @@ set_target_properties( baseDirLib PROPERTIES
 )
 
 target_include_directories( baseDirLib PRIVATE ${CMAKE_CURRENT_BINARY_DIR} )
-
-target_link_directories( baseDirLib . )
