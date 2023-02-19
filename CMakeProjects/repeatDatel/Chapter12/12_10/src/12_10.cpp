@@ -9,6 +9,7 @@ int main()
     cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
     Account::getVersion();
     SavingAccount::getVersion();
+    CheckingAccount::getVersion();
     Account a( 2250 );
     cout << "Base acc balance is " << a.getBalance() << "$.\n";
     double sum;

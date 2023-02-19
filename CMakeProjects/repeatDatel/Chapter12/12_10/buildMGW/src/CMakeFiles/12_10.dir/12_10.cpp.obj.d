@@ -148,4 +148,5 @@ src/CMakeFiles/12_10.dir/12_10.cpp.obj: \
  c:\mingw\include\c++\11.2.0\cmath \
  c:\mingw\x86_64-w64-mingw32\include\math.h \
  C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/buildMGW/src/config.h \
- c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter12\12_10\savaccdirlib\savingaccount.h
+ c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter12\12_10\savaccdirlib\savingaccount.h \
+ c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter12\12_10\chaccdirlib\checkingaccount.h

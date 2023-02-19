@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libchAccDirLib.a CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj
+C:\MinGW\bin\ranlib.exe libchAccDirLib.a

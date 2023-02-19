@@ -63,18 +63,21 @@ CMAKE_BINARY_DIR = C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Cha
 
 # The main recursive "all" target.
 all: baseDirLib/all
+all: chAccDirLib/all
 all: savAccDirLib/all
 all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: baseDirLib/preinstall
+preinstall: chAccDirLib/preinstall
 preinstall: savAccDirLib/preinstall
 preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: baseDirLib/clean
+clean: chAccDirLib/clean
 clean: savAccDirLib/clean
 clean: src/clean
 .PHONY : clean
@@ -93,6 +96,21 @@ baseDirLib/preinstall:
 # Recursive "clean" directory target.
 baseDirLib/clean: baseDirLib/CMakeFiles/baseDirLib.dir/clean
 .PHONY : baseDirLib/clean
+
+#=============================================================================
+# Directory level rules for directory chAccDirLib
+
+# Recursive "all" directory target.
+chAccDirLib/all: chAccDirLib/CMakeFiles/chAccDirLib.dir/all
+.PHONY : chAccDirLib/all
+
+# Recursive "preinstall" directory target.
+chAccDirLib/preinstall:
+.PHONY : chAccDirLib/preinstall
+
+# Recursive "clean" directory target.
+chAccDirLib/clean: chAccDirLib/CMakeFiles/chAccDirLib.dir/clean
+.PHONY : chAccDirLib/clean
 
 #=============================================================================
 # Directory level rules for directory savAccDirLib
@@ -151,13 +169,39 @@ baseDirLib/CMakeFiles/baseDirLib.dir/clean:
 .PHONY : baseDirLib/CMakeFiles/baseDirLib.dir/clean
 
 #=============================================================================
+# Target rules for target chAccDirLib/CMakeFiles/chAccDirLib.dir
+
+# All Build rule for target.
+chAccDirLib/CMakeFiles/chAccDirLib.dir/all: baseDirLib/CMakeFiles/baseDirLib.dir/all
+	$(MAKE) $(MAKESILENT) -f chAccDirLib\CMakeFiles\chAccDirLib.dir\build.make chAccDirLib/CMakeFiles/chAccDirLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f chAccDirLib\CMakeFiles\chAccDirLib.dir\build.make chAccDirLib/CMakeFiles/chAccDirLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter12\12_10\buildMGW\CMakeFiles --progress-num=5,6 "Built target chAccDirLib"
+.PHONY : chAccDirLib/CMakeFiles/chAccDirLib.dir/all
+
+# Build rule for subdir invocation for target.
+chAccDirLib/CMakeFiles/chAccDirLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter12\12_10\buildMGW\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 chAccDirLib/CMakeFiles/chAccDirLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter12\12_10\buildMGW\CMakeFiles 0
+.PHONY : chAccDirLib/CMakeFiles/chAccDirLib.dir/rule
+
+# Convenience name for target.
+chAccDirLib: chAccDirLib/CMakeFiles/chAccDirLib.dir/rule
+.PHONY : chAccDirLib
+
+# clean rule for target.
+chAccDirLib/CMakeFiles/chAccDirLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f chAccDirLib\CMakeFiles\chAccDirLib.dir\build.make chAccDirLib/CMakeFiles/chAccDirLib.dir/clean
+.PHONY : chAccDirLib/CMakeFiles/chAccDirLib.dir/clean
+
+#=============================================================================
 # Target rules for target savAccDirLib/CMakeFiles/savAccDirLib.dir
 
 # All Build rule for target.
 savAccDirLib/CMakeFiles/savAccDirLib.dir/all: baseDirLib/CMakeFiles/baseDirLib.dir/all
 	$(MAKE) $(MAKESILENT) -f savAccDirLib\CMakeFiles\savAccDirLib.dir\build.make savAccDirLib/CMakeFiles/savAccDirLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f savAccDirLib\CMakeFiles\savAccDirLib.dir\build.make savAccDirLib/CMakeFiles/savAccDirLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter12\12_10\buildMGW\CMakeFiles --progress-num=5,6 "Built target savAccDirLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter12\12_10\buildMGW\CMakeFiles --progress-num=7,8 "Built target savAccDirLib"
 .PHONY : savAccDirLib/CMakeFiles/savAccDirLib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -181,6 +225,7 @@ savAccDirLib/CMakeFiles/savAccDirLib.dir/clean:
 
 # All Build rule for target.
 src/CMakeFiles/12_10.dir/all: baseDirLib/CMakeFiles/baseDirLib.dir/all
+src/CMakeFiles/12_10.dir/all: chAccDirLib/CMakeFiles/chAccDirLib.dir/all
 src/CMakeFiles/12_10.dir/all: savAccDirLib/CMakeFiles/savAccDirLib.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\12_10.dir\build.make src/CMakeFiles/12_10.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\12_10.dir\build.make src/CMakeFiles/12_10.dir/build
@@ -189,7 +234,7 @@ src/CMakeFiles/12_10.dir/all: savAccDirLib/CMakeFiles/savAccDirLib.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/12_10.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter12\12_10\buildMGW\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter12\12_10\buildMGW\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/12_10.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter12\12_10\buildMGW\CMakeFiles 0
 .PHONY : src/CMakeFiles/12_10.dir/rule

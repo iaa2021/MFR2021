@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/buildMGW/baseDirLib/CMakeFiles/baseDirLib.dir/DependInfo.cmake"
+  "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/buildMGW/chAccDirLib/CMakeFiles/chAccDirLib.dir/DependInfo.cmake"
   "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/buildMGW/savAccDirLib/CMakeFiles/savAccDirLib.dir/DependInfo.cmake"
   )
 

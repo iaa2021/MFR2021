@@ -93,6 +93,7 @@ src/CMakeFiles/12_10.dir/12_10.cpp.s: cmake_force
 src/12_10.exe: src/CMakeFiles/12_10.dir/12_10.cpp.obj
 src/12_10.exe: src/CMakeFiles/12_10.dir/build.make
 src/12_10.exe: baseDirLib/libbaseDirLib.a
+src/12_10.exe: chAccDirLib/libchAccDirLib.a
 src/12_10.exe: savAccDirLib/libsavAccDirLib.a
 src/12_10.exe: baseDirLib/libbaseDirLib.a
 src/12_10.exe: src/CMakeFiles/12_10.dir/linklibs.rsp

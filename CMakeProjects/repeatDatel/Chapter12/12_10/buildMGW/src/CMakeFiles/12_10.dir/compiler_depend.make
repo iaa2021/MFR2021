@@ -154,7 +154,8 @@ src/CMakeFiles/12_10.dir/12_10.cpp.obj: ../src/12_10.cpp \
   C:/MinGW/include/c++/11.2.0/cmath \
   C:/MinGW/x86_64-w64-mingw32/include/math.h \
   src/config.h \
-  ../savAccDirLib/SavingAccount.h
+  ../savAccDirLib/SavingAccount.h \
+  ../chAccDirLib/CheckingAccount.h
 
 
 C:/MinGW/include/c++/11.2.0/ios:
@@ -392,6 +393,8 @@ C:/MinGW/include/c++/11.2.0/bits/basic_ios.tcc:
 C:/MinGW/x86_64-w64-mingw32/include/stdlib.h:
 
 C:/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+../chAccDirLib/CheckingAccount.h:
 
 C:/MinGW/include/c++/11.2.0/stdlib.h:
 

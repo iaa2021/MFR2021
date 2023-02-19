@@ -28,7 +28,8 @@ void CheckingAccount::debit(double d)
 }
 void CheckingAccount::getVersion()
 {
-    Account::getVersion();
+    cout << "CheckingAccount library version is: " << (PROJECT_VERSION_MAJOR) << '.';
+    cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
 }
 double CheckingAccount::getPay() const
 {

@@ -129,6 +129,19 @@ baseDirLib/fast:
 .PHONY : baseDirLib/fast
 
 #=============================================================================
+# Target rules for targets named chAccDirLib
+
+# Build rule for target.
+chAccDirLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 chAccDirLib
+.PHONY : chAccDirLib
+
+# fast build rule for target.
+chAccDirLib/fast:
+	$(MAKE) $(MAKESILENT) -f chAccDirLib\CMakeFiles\chAccDirLib.dir\build.make chAccDirLib/CMakeFiles/chAccDirLib.dir/build
+.PHONY : chAccDirLib/fast
+
+#=============================================================================
 # Target rules for targets named savAccDirLib
 
 # Build rule for target.
@@ -164,6 +177,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... 12_10
 	@echo ... baseDirLib
+	@echo ... chAccDirLib
 	@echo ... savAccDirLib
 .PHONY : help
 
