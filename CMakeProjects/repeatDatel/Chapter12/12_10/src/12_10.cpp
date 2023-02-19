@@ -1,6 +1,6 @@
 #include "Account.h"
 #include "SavingAccount.h"
-
+#include "CheckingAccount.h"
 #include "config.h"
 int main()
 {
@@ -17,7 +17,9 @@ int main()
     a.creditAcc( sum );
     SavingAccount sa( 1000, 0.05 );
     cout << sa.calculatelnterest();
-    
-
+    CheckingAccount chA( 3000, 0.02 );
+    cout << "Input sum for put money to acc: ";
+    cin >> sum;
+    chA.debit( sum );
     return 0;
 }
