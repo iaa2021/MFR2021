@@ -2,6 +2,8 @@
 CheckingAccount::CheckingAccount( double b, double tr )
     : Account( b ), trPay( ( tr > 0.0 ) ? tr : 0 )
 {
+    cout << "\nChecking acc balance is: " << Account::getBalance() << "$" << endl;
+    cout << "Transaction pay is: " << getPay() << endl;
 }
 void CheckingAccount::credit(double c)
 {
@@ -23,4 +25,8 @@ void CheckingAccount::debit(double d)
 void CheckingAccount::getVersion()
 {
     Account::getVersion();
+}
+double CheckingAccount::getPay() const
+{
+    return trPay;
 }

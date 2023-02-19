@@ -152,6 +152,12 @@
 			"path" : "baseDirLib/config.h.in"
 		},
 		{
+			"path" : "chAccDirLib/CMakeLists.txt"
+		},
+		{
+			"path" : "chAccDirLib/config.h.in"
+		},
+		{
 			"path" : "savAccDirLib/CMakeLists.txt"
 		},
 		{

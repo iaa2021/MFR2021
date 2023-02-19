@@ -10,6 +10,7 @@ public:
     void debit(double);//to put money into the account
     void credit(double);//cash withdrawal
     static void getVersion();
+    double getInterest() const;
 private:
     double iR;
     double balance;

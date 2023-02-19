@@ -13,12 +13,12 @@ set_target_properties( 12_10 PROPERTIES
 
 target_include_directories( 12_10 PRIVATE ${CMAKE_CURRENT_BINARY_DIR} 
     PRIVATE ./../baseDirLib 
-     
+    PRIVATE ./../chAccDirLib
     PRIVATE ./../savAccDirLib
     PRIVATE . )
 
 target_link_libraries( 12_10 baseDirLib )
 
-
+target_link_libraries( 12_10 chAccDirLib )
 
 target_link_libraries( 12_10 savAccDirLib )

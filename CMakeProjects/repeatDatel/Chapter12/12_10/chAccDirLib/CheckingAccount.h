@@ -8,6 +8,7 @@ public:
     CheckingAccount(double, double);
     void debit(double);//to put money into the account
     void credit(double);//cash withdrawal
+    double getPay() const;
     static void getVersion();
 private:
     double trPay;
