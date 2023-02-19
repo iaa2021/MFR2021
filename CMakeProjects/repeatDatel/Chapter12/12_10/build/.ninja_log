@@ -1,19 +1,9 @@
 # ninja log v5
-110	2168	6985065452985005	baseDirLib/CMakeFiles/baseDirLib.dir/Account.cpp.obj	d758bb0b0514b3b8
-123	2280	6985065453724548	chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj	e182b13cd24ecf6c
-141	2291	6985065453794512	savAccDirLib/CMakeFiles/savAccDirLib.dir/SavingAccount.cpp.obj	90e2b8b861242289
-176	2374	6985065455023752	src/CMakeFiles/12_10.dir/12_10.cpp.obj	d09678155972ba83
-2192	2580	6985065457222377	baseDirLib/libbaseDirLib.a	52fa6c81cd98a6e3
-2581	2905	6985065460420398	chAccDirLib/libchAccDirLib.a	541ccfebb834ce0e
-2596	2909	6985065460500354	savAccDirLib/libsavAccDirLib.a	89858d54049a5dd4
-2910	4860	6985065479938313	src/12_10.exe	45900da4641f893c
-133	1513	6985068750164034	chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj	e182b13cd24ecf6c
-147	1598	6985068750903574	src/CMakeFiles/12_10.dir/12_10.cpp.obj	d09678155972ba83
-1529	1831	6985068753432017	chAccDirLib/libchAccDirLib.a	541ccfebb834ce0e
-1832	3680	6985068771750661	src/12_10.exe	45900da4641f893c
-129	1114	6985070465043643	chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj	e182b13cd24ecf6c
-1118	1353	6985070467462127	chAccDirLib/libchAccDirLib.a	541ccfebb834ce0e
-1354	3193	6985070485680838	src/12_10.exe	45900da4641f893c
-125	1110	6985071172898781	chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj	e182b13cd24ecf6c
-1114	1354	6985071175357261	chAccDirLib/libchAccDirLib.a	541ccfebb834ce0e
-1355	3221	6985071193745873	src/12_10.exe	45900da4641f893c
+109	2178	6985077647967527	baseDirLib/CMakeFiles/baseDirLib.dir/Account.cpp.obj	d758bb0b0514b3b8
+137	2257	6985077648167401	savAccDirLib/CMakeFiles/savAccDirLib.dir/SavingAccount.cpp.obj	90e2b8b861242289
+124	2272	6985077649066850	chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj	e182b13cd24ecf6c
+160	2320	6985077649566531	src/CMakeFiles/12_10.dir/12_10.cpp.obj	d09678155972ba83
+2192	2548	6985077652064976	baseDirLib/libbaseDirLib.a	52fa6c81cd98a6e3
+2548	2872	6985077655262997	chAccDirLib/libchAccDirLib.a	541ccfebb834ce0e
+2560	2886	6985077655452883	savAccDirLib/libsavAccDirLib.a	89858d54049a5dd4
+2887	4812	6985077674581019	src/12_10.exe	45900da4641f893c
