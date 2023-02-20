@@ -4,7 +4,7 @@ project ( 2Dshape VERSION 3.4.5 )
 
 configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR} )
 
-add_library (Shape "Shape.cpp" "Shape.h")
+add_library ( 2Dshape 2Dshape.h 2Dshape.cpp )
 
 set_target_properties( Shape PROPERTIES
     CXX_STANDARD 11
@@ -13,4 +13,5 @@ set_target_properties( Shape PROPERTIES
 )
 
 target_include_directories( Shape PRIVATE ${CMAKE_CURRENT_BINARY_DIR} 
+    PRIVATE ./../Shape
     PRIVATE . )

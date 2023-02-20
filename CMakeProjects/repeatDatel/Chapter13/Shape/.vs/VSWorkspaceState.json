@@ -13,8 +13,9 @@
   },
   "ExpandedNodes": [
     "",
-    "\\2Dshape"
+    "\\2Dshape",
+    "\\Shape"
   ],
-  "SelectedNode": "\\CMakeLists.txt",
+  "SelectedNode": "\\2Dshape\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }
