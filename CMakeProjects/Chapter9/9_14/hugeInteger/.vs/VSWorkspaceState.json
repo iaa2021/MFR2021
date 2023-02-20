@@ -12,8 +12,9 @@
     ]
   },
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src"
   ],
-  "SelectedNode": "\\buildMGW",
+  "SelectedNode": "\\src\\9_14.cpp",
   "PreviewInSolutionExplorer": false
 }

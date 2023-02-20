@@ -1,0 +1,195 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "baseDirLib",
+					"jsonFile" : "directory-baseDirLib-Debug-bc9954f0ee8ae9588a40.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "baseDirLib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "chAccDirLib",
+					"jsonFile" : "directory-chAccDirLib-Debug-77bdc96a5f7f9e9e28c3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "chAccDirLib",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "savAccDirLib",
+					"jsonFile" : "directory-savAccDirLib-Debug-31384c076266834829c3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "savAccDirLib",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "account"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "baseDirLib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "chAccDirLib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "savAccDirLib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "12_10",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "12_10::@145eef247bfb46b6828c",
+					"jsonFile" : "target-12_10-Debug-fe4c615dbd860d3b5349.json",
+					"name" : "12_10",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baseDirLib::@13976ca881f8be84f752",
+					"jsonFile" : "target-baseDirLib-Debug-655c21be456a3cce092d.json",
+					"name" : "baseDirLib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "chAccDirLib::@2f28425a91846c6274a1",
+					"jsonFile" : "target-chAccDirLib-Debug-de75c34f81d5bfd5d18b.json",
+					"name" : "chAccDirLib",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "savAccDirLib::@fcab01b7b4edc0016538",
+					"jsonFile" : "target-savAccDirLib-Debug-7d9a30eea3212f4880d7.json",
+					"name" : "savAccDirLib",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/build",
+		"source" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

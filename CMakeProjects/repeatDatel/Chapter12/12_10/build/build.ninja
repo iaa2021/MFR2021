@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: account
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -73,14 +78,12 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_baseDirLib: phony || baseDirLib/CMakeFiles/baseDirLib.dir
 
-build baseDirLib/CMakeFiles/baseDirLib.dir/Account.cpp.obj: CXX_COMPILER__baseDirLib_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/baseDirLib/Account.cpp || cmake_object_order_depends_target_baseDirLib
+build baseDirLib/CMakeFiles/baseDirLib.dir/Account.cpp.obj: CXX_COMPILER__baseDirLib_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/baseDirLib/Account.cpp || cmake_object_order_depends_target_baseDirLib
   DEP_FILE = baseDirLib\CMakeFiles\baseDirLib.dir\Account.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/build/baseDirLib
   OBJECT_DIR = baseDirLib\CMakeFiles\baseDirLib.dir
   OBJECT_FILE_DIR = baseDirLib\CMakeFiles\baseDirLib.dir
-  TARGET_COMPILE_PDB = baseDirLib\CMakeFiles\baseDirLib.dir\baseDirLib.pdb
-  TARGET_PDB = baseDirLib\libbaseDirLib.pdb
 
 
 # =============================================================================
@@ -90,13 +93,13 @@ build baseDirLib/CMakeFiles/baseDirLib.dir/Account.cpp.obj: CXX_COMPILER__baseDi
 #############################################
 # Link the static library baseDirLib\libbaseDirLib.a
 
-build baseDirLib/libbaseDirLib.a: CXX_STATIC_LIBRARY_LINKER__baseDirLib_ baseDirLib/CMakeFiles/baseDirLib.dir/Account.cpp.obj
+build baseDirLib/libbaseDirLib.a: CXX_STATIC_LIBRARY_LINKER__baseDirLib_Debug baseDirLib/CMakeFiles/baseDirLib.dir/Account.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = baseDirLib\CMakeFiles\baseDirLib.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = baseDirLib\CMakeFiles\baseDirLib.dir\baseDirLib.pdb
   TARGET_FILE = baseDirLib\libbaseDirLib.a
-  TARGET_PDB = baseDirLib\libbaseDirLib.pdb
+  TARGET_PDB = baseDirLib.a.dbg
 
 
 #############################################
@@ -136,14 +139,12 @@ build baseDirLib/rebuild_cache: phony baseDirLib/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_chAccDirLib: phony || cmake_object_order_depends_target_baseDirLib
 
-build chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj: CXX_COMPILER__chAccDirLib_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/chAccDirLib/CheckingAccount.cpp || cmake_object_order_depends_target_chAccDirLib
+build chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj: CXX_COMPILER__chAccDirLib_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/chAccDirLib/CheckingAccount.cpp || cmake_object_order_depends_target_chAccDirLib
   DEP_FILE = chAccDirLib\CMakeFiles\chAccDirLib.dir\CheckingAccount.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/build/chAccDirLib -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/chAccDirLib/. -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/chAccDirLib/./../baseDirLib -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/chAccDirLib
   OBJECT_DIR = chAccDirLib\CMakeFiles\chAccDirLib.dir
   OBJECT_FILE_DIR = chAccDirLib\CMakeFiles\chAccDirLib.dir
-  TARGET_COMPILE_PDB = chAccDirLib\CMakeFiles\chAccDirLib.dir\chAccDirLib.pdb
-  TARGET_PDB = chAccDirLib\libchAccDirLib.pdb
 
 
 # =============================================================================
@@ -153,13 +154,13 @@ build chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj: CXX_COMPIL
 #############################################
 # Link the static library chAccDirLib\libchAccDirLib.a
 
-build chAccDirLib/libchAccDirLib.a: CXX_STATIC_LIBRARY_LINKER__chAccDirLib_ chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj || baseDirLib/libbaseDirLib.a
+build chAccDirLib/libchAccDirLib.a: CXX_STATIC_LIBRARY_LINKER__chAccDirLib_Debug chAccDirLib/CMakeFiles/chAccDirLib.dir/CheckingAccount.cpp.obj || baseDirLib/libbaseDirLib.a
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = chAccDirLib\CMakeFiles\chAccDirLib.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = chAccDirLib\CMakeFiles\chAccDirLib.dir\chAccDirLib.pdb
   TARGET_FILE = chAccDirLib\libchAccDirLib.a
-  TARGET_PDB = chAccDirLib\libchAccDirLib.pdb
+  TARGET_PDB = chAccDirLib.a.dbg
 
 
 #############################################
@@ -199,14 +200,12 @@ build chAccDirLib/rebuild_cache: phony chAccDirLib/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_savAccDirLib: phony || cmake_object_order_depends_target_baseDirLib
 
-build savAccDirLib/CMakeFiles/savAccDirLib.dir/SavingAccount.cpp.obj: CXX_COMPILER__savAccDirLib_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/savAccDirLib/SavingAccount.cpp || cmake_object_order_depends_target_savAccDirLib
+build savAccDirLib/CMakeFiles/savAccDirLib.dir/SavingAccount.cpp.obj: CXX_COMPILER__savAccDirLib_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/savAccDirLib/SavingAccount.cpp || cmake_object_order_depends_target_savAccDirLib
   DEP_FILE = savAccDirLib\CMakeFiles\savAccDirLib.dir\SavingAccount.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/build/savAccDirLib -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/savAccDirLib/./../baseDirLib -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/savAccDirLib/.
   OBJECT_DIR = savAccDirLib\CMakeFiles\savAccDirLib.dir
   OBJECT_FILE_DIR = savAccDirLib\CMakeFiles\savAccDirLib.dir
-  TARGET_COMPILE_PDB = savAccDirLib\CMakeFiles\savAccDirLib.dir\savAccDirLib.pdb
-  TARGET_PDB = savAccDirLib\libsavAccDirLib.pdb
 
 
 # =============================================================================
@@ -216,13 +215,13 @@ build savAccDirLib/CMakeFiles/savAccDirLib.dir/SavingAccount.cpp.obj: CXX_COMPIL
 #############################################
 # Link the static library savAccDirLib\libsavAccDirLib.a
 
-build savAccDirLib/libsavAccDirLib.a: CXX_STATIC_LIBRARY_LINKER__savAccDirLib_ savAccDirLib/CMakeFiles/savAccDirLib.dir/SavingAccount.cpp.obj || baseDirLib/libbaseDirLib.a
+build savAccDirLib/libsavAccDirLib.a: CXX_STATIC_LIBRARY_LINKER__savAccDirLib_Debug savAccDirLib/CMakeFiles/savAccDirLib.dir/SavingAccount.cpp.obj || baseDirLib/libbaseDirLib.a
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = savAccDirLib\CMakeFiles\savAccDirLib.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = savAccDirLib\CMakeFiles\savAccDirLib.dir\savAccDirLib.pdb
   TARGET_FILE = savAccDirLib\libsavAccDirLib.a
-  TARGET_PDB = savAccDirLib\libsavAccDirLib.pdb
+  TARGET_PDB = savAccDirLib.a.dbg
 
 
 #############################################
@@ -262,14 +261,12 @@ build savAccDirLib/rebuild_cache: phony savAccDirLib/CMakeFiles/rebuild_cache.ut
 
 build cmake_object_order_depends_target_12_10: phony || cmake_object_order_depends_target_baseDirLib cmake_object_order_depends_target_chAccDirLib cmake_object_order_depends_target_savAccDirLib
 
-build src/CMakeFiles/12_10.dir/12_10.cpp.obj: CXX_COMPILER__12_10_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/src/12_10.cpp || cmake_object_order_depends_target_12_10
+build src/CMakeFiles/12_10.dir/12_10.cpp.obj: CXX_COMPILER__12_10_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/src/12_10.cpp || cmake_object_order_depends_target_12_10
   DEP_FILE = src\CMakeFiles\12_10.dir\12_10.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/build/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/src/./../baseDirLib -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/src/./../chAccDirLib -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/src/./../savAccDirLib -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter12/12_10/src/.
   OBJECT_DIR = src\CMakeFiles\12_10.dir
   OBJECT_FILE_DIR = src\CMakeFiles\12_10.dir
-  TARGET_COMPILE_PDB = src\CMakeFiles\12_10.dir\
-  TARGET_PDB = src\12_10.pdb
 
 
 # =============================================================================
@@ -279,15 +276,15 @@ build src/CMakeFiles/12_10.dir/12_10.cpp.obj: CXX_COMPILER__12_10_ C$:/Users/iva
 #############################################
 # Link the executable src\12_10.exe
 
-build src/12_10.exe: CXX_EXECUTABLE_LINKER__12_10_ src/CMakeFiles/12_10.dir/12_10.cpp.obj | baseDirLib/libbaseDirLib.a chAccDirLib/libchAccDirLib.a savAccDirLib/libsavAccDirLib.a baseDirLib/libbaseDirLib.a || baseDirLib/libbaseDirLib.a chAccDirLib/libchAccDirLib.a savAccDirLib/libsavAccDirLib.a
+build src/12_10.exe: CXX_EXECUTABLE_LINKER__12_10_Debug src/CMakeFiles/12_10.dir/12_10.cpp.obj | baseDirLib/libbaseDirLib.a chAccDirLib/libchAccDirLib.a savAccDirLib/libsavAccDirLib.a baseDirLib/libbaseDirLib.a || baseDirLib/libbaseDirLib.a chAccDirLib/libchAccDirLib.a savAccDirLib/libsavAccDirLib.a
+  FLAGS = -g
   LINK_LIBRARIES = baseDirLib/libbaseDirLib.a  chAccDirLib/libchAccDirLib.a  savAccDirLib/libsavAccDirLib.a  baseDirLib/libbaseDirLib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\12_10.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = src\CMakeFiles\12_10.dir\
   TARGET_FILE = src\12_10.exe
   TARGET_IMPLIB = src\lib12_10.dll.a
-  TARGET_PDB = src\12_10.pdb
+  TARGET_PDB = 12_10.exe.dbg
 
 
 #############################################
@@ -377,14 +374,14 @@ build src/all: phony src/12_10.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../baseDirLib/CMakeLists.txt ../baseDirLib/config.h.in ../chAccDirLib/CMakeLists.txt ../chAccDirLib/config.h.in ../savAccDirLib/CMakeLists.txt ../savAccDirLib/config.h.in ../src/CMakeLists.txt ../src/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCCompilerABI.c C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeNinjaFindMake.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystem.cmake.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../baseDirLib/CMakeLists.txt ../baseDirLib/config.h.in ../chAccDirLib/CMakeLists.txt ../chAccDirLib/config.h.in ../savAccDirLib/CMakeLists.txt ../savAccDirLib/config.h.in ../src/CMakeLists.txt ../src/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../baseDirLib/CMakeLists.txt ../baseDirLib/config.h.in ../chAccDirLib/CMakeLists.txt ../chAccDirLib/config.h.in ../savAccDirLib/CMakeLists.txt ../savAccDirLib/config.h.in ../src/CMakeLists.txt ../src/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCCompilerABI.c C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeNinjaFindMake.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystem.cmake.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../baseDirLib/CMakeLists.txt ../baseDirLib/config.h.in ../chAccDirLib/CMakeLists.txt ../chAccDirLib/config.h.in ../savAccDirLib/CMakeLists.txt ../savAccDirLib/config.h.in ../src/CMakeLists.txt ../src/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake: phony
 
 
 #############################################

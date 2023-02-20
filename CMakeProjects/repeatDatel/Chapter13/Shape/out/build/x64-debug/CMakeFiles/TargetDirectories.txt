@@ -1,0 +1,5 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/Shape/CMakeFiles/Shape.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/Shape/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/Shape/CMakeFiles/rebuild_cache.dir
