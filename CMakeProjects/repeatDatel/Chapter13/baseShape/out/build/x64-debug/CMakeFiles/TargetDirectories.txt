@@ -1,0 +1,14 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/Shape/CMakeFiles/Shape.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/Shape/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/Shape/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/2Dshape/CMakeFiles/2Dshape.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/2Dshape/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/2Dshape/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/Rectangle/CMakeFiles/Rectangle.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/Rectangle/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/Rectangle/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/src/CMakeFiles/13_10.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug/src/CMakeFiles/rebuild_cache.dir

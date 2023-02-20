@@ -1,0 +1,195 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Shape",
+					"jsonFile" : "directory-Shape-Debug-f9b7bbc0cffe3947e41f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Shape",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "2Dshape",
+					"jsonFile" : "directory-2Dshape-Debug-69d4715704e01bad2ca9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "2Dshape",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Rectangle",
+					"jsonFile" : "directory-Rectangle-Debug-1925dff8746ee306b9b2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Rectangle",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "baseShape"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Shape",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "2Dshape",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Rectangle",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "13_10",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "13_10::@145eef247bfb46b6828c",
+					"jsonFile" : "target-13_10-Debug-3f0ab99b9f256e457b3d.json",
+					"name" : "13_10",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "2Dshape::@4907a2a8a97b9f140ea4",
+					"jsonFile" : "target-2Dshape-Debug-937c9ba9be1a5f987e5c.json",
+					"name" : "2Dshape",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Rectangle::@83e40d626b8917bbe7cc",
+					"jsonFile" : "target-Rectangle-Debug-4049c45e7ce5e78c6e02.json",
+					"name" : "Rectangle",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Shape::@4dcfc4c932ca5fcc208e",
+					"jsonFile" : "target-Shape-Debug-833296305c3b90e47a15.json",
+					"name" : "Shape",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape/out/build/x64-debug",
+		"source" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/Shape"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
