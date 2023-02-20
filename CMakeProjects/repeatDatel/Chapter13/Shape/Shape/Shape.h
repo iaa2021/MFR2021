@@ -13,6 +13,7 @@ public:
 	virtual double getArea() = 0;
 	virtual void print() const;
 	static void getVersion();
+	virtual double getLength() const;
 private:
 	double length;
 	string name;

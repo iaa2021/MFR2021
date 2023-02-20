@@ -7,11 +7,15 @@ Shape::Shape( double l, string n )
 
 void Shape::print() const
 {
-	cout << name << "'s length is: " << length << ", ";
+	cout << name << "'s length is: " << geLength() << ", ";
 }
 
 void Shape::getVersion()
 {
 	cout << "Base shape's library version is: " << (PROJECT_VERSION_MAJOR) << '.';
 	cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
+}
+double Shape::getLength() const
+{
+	return length;
 }
