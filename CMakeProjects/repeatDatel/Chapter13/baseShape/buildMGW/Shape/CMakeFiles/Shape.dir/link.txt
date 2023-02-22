@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libShape.a CMakeFiles/Shape.dir/Shape.cpp.obj
+C:\MinGW\bin\ranlib.exe libShape.a

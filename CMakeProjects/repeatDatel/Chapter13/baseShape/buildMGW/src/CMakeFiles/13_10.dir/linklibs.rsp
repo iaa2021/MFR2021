@@ -1,0 +1,1 @@
+ ../Shape/libShape.a ../twoDimShape/libtwoDimShape.a ../Rectangle/libRectangle.a ../Triangle/libTriangle.a ../threeDimShape/libthreeDimShape.a ../Circle/libCircle.a ../twoDimShape/libtwoDimShape.a ../Shape/libShape.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

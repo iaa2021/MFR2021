@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libthreeDimShape.a CMakeFiles/threeDimShape.dir/threeDimShape.cpp.obj
+C:\MinGW\bin\ranlib.exe libthreeDimShape.a

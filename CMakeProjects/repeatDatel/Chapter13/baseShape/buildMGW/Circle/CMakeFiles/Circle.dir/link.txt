@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libCircle.a CMakeFiles/Circle.dir/Circle.cpp.obj
+C:\MinGW\bin\ranlib.exe libCircle.a

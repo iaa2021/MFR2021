@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libRectangle.a CMakeFiles/Rectangle.dir/Rectangle.cpp.obj
+C:\MinGW\bin\ranlib.exe libRectangle.a
