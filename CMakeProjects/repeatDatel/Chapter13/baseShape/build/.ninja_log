@@ -1,8 +1,13 @@
 # ninja log v5
-42	1393	6987815161929165	Shape/CMakeFiles/Shape.dir/Shape.cpp.obj	f248ab18b6e3d9c7
-38	841	6987816558285862	build.ninja	76ea807bebae6669
-932	1246	6987815865566046	twoDimShape/libtwoDimShape.a	4be824410a9a456
-68	1490	6987815163168401	src/CMakeFiles/13_10.dir/13_10.cpp.obj	eab2bfa40f1faddb
-71	926	6987815862298058	twoDimShape/CMakeFiles/twoDimShape.dir/twoDimShape.cpp.obj	8b7452bb6b67fa77
-1405	1766	6987815165966662	Shape/libShape.a	9ced8de79fb1c9ba
-1247	3052	6987815883474954	src/13_10.exe	b4f436031fc66b7b
+50	2422	6987841461155183	Shape/CMakeFiles/Shape.dir/Shape.cpp.obj	f248ab18b6e3d9c7
+38	841	6987860654005223	build.ninja	76ea807bebae6669
+2787	3026	6987841467631175	twoDimShape/libtwoDimShape.a	4be824410a9a456
+51	1348	6987858146241303	src/CMakeFiles/13_10.dir/13_10.cpp.obj	dad57002bb1a465d
+61	1345	6987850801598981	Rectangle/CMakeFiles/Rectangle.dir/Rectangle.cpp.obj	a6aace86beda16d4
+125	2467	6987841461155183	twoDimShape/CMakeFiles/twoDimShape.dir/twoDimShape.cpp.obj	8b7452bb6b67fa77
+2438	2786	6987841465172711	Shape/libShape.a	9ced8de79fb1c9ba
+1102	2932	6987851876080302	src/13_10.exe	a47082b4f65b1aca
+1356	1596	6987850804177392	Rectangle/libRectangle.a	661888c371dc795e
+64	1330	6987857496181404	Triangle/CMakeFiles/Triangle.dir/Triangle.cpp.obj	8c1665d202712e64
+66	384	6987858136537309	Triangle/libTriangle.a	c6f63d97792de059
+51	1573	6987860728281492	src/13_10.exe	aca428a7646649b7

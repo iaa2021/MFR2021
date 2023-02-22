@@ -7,3 +7,7 @@ add_subdirectory ( Shape )
 add_subdirectory( twoDimShape )
 
 add_subdirectory( src )
+
+add_subdirectory( Rectangle )
+
+add_subdirectory( Triangle )
