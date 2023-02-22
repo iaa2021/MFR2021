@@ -7,7 +7,7 @@ Shape::Shape( double l, string n )
 
 void Shape::print() const
 {
-	cout << name << "'s length is: " << getLength() << ", ";
+	cout << name << "'s length is: " << getLength() << "sm, ";
 }
 
 void Shape::getVersion()

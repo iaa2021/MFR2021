@@ -17,6 +17,7 @@ target_include_directories( 13_10 PRIVATE ${CMAKE_CURRENT_BINARY_DIR}
     PRIVATE ./../Rectangle
     PRIVATE ./../Triangle
     PRIVATE ./../threeDimShape
+    PRIVATE ./../Circle 
     PRIVATE . )
 
 target_link_libraries( 13_10 Shape ) 
@@ -28,3 +29,5 @@ target_link_libraries( 13_10 Rectangle )
 target_link_libraries( 13_10 Triangle )
 
 target_link_libraries( 13_10 threeDimShape )
+
+target_link_libraries( 13_10 Circle )

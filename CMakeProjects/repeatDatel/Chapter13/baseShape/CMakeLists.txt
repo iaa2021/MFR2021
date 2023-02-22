@@ -13,3 +13,5 @@ add_subdirectory( Rectangle )
 add_subdirectory( Triangle )
 
 add_subdirectory( threeDimShape )
+
+add_subdirectory( Circle )

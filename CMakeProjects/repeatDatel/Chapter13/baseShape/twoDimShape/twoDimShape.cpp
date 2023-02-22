@@ -12,7 +12,7 @@ void twoDimShape::getVersion()
 void twoDimShape::print() const
 {
     Shape::print();
-    cout << " width is: " << getWidth() << endl;
+    cout << " width is: " << getWidth() << "sm\n";
 }
 
 double twoDimShape::getWidth() const
