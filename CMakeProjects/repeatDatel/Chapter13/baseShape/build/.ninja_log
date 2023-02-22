@@ -1,0 +1,8 @@
+# ninja log v5
+42	1393	6987815161929165	Shape/CMakeFiles/Shape.dir/Shape.cpp.obj	f248ab18b6e3d9c7
+38	841	6987816558285862	build.ninja	76ea807bebae6669
+932	1246	6987815865566046	twoDimShape/libtwoDimShape.a	4be824410a9a456
+68	1490	6987815163168401	src/CMakeFiles/13_10.dir/13_10.cpp.obj	eab2bfa40f1faddb
+71	926	6987815862298058	twoDimShape/CMakeFiles/twoDimShape.dir/twoDimShape.cpp.obj	8b7452bb6b67fa77
+1405	1766	6987815165966662	Shape/libShape.a	9ced8de79fb1c9ba
+1247	3052	6987815883474954	src/13_10.exe	b4f436031fc66b7b

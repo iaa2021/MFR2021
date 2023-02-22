@@ -1,0 +1,11 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Shape/CMakeFiles/Shape.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Shape/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Shape/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/twoDimShape/CMakeFiles/twoDimShape.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/twoDimShape/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/twoDimShape/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/src/CMakeFiles/13_10.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/src/CMakeFiles/rebuild_cache.dir

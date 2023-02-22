@@ -15,6 +15,7 @@ public:
 	virtual void print() const;
 	static void getVersion();
 	virtual double getLength() const;
+	virtual string getName() const;
 private:
 	double length;
 	string name;

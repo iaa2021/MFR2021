@@ -1,7 +1,7 @@
 ﻿#include "Shape.h"
 
 Shape::Shape( double l, string n )
-	: length( l >= 0? l : 0 )
+	: length( l > 0? l : 1 ), name( n )
 {
 }
 
@@ -18,4 +18,8 @@ void Shape::getVersion()
 double Shape::getLength() const
 {
 	return length;
+}
+string Shape::getName() const
+{
+	return name;
 }
