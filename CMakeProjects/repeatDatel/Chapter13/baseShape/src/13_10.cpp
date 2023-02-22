@@ -3,6 +3,7 @@
 #include "twoDimShape.h"
 #include "Rectangle.h"
 #include "Triangle.h"
+#include "threeDimShape.h"
 int main()
 {
 	cout << fixed << setprecision( 2 );
@@ -12,6 +13,7 @@ int main()
 	twoDimShape::getVersion();
 	Rectangle::getVersion();
 	Triangle::getVersion();
+	threeDimShape::getVersion();
 	double l, w;
 	cout << "Input rectangle's length and width in format XX.XX XX.XX: ";
 	cin >> l >> w;

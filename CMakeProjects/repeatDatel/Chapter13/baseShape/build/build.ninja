@@ -191,12 +191,12 @@ build twoDimShape/rebuild_cache: phony twoDimShape/CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for 13_10
 
-build cmake_object_order_depends_target_13_10: phony || cmake_object_order_depends_target_Rectangle cmake_object_order_depends_target_Shape cmake_object_order_depends_target_Triangle cmake_object_order_depends_target_twoDimShape
+build cmake_object_order_depends_target_13_10: phony || cmake_object_order_depends_target_Rectangle cmake_object_order_depends_target_Shape cmake_object_order_depends_target_Triangle cmake_object_order_depends_target_threeDimShape cmake_object_order_depends_target_twoDimShape
 
 build src/CMakeFiles/13_10.dir/13_10.cpp.obj: CXX_COMPILER__13_10_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/13_10.cpp || cmake_object_order_depends_target_13_10
   DEP_FILE = src\CMakeFiles\13_10.dir\13_10.cpp.obj.d
   FLAGS = -std=gnu++11
-  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../twoDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Rectangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Triangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/.
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../twoDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Rectangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Triangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../threeDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/.
   OBJECT_DIR = src\CMakeFiles\13_10.dir
   OBJECT_FILE_DIR = src\CMakeFiles\13_10.dir
 
@@ -208,8 +208,8 @@ build src/CMakeFiles/13_10.dir/13_10.cpp.obj: CXX_COMPILER__13_10_ C$:/Users/iva
 #############################################
 # Link the executable src\13_10.exe
 
-build src/13_10.exe: CXX_EXECUTABLE_LINKER__13_10_ src/CMakeFiles/13_10.dir/13_10.cpp.obj | Shape/libShape.a twoDimShape/libtwoDimShape.a Rectangle/libRectangle.a Triangle/libTriangle.a twoDimShape/libtwoDimShape.a Shape/libShape.a || Rectangle/libRectangle.a Shape/libShape.a Triangle/libTriangle.a twoDimShape/libtwoDimShape.a
-  LINK_LIBRARIES = Shape/libShape.a  twoDimShape/libtwoDimShape.a  Rectangle/libRectangle.a  Triangle/libTriangle.a  twoDimShape/libtwoDimShape.a  Shape/libShape.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+build src/13_10.exe: CXX_EXECUTABLE_LINKER__13_10_ src/CMakeFiles/13_10.dir/13_10.cpp.obj | Shape/libShape.a twoDimShape/libtwoDimShape.a Rectangle/libRectangle.a Triangle/libTriangle.a threeDimShape/libthreeDimShape.a twoDimShape/libtwoDimShape.a Shape/libShape.a || Rectangle/libRectangle.a Shape/libShape.a Triangle/libTriangle.a threeDimShape/libthreeDimShape.a twoDimShape/libtwoDimShape.a
+  LINK_LIBRARIES = Shape/libShape.a  twoDimShape/libtwoDimShape.a  Rectangle/libRectangle.a  Triangle/libTriangle.a  threeDimShape/libthreeDimShape.a  twoDimShape/libtwoDimShape.a  Shape/libShape.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\13_10.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -362,6 +362,66 @@ build Triangle/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build Triangle/rebuild_cache: phony Triangle/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target threeDimShape
+
+
+#############################################
+# Order-only phony target for threeDimShape
+
+build cmake_object_order_depends_target_threeDimShape: phony || cmake_object_order_depends_target_Shape
+
+build threeDimShape/CMakeFiles/threeDimShape.dir/threeDimShape.cpp.obj: CXX_COMPILER__threeDimShape_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/threeDimShape/threeDimShape.cpp || cmake_object_order_depends_target_threeDimShape
+  DEP_FILE = threeDimShape\CMakeFiles\threeDimShape.dir\threeDimShape.cpp.obj.d
+  FLAGS = -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/threeDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/threeDimShape/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/threeDimShape/.
+  OBJECT_DIR = threeDimShape\CMakeFiles\threeDimShape.dir
+  OBJECT_FILE_DIR = threeDimShape\CMakeFiles\threeDimShape.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target threeDimShape
+
+
+#############################################
+# Link the static library threeDimShape\libthreeDimShape.a
+
+build threeDimShape/libthreeDimShape.a: CXX_STATIC_LIBRARY_LINKER__threeDimShape_ threeDimShape/CMakeFiles/threeDimShape.dir/threeDimShape.cpp.obj || Shape/libShape.a
+  OBJECT_DIR = threeDimShape\CMakeFiles\threeDimShape.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = threeDimShape\libthreeDimShape.a
+  TARGET_PDB = threeDimShape.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build threeDimShape/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\build\threeDimShape && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape -BC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build threeDimShape/edit_cache: phony threeDimShape/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build threeDimShape/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\build\threeDimShape && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape -BC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build threeDimShape/rebuild_cache: phony threeDimShape/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build 13_10: phony src/13_10.exe
@@ -380,7 +440,11 @@ build libShape.a: phony Shape/libShape.a
 
 build libTriangle.a: phony Triangle/libTriangle.a
 
+build libthreeDimShape.a: phony threeDimShape/libthreeDimShape.a
+
 build libtwoDimShape.a: phony twoDimShape/libtwoDimShape.a
+
+build threeDimShape: phony threeDimShape/libthreeDimShape.a
 
 build twoDimShape: phony twoDimShape/libtwoDimShape.a
 
@@ -392,7 +456,7 @@ build twoDimShape: phony twoDimShape/libtwoDimShape.a
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build
 
-build all: phony Shape/all twoDimShape/all src/all Rectangle/all Triangle/all
+build all: phony Shape/all twoDimShape/all src/all Rectangle/all Triangle/all threeDimShape/all
 
 # =============================================================================
 
@@ -425,6 +489,13 @@ build src/all: phony src/13_10.exe
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/threeDimShape
+
+build threeDimShape/all: phony threeDimShape/libthreeDimShape.a
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/twoDimShape
 
 build twoDimShape/all: phony twoDimShape/libtwoDimShape.a
@@ -436,14 +507,14 @@ build twoDimShape/all: phony twoDimShape/libtwoDimShape.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Rectangle/CMakeLists.txt ../Rectangle/config.h.in ../Shape/CMakeLists.txt ../Shape/config.h.in ../Triangle/CMakeLists.txt ../Triangle/config.h.in ../src/CMakeLists.txt ../src/config.h.in ../twoDimShape/CMakeLists.txt ../twoDimShape/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Rectangle/CMakeLists.txt ../Rectangle/config.h.in ../Shape/CMakeLists.txt ../Shape/config.h.in ../Triangle/CMakeLists.txt ../Triangle/config.h.in ../src/CMakeLists.txt ../src/config.h.in ../threeDimShape/CMakeLists.txt ../threeDimShape/config.h.in ../twoDimShape/CMakeLists.txt ../twoDimShape/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Rectangle/CMakeLists.txt ../Rectangle/config.h.in ../Shape/CMakeLists.txt ../Shape/config.h.in ../Triangle/CMakeLists.txt ../Triangle/config.h.in ../src/CMakeLists.txt ../src/config.h.in ../twoDimShape/CMakeLists.txt ../twoDimShape/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Rectangle/CMakeLists.txt ../Rectangle/config.h.in ../Shape/CMakeLists.txt ../Shape/config.h.in ../Triangle/CMakeLists.txt ../Triangle/config.h.in ../src/CMakeLists.txt ../src/config.h.in ../threeDimShape/CMakeLists.txt ../threeDimShape/config.h.in ../twoDimShape/CMakeLists.txt ../twoDimShape/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake: phony
 
 
 #############################################
