@@ -5,6 +5,7 @@
 #include "Triangle.h"
 #include "threeDimShape.h"
 #include "Circle.h"
+#include "Sphere.h"
 int main()
 {
 	cout << fixed << setprecision( 2 );
@@ -16,6 +17,7 @@ int main()
 	Triangle::getVersion();
 	threeDimShape::getVersion();
 	Circle::getVersion();
+	Sphere::getVersion();
 	double l, w;
 	cout << "Example of static binding.\n";
 	cout << "Input rectangle's length and width in format XX.XX XX.XX: ";
@@ -33,9 +35,15 @@ int main()
 	Circle c( "circle", l );
 	c.print(); 
 	cout << c.getName() << "'s area is: " << c.getArea() << "sm2.\n";
+	cout << "Input sphere's radius in format XX.XX: ";
+	cin >> l;
+	Sphere sp( "sphere", l );
+	sp.print(); 
+	cout << sp.getName() << "'s area is: " << sp.getArea() << "sm2, ";
+	cout << "volume is: " << sp.getVolume() << "sm3.\n";
 	cout << "\nExample of dynamic binding.\n";
-	Shape *array[ 3 ] = { &r, &t, &c };
-	for (int i = 0; i < 3; i++)
+	Shape *array[ 4 ] = { &r, &t, &c, &sp };
+	for (int i = 0; i < 4; i++)
 	{
 		array[ i ] ->print();
 		cout << array[ i ] -> getName() << "'s area is: ";

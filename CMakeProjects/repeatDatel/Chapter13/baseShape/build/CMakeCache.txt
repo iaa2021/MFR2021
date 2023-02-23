@@ -29,9 +29,8 @@ CMAKE_ADDR2LINE:FILEPATH=C:/MinGW/bin/addr2line.exe
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/MinGW/bin/ar.exe
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+//No help, variable specified on the command line.
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=C:/MinGW/bin/g++.exe
@@ -291,6 +290,18 @@ Shape_IS_TOP_LEVEL:STATIC=OFF
 Shape_SOURCE_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Shape
 
 //Value Computed by CMake
+Sphere_BINARY_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Sphere
+
+//Value Computed by CMake
+Sphere_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+Sphere_LIB_DEPENDS:STATIC=general;Shape;general;threeDimShape;
+
+//Value Computed by CMake
+Sphere_SOURCE_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Sphere
+
+//Value Computed by CMake
 Triangle_BINARY_DIR:STATIC=C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Triangle
 
 //Value Computed by CMake
@@ -442,7 +453,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

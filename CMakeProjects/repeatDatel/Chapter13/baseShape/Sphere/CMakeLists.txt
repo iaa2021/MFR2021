@@ -17,6 +17,6 @@ target_include_directories( Sphere PRIVATE ${CMAKE_CURRENT_BINARY_DIR}
     PRIVATE ./../threeDimShape
     PRIVATE . )
 
-target_link_libraries( Circle Shape )
+target_link_libraries( Sphere Shape )
 
-target_link_libraries( Circle threeDimShape )
+target_link_libraries( Sphere threeDimShape )

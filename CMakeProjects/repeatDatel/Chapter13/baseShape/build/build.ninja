@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: baseShape
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -73,9 +78,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_Circle: phony || cmake_object_order_depends_target_Shape cmake_object_order_depends_target_twoDimShape
 
-build Circle/CMakeFiles/Circle.dir/Circle.cpp.obj: CXX_COMPILER__Circle_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Circle/Circle.cpp || cmake_object_order_depends_target_Circle
+build Circle/CMakeFiles/Circle.dir/Circle.cpp.obj: CXX_COMPILER__Circle_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Circle/Circle.cpp || cmake_object_order_depends_target_Circle
   DEP_FILE = Circle\CMakeFiles\Circle.dir\Circle.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Circle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Circle/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Circle/./../twoDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Circle/.
   OBJECT_DIR = Circle\CMakeFiles\Circle.dir
   OBJECT_FILE_DIR = Circle\CMakeFiles\Circle.dir
@@ -88,7 +93,8 @@ build Circle/CMakeFiles/Circle.dir/Circle.cpp.obj: CXX_COMPILER__Circle_ C$:/Use
 #############################################
 # Link the static library Circle\libCircle.a
 
-build Circle/libCircle.a: CXX_STATIC_LIBRARY_LINKER__Circle_ Circle/CMakeFiles/Circle.dir/Circle.cpp.obj || Shape/libShape.a twoDimShape/libtwoDimShape.a
+build Circle/libCircle.a: CXX_STATIC_LIBRARY_LINKER__Circle_Debug Circle/CMakeFiles/Circle.dir/Circle.cpp.obj || Shape/libShape.a twoDimShape/libtwoDimShape.a
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Circle\CMakeFiles\Circle.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -133,9 +139,9 @@ build Circle/rebuild_cache: phony Circle/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_Rectangle: phony || cmake_object_order_depends_target_Shape cmake_object_order_depends_target_twoDimShape
 
-build Rectangle/CMakeFiles/Rectangle.dir/Rectangle.cpp.obj: CXX_COMPILER__Rectangle_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Rectangle/Rectangle.cpp || cmake_object_order_depends_target_Rectangle
+build Rectangle/CMakeFiles/Rectangle.dir/Rectangle.cpp.obj: CXX_COMPILER__Rectangle_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Rectangle/Rectangle.cpp || cmake_object_order_depends_target_Rectangle
   DEP_FILE = Rectangle\CMakeFiles\Rectangle.dir\Rectangle.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Rectangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Rectangle/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Rectangle/./../twoDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Rectangle/.
   OBJECT_DIR = Rectangle\CMakeFiles\Rectangle.dir
   OBJECT_FILE_DIR = Rectangle\CMakeFiles\Rectangle.dir
@@ -148,7 +154,8 @@ build Rectangle/CMakeFiles/Rectangle.dir/Rectangle.cpp.obj: CXX_COMPILER__Rectan
 #############################################
 # Link the static library Rectangle\libRectangle.a
 
-build Rectangle/libRectangle.a: CXX_STATIC_LIBRARY_LINKER__Rectangle_ Rectangle/CMakeFiles/Rectangle.dir/Rectangle.cpp.obj || Shape/libShape.a twoDimShape/libtwoDimShape.a
+build Rectangle/libRectangle.a: CXX_STATIC_LIBRARY_LINKER__Rectangle_Debug Rectangle/CMakeFiles/Rectangle.dir/Rectangle.cpp.obj || Shape/libShape.a twoDimShape/libtwoDimShape.a
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Rectangle\CMakeFiles\Rectangle.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -193,9 +200,9 @@ build Rectangle/rebuild_cache: phony Rectangle/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_Shape: phony || Shape/CMakeFiles/Shape.dir
 
-build Shape/CMakeFiles/Shape.dir/Shape.cpp.obj: CXX_COMPILER__Shape_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Shape/Shape.cpp || cmake_object_order_depends_target_Shape
+build Shape/CMakeFiles/Shape.dir/Shape.cpp.obj: CXX_COMPILER__Shape_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Shape/Shape.cpp || cmake_object_order_depends_target_Shape
   DEP_FILE = Shape\CMakeFiles\Shape.dir\Shape.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Shape/.
   OBJECT_DIR = Shape\CMakeFiles\Shape.dir
   OBJECT_FILE_DIR = Shape\CMakeFiles\Shape.dir
@@ -208,7 +215,8 @@ build Shape/CMakeFiles/Shape.dir/Shape.cpp.obj: CXX_COMPILER__Shape_ C$:/Users/i
 #############################################
 # Link the static library Shape\libShape.a
 
-build Shape/libShape.a: CXX_STATIC_LIBRARY_LINKER__Shape_ Shape/CMakeFiles/Shape.dir/Shape.cpp.obj
+build Shape/libShape.a: CXX_STATIC_LIBRARY_LINKER__Shape_Debug Shape/CMakeFiles/Shape.dir/Shape.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Shape\CMakeFiles\Shape.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -245,6 +253,67 @@ build Shape/rebuild_cache: phony Shape/CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target Sphere
+
+
+#############################################
+# Order-only phony target for Sphere
+
+build cmake_object_order_depends_target_Sphere: phony || cmake_object_order_depends_target_Shape cmake_object_order_depends_target_threeDimShape
+
+build Sphere/CMakeFiles/Sphere.dir/Sphere.cpp.obj: CXX_COMPILER__Sphere_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Sphere/Sphere.cpp || cmake_object_order_depends_target_Sphere
+  DEP_FILE = Sphere\CMakeFiles\Sphere.dir\Sphere.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Sphere -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Sphere/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Sphere/./../threeDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Sphere/.
+  OBJECT_DIR = Sphere\CMakeFiles\Sphere.dir
+  OBJECT_FILE_DIR = Sphere\CMakeFiles\Sphere.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Sphere
+
+
+#############################################
+# Link the static library Sphere\libSphere.a
+
+build Sphere/libSphere.a: CXX_STATIC_LIBRARY_LINKER__Sphere_Debug Sphere/CMakeFiles/Sphere.dir/Sphere.cpp.obj || Shape/libShape.a threeDimShape/libthreeDimShape.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Sphere\CMakeFiles\Sphere.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Sphere\libSphere.a
+  TARGET_PDB = Sphere.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Sphere/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\build\Sphere && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape -BC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build Sphere/edit_cache: phony Sphere/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Sphere/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\build\Sphere && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape -BC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Sphere/rebuild_cache: phony Sphere/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
 # Object build statements for STATIC_LIBRARY target Triangle
 
 
@@ -253,9 +322,9 @@ build Shape/rebuild_cache: phony Shape/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_Triangle: phony || cmake_object_order_depends_target_Shape cmake_object_order_depends_target_twoDimShape
 
-build Triangle/CMakeFiles/Triangle.dir/Triangle.cpp.obj: CXX_COMPILER__Triangle_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Triangle/Triangle.cpp || cmake_object_order_depends_target_Triangle
+build Triangle/CMakeFiles/Triangle.dir/Triangle.cpp.obj: CXX_COMPILER__Triangle_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Triangle/Triangle.cpp || cmake_object_order_depends_target_Triangle
   DEP_FILE = Triangle\CMakeFiles\Triangle.dir\Triangle.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Triangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Triangle/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Triangle/./../twoDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/Triangle/.
   OBJECT_DIR = Triangle\CMakeFiles\Triangle.dir
   OBJECT_FILE_DIR = Triangle\CMakeFiles\Triangle.dir
@@ -268,7 +337,8 @@ build Triangle/CMakeFiles/Triangle.dir/Triangle.cpp.obj: CXX_COMPILER__Triangle_
 #############################################
 # Link the static library Triangle\libTriangle.a
 
-build Triangle/libTriangle.a: CXX_STATIC_LIBRARY_LINKER__Triangle_ Triangle/CMakeFiles/Triangle.dir/Triangle.cpp.obj || Shape/libShape.a twoDimShape/libtwoDimShape.a
+build Triangle/libTriangle.a: CXX_STATIC_LIBRARY_LINKER__Triangle_Debug Triangle/CMakeFiles/Triangle.dir/Triangle.cpp.obj || Shape/libShape.a twoDimShape/libtwoDimShape.a
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Triangle\CMakeFiles\Triangle.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -311,12 +381,12 @@ build Triangle/rebuild_cache: phony Triangle/CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for 13_10
 
-build cmake_object_order_depends_target_13_10: phony || cmake_object_order_depends_target_Circle cmake_object_order_depends_target_Rectangle cmake_object_order_depends_target_Shape cmake_object_order_depends_target_Triangle cmake_object_order_depends_target_threeDimShape cmake_object_order_depends_target_twoDimShape
+build cmake_object_order_depends_target_13_10: phony || cmake_object_order_depends_target_Circle cmake_object_order_depends_target_Rectangle cmake_object_order_depends_target_Shape cmake_object_order_depends_target_Sphere cmake_object_order_depends_target_Triangle cmake_object_order_depends_target_threeDimShape cmake_object_order_depends_target_twoDimShape
 
-build src/CMakeFiles/13_10.dir/13_10.cpp.obj: CXX_COMPILER__13_10_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/13_10.cpp || cmake_object_order_depends_target_13_10
+build src/CMakeFiles/13_10.dir/13_10.cpp.obj: CXX_COMPILER__13_10_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/13_10.cpp || cmake_object_order_depends_target_13_10
   DEP_FILE = src\CMakeFiles\13_10.dir\13_10.cpp.obj.d
-  FLAGS = -std=gnu++11
-  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../twoDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Rectangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Triangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../threeDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Circle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/.
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../twoDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Rectangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Triangle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../threeDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Circle -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Sphere -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/.
   OBJECT_DIR = src\CMakeFiles\13_10.dir
   OBJECT_FILE_DIR = src\CMakeFiles\13_10.dir
 
@@ -328,8 +398,9 @@ build src/CMakeFiles/13_10.dir/13_10.cpp.obj: CXX_COMPILER__13_10_ C$:/Users/iva
 #############################################
 # Link the executable src\13_10.exe
 
-build src/13_10.exe: CXX_EXECUTABLE_LINKER__13_10_ src/CMakeFiles/13_10.dir/13_10.cpp.obj | Shape/libShape.a twoDimShape/libtwoDimShape.a Rectangle/libRectangle.a Triangle/libTriangle.a threeDimShape/libthreeDimShape.a Circle/libCircle.a twoDimShape/libtwoDimShape.a Shape/libShape.a || Circle/libCircle.a Rectangle/libRectangle.a Shape/libShape.a Triangle/libTriangle.a threeDimShape/libthreeDimShape.a twoDimShape/libtwoDimShape.a
-  LINK_LIBRARIES = Shape/libShape.a  twoDimShape/libtwoDimShape.a  Rectangle/libRectangle.a  Triangle/libTriangle.a  threeDimShape/libthreeDimShape.a  Circle/libCircle.a  twoDimShape/libtwoDimShape.a  Shape/libShape.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+build src/13_10.exe: CXX_EXECUTABLE_LINKER__13_10_Debug src/CMakeFiles/13_10.dir/13_10.cpp.obj | Shape/libShape.a twoDimShape/libtwoDimShape.a Rectangle/libRectangle.a Triangle/libTriangle.a threeDimShape/libthreeDimShape.a Circle/libCircle.a Sphere/libSphere.a twoDimShape/libtwoDimShape.a threeDimShape/libthreeDimShape.a Shape/libShape.a || Circle/libCircle.a Rectangle/libRectangle.a Shape/libShape.a Sphere/libSphere.a Triangle/libTriangle.a threeDimShape/libthreeDimShape.a twoDimShape/libtwoDimShape.a
+  FLAGS = -g
+  LINK_LIBRARIES = Shape/libShape.a  twoDimShape/libtwoDimShape.a  Rectangle/libRectangle.a  Triangle/libTriangle.a  threeDimShape/libthreeDimShape.a  Circle/libCircle.a  Sphere/libSphere.a  twoDimShape/libtwoDimShape.a  threeDimShape/libthreeDimShape.a  Shape/libShape.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\13_10.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -375,9 +446,9 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_threeDimShape: phony || cmake_object_order_depends_target_Shape
 
-build threeDimShape/CMakeFiles/threeDimShape.dir/threeDimShape.cpp.obj: CXX_COMPILER__threeDimShape_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/threeDimShape/threeDimShape.cpp || cmake_object_order_depends_target_threeDimShape
+build threeDimShape/CMakeFiles/threeDimShape.dir/threeDimShape.cpp.obj: CXX_COMPILER__threeDimShape_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/threeDimShape/threeDimShape.cpp || cmake_object_order_depends_target_threeDimShape
   DEP_FILE = threeDimShape\CMakeFiles\threeDimShape.dir\threeDimShape.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/threeDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/threeDimShape/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/threeDimShape/.
   OBJECT_DIR = threeDimShape\CMakeFiles\threeDimShape.dir
   OBJECT_FILE_DIR = threeDimShape\CMakeFiles\threeDimShape.dir
@@ -390,7 +461,8 @@ build threeDimShape/CMakeFiles/threeDimShape.dir/threeDimShape.cpp.obj: CXX_COMP
 #############################################
 # Link the static library threeDimShape\libthreeDimShape.a
 
-build threeDimShape/libthreeDimShape.a: CXX_STATIC_LIBRARY_LINKER__threeDimShape_ threeDimShape/CMakeFiles/threeDimShape.dir/threeDimShape.cpp.obj || Shape/libShape.a
+build threeDimShape/libthreeDimShape.a: CXX_STATIC_LIBRARY_LINKER__threeDimShape_Debug threeDimShape/CMakeFiles/threeDimShape.dir/threeDimShape.cpp.obj || Shape/libShape.a
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = threeDimShape\CMakeFiles\threeDimShape.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -435,9 +507,9 @@ build threeDimShape/rebuild_cache: phony threeDimShape/CMakeFiles/rebuild_cache.
 
 build cmake_object_order_depends_target_twoDimShape: phony || cmake_object_order_depends_target_Shape
 
-build twoDimShape/CMakeFiles/twoDimShape.dir/twoDimShape.cpp.obj: CXX_COMPILER__twoDimShape_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/twoDimShape/twoDimShape.cpp || cmake_object_order_depends_target_twoDimShape
+build twoDimShape/CMakeFiles/twoDimShape.dir/twoDimShape.cpp.obj: CXX_COMPILER__twoDimShape_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/twoDimShape/twoDimShape.cpp || cmake_object_order_depends_target_twoDimShape
   DEP_FILE = twoDimShape\CMakeFiles\twoDimShape.dir\twoDimShape.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/twoDimShape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/twoDimShape/./../Shape -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/twoDimShape/.
   OBJECT_DIR = twoDimShape\CMakeFiles\twoDimShape.dir
   OBJECT_FILE_DIR = twoDimShape\CMakeFiles\twoDimShape.dir
@@ -450,7 +522,8 @@ build twoDimShape/CMakeFiles/twoDimShape.dir/twoDimShape.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the static library twoDimShape\libtwoDimShape.a
 
-build twoDimShape/libtwoDimShape.a: CXX_STATIC_LIBRARY_LINKER__twoDimShape_ twoDimShape/CMakeFiles/twoDimShape.dir/twoDimShape.cpp.obj || Shape/libShape.a
+build twoDimShape/libtwoDimShape.a: CXX_STATIC_LIBRARY_LINKER__twoDimShape_Debug twoDimShape/CMakeFiles/twoDimShape.dir/twoDimShape.cpp.obj || Shape/libShape.a
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = twoDimShape\CMakeFiles\twoDimShape.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -494,6 +567,8 @@ build Rectangle: phony Rectangle/libRectangle.a
 
 build Shape: phony Shape/libShape.a
 
+build Sphere: phony Sphere/libSphere.a
+
 build Triangle: phony Triangle/libTriangle.a
 
 build libCircle.a: phony Circle/libCircle.a
@@ -501,6 +576,8 @@ build libCircle.a: phony Circle/libCircle.a
 build libRectangle.a: phony Rectangle/libRectangle.a
 
 build libShape.a: phony Shape/libShape.a
+
+build libSphere.a: phony Sphere/libSphere.a
 
 build libTriangle.a: phony Triangle/libTriangle.a
 
@@ -520,7 +597,7 @@ build twoDimShape: phony twoDimShape/libtwoDimShape.a
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build
 
-build all: phony Circle/all Rectangle/all Shape/all Triangle/all src/all threeDimShape/all twoDimShape/all
+build all: phony Circle/all Rectangle/all Shape/all Sphere/all Triangle/all src/all threeDimShape/all twoDimShape/all
 
 # =============================================================================
 
@@ -542,6 +619,13 @@ build Rectangle/all: phony Rectangle/libRectangle.a
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Shape
 
 build Shape/all: phony Shape/libShape.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/Sphere
+
+build Sphere/all: phony Sphere/libSphere.a
 
 # =============================================================================
 
@@ -578,14 +662,14 @@ build twoDimShape/all: phony twoDimShape/libtwoDimShape.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Circle/CMakeLists.txt ../Circle/config.h.in ../Rectangle/CMakeLists.txt ../Rectangle/config.h.in ../Shape/CMakeLists.txt ../Shape/config.h.in ../Triangle/CMakeLists.txt ../Triangle/config.h.in ../src/CMakeLists.txt ../src/config.h.in ../threeDimShape/CMakeLists.txt ../threeDimShape/config.h.in ../twoDimShape/CMakeLists.txt ../twoDimShape/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Circle/CMakeLists.txt ../Circle/config.h.in ../Rectangle/CMakeLists.txt ../Rectangle/config.h.in ../Shape/CMakeLists.txt ../Shape/config.h.in ../Sphere/CMakeLists.txt ../Sphere/config.h.in ../Triangle/CMakeLists.txt ../Triangle/config.h.in ../src/CMakeLists.txt ../src/config.h.in ../threeDimShape/CMakeLists.txt ../threeDimShape/config.h.in ../twoDimShape/CMakeLists.txt ../twoDimShape/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Circle/CMakeLists.txt ../Circle/config.h.in ../Rectangle/CMakeLists.txt ../Rectangle/config.h.in ../Shape/CMakeLists.txt ../Shape/config.h.in ../Triangle/CMakeLists.txt ../Triangle/config.h.in ../src/CMakeLists.txt ../src/config.h.in ../threeDimShape/CMakeLists.txt ../threeDimShape/config.h.in ../twoDimShape/CMakeLists.txt ../twoDimShape/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Circle/CMakeLists.txt ../Circle/config.h.in ../Rectangle/CMakeLists.txt ../Rectangle/config.h.in ../Shape/CMakeLists.txt ../Shape/config.h.in ../Sphere/CMakeLists.txt ../Sphere/config.h.in ../Triangle/CMakeLists.txt ../Triangle/config.h.in ../src/CMakeLists.txt ../src/config.h.in ../threeDimShape/CMakeLists.txt ../threeDimShape/config.h.in ../twoDimShape/CMakeLists.txt ../twoDimShape/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake: phony
 
 
 #############################################

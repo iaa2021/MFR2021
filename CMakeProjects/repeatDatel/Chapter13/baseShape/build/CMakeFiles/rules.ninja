@@ -7,7 +7,7 @@
 
 # =============================================================================
 # Project: baseShape
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 # =============================================================================
 
@@ -22,7 +22,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__Circle_
+rule CXX_COMPILER__Circle_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\MinGW\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -32,7 +32,7 @@ rule CXX_COMPILER__Circle_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__Circle_
+rule CXX_STATIC_LIBRARY_LINKER__Circle_Debug
   command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\MinGW\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\MinGW\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -41,7 +41,7 @@ rule CXX_STATIC_LIBRARY_LINKER__Circle_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__Rectangle_
+rule CXX_COMPILER__Rectangle_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\MinGW\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -51,7 +51,7 @@ rule CXX_COMPILER__Rectangle_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__Rectangle_
+rule CXX_STATIC_LIBRARY_LINKER__Rectangle_Debug
   command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\MinGW\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\MinGW\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -60,7 +60,7 @@ rule CXX_STATIC_LIBRARY_LINKER__Rectangle_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__Shape_
+rule CXX_COMPILER__Shape_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\MinGW\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -70,7 +70,7 @@ rule CXX_COMPILER__Shape_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__Shape_
+rule CXX_STATIC_LIBRARY_LINKER__Shape_Debug
   command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\MinGW\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\MinGW\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -79,7 +79,7 @@ rule CXX_STATIC_LIBRARY_LINKER__Shape_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__Triangle_
+rule CXX_COMPILER__Sphere_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\MinGW\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -89,7 +89,7 @@ rule CXX_COMPILER__Triangle_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__Triangle_
+rule CXX_STATIC_LIBRARY_LINKER__Sphere_Debug
   command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\MinGW\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\MinGW\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -98,7 +98,26 @@ rule CXX_STATIC_LIBRARY_LINKER__Triangle_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__13_10_
+rule CXX_COMPILER__Triangle_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\MinGW\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__Triangle_Debug
+  command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\MinGW\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\MinGW\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__13_10_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\MinGW\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -108,7 +127,7 @@ rule CXX_COMPILER__13_10_
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__13_10_
+rule CXX_EXECUTABLE_LINKER__13_10_Debug
   command = cmd.exe /C "$PRE_LINK && C:\MinGW\bin\g++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -117,7 +136,7 @@ rule CXX_EXECUTABLE_LINKER__13_10_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__threeDimShape_
+rule CXX_COMPILER__threeDimShape_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\MinGW\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -127,7 +146,7 @@ rule CXX_COMPILER__threeDimShape_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__threeDimShape_
+rule CXX_STATIC_LIBRARY_LINKER__threeDimShape_Debug
   command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\MinGW\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\MinGW\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -136,7 +155,7 @@ rule CXX_STATIC_LIBRARY_LINKER__threeDimShape_
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__twoDimShape_
+rule CXX_COMPILER__twoDimShape_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = C:\MinGW\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -146,7 +165,7 @@ rule CXX_COMPILER__twoDimShape_
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__twoDimShape_
+rule CXX_STATIC_LIBRARY_LINKER__twoDimShape_Debug
   command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f $TARGET_FILE && C:\MinGW\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\MinGW\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
