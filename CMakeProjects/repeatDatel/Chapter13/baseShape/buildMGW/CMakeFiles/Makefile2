@@ -62,33 +62,33 @@ CMAKE_BINARY_DIR = C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Cha
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: Shape/all
-all: twoDimShape/all
-all: src/all
-all: Rectangle/all
-all: Triangle/all
-all: threeDimShape/all
 all: Circle/all
+all: Rectangle/all
+all: Shape/all
+all: Triangle/all
+all: src/all
+all: threeDimShape/all
+all: twoDimShape/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: Shape/preinstall
-preinstall: twoDimShape/preinstall
-preinstall: src/preinstall
-preinstall: Rectangle/preinstall
-preinstall: Triangle/preinstall
-preinstall: threeDimShape/preinstall
 preinstall: Circle/preinstall
+preinstall: Rectangle/preinstall
+preinstall: Shape/preinstall
+preinstall: Triangle/preinstall
+preinstall: src/preinstall
+preinstall: threeDimShape/preinstall
+preinstall: twoDimShape/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: Shape/clean
-clean: twoDimShape/clean
-clean: src/clean
-clean: Rectangle/clean
-clean: Triangle/clean
-clean: threeDimShape/clean
 clean: Circle/clean
+clean: Rectangle/clean
+clean: Shape/clean
+clean: Triangle/clean
+clean: src/clean
+clean: threeDimShape/clean
+clean: twoDimShape/clean
 .PHONY : clean
 
 #=============================================================================
@@ -197,6 +197,60 @@ twoDimShape/clean: twoDimShape/CMakeFiles/twoDimShape.dir/clean
 .PHONY : twoDimShape/clean
 
 #=============================================================================
+# Target rules for target Circle/CMakeFiles/Circle.dir
+
+# All Build rule for target.
+Circle/CMakeFiles/Circle.dir/all: Shape/CMakeFiles/Shape.dir/all
+Circle/CMakeFiles/Circle.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
+	$(MAKE) $(MAKESILENT) -f Circle\CMakeFiles\Circle.dir\build.make Circle/CMakeFiles/Circle.dir/depend
+	$(MAKE) $(MAKESILENT) -f Circle\CMakeFiles\Circle.dir\build.make Circle/CMakeFiles/Circle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=3,4 "Built target Circle"
+.PHONY : Circle/CMakeFiles/Circle.dir/all
+
+# Build rule for subdir invocation for target.
+Circle/CMakeFiles/Circle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Circle/CMakeFiles/Circle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 0
+.PHONY : Circle/CMakeFiles/Circle.dir/rule
+
+# Convenience name for target.
+Circle: Circle/CMakeFiles/Circle.dir/rule
+.PHONY : Circle
+
+# clean rule for target.
+Circle/CMakeFiles/Circle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Circle\CMakeFiles\Circle.dir\build.make Circle/CMakeFiles/Circle.dir/clean
+.PHONY : Circle/CMakeFiles/Circle.dir/clean
+
+#=============================================================================
+# Target rules for target Rectangle/CMakeFiles/Rectangle.dir
+
+# All Build rule for target.
+Rectangle/CMakeFiles/Rectangle.dir/all: Shape/CMakeFiles/Shape.dir/all
+Rectangle/CMakeFiles/Rectangle.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
+	$(MAKE) $(MAKESILENT) -f Rectangle\CMakeFiles\Rectangle.dir\build.make Rectangle/CMakeFiles/Rectangle.dir/depend
+	$(MAKE) $(MAKESILENT) -f Rectangle\CMakeFiles\Rectangle.dir\build.make Rectangle/CMakeFiles/Rectangle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=5,6 "Built target Rectangle"
+.PHONY : Rectangle/CMakeFiles/Rectangle.dir/all
+
+# Build rule for subdir invocation for target.
+Rectangle/CMakeFiles/Rectangle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Rectangle/CMakeFiles/Rectangle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 0
+.PHONY : Rectangle/CMakeFiles/Rectangle.dir/rule
+
+# Convenience name for target.
+Rectangle: Rectangle/CMakeFiles/Rectangle.dir/rule
+.PHONY : Rectangle
+
+# clean rule for target.
+Rectangle/CMakeFiles/Rectangle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Rectangle\CMakeFiles\Rectangle.dir\build.make Rectangle/CMakeFiles/Rectangle.dir/clean
+.PHONY : Rectangle/CMakeFiles/Rectangle.dir/clean
+
+#=============================================================================
 # Target rules for target Shape/CMakeFiles/Shape.dir
 
 # All Build rule for target.
@@ -223,95 +277,11 @@ Shape/CMakeFiles/Shape.dir/clean:
 .PHONY : Shape/CMakeFiles/Shape.dir/clean
 
 #=============================================================================
-# Target rules for target twoDimShape/CMakeFiles/twoDimShape.dir
-
-# All Build rule for target.
-twoDimShape/CMakeFiles/twoDimShape.dir/all: Shape/CMakeFiles/Shape.dir/all
-	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/depend
-	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=13,14 "Built target twoDimShape"
-.PHONY : twoDimShape/CMakeFiles/twoDimShape.dir/all
-
-# Build rule for subdir invocation for target.
-twoDimShape/CMakeFiles/twoDimShape.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 twoDimShape/CMakeFiles/twoDimShape.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 0
-.PHONY : twoDimShape/CMakeFiles/twoDimShape.dir/rule
-
-# Convenience name for target.
-twoDimShape: twoDimShape/CMakeFiles/twoDimShape.dir/rule
-.PHONY : twoDimShape
-
-# clean rule for target.
-twoDimShape/CMakeFiles/twoDimShape.dir/clean:
-	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/clean
-.PHONY : twoDimShape/CMakeFiles/twoDimShape.dir/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/13_10.dir
-
-# All Build rule for target.
-src/CMakeFiles/13_10.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
-src/CMakeFiles/13_10.dir/all: Shape/CMakeFiles/Shape.dir/all
-src/CMakeFiles/13_10.dir/all: Rectangle/CMakeFiles/Rectangle.dir/all
-src/CMakeFiles/13_10.dir/all: Triangle/CMakeFiles/Triangle.dir/all
-src/CMakeFiles/13_10.dir/all: threeDimShape/CMakeFiles/threeDimShape.dir/all
-src/CMakeFiles/13_10.dir/all: Circle/CMakeFiles/Circle.dir/all
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\13_10.dir\build.make src/CMakeFiles/13_10.dir/depend
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\13_10.dir\build.make src/CMakeFiles/13_10.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=1,2 "Built target 13_10"
-.PHONY : src/CMakeFiles/13_10.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/13_10.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 14
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/13_10.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 0
-.PHONY : src/CMakeFiles/13_10.dir/rule
-
-# Convenience name for target.
-13_10: src/CMakeFiles/13_10.dir/rule
-.PHONY : 13_10
-
-# clean rule for target.
-src/CMakeFiles/13_10.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\13_10.dir\build.make src/CMakeFiles/13_10.dir/clean
-.PHONY : src/CMakeFiles/13_10.dir/clean
-
-#=============================================================================
-# Target rules for target Rectangle/CMakeFiles/Rectangle.dir
-
-# All Build rule for target.
-Rectangle/CMakeFiles/Rectangle.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
-Rectangle/CMakeFiles/Rectangle.dir/all: Shape/CMakeFiles/Shape.dir/all
-	$(MAKE) $(MAKESILENT) -f Rectangle\CMakeFiles\Rectangle.dir\build.make Rectangle/CMakeFiles/Rectangle.dir/depend
-	$(MAKE) $(MAKESILENT) -f Rectangle\CMakeFiles\Rectangle.dir\build.make Rectangle/CMakeFiles/Rectangle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=5,6 "Built target Rectangle"
-.PHONY : Rectangle/CMakeFiles/Rectangle.dir/all
-
-# Build rule for subdir invocation for target.
-Rectangle/CMakeFiles/Rectangle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Rectangle/CMakeFiles/Rectangle.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 0
-.PHONY : Rectangle/CMakeFiles/Rectangle.dir/rule
-
-# Convenience name for target.
-Rectangle: Rectangle/CMakeFiles/Rectangle.dir/rule
-.PHONY : Rectangle
-
-# clean rule for target.
-Rectangle/CMakeFiles/Rectangle.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Rectangle\CMakeFiles\Rectangle.dir\build.make Rectangle/CMakeFiles/Rectangle.dir/clean
-.PHONY : Rectangle/CMakeFiles/Rectangle.dir/clean
-
-#=============================================================================
 # Target rules for target Triangle/CMakeFiles/Triangle.dir
 
 # All Build rule for target.
-Triangle/CMakeFiles/Triangle.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
 Triangle/CMakeFiles/Triangle.dir/all: Shape/CMakeFiles/Shape.dir/all
+Triangle/CMakeFiles/Triangle.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
 	$(MAKE) $(MAKESILENT) -f Triangle\CMakeFiles\Triangle.dir\build.make Triangle/CMakeFiles/Triangle.dir/depend
 	$(MAKE) $(MAKESILENT) -f Triangle\CMakeFiles\Triangle.dir\build.make Triangle/CMakeFiles/Triangle.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=9,10 "Built target Triangle"
@@ -332,6 +302,37 @@ Triangle: Triangle/CMakeFiles/Triangle.dir/rule
 Triangle/CMakeFiles/Triangle.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Triangle\CMakeFiles\Triangle.dir\build.make Triangle/CMakeFiles/Triangle.dir/clean
 .PHONY : Triangle/CMakeFiles/Triangle.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/13_10.dir
+
+# All Build rule for target.
+src/CMakeFiles/13_10.dir/all: Circle/CMakeFiles/Circle.dir/all
+src/CMakeFiles/13_10.dir/all: Rectangle/CMakeFiles/Rectangle.dir/all
+src/CMakeFiles/13_10.dir/all: Shape/CMakeFiles/Shape.dir/all
+src/CMakeFiles/13_10.dir/all: Triangle/CMakeFiles/Triangle.dir/all
+src/CMakeFiles/13_10.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
+src/CMakeFiles/13_10.dir/all: threeDimShape/CMakeFiles/threeDimShape.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\13_10.dir\build.make src/CMakeFiles/13_10.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\13_10.dir\build.make src/CMakeFiles/13_10.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=1,2 "Built target 13_10"
+.PHONY : src/CMakeFiles/13_10.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/13_10.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/13_10.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 0
+.PHONY : src/CMakeFiles/13_10.dir/rule
+
+# Convenience name for target.
+13_10: src/CMakeFiles/13_10.dir/rule
+.PHONY : 13_10
+
+# clean rule for target.
+src/CMakeFiles/13_10.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\13_10.dir\build.make src/CMakeFiles/13_10.dir/clean
+.PHONY : src/CMakeFiles/13_10.dir/clean
 
 #=============================================================================
 # Target rules for target threeDimShape/CMakeFiles/threeDimShape.dir
@@ -360,31 +361,30 @@ threeDimShape/CMakeFiles/threeDimShape.dir/clean:
 .PHONY : threeDimShape/CMakeFiles/threeDimShape.dir/clean
 
 #=============================================================================
-# Target rules for target Circle/CMakeFiles/Circle.dir
+# Target rules for target twoDimShape/CMakeFiles/twoDimShape.dir
 
 # All Build rule for target.
-Circle/CMakeFiles/Circle.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
-Circle/CMakeFiles/Circle.dir/all: Shape/CMakeFiles/Shape.dir/all
-	$(MAKE) $(MAKESILENT) -f Circle\CMakeFiles\Circle.dir\build.make Circle/CMakeFiles/Circle.dir/depend
-	$(MAKE) $(MAKESILENT) -f Circle\CMakeFiles\Circle.dir\build.make Circle/CMakeFiles/Circle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=3,4 "Built target Circle"
-.PHONY : Circle/CMakeFiles/Circle.dir/all
+twoDimShape/CMakeFiles/twoDimShape.dir/all: Shape/CMakeFiles/Shape.dir/all
+	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/depend
+	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=13,14 "Built target twoDimShape"
+.PHONY : twoDimShape/CMakeFiles/twoDimShape.dir/all
 
 # Build rule for subdir invocation for target.
-Circle/CMakeFiles/Circle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Circle/CMakeFiles/Circle.dir/all
+twoDimShape/CMakeFiles/twoDimShape.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 twoDimShape/CMakeFiles/twoDimShape.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 0
-.PHONY : Circle/CMakeFiles/Circle.dir/rule
+.PHONY : twoDimShape/CMakeFiles/twoDimShape.dir/rule
 
 # Convenience name for target.
-Circle: Circle/CMakeFiles/Circle.dir/rule
-.PHONY : Circle
+twoDimShape: twoDimShape/CMakeFiles/twoDimShape.dir/rule
+.PHONY : twoDimShape
 
 # clean rule for target.
-Circle/CMakeFiles/Circle.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Circle\CMakeFiles\Circle.dir\build.make Circle/CMakeFiles/Circle.dir/clean
-.PHONY : Circle/CMakeFiles/Circle.dir/clean
+twoDimShape/CMakeFiles/twoDimShape.dir/clean:
+	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/clean
+.PHONY : twoDimShape/CMakeFiles/twoDimShape.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

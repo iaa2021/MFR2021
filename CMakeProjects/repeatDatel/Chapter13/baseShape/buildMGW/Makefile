@@ -116,43 +116,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Shape
+# Target rules for targets named Circle
 
 # Build rule for target.
-Shape: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Shape
-.PHONY : Shape
+Circle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Circle
+.PHONY : Circle
 
 # fast build rule for target.
-Shape/fast:
-	$(MAKE) $(MAKESILENT) -f Shape\CMakeFiles\Shape.dir\build.make Shape/CMakeFiles/Shape.dir/build
-.PHONY : Shape/fast
-
-#=============================================================================
-# Target rules for targets named twoDimShape
-
-# Build rule for target.
-twoDimShape: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 twoDimShape
-.PHONY : twoDimShape
-
-# fast build rule for target.
-twoDimShape/fast:
-	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/build
-.PHONY : twoDimShape/fast
-
-#=============================================================================
-# Target rules for targets named 13_10
-
-# Build rule for target.
-13_10: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 13_10
-.PHONY : 13_10
-
-# fast build rule for target.
-13_10/fast:
-	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\13_10.dir\build.make src/CMakeFiles/13_10.dir/build
-.PHONY : 13_10/fast
+Circle/fast:
+	$(MAKE) $(MAKESILENT) -f Circle\CMakeFiles\Circle.dir\build.make Circle/CMakeFiles/Circle.dir/build
+.PHONY : Circle/fast
 
 #=============================================================================
 # Target rules for targets named Rectangle
@@ -168,6 +142,19 @@ Rectangle/fast:
 .PHONY : Rectangle/fast
 
 #=============================================================================
+# Target rules for targets named Shape
+
+# Build rule for target.
+Shape: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Shape
+.PHONY : Shape
+
+# fast build rule for target.
+Shape/fast:
+	$(MAKE) $(MAKESILENT) -f Shape\CMakeFiles\Shape.dir\build.make Shape/CMakeFiles/Shape.dir/build
+.PHONY : Shape/fast
+
+#=============================================================================
 # Target rules for targets named Triangle
 
 # Build rule for target.
@@ -179,6 +166,19 @@ Triangle: cmake_check_build_system
 Triangle/fast:
 	$(MAKE) $(MAKESILENT) -f Triangle\CMakeFiles\Triangle.dir\build.make Triangle/CMakeFiles/Triangle.dir/build
 .PHONY : Triangle/fast
+
+#=============================================================================
+# Target rules for targets named 13_10
+
+# Build rule for target.
+13_10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 13_10
+.PHONY : 13_10
+
+# fast build rule for target.
+13_10/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\13_10.dir\build.make src/CMakeFiles/13_10.dir/build
+.PHONY : 13_10/fast
 
 #=============================================================================
 # Target rules for targets named threeDimShape
@@ -194,17 +194,17 @@ threeDimShape/fast:
 .PHONY : threeDimShape/fast
 
 #=============================================================================
-# Target rules for targets named Circle
+# Target rules for targets named twoDimShape
 
 # Build rule for target.
-Circle: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Circle
-.PHONY : Circle
+twoDimShape: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 twoDimShape
+.PHONY : twoDimShape
 
 # fast build rule for target.
-Circle/fast:
-	$(MAKE) $(MAKESILENT) -f Circle\CMakeFiles\Circle.dir\build.make Circle/CMakeFiles/Circle.dir/build
-.PHONY : Circle/fast
+twoDimShape/fast:
+	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/build
+.PHONY : twoDimShape/fast
 
 # Help Target
 help:

@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Shape/cmake_install.cmake")
-  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/twoDimShape/cmake_install.cmake")
-  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/src/cmake_install.cmake")
-  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Rectangle/cmake_install.cmake")
-  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Triangle/cmake_install.cmake")
-  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/threeDimShape/cmake_install.cmake")
   include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Circle/cmake_install.cmake")
+  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Rectangle/cmake_install.cmake")
+  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Shape/cmake_install.cmake")
+  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Triangle/cmake_install.cmake")
+  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/src/cmake_install.cmake")
+  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/threeDimShape/cmake_install.cmake")
+  include("C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/twoDimShape/cmake_install.cmake")
 
 endif()
 
