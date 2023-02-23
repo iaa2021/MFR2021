@@ -2,16 +2,14 @@
 
 project ( baseShape VERSION 1.2.3 )
 
-add_subdirectory ( Shape )
+#making list of directories
+file( GLOB dir_list Circle Rectangle Shape src threeDimShape twoDimShape Triangle )
 
-add_subdirectory( twoDimShape )
+# Iterate over the list of directories
+foreach( directory ${dir_list} )
 
-add_subdirectory( src )
+if( IS_DIRECTORY ${directory} )
+add_subdirectory ( ${directory} )
+endif()
 
-add_subdirectory( Rectangle )
-
-add_subdirectory( Triangle )
-
-add_subdirectory( threeDimShape )
-
-add_subdirectory( Circle )
+endforeach()

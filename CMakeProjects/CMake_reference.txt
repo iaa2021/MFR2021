@@ -1,0 +1,46 @@
+add_subdirectory ( Shape )
+
+add_subdirectory( twoDimShape )
+
+add_subdirectory( src )
+
+add_subdirectory( Rectangle )
+
+add_subdirectory( Triangle )
+
+add_subdirectory( threeDimShape )
+
+add_subdirectory( Circle )
+
+# Set the directory containing your source files
+set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR})
+
+# Set the directory where your executable will be built
+set(BIN_DIR ${CMAKE_CURRENT_BINARY_DIR})
+
+# Get a list of all directories in your source directory
+file(GLOB directories ${SRC_DIR}/*)
+
+# Iterate over the list of directories
+foreach(directory ${directories})
+  # Check if the current directory is a directory
+  if(IS_DIRECTORY ${directory})
+    # Add the current directory to a list of directories
+    list(APPEND dir_list ${directory})
+  endif()
+endforeach()
+
+# Print the list of directories
+message(STATUS "Directories: ${dir_list}")
+
+#making list of directories
+file( GLOB dir_list Circle Rectangle Shape src threeDimShape twoDimShape Triangle )
+
+# Iterate over the list of directories
+foreach( directory ${dir_list} )
+
+if( IS_DIRECTORY ${directory} )
+add_subdirectory ( ${directory} )
+endif()
+
+endforeach()
