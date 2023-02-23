@@ -2,6 +2,8 @@
 #include "SavingAccount.h"
 #include "CheckingAccount.h"
 #include "config.h"
+#include <string>
+using std::string;
 int main()
 {
     cout << fixed << setprecision( 2 );
@@ -22,5 +24,13 @@ int main()
     cout << "Input sum for put money to acc: ";
     cin >> sum;
     chA.debit( sum );
+    cout << "\nExample of dynamic binding:\n";
+    Account *array[ 3 ] = { &a, &sa, &chA };
+    string names[ 3 ] = { "Account", "SavingsAccount", "CheckingAccount" };
+    for (int i = 0; i < 3; i++)
+    {
+        cout << names[ i ] << "'s balance is " << array[ i ] -> getBalance();
+        cout << "$." << endl;
+    }
     return 0;
 }
