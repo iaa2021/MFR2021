@@ -1,6 +1,6 @@
 # ninja log v5
 66	4490	6988497323446244	Shape/CMakeFiles/Shape.dir/Shape.cpp.obj	f248ab18b6e3d9c7
-43	1009	6988499706696036	build.ninja	76ea807bebae6669
+43	1009	6988527407229959	build.ninja	76ea807bebae6669
 4847	5135	6988497330381948	twoDimShape/libtwoDimShape.a	4be824410a9a456
 85	4457	6988497323386278	src/CMakeFiles/13_10.dir/13_10.cpp.obj	68b8181ba53d799e
 55	1745	6987887671751183	Rectangle/CMakeFiles/Rectangle.dir/Rectangle.cpp.obj	a6aace86beda16d4
@@ -14,3 +14,4 @@
 3777	4087	6987875405188064	Triangle/libTriangle.a	c6f63d97792de059
 93	1898	6987886345782783	threeDimShape/CMakeFiles/threeDimShape.dir/threeDimShape.cpp.obj	a3f3dcb8e63c1c85
 52	4516	6988497323476220	Circle/CMakeFiles/Circle.dir/Circle.cpp.obj	ae41240c3d8d719d
+53	1589	6988527510757340	src/13_10.exe	b413aec9f7463061
