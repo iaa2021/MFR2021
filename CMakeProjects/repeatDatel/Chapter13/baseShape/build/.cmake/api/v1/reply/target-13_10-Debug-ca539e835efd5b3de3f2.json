@@ -178,12 +178,12 @@
 			"id" : "Triangle::@c62ee8c2c70b847b24d7"
 		},
 		{
-			"backtrace" : 6,
-			"id" : "threeDimShape::@0c1abf900659d32d1129"
-		},
-		{
 			"backtrace" : 3,
 			"id" : "twoDimShape::@755fed76bb844f3bbc5a"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "threeDimShape::@0c1abf900659d32d1129"
 		}
 	],
 	"id" : "13_10::@145eef247bfb46b6828c",
