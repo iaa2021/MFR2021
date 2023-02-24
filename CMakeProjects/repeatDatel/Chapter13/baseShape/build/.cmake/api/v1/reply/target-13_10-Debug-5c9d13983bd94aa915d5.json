@@ -76,6 +76,12 @@
 				"parent" : 0
 			},
 			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 14,
@@ -104,39 +110,39 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/src"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Shape"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../twoDimShape"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Rectangle"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Triangle"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../threeDimShape"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Circle"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/./../Sphere"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/src/."
 				}
 			],
@@ -145,7 +151,7 @@
 			{
 				"backtraces" : 
 				[
-					10
+					11
 				],
 				"standard" : "11"
 			},
@@ -158,11 +164,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 7,
+			"backtrace" : 8,
 			"id" : "Circle::@8c0c3a9cd705dc4d4949"
 		},
 		{
-			"backtrace" : 4,
+			"backtrace" : 5,
 			"id" : "Rectangle::@83e40d626b8917bbe7cc"
 		},
 		{
@@ -170,20 +176,20 @@
 			"id" : "Shape::@4dcfc4c932ca5fcc208e"
 		},
 		{
-			"backtrace" : 8,
+			"backtrace" : 9,
 			"id" : "Sphere::@3b887131b4fe67832ceb"
 		},
 		{
-			"backtrace" : 5,
+			"backtrace" : 6,
 			"id" : "Triangle::@c62ee8c2c70b847b24d7"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "threeDimShape::@0c1abf900659d32d1129"
 		},
 		{
 			"backtrace" : 3,
 			"id" : "twoDimShape::@755fed76bb844f3bbc5a"
-		},
-		{
-			"backtrace" : 6,
-			"id" : "threeDimShape::@0c1abf900659d32d1129"
 		}
 	],
 	"id" : "13_10::@145eef247bfb46b6828c",
@@ -211,26 +217,31 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "Rectangle\\libRectangle.a",
+				"fragment" : "-lsrc",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "Triangle\\libTriangle.a",
+				"fragment" : "Rectangle\\libRectangle.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "threeDimShape\\libthreeDimShape.a",
+				"fragment" : "Triangle\\libTriangle.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "Circle\\libCircle.a",
+				"fragment" : "threeDimShape\\libthreeDimShape.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 8,
+				"fragment" : "Circle\\libCircle.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
 				"fragment" : "Sphere\\libSphere.a",
 				"role" : "libraries"
 			},
@@ -240,7 +251,7 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 6,
+				"backtrace" : 7,
 				"fragment" : "threeDimShape\\libthreeDimShape.a",
 				"role" : "libraries"
 			},

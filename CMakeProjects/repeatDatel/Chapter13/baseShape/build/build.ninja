@@ -400,7 +400,7 @@ build src/CMakeFiles/13_10.dir/13_10.cpp.obj: CXX_COMPILER__13_10_Debug C$:/User
 
 build src/13_10.exe: CXX_EXECUTABLE_LINKER__13_10_Debug src/CMakeFiles/13_10.dir/13_10.cpp.obj | Shape/libShape.a twoDimShape/libtwoDimShape.a Rectangle/libRectangle.a Triangle/libTriangle.a threeDimShape/libthreeDimShape.a Circle/libCircle.a Sphere/libSphere.a twoDimShape/libtwoDimShape.a threeDimShape/libthreeDimShape.a Shape/libShape.a || Circle/libCircle.a Rectangle/libRectangle.a Shape/libShape.a Sphere/libSphere.a Triangle/libTriangle.a threeDimShape/libthreeDimShape.a twoDimShape/libtwoDimShape.a
   FLAGS = -g
-  LINK_LIBRARIES = Shape/libShape.a  twoDimShape/libtwoDimShape.a  Rectangle/libRectangle.a  Triangle/libTriangle.a  threeDimShape/libthreeDimShape.a  Circle/libCircle.a  Sphere/libSphere.a  twoDimShape/libtwoDimShape.a  threeDimShape/libthreeDimShape.a  Shape/libShape.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = Shape/libShape.a  twoDimShape/libtwoDimShape.a  -lsrc  Rectangle/libRectangle.a  Triangle/libTriangle.a  threeDimShape/libthreeDimShape.a  Circle/libCircle.a  Sphere/libSphere.a  twoDimShape/libtwoDimShape.a  threeDimShape/libthreeDimShape.a  Shape/libShape.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\13_10.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
