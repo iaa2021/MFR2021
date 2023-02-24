@@ -43,12 +43,18 @@ int main()
 	cout << "volume is: " << sp.getVolume() << "sm3.\n";
 	cout << "\nExample of dynamic binding.\n";
 	Shape *array[ 4 ] = { &r, &t, &c, &sp };
+	threeDimShape *derPtr = 0;
 	for (int i = 0; i < 4; i++)
 	{
 		array[ i ] ->print();
 		cout << array[ i ] -> getName() << "'s area is: ";
 		cout << array[ i ] -> getArea() << "sm2.\n";
+		derPtr = dynamic_cast <threeDimShape *>( array[ i] );
+		if( derPtr != 0 )
+		{
+			derPtr = static_cast<threeDimShape *>( array[ i ] );
+			cout << derPtr ->getName() << "'s volume is: " << derPtr ->getVolume() << endl;
+		}
 	}
-	
 	return 0;
 }
