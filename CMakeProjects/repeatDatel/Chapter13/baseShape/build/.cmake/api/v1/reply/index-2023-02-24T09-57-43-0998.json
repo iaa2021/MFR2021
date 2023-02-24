@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-c9dffcdc29465541066d.json",
+			"jsonFile" : "codemodel-v2-b6c43552871140a260f3.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -79,7 +79,7 @@
 			},
 			"codemodel-v2" : 
 			{
-				"jsonFile" : "codemodel-v2-c9dffcdc29465541066d.json",
+				"jsonFile" : "codemodel-v2-b6c43552871140a260f3.json",
 				"kind" : "codemodel",
 				"version" : 
 				{
@@ -125,7 +125,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "codemodel-v2-c9dffcdc29465541066d.json",
+						"jsonFile" : "codemodel-v2-b6c43552871140a260f3.json",
 						"kind" : "codemodel",
 						"version" : 
 						{

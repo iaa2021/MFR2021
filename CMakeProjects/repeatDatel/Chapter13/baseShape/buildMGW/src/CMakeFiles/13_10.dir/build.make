@@ -98,7 +98,9 @@ src/13_10.exe: Rectangle/libRectangle.a
 src/13_10.exe: Triangle/libTriangle.a
 src/13_10.exe: threeDimShape/libthreeDimShape.a
 src/13_10.exe: Circle/libCircle.a
+src/13_10.exe: Sphere/libSphere.a
 src/13_10.exe: twoDimShape/libtwoDimShape.a
+src/13_10.exe: threeDimShape/libthreeDimShape.a
 src/13_10.exe: Shape/libShape.a
 src/13_10.exe: src/CMakeFiles/13_10.dir/linklibs.rsp
 src/13_10.exe: src/CMakeFiles/13_10.dir/objects1.rsp

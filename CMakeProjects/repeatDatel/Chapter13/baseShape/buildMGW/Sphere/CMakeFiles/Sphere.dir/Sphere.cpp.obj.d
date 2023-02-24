@@ -1,5 +1,7 @@
-src/CMakeFiles/13_10.dir/13_10.cpp.obj: \
- C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\src\13_10.cpp \
+Sphere/CMakeFiles/Sphere.dir/Sphere.cpp.obj: \
+ C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\Sphere\Sphere.cpp \
+ C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\Sphere\Sphere.h \
+ c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter13\baseshape\threedimshape\threedimshape.h \
  c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter13\baseshape\shape\shape.h \
  c:\mingw\include\c++\11.2.0\iostream \
  c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++config.h \
@@ -131,7 +133,7 @@ src/CMakeFiles/13_10.dir/13_10.cpp.obj: \
  c:\mingw\include\c++\11.2.0\bits\ostream.tcc \
  c:\mingw\include\c++\11.2.0\istream \
  c:\mingw\include\c++\11.2.0\bits\istream.tcc \
- C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/src/config.h \
+ C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Sphere/config.h \
  c:\mingw\include\c++\11.2.0\iomanip c:\mingw\include\c++\11.2.0\locale \
  c:\mingw\include\c++\11.2.0\bits\locale_facets_nonio.h \
  c:\mingw\include\c++\11.2.0\ctime \
@@ -145,10 +147,4 @@ src/CMakeFiles/13_10.dir/13_10.cpp.obj: \
  c:\mingw\include\c++\11.2.0\bits\stl_relops.h \
  c:\mingw\include\c++\11.2.0\tuple c:\mingw\include\c++\11.2.0\array \
  c:\mingw\include\c++\11.2.0\bits\uses_allocator.h \
- c:\mingw\include\c++\11.2.0\bits\invoke.h \
- c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter13\baseshape\twodimshape\twodimshape.h \
- c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter13\baseshape\rectangle\rectangle.h \
- c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter13\baseshape\triangle\triangle.h \
- c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter13\baseshape\threedimshape\threedimshape.h \
- c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter13\baseshape\circle\circle.h \
- c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter13\baseshape\sphere\sphere.h
+ c:\mingw\include\c++\11.2.0\bits\invoke.h

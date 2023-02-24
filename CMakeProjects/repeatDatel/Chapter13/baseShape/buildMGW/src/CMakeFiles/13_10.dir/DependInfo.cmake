@@ -19,6 +19,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Triangle/CMakeFiles/Triangle.dir/DependInfo.cmake"
   "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/threeDimShape/CMakeFiles/threeDimShape.dir/DependInfo.cmake"
   "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Circle/CMakeFiles/Circle.dir/DependInfo.cmake"
+  "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/Sphere/CMakeFiles/Sphere.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
