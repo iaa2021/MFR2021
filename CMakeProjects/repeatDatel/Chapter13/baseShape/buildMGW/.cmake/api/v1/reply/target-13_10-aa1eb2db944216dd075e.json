@@ -95,9 +95,6 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				},
-				{
 					"fragment" : "-std=gnu++11"
 				}
 			],
@@ -105,7 +102,7 @@
 			[
 				{
 					"backtrace" : 9,
-					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/build/src"
+					"path" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW/src"
 				},
 				{
 					"backtrace" : 9,
@@ -192,61 +189,57 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
-			{
 				"fragment" : "",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "Shape\\libShape.a",
+				"fragment" : "..\\Shape\\libShape.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "twoDimShape\\libtwoDimShape.a",
+				"fragment" : "..\\twoDimShape\\libtwoDimShape.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "Rectangle\\libRectangle.a",
+				"fragment" : "..\\Rectangle\\libRectangle.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "Triangle\\libTriangle.a",
+				"fragment" : "..\\Triangle\\libTriangle.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "threeDimShape\\libthreeDimShape.a",
+				"fragment" : "..\\threeDimShape\\libthreeDimShape.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "Circle\\libCircle.a",
+				"fragment" : "..\\Circle\\libCircle.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 8,
-				"fragment" : "Sphere\\libSphere.a",
+				"fragment" : "..\\Sphere\\libSphere.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "twoDimShape\\libtwoDimShape.a",
+				"fragment" : "..\\twoDimShape\\libtwoDimShape.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "threeDimShape\\libthreeDimShape.a",
+				"fragment" : "..\\threeDimShape\\libthreeDimShape.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "Shape\\libShape.a",
+				"fragment" : "..\\Shape\\libShape.a",
 				"role" : "libraries"
 			},
 			{

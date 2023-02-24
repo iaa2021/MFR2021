@@ -155,6 +155,19 @@ Shape/fast:
 .PHONY : Shape/fast
 
 #=============================================================================
+# Target rules for targets named Sphere
+
+# Build rule for target.
+Sphere: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sphere
+.PHONY : Sphere
+
+# fast build rule for target.
+Sphere/fast:
+	$(MAKE) $(MAKESILENT) -f Sphere\CMakeFiles\Sphere.dir\build.make Sphere/CMakeFiles/Sphere.dir/build
+.PHONY : Sphere/fast
+
+#=============================================================================
 # Target rules for targets named Triangle
 
 # Build rule for target.
@@ -218,6 +231,7 @@ help:
 	@echo ... Circle
 	@echo ... Rectangle
 	@echo ... Shape
+	@echo ... Sphere
 	@echo ... Triangle
 	@echo ... threeDimShape
 	@echo ... twoDimShape

@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Cha
 all: Circle/all
 all: Rectangle/all
 all: Shape/all
+all: Sphere/all
 all: Triangle/all
 all: src/all
 all: threeDimShape/all
@@ -75,6 +76,7 @@ all: twoDimShape/all
 preinstall: Circle/preinstall
 preinstall: Rectangle/preinstall
 preinstall: Shape/preinstall
+preinstall: Sphere/preinstall
 preinstall: Triangle/preinstall
 preinstall: src/preinstall
 preinstall: threeDimShape/preinstall
@@ -85,6 +87,7 @@ preinstall: twoDimShape/preinstall
 clean: Circle/clean
 clean: Rectangle/clean
 clean: Shape/clean
+clean: Sphere/clean
 clean: Triangle/clean
 clean: src/clean
 clean: threeDimShape/clean
@@ -135,6 +138,21 @@ Shape/preinstall:
 # Recursive "clean" directory target.
 Shape/clean: Shape/CMakeFiles/Shape.dir/clean
 .PHONY : Shape/clean
+
+#=============================================================================
+# Directory level rules for directory Sphere
+
+# Recursive "all" directory target.
+Sphere/all: Sphere/CMakeFiles/Sphere.dir/all
+.PHONY : Sphere/all
+
+# Recursive "preinstall" directory target.
+Sphere/preinstall:
+.PHONY : Sphere/preinstall
+
+# Recursive "clean" directory target.
+Sphere/clean: Sphere/CMakeFiles/Sphere.dir/clean
+.PHONY : Sphere/clean
 
 #=============================================================================
 # Directory level rules for directory Triangle
@@ -277,6 +295,33 @@ Shape/CMakeFiles/Shape.dir/clean:
 .PHONY : Shape/CMakeFiles/Shape.dir/clean
 
 #=============================================================================
+# Target rules for target Sphere/CMakeFiles/Sphere.dir
+
+# All Build rule for target.
+Sphere/CMakeFiles/Sphere.dir/all: Shape/CMakeFiles/Shape.dir/all
+Sphere/CMakeFiles/Sphere.dir/all: threeDimShape/CMakeFiles/threeDimShape.dir/all
+	$(MAKE) $(MAKESILENT) -f Sphere\CMakeFiles\Sphere.dir\build.make Sphere/CMakeFiles/Sphere.dir/depend
+	$(MAKE) $(MAKESILENT) -f Sphere\CMakeFiles\Sphere.dir\build.make Sphere/CMakeFiles/Sphere.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=9,10 "Built target Sphere"
+.PHONY : Sphere/CMakeFiles/Sphere.dir/all
+
+# Build rule for subdir invocation for target.
+Sphere/CMakeFiles/Sphere.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Sphere/CMakeFiles/Sphere.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 0
+.PHONY : Sphere/CMakeFiles/Sphere.dir/rule
+
+# Convenience name for target.
+Sphere: Sphere/CMakeFiles/Sphere.dir/rule
+.PHONY : Sphere
+
+# clean rule for target.
+Sphere/CMakeFiles/Sphere.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Sphere\CMakeFiles\Sphere.dir\build.make Sphere/CMakeFiles/Sphere.dir/clean
+.PHONY : Sphere/CMakeFiles/Sphere.dir/clean
+
+#=============================================================================
 # Target rules for target Triangle/CMakeFiles/Triangle.dir
 
 # All Build rule for target.
@@ -284,7 +329,7 @@ Triangle/CMakeFiles/Triangle.dir/all: Shape/CMakeFiles/Shape.dir/all
 Triangle/CMakeFiles/Triangle.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
 	$(MAKE) $(MAKESILENT) -f Triangle\CMakeFiles\Triangle.dir\build.make Triangle/CMakeFiles/Triangle.dir/depend
 	$(MAKE) $(MAKESILENT) -f Triangle\CMakeFiles\Triangle.dir\build.make Triangle/CMakeFiles/Triangle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=9,10 "Built target Triangle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=11,12 "Built target Triangle"
 .PHONY : Triangle/CMakeFiles/Triangle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -310,6 +355,7 @@ Triangle/CMakeFiles/Triangle.dir/clean:
 src/CMakeFiles/13_10.dir/all: Circle/CMakeFiles/Circle.dir/all
 src/CMakeFiles/13_10.dir/all: Rectangle/CMakeFiles/Rectangle.dir/all
 src/CMakeFiles/13_10.dir/all: Shape/CMakeFiles/Shape.dir/all
+src/CMakeFiles/13_10.dir/all: Sphere/CMakeFiles/Sphere.dir/all
 src/CMakeFiles/13_10.dir/all: Triangle/CMakeFiles/Triangle.dir/all
 src/CMakeFiles/13_10.dir/all: twoDimShape/CMakeFiles/twoDimShape.dir/all
 src/CMakeFiles/13_10.dir/all: threeDimShape/CMakeFiles/threeDimShape.dir/all
@@ -320,7 +366,7 @@ src/CMakeFiles/13_10.dir/all: threeDimShape/CMakeFiles/threeDimShape.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/13_10.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/13_10.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles 0
 .PHONY : src/CMakeFiles/13_10.dir/rule
@@ -341,7 +387,7 @@ src/CMakeFiles/13_10.dir/clean:
 threeDimShape/CMakeFiles/threeDimShape.dir/all: Shape/CMakeFiles/Shape.dir/all
 	$(MAKE) $(MAKESILENT) -f threeDimShape\CMakeFiles\threeDimShape.dir\build.make threeDimShape/CMakeFiles/threeDimShape.dir/depend
 	$(MAKE) $(MAKESILENT) -f threeDimShape\CMakeFiles\threeDimShape.dir\build.make threeDimShape/CMakeFiles/threeDimShape.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=11,12 "Built target threeDimShape"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=13,14 "Built target threeDimShape"
 .PHONY : threeDimShape/CMakeFiles/threeDimShape.dir/all
 
 # Build rule for subdir invocation for target.
@@ -367,7 +413,7 @@ threeDimShape/CMakeFiles/threeDimShape.dir/clean:
 twoDimShape/CMakeFiles/twoDimShape.dir/all: Shape/CMakeFiles/Shape.dir/all
 	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/depend
 	$(MAKE) $(MAKESILENT) -f twoDimShape\CMakeFiles\twoDimShape.dir\build.make twoDimShape/CMakeFiles/twoDimShape.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=13,14 "Built target twoDimShape"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter13\baseShape\buildMGW\CMakeFiles --progress-num=15,16 "Built target twoDimShape"
 .PHONY : twoDimShape/CMakeFiles/twoDimShape.dir/all
 
 # Build rule for subdir invocation for target.
