@@ -1,0 +1,339 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-.-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Circle",
+					"jsonFile" : "directory-Circle-c095abeb43e62254e258.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Circle",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Rectangle",
+					"jsonFile" : "directory-Rectangle-1925dff8746ee306b9b2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Rectangle",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Shape",
+					"jsonFile" : "directory-Shape-f9b7bbc0cffe3947e41f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Shape",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "Sphere",
+					"jsonFile" : "directory-Sphere-79a744981fa951e9b73a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "Sphere",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "Triangle",
+					"jsonFile" : "directory-Triangle-78b0822e04d8ce532274.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "Triangle",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "threeDimShape",
+					"jsonFile" : "directory-threeDimShape-e65a58ce13f4989d18d3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "threeDimShape",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "twoDimShape",
+					"jsonFile" : "directory-twoDimShape-34ead179eae643fe6ad8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "twoDimShape",
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "baseShape"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Circle",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Rectangle",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Shape",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "Sphere",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "Triangle",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "13_10",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "threeDimShape",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "twoDimShape",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 6,
+					"id" : "13_10::@145eef247bfb46b6828c",
+					"jsonFile" : "target-13_10-aa1eb2db944216dd075e.json",
+					"name" : "13_10",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Circle::@8c0c3a9cd705dc4d4949",
+					"jsonFile" : "target-Circle-007f2c2a88035d9daade.json",
+					"name" : "Circle",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Rectangle::@83e40d626b8917bbe7cc",
+					"jsonFile" : "target-Rectangle-d6abe35c81db33400c53.json",
+					"name" : "Rectangle",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Shape::@4dcfc4c932ca5fcc208e",
+					"jsonFile" : "target-Shape-cef6304c4a07a302af31.json",
+					"name" : "Shape",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Sphere::@3b887131b4fe67832ceb",
+					"jsonFile" : "target-Sphere-71a8300dccf250e6b394.json",
+					"name" : "Sphere",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Triangle::@c62ee8c2c70b847b24d7",
+					"jsonFile" : "target-Triangle-1b8540ede9716340c949.json",
+					"name" : "Triangle",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "threeDimShape::@0c1abf900659d32d1129",
+					"jsonFile" : "target-threeDimShape-88b83b58e2b3f9dec8d2.json",
+					"name" : "threeDimShape",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "twoDimShape::@755fed76bb844f3bbc5a",
+					"jsonFile" : "target-twoDimShape-fccbf75eaff39986bcda.json",
+					"name" : "twoDimShape",
+					"projectIndex" : 8
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape/buildMGW",
+		"source" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter13/baseShape"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

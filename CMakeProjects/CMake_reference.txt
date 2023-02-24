@@ -1,16 +1,3 @@
-add_subdirectory ( Shape )
-
-add_subdirectory( twoDimShape )
-
-add_subdirectory( src )
-
-add_subdirectory( Rectangle )
-
-add_subdirectory( Triangle )
-
-add_subdirectory( threeDimShape )
-
-add_subdirectory( Circle )
 
 # Set the directory containing your source files
 set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR})
@@ -29,7 +16,7 @@ foreach(directory ${directories})
     list(APPEND dir_list ${directory})
   endif()
 endforeach()
-
+1. Creating a list of directories
 # Print the list of directories
 message(STATUS "Directories: ${dir_list}")
 
@@ -44,3 +31,18 @@ add_subdirectory ( ${directory} )
 endif()
 
 endforeach()
+1. Creating a list of binaries by chatGPT
+# Set the directory containing your binary files
+set(BIN_DIR ${CMAKE_CURRENT_BINARY_DIR})
+
+# Get a list of all binary files in your binary directory
+file(GLOB_RECURSE binary_files ${BIN_DIR}/*.exe ${BIN_DIR}/*.dll)
+
+# Iterate over the list of binary files
+foreach(binary_file ${binary_files})
+  # Add the current binary file to a list of binaries
+  list(APPEND binary_list ${binary_file})
+endforeach()
+
+# Print the list of binaries
+message(STATUS "Binaries: ${binary_list}")
