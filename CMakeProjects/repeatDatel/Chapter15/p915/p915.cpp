@@ -13,10 +13,12 @@ int main()
     cout << "The value of static_cast<void *>( word ) is: ";
     cout << static_cast<void *>( word ) << endl;
     cout << "The value of &word is: " << &word << endl;
-    getline( cin, text );
+    getline( cin, text );//for string text
     cout << "Text is: " << text << endl;
     cout << "Input text in array:\n";
-    cin.getline( array, 80 );
+    cin.getline( array, 80 );//for char *array
     cout << "Array is: " << array << endl;
+    cout.write( array, cin.gcount() );// output char *array with counted by gcount size
+    
     return 0;
 }
