@@ -19,6 +19,6 @@ int main()
     cin.getline( array, 80 );//for char *array
     cout << "Array is: " << array << endl;
     cout.write( array, cin.gcount() );// output char *array with counted by gcount size
-    
+    cout << "\nLast changes 28.02.2023.\n";
     return 0;
 }
