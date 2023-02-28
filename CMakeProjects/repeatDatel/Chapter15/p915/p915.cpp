@@ -18,10 +18,6 @@ int main()
     cout << "Input text in array:\n";
     cin.getline( array, 80 );
     cout << "Array is: " << array << endl;
-<<<<<<< HEAD
-    cout.write( array, cin.gcount() );// output char *array with counted by gcount size
-    cout << "\nLast changes 28.02.2023.\n";
-=======
->>>>>>> parent of 0bb95b3 (work with streams in p915)
+    cout.write( array, cin.gcount() );
     return 0;
 }
