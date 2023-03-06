@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/p993/buidlMGW/CMakeFiles/p993.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/p993/buidlMGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/p993/buidlMGW/CMakeFiles/rebuild_cache.dir
