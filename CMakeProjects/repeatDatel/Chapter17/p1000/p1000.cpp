@@ -25,7 +25,46 @@ int getRequest();
 bool shouldDisplay( int, double );
 int main()
 {
-
+    cout << "Project version is: " << (PROJECT_VERSION_MAJOR) << '.';
+    cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
+    ifstream inClientFile ( "clients.txt", ios::in );
+    if( !inClientFile )
+    {
+        cerr << "File cannot be opened by inClientFile.\n";
+        exit( 1 );
+    }
+    int request, account; char name[ 30 ]; double balance;
+    request = getRequest();
+    while ( request != END )
+    {
+        switch ( request )
+        {
+        case ZERO_BALANCE:
+            cout << "Accounts with zero balances:\n";
+            break;
+        case CREDIT_BALANCE:
+            cout << "Accounts with credit balances:\n";
+            break;
+        case DEBIT_BALANCE:
+            cout << "Accounts with debit balances:\n";
+            break;
+        default:
+            cout << "You've entered wrong request.\n";
+            break;
+        }
+        inClientFile >> account >> name >> balance;
+        while ( !inClientFile.eof() )
+        {
+            if( shouldDisplay( request, balance ) )
+            outputLine( account, name, balance );
+            inClientFile >> account >> name >> balance;
+        }
+        inClientFile.clear();
+        inClientFile.seekg( 0 );
+        request = getRequest();
+    }
+    cout << "End of run.\n";
+    return 0;
 }
 void outputLine( int account, const string name, double balance )
 {
@@ -44,13 +83,17 @@ int getRequest()
     {
         cout << "? ";
         cin >> request;
-    } while ( request >= ZERO_BALANCE && request <= END );
+    } while ( request << ZERO_BALANCE && request >> END );
     return request;
 }
 bool shouldDisplay( int type, double balance )
 {
     if( type == ZERO_BALANCE && balance == 0 )
     return true;
-    if( type == ZERO_BALANCE && balance == 0 )
+    if( type == CREDIT_BALANCE && balance < 0 )
     return true;
+    if( type == DEBIT_BALANCE && balance > 0 )
+    return true;
+
+    return false;
 }

@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: p993
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -44,9 +49,9 @@ cmake_ninja_workdir = C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel
 
 build cmake_object_order_depends_target_p993: phony || CMakeFiles/p993.dir
 
-build CMakeFiles/p993.dir/p993.cpp.obj: CXX_COMPILER__p993_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/p993/p993.cpp || cmake_object_order_depends_target_p993
+build CMakeFiles/p993.dir/p993.cpp.obj: CXX_COMPILER__p993_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/p993/p993.cpp || cmake_object_order_depends_target_p993
   DEP_FILE = CMakeFiles\p993.dir\p993.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -g -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/p993/. -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/p993/build
   OBJECT_DIR = CMakeFiles\p993.dir
   OBJECT_FILE_DIR = CMakeFiles\p993.dir
@@ -59,7 +64,8 @@ build CMakeFiles/p993.dir/p993.cpp.obj: CXX_COMPILER__p993_ C$:/Users/ivano/Desk
 #############################################
 # Link the executable p993.exe
 
-build p993.exe: CXX_EXECUTABLE_LINKER__p993_ CMakeFiles/p993.dir/p993.cpp.obj
+build p993.exe: CXX_EXECUTABLE_LINKER__p993_Debug CMakeFiles/p993.dir/p993.cpp.obj
+  FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\p993.dir
   POST_BUILD = cd .
