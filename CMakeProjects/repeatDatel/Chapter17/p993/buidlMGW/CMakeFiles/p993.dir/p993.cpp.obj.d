@@ -130,9 +130,22 @@ CMakeFiles/p993.dir/p993.cpp.obj: \
  c:\mingw\include\c++\11.2.0\bits\ostream.tcc \
  c:\mingw\include\c++\11.2.0\istream \
  c:\mingw\include\c++\11.2.0\bits\istream.tcc \
- c:\mingw\include\c++\11.2.0\fstream \
+ c:\mingw\include\c++\11.2.0\iomanip c:\mingw\include\c++\11.2.0\locale \
+ c:\mingw\include\c++\11.2.0\bits\locale_facets_nonio.h \
+ c:\mingw\include\c++\11.2.0\ctime \
+ c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\time_members.h \
+ c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\messages_members.h \
  c:\mingw\include\c++\11.2.0\bits\codecvt.h \
+ c:\mingw\include\c++\11.2.0\bits\locale_facets_nonio.tcc \
+ c:\mingw\include\c++\11.2.0\bits\locale_conv.h \
+ c:\mingw\include\c++\11.2.0\bits\unique_ptr.h \
+ c:\mingw\include\c++\11.2.0\utility \
+ c:\mingw\include\c++\11.2.0\bits\stl_relops.h \
+ c:\mingw\include\c++\11.2.0\tuple c:\mingw\include\c++\11.2.0\array \
+ c:\mingw\include\c++\11.2.0\bits\uses_allocator.h \
+ c:\mingw\include\c++\11.2.0\bits\invoke.h \
+ c:\mingw\include\c++\11.2.0\fstream \
  c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\basic_file.h \
  c:\mingw\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++io.h \
  c:\mingw\include\c++\11.2.0\bits\fstream.tcc \
- C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/p993/buidlMGW/config.h
+ C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\p993\config.h
