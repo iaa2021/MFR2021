@@ -64,16 +64,19 @@ CMAKE_BINARY_DIR = C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Cha
 # The main recursive "all" target.
 all: lib/all
 all: src/all
+all: src1/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: lib/preinstall
 preinstall: src/preinstall
+preinstall: src1/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: lib/clean
 clean: src/clean
+clean: src1/clean
 .PHONY : clean
 
 #=============================================================================
@@ -105,6 +108,21 @@ src/preinstall:
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/p1006.dir/clean
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src1
+
+# Recursive "all" directory target.
+src1/all: src1/CMakeFiles/read.dir/all
+.PHONY : src1/all
+
+# Recursive "preinstall" directory target.
+src1/preinstall:
+.PHONY : src1/preinstall
+
+# Recursive "clean" directory target.
+src1/clean: src1/CMakeFiles/read.dir/clean
+.PHONY : src1/clean
 
 #=============================================================================
 # Target rules for target lib/CMakeFiles/myLib.dir
@@ -157,6 +175,32 @@ p1006: src/CMakeFiles/p1006.dir/rule
 src/CMakeFiles/p1006.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1006.dir\build.make src/CMakeFiles/p1006.dir/clean
 .PHONY : src/CMakeFiles/p1006.dir/clean
+
+#=============================================================================
+# Target rules for target src1/CMakeFiles/read.dir
+
+# All Build rule for target.
+src1/CMakeFiles/read.dir/all: lib/CMakeFiles/myLib.dir/all
+	$(MAKE) $(MAKESILENT) -f src1\CMakeFiles\read.dir\build.make src1/CMakeFiles/read.dir/depend
+	$(MAKE) $(MAKESILENT) -f src1\CMakeFiles\read.dir\build.make src1/CMakeFiles/read.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData\buildMGW\CMakeFiles --progress-num=5,6 "Built target read"
+.PHONY : src1/CMakeFiles/read.dir/all
+
+# Build rule for subdir invocation for target.
+src1/CMakeFiles/read.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData\buildMGW\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src1/CMakeFiles/read.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData\buildMGW\CMakeFiles 0
+.PHONY : src1/CMakeFiles/read.dir/rule
+
+# Convenience name for target.
+read: src1/CMakeFiles/read.dir/rule
+.PHONY : read
+
+# clean rule for target.
+src1/CMakeFiles/read.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src1\CMakeFiles\read.dir\build.make src1/CMakeFiles/read.dir/clean
+.PHONY : src1/CMakeFiles/read.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

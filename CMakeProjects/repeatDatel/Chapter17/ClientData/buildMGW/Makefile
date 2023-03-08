@@ -141,6 +141,19 @@ p1006/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1006.dir\build.make src/CMakeFiles/p1006.dir/build
 .PHONY : p1006/fast
 
+#=============================================================================
+# Target rules for targets named read
+
+# Build rule for target.
+read: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 read
+.PHONY : read
+
+# fast build rule for target.
+read/fast:
+	$(MAKE) $(MAKESILENT) -f src1\CMakeFiles\read.dir\build.make src1/CMakeFiles/read.dir/build
+.PHONY : read/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -151,6 +164,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... myLib
 	@echo ... p1006
+	@echo ... read
 .PHONY : help
 
 
