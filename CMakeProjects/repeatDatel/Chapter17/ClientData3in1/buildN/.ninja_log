@@ -1,0 +1,9 @@
+# ninja log v5
+27	1427	6999997066533613	lib/CMakeFiles/myLib.dir/ClientData.cpp.obj	57d6e27b5aaad0d4
+49	1771	6999997069971485	src/CMakeFiles/read.dir/read.cpp.obj	d3d1d5eecbbf6e06
+1440	1992	6999997072429942	lib/libmyLib.a	ce261f48038228a4
+68	1781	6999997070141369	src/CMakeFiles/write.dir/write.cpp.obj	23ebe7c89e9dcdf6
+2027	4748	6999997098603719	src/write.exe	3257826f8b804ef2
+1993	4756	6999997098463810	src/read.exe	218e9a2c00936bc9
+46	899	7000003062847108	src/CMakeFiles/create.dir/create.cpp.obj	760cc5328dad87f0
+910	2581	7000003079466798	src/create.exe	39a4b17d0318ea40
