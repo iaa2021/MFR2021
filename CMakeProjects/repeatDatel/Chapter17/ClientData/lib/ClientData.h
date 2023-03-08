@@ -3,6 +3,10 @@
 using std::string;
 #include <cstring>
 using std::strncpy;
+#include <iostream>
+using std::cout;
+using std::endl;
+#include "config.h"
 class ClientData
 {
 public:
@@ -15,6 +19,7 @@ public:
     string getLastName() const;
     void setBalance( double );
     double getBalance() const;
+    void printVersion() const;
 private:
     int account;
     double balance;

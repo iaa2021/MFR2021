@@ -1,0 +1,7 @@
+# ninja log v5
+43	1292	6999739107082836	src/CMakeFiles/p1006.dir/p1006.cpp.obj	e7ebaeb79b13bedf
+64	1369	6999740504403214	src/CMakeFiles/p1006.dir/p1006.cpp.obj	e7ebaeb79b13bedf
+44	1049	6999741778084049	lib/CMakeFiles/myLib.dir/ClientData.cpp.obj	6a7e21abfe4a329a
+61	1512	6999741782611250	src/CMakeFiles/p1006.dir/p1006.cpp.obj	e7ebaeb79b13bedf
+1067	1782	6999741785499450	lib/libmyLib.a	ce261f48038228a4
+1784	4215	6999741809674463	src/p1006.exe	b7bc9aba9bfc8f3b

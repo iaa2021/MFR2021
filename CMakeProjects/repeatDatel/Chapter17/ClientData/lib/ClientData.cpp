@@ -7,7 +7,6 @@ ClientData::ClientData( int accN, string fN, string lN, double bV )
     setLastName( lN );
     setBalance( bV );
 }
-
 void ClientData::setAccountNumber( int accN )
 {
     account = accN;
@@ -18,7 +17,7 @@ int ClientData::getAccountNumber() const
 }
 void ClientData::setFirstName( string fNS )
 {
-    char *fN = fNS.data();
+    const char *fN = fNS.data();
     int length = fNS.size();
     length = ( length > 10 ? 9 : length );
     strncpy( firstName, fN, length );
@@ -30,7 +29,7 @@ string ClientData::getFirstName() const
 }
 void ClientData::setLastName( string lNS )
 {
-    char *lN = lNS.data();
+    const char *lN = lNS.data();
     int length = lNS.size();
     length = ( length < 15 ? length : 14 );
     strncpy( lastName, lN, length );
@@ -47,4 +46,9 @@ void ClientData::setBalance( double b )
 double ClientData::getBalance() const
 {
     return balance;
+}
+void ClientData::printVersion() const
+{
+    cout << "Library's version is: " << (PROJECT_VERSION_MAJOR) << '.';
+    cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
 }
