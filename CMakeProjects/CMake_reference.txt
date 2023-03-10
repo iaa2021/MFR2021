@@ -46,3 +46,17 @@ endforeach()
 
 # Print the list of binaries
 message(STATUS "Binaries: ${binary_list}")
+
+#Creating a list of targets
+set( targets read write create )
+#handling it
+foreach( target ${targets} )
+    set_target_properties( ${target} PROPERTIES
+    CXX_STANDARD 11
+    CXX_STANDARD_REQUIRED ON )
+
+    target_include_directories( ${target} PRIVATE ../lib 
+    PRIVATE ${CMAKE_CURRENT_BINARY_DIR} PRIVATE . )
+
+    target_link_libraries( ${target} myLib )
+endforeach()
