@@ -60,4 +60,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/read.dir/DependInfo.cmake"
   "src/CMakeFiles/write.dir/DependInfo.cmake"
   "src/CMakeFiles/create.dir/DependInfo.cmake"
+  "src/CMakeFiles/handle.dir/DependInfo.cmake"
   )

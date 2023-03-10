@@ -167,6 +167,19 @@ create/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\create.dir\build.make src/CMakeFiles/create.dir/build
 .PHONY : create/fast
 
+#=============================================================================
+# Target rules for targets named handle
+
+# Build rule for target.
+handle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 handle
+.PHONY : handle
+
+# fast build rule for target.
+handle/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\handle.dir\build.make src/CMakeFiles/handle.dir/build
+.PHONY : handle/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -176,6 +189,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... create
+	@echo ... handle
 	@echo ... myLib
 	@echo ... read
 	@echo ... write

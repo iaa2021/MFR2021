@@ -6,5 +6,6 @@ C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ClientData3i
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ClientData3in1/buildN/src/CMakeFiles/read.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ClientData3in1/buildN/src/CMakeFiles/write.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ClientData3in1/buildN/src/CMakeFiles/create.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ClientData3in1/buildN/src/CMakeFiles/handle.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ClientData3in1/buildN/src/CMakeFiles/edit_cache.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ClientData3in1/buildN/src/CMakeFiles/rebuild_cache.dir

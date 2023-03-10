@@ -7,8 +7,9 @@ configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 add_executable( read read.cpp )
 add_executable( write write.cpp )
 add_executable( create create.cpp )
+add_executable( handle handle.cpp )
 
-set( targets read write create )
+set( targets read write create handle )
 
 foreach( target ${targets} )
     set_target_properties( ${target} PROPERTIES

@@ -98,6 +98,7 @@ lib/clean: lib/CMakeFiles/myLib.dir/clean
 src/all: src/CMakeFiles/read.dir/all
 src/all: src/CMakeFiles/write.dir/all
 src/all: src/CMakeFiles/create.dir/all
+src/all: src/CMakeFiles/handle.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -108,6 +109,7 @@ src/preinstall:
 src/clean: src/CMakeFiles/read.dir/clean
 src/clean: src/CMakeFiles/write.dir/clean
 src/clean: src/CMakeFiles/create.dir/clean
+src/clean: src/CMakeFiles/handle.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -117,7 +119,7 @@ src/clean: src/CMakeFiles/create.dir/clean
 lib/CMakeFiles/myLib.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib\CMakeFiles\myLib.dir\build.make lib/CMakeFiles/myLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib\CMakeFiles\myLib.dir\build.make lib/CMakeFiles/myLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData3in1\buildMGW\CMakeFiles --progress-num=3,4 "Built target myLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData3in1\buildMGW\CMakeFiles --progress-num=5,6 "Built target myLib"
 .PHONY : lib/CMakeFiles/myLib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -143,7 +145,7 @@ lib/CMakeFiles/myLib.dir/clean:
 src/CMakeFiles/read.dir/all: lib/CMakeFiles/myLib.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\read.dir\build.make src/CMakeFiles/read.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\read.dir\build.make src/CMakeFiles/read.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData3in1\buildMGW\CMakeFiles --progress-num=5,6 "Built target read"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData3in1\buildMGW\CMakeFiles --progress-num=7,8 "Built target read"
 .PHONY : src/CMakeFiles/read.dir/all
 
 # Build rule for subdir invocation for target.
@@ -169,7 +171,7 @@ src/CMakeFiles/read.dir/clean:
 src/CMakeFiles/write.dir/all: lib/CMakeFiles/myLib.dir/all
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\write.dir\build.make src/CMakeFiles/write.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\write.dir\build.make src/CMakeFiles/write.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData3in1\buildMGW\CMakeFiles --progress-num=7,8 "Built target write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData3in1\buildMGW\CMakeFiles --progress-num=9,10 "Built target write"
 .PHONY : src/CMakeFiles/write.dir/all
 
 # Build rule for subdir invocation for target.
@@ -213,6 +215,32 @@ create: src/CMakeFiles/create.dir/rule
 src/CMakeFiles/create.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\create.dir\build.make src/CMakeFiles/create.dir/clean
 .PHONY : src/CMakeFiles/create.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/handle.dir
+
+# All Build rule for target.
+src/CMakeFiles/handle.dir/all: lib/CMakeFiles/myLib.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\handle.dir\build.make src/CMakeFiles/handle.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\handle.dir\build.make src/CMakeFiles/handle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData3in1\buildMGW\CMakeFiles --progress-num=3,4 "Built target handle"
+.PHONY : src/CMakeFiles/handle.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/handle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData3in1\buildMGW\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/handle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ClientData3in1\buildMGW\CMakeFiles 0
+.PHONY : src/CMakeFiles/handle.dir/rule
+
+# Convenience name for target.
+handle: src/CMakeFiles/handle.dir/rule
+.PHONY : handle
+
+# clean rule for target.
+src/CMakeFiles/handle.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\handle.dir\build.make src/CMakeFiles/handle.dir/clean
+.PHONY : src/CMakeFiles/handle.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
