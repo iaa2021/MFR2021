@@ -26,7 +26,6 @@ void updateRecord( fstream & );
 void createRecord( fstream & );
 void deleteRecord( fstream & );
 void newRecord( fstream & );
-int getAccount( const char * const );
 enum Choices { PRINT = 1, UPDATE, NEW, DELETE, END }; 
 int main()
 {
@@ -69,16 +68,11 @@ void outputLine( ostream &output, const ClientData &client )
     output << setw( 10 ) << fixed << showpoint << setprecision( 2 );
     output << right << client.getBalance() << endl;
 }
-int getAccount( const char * const prompt )
-{
-    int accountNumber;
-        cout << prompt << " from 1 - 100: ";
-        cin >> accountNumber;
-    return accountNumber;
-}
 void newRecord( fstream &insertInFile )
 {
-    int accountNumber = getAccount( "\nEnter account number to create:\n? " );
+    int accountNumber;
+    cout << "\nEnter account number to create:\n? ";
+    cin >> accountNumber;
     //move pointer to a corresponding position
     insertInFile.seekg( ( accountNumber - 1 ) * sizeof( ClientData ) );
     ClientData client;
@@ -100,7 +94,8 @@ void newRecord( fstream &insertInFile )
 }
 void deleteRecord( fstream &deleteFromFile )
 {
-    int accountNumber = getAccount( "Enter account number to delete:\n? " );
+    int accountNumber;
+    cout << "Enter account number to delete:\n? ";
     cin >> accountNumber;
     //move pointer to a corresponding position
     deleteFromFile.seekg( ( accountNumber - 1 ) * sizeof( ClientData) );
@@ -120,7 +115,8 @@ void deleteRecord( fstream &deleteFromFile )
 }
 void updateRecord( fstream &updateFile )
 {
-    int accountNumber = getAccount( "Enter an account to update: " );
+    int accountNumber;
+    cout << "Enter an account to update: ";
     cin >> accountNumber;
     ClientData client;
     //move pointer to a corresponding position

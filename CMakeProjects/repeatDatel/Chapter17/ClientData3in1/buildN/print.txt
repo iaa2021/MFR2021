@@ -1,6 +1,6 @@
 Account   Last Name       First Name    Balance
 29        Nancy           Brown            0.00
-33        Stacey          Dunn           321.98
+33        Stacey          Dunn           221.98
 37        Doug            Baker            0.00
 88        Dave            Smith          258.34
 96        Sam             Stone           34.98
