@@ -21,44 +21,55 @@ using std::setprecision;
 using std::string;
 int main()
 {
-    ofstream outOldMaster( "oldmast.txt", ios::out );
-    if( !outOldMaster )
-    {
-        cerr << "File cannot be opened by outOldMast.\n";
-        exit( 1 );
-    }
-    ifstream inOldMaster( "oldmast.txt", ios::in );
+    ofstream outOldMaster;//( "oldmast.txt", ios::out );
+    
+    ifstream inOldMaster;//( "oldmast.txt", ios::in );
     if( !inOldMaster )
     {
         cerr << "File cannot be opened by inOldMast.\n";
         exit( 1 );
     }
-    ofstream outTransaction( "trans.txt", ios::out );
+    ofstream outTransaction;//( "trans.txt", ios::out );
     if( !outTransaction )
     {
         cerr << "File cannot be opened by inTransaction.\n";
         exit( 1 );
     }
-    ifstream inTransaction( "trans.txt", ios::in );
+    ifstream inTransaction;//( "trans.txt", ios::in );
     if( !inTransaction )
     {
         cerr << "File cannot be opened by inTransaction.\n";
         exit( 1 );
     }
-    ofstream outNewMaster( "newmast.txt", ios::out );
+    ofstream outNewMaster;//( "newmast.txt", ios::out );
     if( !inOldMaster )
     {
         cerr << "File cannot be opened by inOldMast.\n";
         exit( 1 );
     }
-    int accountNumber; char name[ 30 ]; double balance;
-    outOldMaster << setw(10) << "Account" << setw(15) << right << "Name";
-    outOldMaster << setw(20) << right << "Balance\n";
-    cout << "Input data in oldmast.txt:\n? ";
-    while ( cin >> accountNumber >> name >> balance )
+    int accountNumber, choice; char name[ 30 ]; double balance;
+    cout << "Input choice, 1 - to input data in oldmast.txt :\n? ";
+    cin >> choice;
+    switch( choice )
     {
-        outOldMaster << accountNumber << ' ' << name << ' ' << balance << endl;
-        cout << "? ";
+        case 1:
+        {
+            outOldMaster.open( "oldmast.txt", ios::out );
+            if( !outOldMaster )
+            {
+                cerr << "File cannot be opened by outOldMast.\n";
+                exit( 1 );
+            }
+            outOldMaster << setw(10) << "Account" << setw(15) << right << "Name";
+            outOldMaster << setw(20) << right << "Balance\n";
+            cout << "Input data in oldmast.txt:\n? ";
+            while ( cin >> accountNumber >> name >> balance )
+            {
+                outOldMaster << accountNumber << ' ' << name << ' ' << balance << endl;
+                cout << "Input data in oldmast.txt:\n? ";
+                cin >> accountNumber >> name >> balance;
+            }
+        }
     }
     return 0;
 }
