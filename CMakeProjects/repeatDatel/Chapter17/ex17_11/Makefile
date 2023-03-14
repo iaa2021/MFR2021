@@ -8,7 +8,7 @@ CXXFLAGS = -std=c++11 -Wall
 LDFLAGS = 
 
 # Makefile settings - Can be customized.
-APPNAME = 17_11
+APPNAME = create
 EXT = .cpp
 SRCDIR = C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ex17_11
 OBJDIR = obj
