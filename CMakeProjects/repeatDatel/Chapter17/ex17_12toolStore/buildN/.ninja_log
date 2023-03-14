@@ -1,0 +1,5 @@
+# ninja log v5
+125	1537	7005196158820212	src/CMakeFiles/create.dir/create.cpp.obj	dc72d7d844e914cd
+1587	2180	7005196165566047	lib/libmyLib.a	177405d46e94f0f5
+107	1577	7005196158790238	lib/CMakeFiles/myLib.dir/ToolStore.cpp.obj	b9968fedd56aa36e
+51	1663	7005197733675646	src/create.exe	39a4b17d0318ea40
