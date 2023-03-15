@@ -15,7 +15,7 @@ int ToolStore::getNumber() const
 }
 void ToolStore::setQwantity( int qw )
 {
-    qw = ( qw < 0 ? 0 : qw );
+    qwantity = ( qw < 0 ? 0 : qw );
 }
 int ToolStore::getQwantity() const
 {

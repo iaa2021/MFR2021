@@ -1,4 +1,4 @@
-Number Tool's name Price Qwantity
-67305472 ÷0.00 5
-1075838976 0.00 32759
-7 knife11.00 32759
+Number Tool's name Qwantity Price
+3    Grinding_mashine    7         57.99  
+17   hummer              76        11.98  
+24   jigsaw              11        11.25  
