@@ -157,6 +157,39 @@ build src/create.exe: CXX_EXECUTABLE_LINKER__create_ src/CMakeFiles/create.dir/c
   TARGET_IMPLIB = src\libcreate.dll.a
   TARGET_PDB = create.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target handle
+
+
+#############################################
+# Order-only phony target for handle
+
+build cmake_object_order_depends_target_handle: phony || cmake_object_order_depends_target_myLib
+
+build src/CMakeFiles/handle.dir/handle.cpp.obj: CXX_COMPILER__handle_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/src/handle.cpp || cmake_object_order_depends_target_handle
+  DEP_FILE = src\CMakeFiles\handle.dir\handle.cpp.obj.d
+  FLAGS = -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/buildN/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/src/. -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/src/../lib
+  OBJECT_DIR = src\CMakeFiles\handle.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\handle.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target handle
+
+
+#############################################
+# Link the executable src\handle.exe
+
+build src/handle.exe: CXX_EXECUTABLE_LINKER__handle_ src/CMakeFiles/handle.dir/handle.cpp.obj | lib/libmyLib.a || lib/libmyLib.a
+  LINK_LIBRARIES = lib/libmyLib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\handle.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\handle.exe
+  TARGET_IMPLIB = src\libhandle.dll.a
+  TARGET_PDB = handle.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -188,6 +221,10 @@ build create: phony src/create.exe
 
 build create.exe: phony src/create.exe
 
+build handle: phony src/handle.exe
+
+build handle.exe: phony src/handle.exe
+
 build libmyLib.a: phony lib/libmyLib.a
 
 build myLib: phony lib/libmyLib.a
@@ -214,7 +251,7 @@ build lib/all: phony lib/libmyLib.a
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/buildN/src
 
-build src/all: phony src/create.exe
+build src/all: phony src/create.exe src/handle.exe
 
 # =============================================================================
 # Built-in targets

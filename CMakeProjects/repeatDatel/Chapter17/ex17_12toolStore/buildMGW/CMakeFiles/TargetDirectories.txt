@@ -4,5 +4,6 @@ C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolS
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/buildMGW/lib/CMakeFiles/edit_cache.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/buildMGW/lib/CMakeFiles/rebuild_cache.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/buildMGW/src/CMakeFiles/create.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/buildMGW/src/CMakeFiles/handle.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/buildMGW/src/CMakeFiles/edit_cache.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter17/ex17_12toolStore/buildMGW/src/CMakeFiles/rebuild_cache.dir

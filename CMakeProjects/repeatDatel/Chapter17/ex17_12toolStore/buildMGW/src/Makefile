@@ -129,6 +129,20 @@ create/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ex17_12toolStore\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\create.dir\build.make src/CMakeFiles/create.dir/build
 .PHONY : create/fast
 
+# Convenience name for target.
+src/CMakeFiles/handle.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ex17_12toolStore\buildMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/handle.dir/rule
+.PHONY : src/CMakeFiles/handle.dir/rule
+
+# Convenience name for target.
+handle: src/CMakeFiles/handle.dir/rule
+.PHONY : handle
+
+# fast build rule for target.
+handle/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ex17_12toolStore\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\handle.dir\build.make src/CMakeFiles/handle.dir/build
+.PHONY : handle/fast
+
 create.obj: create.cpp.obj
 .PHONY : create.obj
 
@@ -153,6 +167,30 @@ create.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ex17_12toolStore\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\create.dir\build.make src/CMakeFiles/create.dir/create.cpp.s
 .PHONY : create.cpp.s
 
+handle.obj: handle.cpp.obj
+.PHONY : handle.obj
+
+# target to build an object file
+handle.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ex17_12toolStore\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\handle.dir\build.make src/CMakeFiles/handle.dir/handle.cpp.obj
+.PHONY : handle.cpp.obj
+
+handle.i: handle.cpp.i
+.PHONY : handle.i
+
+# target to preprocess a source file
+handle.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ex17_12toolStore\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\handle.dir\build.make src/CMakeFiles/handle.dir/handle.cpp.i
+.PHONY : handle.cpp.i
+
+handle.s: handle.cpp.s
+.PHONY : handle.s
+
+# target to generate assembly for a file
+handle.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter17\ex17_12toolStore\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\handle.dir\build.make src/CMakeFiles/handle.dir/handle.cpp.s
+.PHONY : handle.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -162,9 +200,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... create
+	@echo ... handle
 	@echo ... create.obj
 	@echo ... create.i
 	@echo ... create.s
+	@echo ... handle.obj
+	@echo ... handle.i
+	@echo ... handle.s
 .PHONY : help
 
 
