@@ -1,4 +1,5 @@
 Number Tool's name Qwantity Price
-3    Grinding_mashine    7         57.99  
-17   hummer              76        11.98  
-24   jigsaw              11        11.25  
+3    Grinding_mashine    7         57.89  
+17   hummer              76        11.89  
+24   jigsaw              11        21.00  
+39   lawn_mover          47        79.50  
