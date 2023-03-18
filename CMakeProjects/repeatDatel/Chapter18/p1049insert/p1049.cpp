@@ -35,6 +35,13 @@ int main()
         cout << *it;
         it++;
     }
+    cout << "\n\nPassing string1 in reverse order.\n";
+    string::const_reverse_iterator it1 = string1.rbegin();
+    while ( it1 != string1.rend() )
+    {
+        cout << *it1;
+        it1++;
+    }
     cout << endl;
     return 0;
 }
