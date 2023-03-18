@@ -4,6 +4,8 @@ project( 1049 VERSION 1.3.5 )
 
 configure_file( config.h.in config.h )
 
+configure_file( config.h.in ../config.h )
+
 add_executable( 1049 p1049.cpp )
 
 set_target_properties( 1049 PROPERTIES 
