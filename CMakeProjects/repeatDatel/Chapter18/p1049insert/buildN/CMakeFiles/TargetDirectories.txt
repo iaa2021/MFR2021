@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter18/p1049insert/buildN/CMakeFiles/1049.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter18/p1049insert/buildN/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter18/p1049insert/buildN/CMakeFiles/rebuild_cache.dir
