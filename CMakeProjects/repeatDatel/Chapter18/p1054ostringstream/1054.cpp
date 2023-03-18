@@ -4,6 +4,7 @@ using std::cin;
 using std::endl;
 #include <sstream>
 using std::ostringstream;
+using std::istringstream;
 #include <string>
 using std::string;
 int main()
@@ -22,5 +23,16 @@ int main()
     cout << "outputString's content after adding new data is:\n";
     outputString << "\nAdding new content.\n";
     cout << outputString.str();
+    cout << "\nWork with istringstream object.\n";
+    string input( "Input test 123 4.7 A" );
+    istringstream inputTest( input );
+    string string11;
+    string string12;
+    int integer1;
+    double double2;
+    char character;
+    inputTest >> string11 >> string12 >> integer1 >> double2 >> character;
+    cout << "Such data was extracted from inputTest:\n";
+    cout << string11 << "  " << string12 << "  " << double2 << "  " << character << endl;
     return 0;
 }
