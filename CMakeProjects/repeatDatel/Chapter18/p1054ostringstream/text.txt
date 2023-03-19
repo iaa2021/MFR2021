@@ -1,0 +1,5 @@
+Output of several data types to an ostringstream object:
+ double: 123.456
+ int: 22
+address of int: 0x51bdfff8ac
+more characters added
