@@ -17,7 +17,7 @@ int main()
         if( letter == question.at( right ) )
         {
             answer += letter;
-            right++; count++;
+            right++;
             if ( answer == question )
             {
                 cout << "Well done, the word is: " << answer << endl;;
@@ -37,7 +37,7 @@ int main()
             }
             else
            { 
-                cout << "You've done " << count << " attempts.\n";
+                cout << "You've done " << count << " wrong attempts.\n";
                 cout << "Try again:\n? ";
             }
         }
