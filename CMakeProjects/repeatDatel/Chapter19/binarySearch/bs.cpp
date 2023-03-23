@@ -11,11 +11,16 @@ using std::srand;
 using std::time;
 #include <iomanip>
 using std::setw;
+#include <algorithm>
+using std::sort;
+using std::copy;
+#include <iterator>
+using std::ostream_iterator;
 int binarySearch( vector<int>, int, size_t, size_t );
 int main()
 {
     srand( time( 0 ) );
-    vector <int> v;
+    vector <int> v; ostream_iterator <int> it( cout, ", ");
     for (size_t i = 0; i < 100; i++)
     {
         v.push_back( rand()%1000 + 1 );
@@ -27,6 +32,9 @@ int main()
         if( ( i + 1 ) % 10 == 0 )
         cout << endl;
     }
+    cout << "\nSorted by function vector is:\n";
+    sort( v.begin(), v.end());
+    copy( v.begin(), v.end(), it );
     int hold;
     for (size_t i = 0; i < 99; i++)
     {
