@@ -11,6 +11,7 @@ using std::srand;
 using std::time;
 #include <iomanip>
 using std::setw;
+int binarySearch( vector<int>, int, size_t, size_t );
 int main()
 {
     srand( time( 0 ) );
@@ -46,23 +47,29 @@ int main()
         if( ( i + 1 ) % 10 == 0 )
         cout << endl;
     }
-    int key, attempt = -1; size_t min = 0, max = v.size(), n;
+    int key;
     cout << "Input search key: ";
     cin >> key;
-    n = ( max - min ) / 2;
-    attempt = v.at( n );
-    while ( key != attempt )
-    {
-        if ( key > v.at( n ))
-            min = n;
-        else
-            max = n;
-
-        n = ( max - min ) / 2;
-        attempt = v.at( n );
-    }
-    if( v.at( n ) == key )
-    cout << key << " was found in " << n << " position.\n";
+    cout << key << " was found in ";
+    cout << binarySearch( v, key, 0, v.size() ) << " position.\n";
+    cout << "\nLet's check it, input position:\n";
+    cin >> key;
+    cout << "\nValue in key position is: " << v.at( key ) << endl;
     return 0;
 }
-
+int binarySearch( vector<int> v, int key, size_t min, size_t max )
+{
+    int n = ( max + min )/2;
+    if( key == v.at( n ) )
+    return n;
+    else
+    {
+        if( key > v.at( n ) )
+        {
+            min = n;
+        }
+        else 
+        { max = n; }
+        return binarySearch( v, key, min, max );   
+    }
+}
