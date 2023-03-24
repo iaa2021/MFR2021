@@ -4,7 +4,7 @@ template < class NodeType > class List;
 template < class NodeType >
 class ListNode
 {
-    friend class List;
+    friend class List<NodeType>;
     public:
     ListNode( const NodeType & );
     NodeType getData() const;

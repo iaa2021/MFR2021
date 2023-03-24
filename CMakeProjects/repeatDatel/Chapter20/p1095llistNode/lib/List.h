@@ -3,6 +3,7 @@
 #include <iostream>
 using std::cout;
 using std::endl;
+#include "config.h"
 template < class NodeType >
 class List
 {
@@ -15,9 +16,10 @@ public:
     bool removeFromBack( NodeType & );
     bool isEmpty() const;
     void print() const;
+    void printVersion();
 private:
-    ListNode<NodeType> first;
-    ListNode<NodeType> last;
+    ListNode<NodeType> *first;
+    ListNode<NodeType> *last;
     ListNode<NodeType> *getNewNode( const NodeType & );
 };
 template < class NodeType >
@@ -137,4 +139,10 @@ void List<NodeType>::print() const
         }
         cout << endl;
     }
+}
+template< class NodeType >
+void List<NodeType>::printVersion() 
+{
+    cout << "\nLibrary's version is " << (PROJECT_VERSION_MAJOR) << '.';
+    cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
 }
