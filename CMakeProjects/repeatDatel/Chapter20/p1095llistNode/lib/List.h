@@ -13,7 +13,7 @@ public:
     void insertAtFront( const NodeType & );
     void insertAtBack( const NodeType & );
     bool removeFromFront( NodeType & );
-    bool removeFromBack( NodeType & );
+    bool removeFromBack();
     bool isEmpty() const;
     void print() const;
     void printVersion();
@@ -87,25 +87,26 @@ bool List<NodeType>::removeFromFront( NodeType &value )
     }
 }
 template < class NodeType >
-bool List<NodeType>::removeFromBack( NodeType &value )
+bool List<NodeType>::removeFromBack()
 {
     if ( isEmpty() )
     return false;
     else
     {
         ListNode< NodeType > *temp = last;
+        
         if ( first = last )
         first = last = 0;
         else
         {
             ListNode< NodeType > *current = first;
             while ( current -> nextPtr != last )
-                current = current -> nextPtr;
-
+                {
+                    current = current -> nextPtr;
+                }
             last = current;
             current -> nextPtr = 0;
         }  
-        value = temp -> data;
         delete temp;
         return true;
     }

@@ -1,0 +1,125 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Ninja"
+		},
+		"paths" : 
+		{
+			"cmake" : "/snap/cmake/1276/bin/cmake",
+			"cpack" : "/snap/cmake/1276/bin/cpack",
+			"ctest" : "/snap/cmake/1276/bin/ctest",
+			"root" : "/snap/cmake/1276/share/cmake-3.26"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 26,
+			"patch" : 1,
+			"string" : "3.26.1",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-f45f641bf91b32c12aaa.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 5
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-cdeaaa439478cfdf1050.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-c0e02fc4d861ed977ad7.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"client-vscode-cmake-lite" : 
+		{
+			"query.json" : 
+			{
+				"requests" : 
+				[
+					{
+						"kind" : "codemodel",
+						"version" : 
+						[
+							{
+								"major" : 2
+							}
+						]
+					},
+					{
+						"kind" : "cache",
+						"version" : 
+						[
+							{
+								"major" : 2
+							}
+						]
+					},
+					{
+						"kind" : "cmakeFiles",
+						"version" : 
+						[
+							{
+								"major" : 1
+							}
+						]
+					}
+				],
+				"responses" : 
+				[
+					{
+						"jsonFile" : "codemodel-v2-f45f641bf91b32c12aaa.json",
+						"kind" : "codemodel",
+						"version" : 
+						{
+							"major" : 2,
+							"minor" : 5
+						}
+					},
+					{
+						"jsonFile" : "cache-v2-cdeaaa439478cfdf1050.json",
+						"kind" : "cache",
+						"version" : 
+						{
+							"major" : 2,
+							"minor" : 0
+						}
+					},
+					{
+						"jsonFile" : "cmakeFiles-v1-c0e02fc4d861ed977ad7.json",
+						"kind" : "cmakeFiles",
+						"version" : 
+						{
+							"major" : 1,
+							"minor" : 0
+						}
+					}
+				]
+			}
+		}
+	}
+}

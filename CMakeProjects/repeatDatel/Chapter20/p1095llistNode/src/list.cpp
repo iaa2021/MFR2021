@@ -24,9 +24,11 @@ int main()
     }
     cout << "\nAfter insert values at back integer's list is:\n";
     intList.print();
-    cout << "\nInput integer to remove from back: ";
-    int n; cin >> n;
-    intList.removeFromBack(n);
+    int n;
+    intList.removeFromFront(n);
+    cout << "\nAfter remove from front values  integer's list is:\n";
+    intList.print();
+    intList.removeFromBack();
     cout << "\nAfter remove from back values  integer's list is:\n";
     intList.print();
     return 0;
