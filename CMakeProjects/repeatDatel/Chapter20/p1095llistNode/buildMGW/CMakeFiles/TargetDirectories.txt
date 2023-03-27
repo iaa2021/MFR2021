@@ -1,0 +1,8 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildMGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildMGW/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildMGW/src/CMakeFiles/list.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildMGW/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildMGW/src/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildMGW/lib/CMakeFiles/myLib.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildMGW/lib/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildMGW/lib/CMakeFiles/rebuild_cache.dir
