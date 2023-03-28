@@ -11,11 +11,13 @@ using std::time;
 #include <iomanip>
 using std::setw;
 using std::setprecision;
+#include <stack>
+using std::stack;
 struct ListNode
 {
     friend class List;
     public:
-    ListNode( int d )
+    ListNode( int d = 0 )
     : data( d ), next( 0 ){}
     int getData() const
     {
@@ -83,6 +85,21 @@ struct List
         value = static_cast<double>( sum() ) / static_cast<double>( count );
         return value;
     }
+    void reverseCopy( List &l)
+    {
+        stack<int> intStack;
+        ListNode *current = first;
+        while ( current != 0 )
+        {
+            intStack.push( current ->data );
+            current = current ->next;
+        }
+        while ( !intStack.empty() )
+        {
+            l.insert( intStack.top() );
+            intStack.pop();
+        }
+    }
     private:
     ListNode *last;
     ListNode *first;
@@ -118,5 +135,12 @@ int main()
     cout << "\nSum of list3's elements is: " << l3.sum() << endl;
     cout << fixed << setprecision( 2 );
     cout << "\nAverage of list3's elements is: " << l3.average() << endl;
+    cout << "\nExersise 20.9\n";
+    List l4;
+    cout << "List 1 is: ";
+    l1.print();
+    cout << "\nReversed list1 is:\n";
+    l1.reverseCopy( l4 );
+    l4.print();
     return 0;
 }
