@@ -5,6 +5,7 @@
 using std::cout;
 using std::endl;
 #include <new>
+#include "config.h"
 template < class NODETYPE >
 class Tree
 {
@@ -14,6 +15,11 @@ public:
     void preOrderTraversal() const;
     void postOrderTraversal() const;
     void inOrderTraversal() const;
+    void printVersion() const
+    {
+        cout << "Library version is: " << (PROJECT_VERSION_MAJOR) << '.';
+        cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
+    }
 private:
     TreeNode <NODETYPE> *root;
     void insertNodeHelper( TreeNode<NODETYPE>**, const NODETYPE & );
@@ -38,17 +44,60 @@ void Tree<NODETYPE>::insertNodeHelper(TreeNode<NODETYPE> **ptr, const NODETYPE &
     *ptr = new TreeNode<NODETYPE>( value );
     else
     {
-        if( value > (*ptr) -> data )
+        if( value < (*ptr) -> data )
         insertNodeHelper( &( (*ptr) -> left ), value );
         else
         {
-            if( value < (*ptr) -> data )
+            if( value > (*ptr) -> data )
             insertNodeHelper( &( (*ptr) -> right ), value );
             else
-            cout << value << " is uplicate.\n";
+            cout << endl << value << " is duplicate.\n";
         }
         
     }
-    
 }
+template < class NODETYPE >
+void Tree<NODETYPE>::preOrderTraversal() const
+{
+    preOrderHelper( root );
+}
+template < class NODETYPE >
+void Tree<NODETYPE>::preOrderHelper( TreeNode<NODETYPE> *ptr ) const
+//traversal from root
+{
+    if ( ptr != 0 )
+    {
+        cout << ptr ->data << ' ';
+        preOrderHelper( ptr ->left );
+        preOrderHelper( ptr ->right);
+    } 
+}
+template < class NODETYPE >
+void Tree<NODETYPE>::inOrderTraversal() const
+{
+    inOrderHelper( root );
+}
+template < class NODETYPE >
+void Tree<NODETYPE>::inOrderHelper( TreeNode<NODETYPE> *ptr ) const
+{
+    if( ptr != 0 )
+    {
+        inOrderHelper( ptr -> left );
+        cout << ptr ->data << ' ';
+        inOrderHelper( ptr -> right );
+    }
+}
+template < class NODETYPE >
+void Tree<NODETYPE>::postOrderTraversal() const
+{
+    postOrderHelper( root );
+}
+template < class NODETYPE >
+void Tree<NODETYPE>::postOrderHelper( TreeNode<NODETYPE> *ptr ) const
+{
+    inOrderHelper( ptr -> left );
+    inOrderHelper( ptr -> right );
+    cout << ptr ->data << ' ';
+}
+
 #endif

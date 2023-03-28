@@ -1,0 +1,8 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/buildMGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/buildMGW/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/buildMGW/lib/CMakeFiles/myLib.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/buildMGW/lib/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/buildMGW/lib/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/buildMGW/src/CMakeFiles/1122.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/buildMGW/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/buildMGW/src/CMakeFiles/rebuild_cache.dir

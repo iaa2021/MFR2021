@@ -2,6 +2,42 @@
 	"entries" : 
 	[
 		{
+			"name" : "1122_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/src"
+		},
+		{
+			"name" : "1122_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "1122_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/src"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -783,7 +819,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1336,6 +1372,42 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree"
+		},
+		{
+			"name" : "myLib_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/lib"
+		},
+		{
+			"name" : "myLib_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "myLib_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/lib"
 		},
 		{
 			"name" : "tr_BINARY_DIR",

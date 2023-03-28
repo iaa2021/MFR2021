@@ -1,2 +1,8 @@
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/CMakeFiles/edit_cache.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/lib/CMakeFiles/myLib.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/lib/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/lib/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/src/CMakeFiles/1122.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/src/CMakeFiles/rebuild_cache.dir

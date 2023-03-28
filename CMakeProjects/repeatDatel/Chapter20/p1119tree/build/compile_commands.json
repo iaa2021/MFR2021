@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build",
+  "command": "C:\\MinGW\\bin\\g++.exe -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/src/../lib -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/src/. -g -std=gnu++11 -o src\\CMakeFiles\\1122.dir\\1122.cpp.obj -c C:\\Users\\ivano\\Desktop\\gitWatch\\CMakeProjects\\repeatDatel\\Chapter20\\p1119tree\\src\\1122.cpp",
+  "file": "C:\\Users\\ivano\\Desktop\\gitWatch\\CMakeProjects\\repeatDatel\\Chapter20\\p1119tree\\src\\1122.cpp"
+}
+]

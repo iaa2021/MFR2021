@@ -65,7 +65,132 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target myLib
+
+
+#############################################
+# Order-only phony target for myLib
+
+build cmake_object_order_depends_target_myLib: phony || lib/CMakeFiles/myLib.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target myLib
+
+
+#############################################
+# Link the static library lib\libmyLib.a
+
+build lib/libmyLib.a: CXX_STATIC_LIBRARY_LINKER__myLib_Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib\CMakeFiles\myLib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libmyLib.a
+  TARGET_PDB = myLib.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree\build\lib && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree -BC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lib/edit_cache: phony lib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree\build\lib && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree -BC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/rebuild_cache: phony lib/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1122
+
+
+#############################################
+# Order-only phony target for 1122
+
+build cmake_object_order_depends_target_1122: phony || cmake_object_order_depends_target_myLib
+
+build src/CMakeFiles/1122.dir/1122.cpp.obj: CXX_COMPILER__1122_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/src/1122.cpp || cmake_object_order_depends_target_1122
+  DEP_FILE = src\CMakeFiles\1122.dir\1122.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/src/../lib -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/src/.
+  OBJECT_DIR = src\CMakeFiles\1122.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\1122.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1122
+
+
+#############################################
+# Link the executable src\1122.exe
+
+build src/1122.exe: CXX_EXECUTABLE_LINKER__1122_Debug src/CMakeFiles/1122.dir/1122.cpp.obj | lib/libmyLib.a || lib/libmyLib.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libmyLib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\1122.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\1122.exe
+  TARGET_IMPLIB = src\lib1122.dll.a
+  TARGET_PDB = 1122.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree\build\src && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree -BC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree\build"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree\build\src && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree -BC:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter20\p1119tree\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build 1122: phony src/1122.exe
+
+build 1122.exe: phony src/1122.exe
+
+build libmyLib.a: phony lib/libmyLib.a
+
+build myLib: phony lib/libmyLib.a
 
 # =============================================================================
 # Folder targets.
@@ -75,7 +200,21 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build
 
-build all: phony
+build all: phony lib/all src/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/lib
+
+build lib/all: phony lib/libmyLib.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter20/p1119tree/build/src
+
+build src/all: phony src/1122.exe
 
 # =============================================================================
 # Built-in targets
@@ -84,14 +223,14 @@ build all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../lib/CMakeLists.txt ../lib/config.h.in ../src/CMakeLists.txt ../src/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../lib/CMakeLists.txt ../lib/config.h.in ../src/CMakeLists.txt ../src/config.h.in C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.23.3/CMakeCCompiler.cmake CMakeFiles/3.23.3/CMakeCXXCompiler.cmake CMakeFiles/3.23.3/CMakeRCCompiler.cmake CMakeFiles/3.23.3/CMakeSystem.cmake: phony
 
 
 #############################################
