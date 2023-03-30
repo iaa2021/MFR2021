@@ -14,7 +14,7 @@ int main()
     intList.printVersion();
     for (size_t i = 0; i < 5; i++)
     {
-        intList.insertAtFront( i );
+        intList.insertAtFront( i * 2 );
     }
     cout << "\nAfter insert values at front integer's list is:\n";
     intList.print();
