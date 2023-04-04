@@ -22,7 +22,7 @@ public:
     void preOrderTraversal() const;
     void inOrderTraversal() const;
     void postOrderTraversal() const;
-    int levelCount(map<treeNode<NODETYPE> *, int>, int);
+    int levelCount(tree<NODETYPE>, int);
     static void printVersion()
     {
         cout << "Library version is " << (PROJECT_VERSION_MAJOR) << '.';
@@ -34,7 +34,7 @@ private:
     void preOrderHelper( treeNode<NODETYPE> * ) const;
     void inOrderHelper( treeNode<NODETYPE> * ) const;
     void postOrderHelper( treeNode<NODETYPE> * ) const;
-    void levelCountHelper( treeNode<NODETYPE> *, map<treeNode<NODETYPE> *, int>, int );
+    int levelCountHelper( treeNode<NODETYPE> *, int = 1 );
 };
 template< class NODETYPE >
 tree<NODETYPE>::tree()
@@ -109,29 +109,21 @@ void tree<NODETYPE>::postOrderHelper( treeNode<NODETYPE> *ptr ) const
     }
 }
 template< class NODETYPE >
-int tree<NODETYPE>::levelCount( map<treeNode<NODETYPE> *, int>treeMap, int count )
+int tree<NODETYPE>::levelCount( tree<NODETYPE> someTree, int count )
 {
-    levelCountHelper( root, treeMap, count );
-    for( auto pair : treeMap )
-    {
-        if( count < pair.second )
-        count = pair.second;
-    }
-    return count;
+  count = levelCountHelper( someTree.root, count );
+  return count;
 }
 template< class NODETYPE >
-void tree<NODETYPE>::levelCountHelper( treeNode<NODETYPE> *ptr, map<treeNode<NODETYPE> *, int>treeMap, int count )
+int tree<NODETYPE>::levelCountHelper( treeNode<NODETYPE> *ptr, int count )
 {
-    
     if( ptr != 0 )
     {
-        map<treeNode<NODETYPE> *, int>::iterator it = treeMap.find( ptr );
-        if( it == treeMap.end() );
-        {treeMap.insert( make_pair( ptr, count ) );}
-        count++;
+        cout << ptr ->data << ' ' << count << endl;
         
-        levelCountHelper( ptr ->left, treeMap, count );
-        levelCountHelper( ptr ->right, treeMap, count );
+        levelCountHelper( ptr ->left, count++ );
+        levelCountHelper( ptr ->right, count++ );
     }
+    return count;
 }
 #endif
