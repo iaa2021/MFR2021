@@ -13,7 +13,7 @@ int main()
     tree<int>::printVersion();
     srand( time( 0 ) );
     tree<int> intTree; int number;
-    for ( int i = 0; i < 10; i++ )
+    for ( int i = 0; i < 30; i++ )
     {
         number = rand()%100 + 1;
         intTree.insertNode( number );
