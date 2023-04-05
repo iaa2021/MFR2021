@@ -18,10 +18,14 @@ class tree
 {
 public:
     tree();
-    void insertNode( const NODETYPE & );
+    void insertNode( const NODETYPE &, int );
     void preOrderTraversal() const;
     void inOrderTraversal() const;
     void postOrderTraversal() const;
+    bool isEmpty() const
+    {
+        return root == 0;
+    }
     static void printVersion()
     {
         cout << "Library version is " << (PROJECT_VERSION_MAJOR) << '.';
@@ -29,7 +33,7 @@ public:
     }
 private:
     treeNode<NODETYPE> *root;
-    void insertNodeHelper( treeNode<NODETYPE> **, const NODETYPE & );
+    void insertNodeHelper( treeNode<NODETYPE> **, const NODETYPE &, int, treeNode<NODETYPE> * = 0 );
     void preOrderHelper( treeNode<NODETYPE> * ) const;
     void inOrderHelper( treeNode<NODETYPE> * ) const;
     void postOrderHelper( treeNode<NODETYPE> * ) const;
@@ -40,23 +44,31 @@ tree<NODETYPE>::tree()
     : root( 0 ){}
 
 template< class NODETYPE >
-void tree<NODETYPE>::insertNode( const NODETYPE &value )
+void tree<NODETYPE>::insertNode( const NODETYPE &value, int l )
 {
-    insertNodeHelper( &root, value );
+    insertNodeHelper( &root, value, l );
 }
 template< class NODETYPE >
-void tree<NODETYPE>::insertNodeHelper( treeNode<NODETYPE> **ptr, const NODETYPE &value )
+void tree<NODETYPE>::insertNodeHelper( treeNode<NODETYPE> **ptr, const NODETYPE &value,  int l, treeNode<NODETYPE> *parent )
 { 
     if( *ptr == 0 )
-    *ptr = new treeNode<NODETYPE>( value );
+    {
+        if( this ->isEmpty() )
+        *ptr = new treeNode<NODETYPE>( value, 0, l );
+        else
+        {
+            l = parent ->level + 1;
+            *ptr = new treeNode<NODETYPE>( value, parent, l );
+        }
+    }
     else
     {
         if( ( (*ptr) ->data ) > value )
-        insertNodeHelper( &( (*ptr) -> left ), value );
+        insertNodeHelper( &( (*ptr) -> left ), value, (*ptr) ->level, (*ptr) );
         else
         {
             if( ( (*ptr) ->data ) < value )
-            insertNodeHelper( &( (*ptr) -> right ), value );
+            insertNodeHelper( &( (*ptr) -> right ), value, (*ptr) ->level, (*ptr) );
             else
             cout << "This is duplicate.\n";
         }
@@ -72,7 +84,7 @@ void tree<NODETYPE>::preOrderHelper( treeNode<NODETYPE> *ptr ) const
 {
     if( ptr != 0 )
     {
-        cout << ptr ->data << ' ';
+        cout << ptr ->data << ' ' << ptr -> level << endl;
         preOrderHelper( ptr ->left );
         preOrderHelper( ptr -> right );
     }

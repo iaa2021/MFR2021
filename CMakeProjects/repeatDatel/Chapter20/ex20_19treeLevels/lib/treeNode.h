@@ -6,17 +6,18 @@ class treeNode
 {
     friend class tree<NODETYPE>;
 public:
-    treeNode(const NODETYPE & value )
-    : data( value ), left( 0 ), right( 0 ){}
-    NODETYPE getData() const;
+    treeNode(const NODETYPE & value, treeNode<NODETYPE> *p, int l )
+    : data( value ), left( 0 ), right( 0 ), parent( p ), level( l ){}
+    NODETYPE getData() const
+    {
+        return data;
+    }
 private:
     treeNode<NODETYPE> *left;
     treeNode<NODETYPE> *right;
+    treeNode<NODETYPE> *parent;
     NODETYPE data;
+    int level;
 };
-template< class NODETYPE >
-NODETYPE treeNode<NODETYPE>::getData() const
-{
-    return data;
-}
+
 #endif

@@ -2,7 +2,7 @@ cmake_minimum_required( VERSION 3.5 )
 
 project( myLib VERSION 2.3.4 )
 
-configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config1.h )
+
 
 configure_file( config.h.in ${CMAKE_CURRENT_SOURCE_DIR}/config1.h )
 

@@ -12,11 +12,11 @@ int main()
     cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
     tree<int>::printVersion();
     srand( time( 0 ) );
-    tree<int> intTree; int number;
-    for ( int i = 0; i < 30; i++ )
+    tree<int> intTree; int number; int count = 1;
+    for ( int i = 0; i < 10; i++ )
     {
         number = rand()%100 + 1;
-        intTree.insertNode( number );
+        intTree.insertNode( number, count );
     }
     cout << "\nPass int tree in order:\n";
     intTree.inOrderTraversal();
