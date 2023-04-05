@@ -1,0 +1,8 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/buildN/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/buildN/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/buildN/lib/CMakeFiles/myLib.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/buildN/lib/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/buildN/lib/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/buildN/src/CMakeFiles/level.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/buildN/src/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/buildN/src/CMakeFiles/rebuild_cache.dir

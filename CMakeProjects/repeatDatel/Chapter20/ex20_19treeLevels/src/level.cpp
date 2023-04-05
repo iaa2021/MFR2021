@@ -24,7 +24,6 @@ int main()
     intTree.preOrderTraversal();
     cout << "\nPass int tree in postorder:\n";
     intTree.postOrderTraversal();
-    int count = 1;
-    cout << "\nintTree has: " << intTree.levelCount( intTree, count ) << endl;
+    cout << endl;
     return 0;
 }

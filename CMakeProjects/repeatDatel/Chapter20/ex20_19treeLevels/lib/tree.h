@@ -22,7 +22,6 @@ public:
     void preOrderTraversal() const;
     void inOrderTraversal() const;
     void postOrderTraversal() const;
-    int levelCount(tree<NODETYPE>, int);
     static void printVersion()
     {
         cout << "Library version is " << (PROJECT_VERSION_MAJOR) << '.';
@@ -34,7 +33,7 @@ private:
     void preOrderHelper( treeNode<NODETYPE> * ) const;
     void inOrderHelper( treeNode<NODETYPE> * ) const;
     void postOrderHelper( treeNode<NODETYPE> * ) const;
-    int levelCountHelper( treeNode<NODETYPE> *, int = 1 );
+    
 };
 template< class NODETYPE >
 tree<NODETYPE>::tree()
@@ -107,23 +106,5 @@ void tree<NODETYPE>::postOrderHelper( treeNode<NODETYPE> *ptr ) const
         postOrderHelper( ptr -> right );
         cout << ptr ->data << ' ';
     }
-}
-template< class NODETYPE >
-int tree<NODETYPE>::levelCount( tree<NODETYPE> someTree, int count )
-{
-  count = levelCountHelper( someTree.root, count );
-  return count;
-}
-template< class NODETYPE >
-int tree<NODETYPE>::levelCountHelper( treeNode<NODETYPE> *ptr, int count )
-{
-    if( ptr != 0 )
-    {
-        cout << ptr ->data << ' ' << count << endl;
-        
-        levelCountHelper( ptr ->left, count++ );
-        levelCountHelper( ptr ->right, count++ );
-    }
-    return count;
 }
 #endif
