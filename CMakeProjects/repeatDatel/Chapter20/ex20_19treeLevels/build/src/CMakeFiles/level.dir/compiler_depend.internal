@@ -194,14 +194,28 @@ src/CMakeFiles/level.dir/level.cpp.o
  /usr/include/c++/11/bits/invoke.h
  /usr/include/c++/11/bits/stl_multimap.h
  /usr/include/c++/11/bits/erase_if.h
- /usr/include/c++/11/iterator
- /usr/include/c++/11/bits/stream_iterator.h
- /usr/include/c++/11/vector
+ /usr/include/c++/11/iomanip
+ /usr/include/c++/11/locale
+ /usr/include/c++/11/bits/locale_facets_nonio.h
+ /usr/include/c++/11/ctime
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h
+ /usr/include/libintl.h
+ /usr/include/c++/11/bits/codecvt.h
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc
+ /usr/include/c++/11/bits/locale_conv.h
+ /usr/include/c++/11/bits/unique_ptr.h
+ /usr/include/c++/11/queue
+ /usr/include/c++/11/deque
  /usr/include/c++/11/bits/stl_uninitialized.h
+ /usr/include/c++/11/bits/stl_deque.h
+ /usr/include/c++/11/bits/deque.tcc
+ /usr/include/c++/11/vector
  /usr/include/c++/11/bits/stl_vector.h
  /usr/include/c++/11/bits/stl_bvector.h
  /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/bits/stl_heap.h
+ /usr/include/c++/11/bits/stl_queue.h
  /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/lib/treeNode.h
  /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/build/src/config.h
- /usr/include/c++/11/ctime
 

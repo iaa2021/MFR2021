@@ -193,25 +193,47 @@ src/CMakeFiles/level.dir/level.cpp.o: /home/iaa/Desktop/gitStore/MFR2021/CMakePr
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/iterator \
-  /usr/include/c++/11/bits/stream_iterator.h \
-  /usr/include/c++/11/vector \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/c++/11/ctime \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_queue.h \
   /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/lib/treeNode.h \
-  src/config.h \
-  /usr/include/c++/11/ctime
+  src/config.h
 
 
 /usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
+/usr/include/c++/11/vector:
+
+/usr/include/c++/11/bits/stl_deque.h:
+
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
-/usr/include/c++/11/vector:
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
 
 /usr/include/c++/11/bits/erase_if.h:
 
@@ -301,9 +323,9 @@ src/CMakeFiles/level.dir/level.cpp.o: /home/iaa/Desktop/gitStore/MFR2021/CMakePr
 
 /usr/include/stdlib.h:
 
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+/usr/include/c++/11/bits/stl_queue.h:
 
-/usr/include/c++/11/bits/stream_iterator.h:
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/ctype.h:
 
@@ -377,7 +399,7 @@ src/CMakeFiles/level.dir/level.cpp.o: /home/iaa/Desktop/gitStore/MFR2021/CMakePr
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/include/c++/11/iterator:
+/usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/ostream:
 
@@ -401,6 +423,8 @@ src/CMakeFiles/level.dir/level.cpp.o: /home/iaa/Desktop/gitStore/MFR2021/CMakePr
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
+/usr/include/c++/11/queue:
+
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
@@ -423,6 +447,8 @@ src/config.h:
 
 /usr/include/c++/11/iosfwd:
 
+/usr/include/c++/11/bits/codecvt.h:
+
 /usr/include/c++/11/ctime:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
@@ -433,9 +459,13 @@ src/config.h:
 
 /usr/include/stdc-predef.h:
 
+/usr/include/c++/11/bits/locale_conv.h:
+
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/lib/tree.h:
 
 /usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/c++/11/deque:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -448,6 +478,8 @@ src/config.h:
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/features-time64.h:
+
+/usr/include/c++/11/locale:
 
 /usr/include/linux/errno.h:
 
@@ -466,6 +498,8 @@ src/config.h:
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/11/bits/stl_heap.h:
 
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/ex20_19treeLevels/lib/treeNode.h:
 
@@ -541,6 +575,8 @@ src/config.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/include/libintl.h:
+
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
@@ -552,6 +588,8 @@ src/config.h:
 /usr/include/sched.h:
 
 /usr/include/time.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
@@ -566,6 +604,8 @@ src/config.h:
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/11/iomanip:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
@@ -584,6 +624,8 @@ src/config.h:
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/c++/11/bits/deque.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 

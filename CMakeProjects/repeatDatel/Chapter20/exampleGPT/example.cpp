@@ -1,0 +1,1 @@
+//write simple code finding greater common deleter in c++  

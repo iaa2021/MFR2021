@@ -25,5 +25,8 @@ int main()
     cout << "\nPass int tree in postorder:\n";
     intTree.postOrderTraversal();
     cout << endl;
+    cout << "\nPass int tree in level order:\n";
+    intTree.depth();
+    cout << endl;
     return 0;
 }

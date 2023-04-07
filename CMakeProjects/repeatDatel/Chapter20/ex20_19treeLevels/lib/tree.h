@@ -9,10 +9,10 @@ using std::endl;
 #include <map>
 using std::map;
 using std::make_pair;
-#include <iterator>
-using std::iterator;
-#include <vector>
-using std::vector;
+#include <iomanip>
+using std::setw;
+#include <queue>
+using std::queue;
 template< class NODETYPE >
 class tree
 {
@@ -22,6 +22,7 @@ public:
     void preOrderTraversal() const;
     void inOrderTraversal() const;
     void postOrderTraversal() const;
+    void depth();
     bool isEmpty() const
     {
         return root == 0;
@@ -37,7 +38,6 @@ private:
     void preOrderHelper( treeNode<NODETYPE> * ) const;
     void inOrderHelper( treeNode<NODETYPE> * ) const;
     void postOrderHelper( treeNode<NODETYPE> * ) const;
-    
 };
 template< class NODETYPE >
 tree<NODETYPE>::tree()
@@ -117,6 +117,31 @@ void tree<NODETYPE>::postOrderHelper( treeNode<NODETYPE> *ptr ) const
         postOrderHelper( ptr ->left );
         postOrderHelper( ptr -> right );
         cout << ptr ->data << ' ';
+    }
+}
+template< class NODETYPE >
+void tree<NODETYPE>::depth() 
+{
+    queue<treeNode<NODETYPE> *> treeQueue;
+    int currentLevel = 1;
+    treeQueue.push( root );// insert root
+    while ( !treeQueue.empty() )
+    {
+        if( treeQueue.front() ->parent == 0 )//root's output
+        cout << setw( 32/( 2 * treeQueue.front() -> level ) ) << treeQueue.front() ->data;
+        else if( treeQueue.front() ->level != currentLevel )// next level's output
+        {
+            currentLevel = treeQueue.front() ->level;
+            cout << '\n' << setw( 32/( 2 * treeQueue.front() -> level ) ) << treeQueue.front() -> data << ' ';
+        }
+        else
+        cout << setw( 32/( 2 * treeQueue.front() -> level ) ) << treeQueue.front() -> data << ' ';
+        if( treeQueue.front() ->left != 0 )
+        treeQueue.push( treeQueue.front() ->left );
+        if( treeQueue.front() ->right != 0 )
+        treeQueue.push( treeQueue.front() ->right );
+
+        treeQueue.pop();
     }
 }
 #endif
