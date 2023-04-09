@@ -28,5 +28,8 @@ int main()
     cout << "\nPass int tree in level order:\n";
     intTree.depth();
     cout << endl;
+    cout << "\nPass int tree in level order throw 2 dimension array:\n";
+    intTree.depthArray();
+    cout << endl;
     return 0;
 }

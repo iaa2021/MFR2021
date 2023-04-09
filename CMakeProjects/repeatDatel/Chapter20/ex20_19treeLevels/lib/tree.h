@@ -6,9 +6,8 @@ using std::cout;
 using std::cin;
 using std::endl;
 #include "config1.h"
-#include <map>
-using std::map;
-using std::make_pair;
+#include <cmath>
+using std::pow;
 #include <iomanip>
 using std::setw;
 #include <queue>
@@ -23,6 +22,7 @@ public:
     void inOrderTraversal() const;
     void postOrderTraversal() const;
     void depth();
+    void depthArray();
     bool isEmpty() const
     {
         return root == 0;
@@ -137,11 +137,81 @@ void tree<NODETYPE>::depth()
         else
         cout << setw( 32/( 2 * treeQueue.front() -> level ) ) << treeQueue.front() -> data << ' ';
         if( treeQueue.front() ->left != 0 )
-        treeQueue.push( treeQueue.front() ->left );
+        treeQueue.push( treeQueue.front() ->left );//insert left child
         if( treeQueue.front() ->right != 0 )
-        treeQueue.push( treeQueue.front() ->right );
+        treeQueue.push( treeQueue.front() ->right );//insert right child
 
         treeQueue.pop();
     }
+}
+template< class NODETYPE >
+void tree<NODETYPE>::depthArray() 
+{
+    queue<treeNode<NODETYPE> *> treeQueue;
+    int maxLevel = 1;
+    treeQueue.push( root );// insert root
+    while ( !treeQueue.empty() )//find how much levels tree has
+    {
+        if( maxLevel < treeQueue.front() ->level )
+        maxLevel = treeQueue.front() ->level;
+
+        if( treeQueue.front() ->left != 0 )
+        treeQueue.push( treeQueue.front() ->left );//insert left child
+        if( treeQueue.front() ->right != 0 )
+        treeQueue.push( treeQueue.front() ->right );//insert right child
+
+        treeQueue.pop();
+    }
+    cout << "\nTree has " << maxLevel << " levels.\n";
+    int arraySize = maxLevel + 2;
+    treeNode<NODETYPE> ***array = new treeNode<NODETYPE> **[ arraySize ];//
+    for ( int i = 0; i < arraySize; i++)
+    {
+        array[ i ] = new treeNode<NODETYPE> *[ arraySize ];
+    }
+    for (int i = 0; i < arraySize; i++)
+    {
+        for ( int j = 0; j < arraySize; j++)
+        {
+            array[ i ][ j ] = 0;
+        }
+    }
+    
+    treeQueue.push( root );// insert root
+    while ( !treeQueue.empty() )//find how much levels tree has
+    {
+        if( treeQueue.front() ->parent == 0 )// insert root in array
+        array[ static_cast<int>((treeQueue.front() ->level) - 1) ][ static_cast<int>(maxLevel / ( pow( 2, treeQueue.front() ->level ) )) ];
+        else
+        {
+            for ( int i = 0; i < arraySize; i++)
+            {
+                if( array[ (treeQueue.front() ->level) - 2 ][ i ] == treeQueue.front() ->parent )
+                {
+                    if( treeQueue.front() == treeQueue.front() ->parent ->left )
+                    array[ static_cast<int>((treeQueue.front() ->level) - 1 )][ i - static_cast<int>(maxLevel/( pow( 2, treeQueue.front() ->level) ) )];
+                    else if( treeQueue.front() == treeQueue.front() ->parent ->right )
+                    array[ static_cast<int>((treeQueue.front() ->level) - 1) ][ i + static_cast<int>(maxLevel/( pow( 2, treeQueue.front() ->level ) ))];
+                }
+            }
+        }
+        
+        if( treeQueue.front() ->left != 0 )
+        treeQueue.push( treeQueue.front() ->left );//insert left child
+        if( treeQueue.front() ->right != 0 )
+        treeQueue.push( treeQueue.front() ->right );//insert right child
+
+        treeQueue.pop();
+    }
+    for ( int i = 0; i < arraySize; i++)
+    {
+        for ( int j = 0; j < arraySize; j++)
+        {
+            if( array[ i ][ j ] ->data > 0 )
+            cout << array[ i ][ j ] ->data;
+        }
+        cout << endl;
+    }
+    
 }
 #endif
