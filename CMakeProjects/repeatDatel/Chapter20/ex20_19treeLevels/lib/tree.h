@@ -24,6 +24,7 @@ public:
     void depth();
     void depthArray();
     treeNode<NODETYPE> *searchList( NODETYPE );
+    void deleteNode( NODETYPE );
     bool isEmpty() const
     {
         return root == 0;
@@ -40,6 +41,7 @@ private:
     void inOrderHelper( treeNode<NODETYPE> * ) const;
     void postOrderHelper( treeNode<NODETYPE> * ) const;
     treeNode<NODETYPE> * searchHelper( treeNode<NODETYPE> *, NODETYPE );
+    void deleteHelper( treeNode<NODETYPE> *, NODETYPE );
 };
 template< class NODETYPE >
 tree<NODETYPE>::tree()
@@ -250,5 +252,76 @@ treeNode<NODETYPE> * tree<NODETYPE>::searchHelper( treeNode<NODETYPE> *ptr, NODE
     }
     else
     return NULL;
+}
+template< class NODETYPE >
+void tree<NODETYPE>::deleteNode( NODETYPE value )
+{
+    deleteHelper( root, value );
+}
+template< class NODETYPE >
+void tree<NODETYPE>::deleteHelper( treeNode<NODETYPE> *ptr, NODETYPE value )
+{
+    treeNode<NODETYPE> *current = ptr;
+    if( ptr != 0 )
+    {
+        if( ptr ->data == value )
+        {
+            if( ptr -> left == 0 && ptr -> right == 0 )// node is a maple
+            {
+                if( ptr ->parent ->left == ptr )
+                ptr ->parent ->left = 0;
+                if( ptr ->parent ->right == ptr )
+                ptr ->parent ->right = 0;
+
+                delete current;
+            }
+            else if( ptr -> left != 0 && ptr -> right == 0 )// single left child case
+            {
+                if( ptr == ptr ->parent ->left )
+                ptr ->parent ->left = ptr ->left;
+                if( ptr == ptr ->parent ->right )
+                ptr ->parent ->left = ptr ->right;
+
+                ptr ->left -> parent = ptr ->parent;
+                ptr ->parent = 0;
+                ptr ->left = 0;
+                delete current;
+            }
+            else if( ptr -> left == 0 && ptr -> right != 0 )// single right child case
+            {
+                if( ptr == ptr ->parent ->left )
+                ptr ->parent ->left = ptr ->left;
+                if( ptr == ptr ->parent ->right )
+                ptr ->parent ->left = ptr ->right;
+
+                ptr ->right ->parent = ptr ->parent;
+                ptr ->parent = 0;
+                ptr ->right = 0;
+                delete current;
+            }
+            else // there are 2 childs
+            {
+                ptr = ptr ->left;
+                {
+                    while ( ptr ->right != 0 )
+                    {
+                        ptr = ptr -> right;
+                    }
+                    ptr ->parent = current ->parent;
+                    ptr ->left = current ->left;
+                    ptr ->right = current ->right;
+                    current ->parent = 0;
+                    current ->left = 0;
+                    current ->right = 0;
+                    delete current;
+                }
+            }
+        }
+        else
+        {
+            deleteHelper( ptr ->left, value );
+            deleteHelper( ptr ->right, value );
+        }
+    }
 }
 #endif
