@@ -148,6 +148,7 @@ template< class NODETYPE >
 void tree<NODETYPE>::depthArray() 
 {
     queue<treeNode<NODETYPE> *> treeQueue;
+    treeNode<NODETYPE> *temp = new treeNode<NODETYPE>( 0, 0, 0 );
     int maxLevel = 1;
     treeQueue.push( root );// insert root
     while ( !treeQueue.empty() )//find how much levels tree has
@@ -163,37 +164,36 @@ void tree<NODETYPE>::depthArray()
         treeQueue.pop();
     }
     cout << "\nTree has " << maxLevel << " levels.\n";
-    int arraySize = maxLevel + 2;
+    int arraySize = pow( 2, maxLevel );
     treeNode<NODETYPE> ***array = new treeNode<NODETYPE> **[ arraySize ];//
     for ( int i = 0; i < arraySize; i++)
     {
         array[ i ] = new treeNode<NODETYPE> *[ arraySize ];
     }
-    for (int i = 0; i < arraySize; i++)
+    for ( int i = 0; i < arraySize; i++)
     {
         for ( int j = 0; j < arraySize; j++)
         {
-            array[ i ][ j ] = 0;
+            array[ i ][ j ] = temp;
         }
     }
-    
     treeQueue.push( root );// insert root
     while ( !treeQueue.empty() )//find how much levels tree has
     {
         if( treeQueue.front() ->parent == 0 )// insert root in array
-        array[ static_cast<int>((treeQueue.front() ->level) - 1) ][ static_cast<int>(maxLevel / ( pow( 2, treeQueue.front() ->level ) )) ];
-        else
+        array[ (treeQueue.front() ->level) - 1 ][ static_cast<int>(arraySize / ( pow(2, treeQueue.front() ->level))) ] = treeQueue.front();
+        else 
         {
-            for ( int i = 0; i < arraySize; i++)
+            for (size_t i = 0; i < arraySize; i++)
             {
-                if( array[ (treeQueue.front() ->level) - 2 ][ i ] == treeQueue.front() ->parent )
-                {
-                    if( treeQueue.front() == treeQueue.front() ->parent ->left )
-                    array[ static_cast<int>((treeQueue.front() ->level) - 1 )][ i - static_cast<int>(maxLevel/( pow( 2, treeQueue.front() ->level) ) )];
-                    else if( treeQueue.front() == treeQueue.front() ->parent ->right )
-                    array[ static_cast<int>((treeQueue.front() ->level) - 1) ][ i + static_cast<int>(maxLevel/( pow( 2, treeQueue.front() ->level ) ))];
-                }
+                // if treeQueue.front() is left child
+                if( array[ (treeQueue.front() ->level) - 2 ][ i ] ->left == treeQueue.front() )
+                array[ (treeQueue.front() ->level) - 1 ][ static_cast<int>(i) - static_cast<int>( arraySize / ( pow(2, treeQueue.front() ->level))) ] = treeQueue.front();
+                // if treeQueue.front() is right child
+                else if( array[ (treeQueue.front() ->level) - 2 ][ i ] ->right == treeQueue.front() )
+                array[ (treeQueue.front() ->level) - 1 ][ static_cast<int>(i) + static_cast<int>( arraySize / ( pow(2, treeQueue.front() ->level))) ] = treeQueue.front();
             }
+            
         }
         
         if( treeQueue.front() ->left != 0 )
@@ -205,13 +205,21 @@ void tree<NODETYPE>::depthArray()
     }
     for ( int i = 0; i < arraySize; i++)
     {
+        int check = 0;
         for ( int j = 0; j < arraySize; j++)
         {
-            if( array[ i ][ j ] ->data > 0 )
-            cout << array[ i ][ j ] ->data;
+            if( array[ i ][ j ] ->data )
+            {
+                cout << setw(2) << array[ i ][ j ] ->data;
+                check++;
+            }
+            else
+            cout << ' ';
         }
         cout << endl;
+        if( check == 0 )
+        break;
     }
-    
+    cout << "The pass is over.\n";
 }
 #endif
