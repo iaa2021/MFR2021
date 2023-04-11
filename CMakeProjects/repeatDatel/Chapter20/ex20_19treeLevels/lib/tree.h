@@ -23,6 +23,7 @@ public:
     void postOrderTraversal() const;
     void depth();
     void depthArray();
+    treeNode<NODETYPE> *searchList( NODETYPE );
     bool isEmpty() const
     {
         return root == 0;
@@ -38,6 +39,7 @@ private:
     void preOrderHelper( treeNode<NODETYPE> * ) const;
     void inOrderHelper( treeNode<NODETYPE> * ) const;
     void postOrderHelper( treeNode<NODETYPE> * ) const;
+    treeNode<NODETYPE> * searchHelper( treeNode<NODETYPE> *, NODETYPE );
 };
 template< class NODETYPE >
 tree<NODETYPE>::tree()
@@ -221,5 +223,32 @@ void tree<NODETYPE>::depthArray()
         break;
     }
     cout << "The pass is over.\n";
+}
+template< class NODETYPE >
+treeNode<NODETYPE> * tree<NODETYPE>::searchList( NODETYPE value )
+{
+    if( searchHelper( root, value ) != NULL )
+    return searchHelper( root, value );
+    else
+    return NULL;
+}
+template< class NODETYPE >
+treeNode<NODETYPE> * tree<NODETYPE>::searchHelper( treeNode<NODETYPE> *ptr, NODETYPE value )
+{
+    if( ptr != 0 )
+    {
+        if( ptr ->data == value )
+            {
+                cout << "Value " << value << " is situated in " << ptr ->level << " level.\n";
+                return ptr;
+            }
+        else
+        {
+            searchHelper( ptr ->left, value );
+            searchHelper( ptr ->right, value );
+        }
+    }
+    else
+    return NULL;
 }
 #endif

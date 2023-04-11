@@ -31,5 +31,9 @@ int main()
     cout << "\nPass int tree in level order throw 2 dimension array:\n";
     intTree.depthArray();
     cout << endl;
+    int value;
+    cout << "Input value, you'd like to search: ";
+    cin >> value;
+    cout << "\nThe result is: " << intTree.searchList( value ) << endl;
     return 0;
 }
