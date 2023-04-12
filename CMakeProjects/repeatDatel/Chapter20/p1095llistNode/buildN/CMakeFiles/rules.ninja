@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__list_
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__myLib_
-  command = $PRE_LINK && /snap/cmake/1276/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /snap/cmake/1288/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -51,7 +51,7 @@ rule CXX_STATIC_LIBRARY_LINKER__myLib_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /snap/cmake/1276/bin/cmake --regenerate-during-build -S/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/p1095llistNode -B/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildN
+  command = /snap/cmake/1288/bin/cmake --regenerate-during-build -S/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/p1095llistNode -B/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter20/p1095llistNode/buildN
   description = Re-running CMake...
   generator = 1
 
