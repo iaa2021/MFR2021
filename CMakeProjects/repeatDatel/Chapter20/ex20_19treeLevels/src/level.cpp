@@ -37,11 +37,13 @@ int main()
     cout << "\nThe result is: " << intTree.searchList( value ) << endl;
     cout << "\nPass int tree in order:\n";
     intTree.inOrderTraversal();
-    cout << "Input value, you'd like to delete: ";
+    cout << "\nInput value, you'd like to delete: ";
     cin >> value;
+    intTree.deleteNode( value );
+    cout << "\nPass int tree in preorder:\n";
+    intTree.preOrderTraversal();
     cout << "\nPass int tree in order:\n";
     intTree.inOrderTraversal();
-    intTree.preOrderTraversal();
     cout << "\nPass int tree in level order throw 2 dimension array:\n";
     intTree.depthArray();
     return 0;

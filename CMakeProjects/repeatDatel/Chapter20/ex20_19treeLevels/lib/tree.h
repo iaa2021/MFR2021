@@ -88,6 +88,9 @@ void tree<NODETYPE>::preOrderHelper( treeNode<NODETYPE> *ptr ) const
 {
     if( ptr != 0 )
     {
+        if( ptr ->parent != 0 )
+        ptr ->level = ptr ->parent ->level + 1;
+
         cout << ptr ->data << ' ' << ptr -> level << endl;
         preOrderHelper( ptr ->left );
         preOrderHelper( ptr -> right );
@@ -273,14 +276,15 @@ void tree<NODETYPE>::deleteHelper( treeNode<NODETYPE> *ptr, NODETYPE value )
                 if( ptr ->parent ->right == ptr )
                 ptr ->parent ->right = 0;
 
+                ptr ->parent = 0;
                 delete current;
             }
             else if( ptr -> left != 0 && ptr -> right == 0 )// single left child case
             {
-                if( ptr == ptr ->parent ->left )
+                if( ptr ->parent ->left == ptr )
                 ptr ->parent ->left = ptr ->left;
-                if( ptr == ptr ->parent ->right )
-                ptr ->parent ->left = ptr ->right;
+                if( ptr ->parent ->right == ptr )
+                ptr ->parent ->right = ptr ->left;
 
                 ptr ->left -> parent = ptr ->parent;
                 ptr ->parent = 0;
@@ -289,10 +293,10 @@ void tree<NODETYPE>::deleteHelper( treeNode<NODETYPE> *ptr, NODETYPE value )
             }
             else if( ptr -> left == 0 && ptr -> right != 0 )// single right child case
             {
-                if( ptr == ptr ->parent ->left )
-                ptr ->parent ->left = ptr ->left;
-                if( ptr == ptr ->parent ->right )
+                if( ptr ->parent ->left == ptr )//if ptr is left child
                 ptr ->parent ->left = ptr ->right;
+                if( ptr ->parent ->right == ptr )
+                ptr ->parent ->right = ptr ->right;
 
                 ptr ->right ->parent = ptr ->parent;
                 ptr ->parent = 0;
@@ -301,20 +305,19 @@ void tree<NODETYPE>::deleteHelper( treeNode<NODETYPE> *ptr, NODETYPE value )
             }
             else // there are 2 childs
             {
-                ptr = ptr ->left;
-                {
-                    while ( ptr ->right != 0 )
-                    {
-                        ptr = ptr -> right;
-                    }
-                    ptr ->parent = current ->parent;
-                    ptr ->left = current ->left;
-                    ptr ->right = current ->right;
-                    current ->parent = 0;
-                    current ->left = 0;
-                    current ->right = 0;
-                    delete current;
-                }
+                current = current ->left;
+                while( current -> right != 0 )
+                { current = current ->right; }
+
+                ptr ->data = current ->data;
+
+                if( current ->parent ->left == current )
+                current ->parent ->left = 0;
+                if( current ->parent ->right == current )
+                current ->parent ->right = 0;
+
+                current ->parent = 0;
+                delete current;
             }
         }
         else
