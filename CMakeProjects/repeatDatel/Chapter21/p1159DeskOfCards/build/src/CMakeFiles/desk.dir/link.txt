@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/desk.dir/desk.cpp.o -o desk  ../lib/libmyLib.a 
