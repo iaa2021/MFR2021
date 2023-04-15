@@ -1,0 +1,3 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/wxWidgets/helloTest1/buildN/CMakeFiles/hello.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/wxWidgets/helloTest1/buildN/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/wxWidgets/helloTest1/buildN/CMakeFiles/rebuild_cache.dir
