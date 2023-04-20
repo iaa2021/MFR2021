@@ -4,6 +4,8 @@ project( hello VERSION 1.2.3 )
 
 set( wxWidgets_ROOT_DIR "C:/wxWidgets" )
 
+set(wxWidgets_CONFIGURATION mswu)
+
 set( wxWidgets_LIB_DIR "C:/wxWidgets/lib/vc_x64_dll" )
 
 set( wxWidgets_INCLUDE_DIRS "C:/wxWidgets/include" )
@@ -20,6 +22,6 @@ set_target_properties( hello PROPERTIES
     LINKER_LANGUAGE CXX
 )
 
-target_link_libraries(myapp ${wxWidgets_LIBRARIES})
+target_link_libraries(hello ${wxWidgets_LIBRARIES})
 
-target_include_directories( hello PRIVATE ${wxWidgets_INCLUDE_DIRS} )
+target_include_directories( hello PRIVATE ${wxWidgets_INCLUDE_DIRS} PRIVATE . )
