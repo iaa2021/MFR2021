@@ -15,6 +15,8 @@ MyFrame(const wxString& title);
 // Event handlers
 void OnQuit(wxCommandEvent& event);
 void OnAbout(wxCommandEvent& event);
+void OnSize(wxSizeEvent& event);
+void OnButton(wxCommandEvent& event);
 private:
 // This class handles events
 DECLARE_EVENT_TABLE()
@@ -37,6 +39,8 @@ return true;
 BEGIN_EVENT_TABLE(MyFrame, wxFrame)
 EVT_MENU(wxID_ABOUT, MyFrame::OnAbout)
 EVT_MENU(wxID_EXIT, MyFrame::OnQuit)
+EVT_SIZE( MyFrame::OnSize )
+EVT_BUTTON(wxID_OK, MyFrame::OnButton)
 END_EVENT_TABLE()
 void MyFrame::OnAbout(wxCommandEvent& event)
 {
@@ -51,10 +55,27 @@ void MyFrame::OnQuit(wxCommandEvent& event)
 // Destroy the frame
 Close();
 }
-
+void MyFrame::OnSize(wxSizeEvent& event)
+{
+    wxSize size = event.GetSize();
+}
+void MyFrame::OnButton(wxCommandEvent& event)
+{
+    wxMessageBox("Button clicked!");
+}
 MyFrame::MyFrame(const wxString& title)
 : wxFrame(NULL, wxID_ANY, title)
 {
+//Create a button
+wxButton *button = new wxButton( this, wxID_OK, wxT("Click me, please...") );
+// Add the button to the frame
+wxBoxSizer *sizer = new wxBoxSizer(wxVERTICAL);
+//sizer -> Add( button, wxSizerFlags().Center().Border(wxALL, 20) );
+// Add button to the center
+sizer -> AddStretchSpacer();// Add a stretchable space to push the button to the center
+sizer -> Add( button, wxSizerFlags().Center());
+sizer -> AddStretchSpacer();// Add another stretchable space to keep the button centered
+SetSizer(sizer);
 // Create a menu bar
 wxMenu *fileMenu = new wxMenu;
 // The “About” item should be in the help menu
@@ -72,4 +93,6 @@ SetMenuBar(menuBar);
 // Create a status bar just for fun
 CreateStatusBar(2);
 SetStatusText(wxT("Welcome to wxWidgets!"));
+//another way to attach EVT_SIZE object to frame
+//Bind( wxEVT_SIZE, &MyFrame::OnSize, this );
 }

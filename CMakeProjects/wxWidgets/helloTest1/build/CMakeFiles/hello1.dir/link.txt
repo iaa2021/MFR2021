@@ -1,0 +1,1 @@
+/usr/bin/c++  -pthread CMakeFiles/hello1.dir/hello1.cpp.o -o hello1   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -L/usr/local/lib -pthread -lwx_baseu_net-3.2 -lwx_gtk3u_core-3.2 -lwx_baseu-3.2 
