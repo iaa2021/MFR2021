@@ -31,6 +31,7 @@ private:
     void OnHello(wxCommandEvent& event);
     void OnExit(wxCommandEvent& event);
     void OnAbout(wxCommandEvent& event);
+    void OnButton(wxCommandEvent& event);
 };
 
 //In the constructor of the main window(str 21, 22), we create a menu with our menu items,
@@ -64,6 +65,11 @@ bool MyApp::OnInit()
 MyFrame::MyFrame()
     : wxFrame(nullptr, wxID_ANY, "Hello World")
 {
+    //Create a button
+    wxButton *button = new wxButton( this, wxID_OK, wxT("Click me, please...") );
+    // Add the button to the frame
+    wxBoxSizer *sizer = new wxBoxSizer(wxVERTICAL);
+    sizer -> Add( button, wxSizerFlags().Center().Border(wxALL, 20) );
     //defines File item on menu bar
     wxMenu *menuFile = new wxMenu;
     //For our custom item, we specify the label, also containing an accelerator,
@@ -107,6 +113,7 @@ MyFrame::MyFrame()
     Bind(wxEVT_MENU, &MyFrame::OnHello, this, ID_Hello);
     Bind(wxEVT_MENU, &MyFrame::OnAbout, this, wxID_ABOUT);
     Bind(wxEVT_MENU, &MyFrame::OnExit, this, wxID_EXIT);
+    Bind(wxEVT_BUTTON, &MyFrame::OnButton, this, wxID_OK );
 }
  
 //Here are the standard event handlers implementations. MyFrame::OnExit() closes 
@@ -132,4 +139,8 @@ void MyFrame::OnAbout(wxCommandEvent& event)
 void MyFrame::OnHello(wxCommandEvent& event)
 {
     wxLogMessage("Hello world from wxWidgets!");
+}
+void MyFrame::OnButton(wxCommandEvent& event)
+{
+    wxMessageBox("Button clicked!");
 }

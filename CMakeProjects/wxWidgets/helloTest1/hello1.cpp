@@ -95,4 +95,7 @@ CreateStatusBar(2);
 SetStatusText(wxT("Welcome to wxWidgets!"));
 //another way to attach EVT_SIZE object to frame
 //Bind( wxEVT_SIZE, &MyFrame::OnSize, this );
+// Call the OnSize function to handle the frame resizing event
+wxSizeEvent event(GetClientSize());
+OnSize(event);
 }
