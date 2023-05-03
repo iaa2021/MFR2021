@@ -130,6 +130,19 @@ desk/fast:
 .PHONY : desk/fast
 
 #=============================================================================
+# Target rules for targets named deskBits
+
+# Build rule for target.
+deskBits: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deskBits
+.PHONY : deskBits
+
+# fast build rule for target.
+deskBits/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deskBits.dir/build.make src/CMakeFiles/deskBits.dir/build
+.PHONY : deskBits/fast
+
+#=============================================================================
 # Target rules for targets named myLib
 
 # Build rule for target.
@@ -142,6 +155,19 @@ myLib/fast:
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/myLib.dir/build.make lib/CMakeFiles/myLib.dir/build
 .PHONY : myLib/fast
 
+#=============================================================================
+# Target rules for targets named myLibBits
+
+# Build rule for target.
+myLibBits: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myLibBits
+.PHONY : myLibBits
+
+# fast build rule for target.
+myLibBits/fast:
+	$(MAKE) $(MAKESILENT) -f libBits/CMakeFiles/myLibBits.dir/build.make libBits/CMakeFiles/myLibBits.dir/build
+.PHONY : myLibBits/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -151,7 +177,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... desk"
+	@echo "... deskBits"
 	@echo "... myLib"
+	@echo "... myLibBits"
 .PHONY : help
 
 

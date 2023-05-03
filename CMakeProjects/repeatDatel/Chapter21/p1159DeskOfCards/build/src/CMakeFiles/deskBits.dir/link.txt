@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/deskBits.dir/deskBits.cpp.o -o deskBits  ../libBits/libmyLibBits.a 

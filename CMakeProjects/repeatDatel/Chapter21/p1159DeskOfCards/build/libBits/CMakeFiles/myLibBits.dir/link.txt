@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmyLibBits.a CMakeFiles/myLibBits.dir/DeskOfCards1.cpp.o
+/usr/bin/ranlib libmyLibBits.a

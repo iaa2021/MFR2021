@@ -1,8 +1,12 @@
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/CMakeFiles/edit_cache.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/CMakeFiles/rebuild_cache.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/src/CMakeFiles/desk.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/src/CMakeFiles/deskBits.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/src/CMakeFiles/edit_cache.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/src/CMakeFiles/rebuild_cache.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/lib/CMakeFiles/myLib.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/lib/CMakeFiles/edit_cache.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/lib/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/libBits/CMakeFiles/myLibBits.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/libBits/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/libBits/CMakeFiles/rebuild_cache.dir

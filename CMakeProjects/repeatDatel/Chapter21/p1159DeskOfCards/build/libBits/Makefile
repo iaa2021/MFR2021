@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/CMakeFiles /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/src//CMakeFiles/progress.marks
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/CMakeFiles /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/libBits//CMakeFiles/progress.marks
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libBits/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libBits/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libBits/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libBits/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,80 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/desk.dir/rule:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/desk.dir/rule
-.PHONY : src/CMakeFiles/desk.dir/rule
+libBits/CMakeFiles/myLibBits.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libBits/CMakeFiles/myLibBits.dir/rule
+.PHONY : libBits/CMakeFiles/myLibBits.dir/rule
 
 # Convenience name for target.
-desk: src/CMakeFiles/desk.dir/rule
-.PHONY : desk
+myLibBits: libBits/CMakeFiles/myLibBits.dir/rule
+.PHONY : myLibBits
 
 # fast build rule for target.
-desk/fast:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/desk.dir/build.make src/CMakeFiles/desk.dir/build
-.PHONY : desk/fast
+myLibBits/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f libBits/CMakeFiles/myLibBits.dir/build.make libBits/CMakeFiles/myLibBits.dir/build
+.PHONY : myLibBits/fast
 
-# Convenience name for target.
-src/CMakeFiles/deskBits.dir/rule:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deskBits.dir/rule
-.PHONY : src/CMakeFiles/deskBits.dir/rule
-
-# Convenience name for target.
-deskBits: src/CMakeFiles/deskBits.dir/rule
-.PHONY : deskBits
-
-# fast build rule for target.
-deskBits/fast:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deskBits.dir/build.make src/CMakeFiles/deskBits.dir/build
-.PHONY : deskBits/fast
-
-desk.o: desk.cpp.o
-.PHONY : desk.o
+DeskOfCards1.o: DeskOfCards1.cpp.o
+.PHONY : DeskOfCards1.o
 
 # target to build an object file
-desk.cpp.o:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/desk.dir/build.make src/CMakeFiles/desk.dir/desk.cpp.o
-.PHONY : desk.cpp.o
+DeskOfCards1.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f libBits/CMakeFiles/myLibBits.dir/build.make libBits/CMakeFiles/myLibBits.dir/DeskOfCards1.cpp.o
+.PHONY : DeskOfCards1.cpp.o
 
-desk.i: desk.cpp.i
-.PHONY : desk.i
-
-# target to preprocess a source file
-desk.cpp.i:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/desk.dir/build.make src/CMakeFiles/desk.dir/desk.cpp.i
-.PHONY : desk.cpp.i
-
-desk.s: desk.cpp.s
-.PHONY : desk.s
-
-# target to generate assembly for a file
-desk.cpp.s:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/desk.dir/build.make src/CMakeFiles/desk.dir/desk.cpp.s
-.PHONY : desk.cpp.s
-
-deskBits.o: deskBits.cpp.o
-.PHONY : deskBits.o
-
-# target to build an object file
-deskBits.cpp.o:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deskBits.dir/build.make src/CMakeFiles/deskBits.dir/deskBits.cpp.o
-.PHONY : deskBits.cpp.o
-
-deskBits.i: deskBits.cpp.i
-.PHONY : deskBits.i
+DeskOfCards1.i: DeskOfCards1.cpp.i
+.PHONY : DeskOfCards1.i
 
 # target to preprocess a source file
-deskBits.cpp.i:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deskBits.dir/build.make src/CMakeFiles/deskBits.dir/deskBits.cpp.i
-.PHONY : deskBits.cpp.i
+DeskOfCards1.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f libBits/CMakeFiles/myLibBits.dir/build.make libBits/CMakeFiles/myLibBits.dir/DeskOfCards1.cpp.i
+.PHONY : DeskOfCards1.cpp.i
 
-deskBits.s: deskBits.cpp.s
-.PHONY : deskBits.s
+DeskOfCards1.s: DeskOfCards1.cpp.s
+.PHONY : DeskOfCards1.s
 
 # target to generate assembly for a file
-deskBits.cpp.s:
-	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deskBits.dir/build.make src/CMakeFiles/deskBits.dir/deskBits.cpp.s
-.PHONY : deskBits.cpp.s
+DeskOfCards1.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1159DeskOfCards/build && $(MAKE) $(MAKESILENT) -f libBits/CMakeFiles/myLibBits.dir/build.make libBits/CMakeFiles/myLibBits.dir/DeskOfCards1.cpp.s
+.PHONY : DeskOfCards1.cpp.s
 
 # Help Target
 help:
@@ -200,14 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... desk"
-	@echo "... deskBits"
-	@echo "... desk.o"
-	@echo "... desk.i"
-	@echo "... desk.s"
-	@echo "... deskBits.o"
-	@echo "... deskBits.i"
-	@echo "... deskBits.s"
+	@echo "... myLibBits"
+	@echo "... DeskOfCards1.o"
+	@echo "... DeskOfCards1.i"
+	@echo "... DeskOfCards1.s"
 .PHONY : help
 
 
