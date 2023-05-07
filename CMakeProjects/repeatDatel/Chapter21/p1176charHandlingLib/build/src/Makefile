@@ -130,6 +130,34 @@ src/CMakeFiles/1176.dir/rule:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1176.dir/build.make src/CMakeFiles/1176.dir/build
 .PHONY : 1176/fast
 
+# Convenience name for target.
+src/CMakeFiles/1178.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/1178.dir/rule
+.PHONY : src/CMakeFiles/1178.dir/rule
+
+# Convenience name for target.
+1178: src/CMakeFiles/1178.dir/rule
+.PHONY : 1178
+
+# fast build rule for target.
+1178/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1178.dir/build.make src/CMakeFiles/1178.dir/build
+.PHONY : 1178/fast
+
+# Convenience name for target.
+src/CMakeFiles/1180.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/1180.dir/rule
+.PHONY : src/CMakeFiles/1180.dir/rule
+
+# Convenience name for target.
+1180: src/CMakeFiles/1180.dir/rule
+.PHONY : 1180
+
+# fast build rule for target.
+1180/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1180.dir/build.make src/CMakeFiles/1180.dir/build
+.PHONY : 1180/fast
+
 1176.o: 1176.cpp.o
 .PHONY : 1176.o
 
@@ -154,6 +182,54 @@ src/CMakeFiles/1176.dir/rule:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1176.dir/build.make src/CMakeFiles/1176.dir/1176.cpp.s
 .PHONY : 1176.cpp.s
 
+1178.o: 1178.cpp.o
+.PHONY : 1178.o
+
+# target to build an object file
+1178.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1178.dir/build.make src/CMakeFiles/1178.dir/1178.cpp.o
+.PHONY : 1178.cpp.o
+
+1178.i: 1178.cpp.i
+.PHONY : 1178.i
+
+# target to preprocess a source file
+1178.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1178.dir/build.make src/CMakeFiles/1178.dir/1178.cpp.i
+.PHONY : 1178.cpp.i
+
+1178.s: 1178.cpp.s
+.PHONY : 1178.s
+
+# target to generate assembly for a file
+1178.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1178.dir/build.make src/CMakeFiles/1178.dir/1178.cpp.s
+.PHONY : 1178.cpp.s
+
+1180.o: 1180.cpp.o
+.PHONY : 1180.o
+
+# target to build an object file
+1180.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1180.dir/build.make src/CMakeFiles/1180.dir/1180.cpp.o
+.PHONY : 1180.cpp.o
+
+1180.i: 1180.cpp.i
+.PHONY : 1180.i
+
+# target to preprocess a source file
+1180.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1180.dir/build.make src/CMakeFiles/1180.dir/1180.cpp.i
+.PHONY : 1180.cpp.i
+
+1180.s: 1180.cpp.s
+.PHONY : 1180.s
+
+# target to generate assembly for a file
+1180.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1176charHandlingLib/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/1180.dir/build.make src/CMakeFiles/1180.dir/1180.cpp.s
+.PHONY : 1180.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +239,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 1176"
+	@echo "... 1178"
+	@echo "... 1180"
 	@echo "... 1176.o"
 	@echo "... 1176.i"
 	@echo "... 1176.s"
+	@echo "... 1178.o"
+	@echo "... 1178.i"
+	@echo "... 1178.s"
+	@echo "... 1180.o"
+	@echo "... 1180.i"
+	@echo "... 1180.s"
 .PHONY : help
 
 

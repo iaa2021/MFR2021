@@ -27,6 +27,9 @@ int main()
     cout << "According to isxdigit:\n";
     cout << ( isxdigit( 'F' )? "F is a " : "F isn't a " ) << "16x digit.\n";
     cout << ( isxdigit( '#' )? "# is a " : "# isn't a " ) << "16x digit.\n";
-    
+    cout << ( isxdigit( '7' )? "7 is a " : "7 isn't a " ) << "16x digit.\n";
+    cout << ( isxdigit( '$' )? "$ is a " : "$ isn't a " ) << "16x digit.\n";
+    cout << ( isxdigit( 'f' )? "f is a " : "f isn't a " ) << "16x digit.\n";
+    cout << ( isxdigit( 'J' )? "J is a " : "J isn't a " ) << "16x digit.\n";
     return 0;
 }
