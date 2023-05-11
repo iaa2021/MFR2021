@@ -1,0 +1,7 @@
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1187stringSearch/build/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1187stringSearch/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1187stringSearch/build/src/CMakeFiles/1187.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1187stringSearch/build/src/CMakeFiles/1188.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1187stringSearch/build/src/CMakeFiles/1189.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1187stringSearch/build/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1187stringSearch/build/src/CMakeFiles/rebuild_cache.dir

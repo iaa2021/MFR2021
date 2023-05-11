@@ -1,0 +1,6 @@
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1182convertCharPtrStringIntoNumbers/build/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1182convertCharPtrStringIntoNumbers/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1182convertCharPtrStringIntoNumbers/build/src/CMakeFiles/1182.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1182convertCharPtrStringIntoNumbers/build/src/CMakeFiles/1184.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1182convertCharPtrStringIntoNumbers/build/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1182convertCharPtrStringIntoNumbers/build/src/CMakeFiles/rebuild_cache.dir

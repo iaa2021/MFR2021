@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "convertCN"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "convertFunctions",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "1182::@145eef247bfb46b6828c",
+					"jsonFile" : "target-1182-Debug-fad43636d24d0d28a220.json",
+					"name" : "1182",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "1184::@145eef247bfb46b6828c",
+					"jsonFile" : "target-1184-Debug-7e88f28f8662d23036f3.json",
+					"name" : "1184",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1182convertCharPtrStringIntoNumbers/build",
+		"source" : "C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1182convertCharPtrStringIntoNumbers"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
