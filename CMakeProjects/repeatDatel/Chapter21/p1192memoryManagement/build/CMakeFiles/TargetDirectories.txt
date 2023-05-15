@@ -1,0 +1,6 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1192memoryManagement/build/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1192memoryManagement/build/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1192memoryManagement/build/src/CMakeFiles/1192.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1192memoryManagement/build/src/CMakeFiles/1194.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1192memoryManagement/build/src/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/p1192memoryManagement/build/src/CMakeFiles/rebuild_cache.dir
