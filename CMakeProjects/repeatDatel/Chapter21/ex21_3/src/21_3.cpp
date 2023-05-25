@@ -2,6 +2,7 @@
 using std::cout;
 using std::cin;
 using std::endl;
+#include "config.h"
 struct Part
 {
     int partNumber;
@@ -9,6 +10,8 @@ struct Part
 };
 int main()
 {
+    cout << "Project version is: " << (PROJECT_VERSION_MAJOR) << '.';
+    cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
     cout << "Exersise 21.3\n";
     typedef Part* patrPtr;
     Part a;
