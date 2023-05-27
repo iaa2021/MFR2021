@@ -144,6 +144,20 @@ src/CMakeFiles/21_5.dir/rule:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_5.dir/build.make src/CMakeFiles/21_5.dir/build
 .PHONY : 21_5/fast
 
+# Convenience name for target.
+src/CMakeFiles/21_6.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/21_6.dir/rule
+.PHONY : src/CMakeFiles/21_6.dir/rule
+
+# Convenience name for target.
+21_6: src/CMakeFiles/21_6.dir/rule
+.PHONY : 21_6
+
+# fast build rule for target.
+21_6/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_6.dir/build.make src/CMakeFiles/21_6.dir/build
+.PHONY : 21_6/fast
+
 21_3.o: 21_3.cpp.o
 .PHONY : 21_3.o
 
@@ -192,6 +206,30 @@ src/CMakeFiles/21_5.dir/rule:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_5.dir/build.make src/CMakeFiles/21_5.dir/21_5.cpp.s
 .PHONY : 21_5.cpp.s
 
+21_6.o: 21_6.cpp.o
+.PHONY : 21_6.o
+
+# target to build an object file
+21_6.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_6.dir/build.make src/CMakeFiles/21_6.dir/21_6.cpp.o
+.PHONY : 21_6.cpp.o
+
+21_6.i: 21_6.cpp.i
+.PHONY : 21_6.i
+
+# target to preprocess a source file
+21_6.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_6.dir/build.make src/CMakeFiles/21_6.dir/21_6.cpp.i
+.PHONY : 21_6.cpp.i
+
+21_6.s: 21_6.cpp.s
+.PHONY : 21_6.s
+
+# target to generate assembly for a file
+21_6.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_6.dir/build.make src/CMakeFiles/21_6.dir/21_6.cpp.s
+.PHONY : 21_6.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,12 +240,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... 21_3"
 	@echo "... 21_5"
+	@echo "... 21_6"
 	@echo "... 21_3.o"
 	@echo "... 21_3.i"
 	@echo "... 21_3.s"
 	@echo "... 21_5.o"
 	@echo "... 21_5.i"
 	@echo "... 21_5.s"
+	@echo "... 21_6.o"
+	@echo "... 21_6.i"
+	@echo "... 21_6.s"
 .PHONY : help
 
 

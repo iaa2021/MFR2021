@@ -8,7 +8,9 @@ add_executable( 21_3 21_3.cpp )
 
 add_executable( 21_5 21_5.cpp )
 
-set( targets 21_3 21_5 )
+add_executable( 21_6 21_6.cpp )
+
+set( targets 21_3 21_5 21_6 )
 
 foreach( target ${targets} )
     set_target_properties( ${target} PROPERTIES
