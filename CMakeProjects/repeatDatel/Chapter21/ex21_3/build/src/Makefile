@@ -158,6 +158,82 @@ src/CMakeFiles/21_6.dir/rule:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_6.dir/build.make src/CMakeFiles/21_6.dir/build
 .PHONY : 21_6/fast
 
+# Convenience name for target.
+src/CMakeFiles/21_11.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/21_11.dir/rule
+.PHONY : src/CMakeFiles/21_11.dir/rule
+
+# Convenience name for target.
+21_11: src/CMakeFiles/21_11.dir/rule
+.PHONY : 21_11
+
+# fast build rule for target.
+21_11/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_11.dir/build.make src/CMakeFiles/21_11.dir/build
+.PHONY : 21_11/fast
+
+# Convenience name for target.
+src/CMakeFiles/21_13.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/21_13.dir/rule
+.PHONY : src/CMakeFiles/21_13.dir/rule
+
+# Convenience name for target.
+21_13: src/CMakeFiles/21_13.dir/rule
+.PHONY : 21_13
+
+# fast build rule for target.
+21_13/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_13.dir/build.make src/CMakeFiles/21_13.dir/build
+.PHONY : 21_13/fast
+
+21_11.o: 21_11.cpp.o
+.PHONY : 21_11.o
+
+# target to build an object file
+21_11.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_11.dir/build.make src/CMakeFiles/21_11.dir/21_11.cpp.o
+.PHONY : 21_11.cpp.o
+
+21_11.i: 21_11.cpp.i
+.PHONY : 21_11.i
+
+# target to preprocess a source file
+21_11.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_11.dir/build.make src/CMakeFiles/21_11.dir/21_11.cpp.i
+.PHONY : 21_11.cpp.i
+
+21_11.s: 21_11.cpp.s
+.PHONY : 21_11.s
+
+# target to generate assembly for a file
+21_11.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_11.dir/build.make src/CMakeFiles/21_11.dir/21_11.cpp.s
+.PHONY : 21_11.cpp.s
+
+21_13.o: 21_13.cpp.o
+.PHONY : 21_13.o
+
+# target to build an object file
+21_13.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_13.dir/build.make src/CMakeFiles/21_13.dir/21_13.cpp.o
+.PHONY : 21_13.cpp.o
+
+21_13.i: 21_13.cpp.i
+.PHONY : 21_13.i
+
+# target to preprocess a source file
+21_13.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_13.dir/build.make src/CMakeFiles/21_13.dir/21_13.cpp.i
+.PHONY : 21_13.cpp.i
+
+21_13.s: 21_13.cpp.s
+.PHONY : 21_13.s
+
+# target to generate assembly for a file
+21_13.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_13.dir/build.make src/CMakeFiles/21_13.dir/21_13.cpp.s
+.PHONY : 21_13.cpp.s
+
 21_3.o: 21_3.cpp.o
 .PHONY : 21_3.o
 
@@ -238,9 +314,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 21_11"
+	@echo "... 21_13"
 	@echo "... 21_3"
 	@echo "... 21_5"
 	@echo "... 21_6"
+	@echo "... 21_11.o"
+	@echo "... 21_11.i"
+	@echo "... 21_11.s"
+	@echo "... 21_13.o"
+	@echo "... 21_13.i"
+	@echo "... 21_13.s"
 	@echo "... 21_3.o"
 	@echo "... 21_3.i"
 	@echo "... 21_3.s"
