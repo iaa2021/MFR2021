@@ -9,7 +9,7 @@ using std::setw;
 using std::vector;
 template <class T> 
 void displayBits( T );
-void unpack4Characters( int );
+vector<char> unpack4Characters( int );
 int pack4Characters( vector<char> );
 int main()
 {
@@ -17,7 +17,7 @@ int main()
     cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
     cout << "Exersise 21.12\n";
     cout << "Input 4 characters:\n";
-    char c; vector<char>v;
+    char c; vector<char>v, v1;
     for (size_t i = 0; i < 4; i++)
     {
         cin >> c;
@@ -32,6 +32,21 @@ int main()
     int a = pack4Characters( v );
     cout << "\nInteger, contains 4 characters is: " << a << endl;
     displayBits( a );
+    v1 = unpack4Characters( a );
+    cout << "\nCharacters contained in vector are next:\n";
+    for (size_t i = 0; i < v1.size(); i++)
+    {
+        cout << v1.at( i ) << ' ';
+    }
+    cout << endl;
+    cout << "Exersise 21.15\n";
+    unsigned b, d;
+    cout << "Input 1 unsigned integer :\n";
+    cin >> b;
+    displayBits( b );
+    d = ~b;
+    cout << "Reversed unsigned integer is:\n";
+    displayBits( d );
     return 0;
 }
 template <class T> 
@@ -59,4 +74,21 @@ int pack4Characters( vector<char>v )
         a <<= 8;
     }
     return a;
+}
+vector<char> unpack4Characters( int number )
+{
+    vector<char>v; char c; int a = 65280 >> 8;
+    cout << "\nCharacters, packed in " << number << " are next:\n";
+    for (size_t i = 0; i < 4; i++)
+    {
+        c = number & a;
+        v.push_back( static_cast<char>( c ) );
+        if( i < 3 )
+        {number >>= 8;}
+    }
+    for (size_t i = 0; i < 4; i++)
+    cout << v.at( i ) << ' ';
+
+    cout << endl;
+    return v;
 }
