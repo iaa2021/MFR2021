@@ -186,6 +186,20 @@ src/CMakeFiles/21_13.dir/rule:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_13.dir/build.make src/CMakeFiles/21_13.dir/build
 .PHONY : 21_13/fast
 
+# Convenience name for target.
+src/CMakeFiles/21_18.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/21_18.dir/rule
+.PHONY : src/CMakeFiles/21_18.dir/rule
+
+# Convenience name for target.
+21_18: src/CMakeFiles/21_18.dir/rule
+.PHONY : 21_18
+
+# fast build rule for target.
+21_18/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_18.dir/build.make src/CMakeFiles/21_18.dir/build
+.PHONY : 21_18/fast
+
 21_11.o: 21_11.cpp.o
 .PHONY : 21_11.o
 
@@ -233,6 +247,30 @@ src/CMakeFiles/21_13.dir/rule:
 21_13.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_13.dir/build.make src/CMakeFiles/21_13.dir/21_13.cpp.s
 .PHONY : 21_13.cpp.s
+
+21_18.o: 21_18.cpp.o
+.PHONY : 21_18.o
+
+# target to build an object file
+21_18.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_18.dir/build.make src/CMakeFiles/21_18.dir/21_18.cpp.o
+.PHONY : 21_18.cpp.o
+
+21_18.i: 21_18.cpp.i
+.PHONY : 21_18.i
+
+# target to preprocess a source file
+21_18.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_18.dir/build.make src/CMakeFiles/21_18.dir/21_18.cpp.i
+.PHONY : 21_18.cpp.i
+
+21_18.s: 21_18.cpp.s
+.PHONY : 21_18.s
+
+# target to generate assembly for a file
+21_18.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_18.dir/build.make src/CMakeFiles/21_18.dir/21_18.cpp.s
+.PHONY : 21_18.cpp.s
 
 21_3.o: 21_3.cpp.o
 .PHONY : 21_3.o
@@ -316,6 +354,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... 21_11"
 	@echo "... 21_13"
+	@echo "... 21_18"
 	@echo "... 21_3"
 	@echo "... 21_5"
 	@echo "... 21_6"
@@ -325,6 +364,9 @@ help:
 	@echo "... 21_13.o"
 	@echo "... 21_13.i"
 	@echo "... 21_13.s"
+	@echo "... 21_18.o"
+	@echo "... 21_18.i"
+	@echo "... 21_18.s"
 	@echo "... 21_3.o"
 	@echo "... 21_3.i"
 	@echo "... 21_3.s"

@@ -219,6 +219,68 @@ build src/21_13: CXX_EXECUTABLE_LINKER__21_13_ src/CMakeFiles/21_13.dir/21_13.cp
   TARGET_FILE = src/21_13
   TARGET_PDB = 21_13.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 21_18
+
+
+#############################################
+# Order-only phony target for 21_18
+
+build cmake_object_order_depends_target_21_18: phony || src/CMakeFiles/21_18.dir
+
+build src/CMakeFiles/21_18.dir/21_18.cpp.o: CXX_COMPILER__21_18_unscanned_ /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/src/21_18.cpp || cmake_object_order_depends_target_21_18
+  DEP_FILE = src/CMakeFiles/21_18.dir/21_18.cpp.o.d
+  FLAGS = -std=gnu++11
+  INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/buildN/src -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/src/.
+  OBJECT_DIR = src/CMakeFiles/21_18.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/21_18.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 21_18
+
+
+#############################################
+# Link the executable src/21_18
+
+build src/21_18: CXX_EXECUTABLE_LINKER__21_18_ src/CMakeFiles/21_18.dir/21_18.cpp.o
+  OBJECT_DIR = src/CMakeFiles/21_18.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/21_18
+  TARGET_PDB = 21_18.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 21_20
+
+
+#############################################
+# Order-only phony target for 21_20
+
+build cmake_object_order_depends_target_21_20: phony || src/CMakeFiles/21_20.dir
+
+build src/CMakeFiles/21_20.dir/21_20.cpp.o: CXX_COMPILER__21_20_unscanned_ /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/src/21_20.cpp || cmake_object_order_depends_target_21_20
+  DEP_FILE = src/CMakeFiles/21_20.dir/21_20.cpp.o.d
+  FLAGS = -std=gnu++11
+  INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/buildN/src -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/src/.
+  OBJECT_DIR = src/CMakeFiles/21_20.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/21_20.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 21_20
+
+
+#############################################
+# Link the executable src/21_20
+
+build src/21_20: CXX_EXECUTABLE_LINKER__21_20_ src/CMakeFiles/21_20.dir/21_20.cpp.o
+  OBJECT_DIR = src/CMakeFiles/21_20.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/21_20
+  TARGET_PDB = 21_20.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -250,6 +312,10 @@ build 21_11: phony src/21_11
 
 build 21_13: phony src/21_13
 
+build 21_18: phony src/21_18
+
+build 21_20: phony src/21_20
+
 build 21_3: phony src/21_3
 
 build 21_5: phony src/21_5
@@ -271,7 +337,7 @@ build all: phony src/all
 #############################################
 # Folder: /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/buildN/src
 
-build src/all: phony src/21_3 src/21_5 src/21_6 src/21_11 src/21_13
+build src/all: phony src/21_3 src/21_5 src/21_6 src/21_11 src/21_13 src/21_18 src/21_20
 
 # =============================================================================
 # Built-in targets
