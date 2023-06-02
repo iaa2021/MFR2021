@@ -200,6 +200,34 @@ src/CMakeFiles/21_18.dir/rule:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_18.dir/build.make src/CMakeFiles/21_18.dir/build
 .PHONY : 21_18/fast
 
+# Convenience name for target.
+src/CMakeFiles/21_20.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/21_20.dir/rule
+.PHONY : src/CMakeFiles/21_20.dir/rule
+
+# Convenience name for target.
+21_20: src/CMakeFiles/21_20.dir/rule
+.PHONY : 21_20
+
+# fast build rule for target.
+21_20/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_20.dir/build.make src/CMakeFiles/21_20.dir/build
+.PHONY : 21_20/fast
+
+# Convenience name for target.
+src/CMakeFiles/21_21.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/21_21.dir/rule
+.PHONY : src/CMakeFiles/21_21.dir/rule
+
+# Convenience name for target.
+21_21: src/CMakeFiles/21_21.dir/rule
+.PHONY : 21_21
+
+# fast build rule for target.
+21_21/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_21.dir/build.make src/CMakeFiles/21_21.dir/build
+.PHONY : 21_21/fast
+
 21_11.o: 21_11.cpp.o
 .PHONY : 21_11.o
 
@@ -271,6 +299,54 @@ src/CMakeFiles/21_18.dir/rule:
 21_18.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_18.dir/build.make src/CMakeFiles/21_18.dir/21_18.cpp.s
 .PHONY : 21_18.cpp.s
+
+21_20.o: 21_20.cpp.o
+.PHONY : 21_20.o
+
+# target to build an object file
+21_20.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_20.dir/build.make src/CMakeFiles/21_20.dir/21_20.cpp.o
+.PHONY : 21_20.cpp.o
+
+21_20.i: 21_20.cpp.i
+.PHONY : 21_20.i
+
+# target to preprocess a source file
+21_20.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_20.dir/build.make src/CMakeFiles/21_20.dir/21_20.cpp.i
+.PHONY : 21_20.cpp.i
+
+21_20.s: 21_20.cpp.s
+.PHONY : 21_20.s
+
+# target to generate assembly for a file
+21_20.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_20.dir/build.make src/CMakeFiles/21_20.dir/21_20.cpp.s
+.PHONY : 21_20.cpp.s
+
+21_21.o: 21_21.cpp.o
+.PHONY : 21_21.o
+
+# target to build an object file
+21_21.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_21.dir/build.make src/CMakeFiles/21_21.dir/21_21.cpp.o
+.PHONY : 21_21.cpp.o
+
+21_21.i: 21_21.cpp.i
+.PHONY : 21_21.i
+
+# target to preprocess a source file
+21_21.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_21.dir/build.make src/CMakeFiles/21_21.dir/21_21.cpp.i
+.PHONY : 21_21.cpp.i
+
+21_21.s: 21_21.cpp.s
+.PHONY : 21_21.s
+
+# target to generate assembly for a file
+21_21.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/21_21.dir/build.make src/CMakeFiles/21_21.dir/21_21.cpp.s
+.PHONY : 21_21.cpp.s
 
 21_3.o: 21_3.cpp.o
 .PHONY : 21_3.o
@@ -355,6 +431,8 @@ help:
 	@echo "... 21_11"
 	@echo "... 21_13"
 	@echo "... 21_18"
+	@echo "... 21_20"
+	@echo "... 21_21"
 	@echo "... 21_3"
 	@echo "... 21_5"
 	@echo "... 21_6"
@@ -367,6 +445,12 @@ help:
 	@echo "... 21_18.o"
 	@echo "... 21_18.i"
 	@echo "... 21_18.s"
+	@echo "... 21_20.o"
+	@echo "... 21_20.i"
+	@echo "... 21_20.s"
+	@echo "... 21_21.o"
+	@echo "... 21_21.i"
+	@echo "... 21_21.s"
 	@echo "... 21_3.o"
 	@echo "... 21_3.i"
 	@echo "... 21_3.s"
