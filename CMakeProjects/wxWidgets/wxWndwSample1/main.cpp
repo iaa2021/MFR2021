@@ -1,67 +1,104 @@
-#include <wx/wx.h>
-class myApp : public wxApp
+#include "wx/wx.h"
+// Declare the application class
+class MyApp : public wxApp
 {
-    public:
-    virtual bool onInit();
+public:
+// Called on application startup
+virtual bool OnInit();
 };
-DECLARE_APP( myApp )
-IMPLEMENT_APP( myApp )
-
-class myWindow : public wxFrame
+// Declare our main frame class
+class MyFrame : public wxFrame
 {
-    public:
-    myWindow( const wxString &title );
-    void OnHello( wxCommandEvent &event );
-    void OnAbout( wxCommandEvent &event );
-    void OnExit( wxCommandEvent &event );
-    private:
-    DECLARE_EVENT_TABLE()
+public:
+// Constructor
+MyFrame(const wxString& title);
+// Event handlers
+void OnQuit(wxCommandEvent& event);
+void OnAbout(wxCommandEvent& event);
+void OnSize(wxSizeEvent& event);
+void OnButton(wxCommandEvent& event);
+private:
+// This class handles events
+DECLARE_EVENT_TABLE()
 };
-
-enum { ID_Hello = 1 };
-
-bool myApp::onInit()
+// Implements MyApp& GetApp()
+DECLARE_APP(MyApp)
+// Give wxWidgets the means to create a MyApp object
+IMPLEMENT_APP(MyApp)
+// Initialize the application
+bool MyApp::OnInit()
 {
-    myWindow *window = new myWindow( "My window sample." );
-    window -> Show( true );
-    return true;
+// Create the main application window
+MyFrame *frame = new MyFrame(wxT("Minimal wxWidgets App"));
+// Show it
+frame->Show(true);
+// Start the event loop
+return true;
 }
-
-BEGIN_EVENT_TABLE( myWindow, wxFrame )
-    EVT_MENU( ID_Hello, myWindow::OnHello )
-    EVT_MENU( wxID_ABOUT, myWindow::OnAbout )
-    EVT_MENU( wxID_EXIT, myWindow::OnExit )
+// Event table for MyFrame
+BEGIN_EVENT_TABLE(MyFrame, wxFrame)
+EVT_MENU(wxID_ABOUT, MyFrame::OnAbout)
+EVT_MENU(wxID_EXIT, MyFrame::OnQuit)
+EVT_SIZE( MyFrame::OnSize )
+EVT_BUTTON(wxID_OK, MyFrame::OnButton)
 END_EVENT_TABLE()
-
-myWindow::myWindow( const wxString &title )
-    :wxFrame( nullptr, wxID_ANY, title )
+void MyFrame::OnAbout(wxCommandEvent& event)
 {
-    //Create menu's punct file
-    wxMenu *menuFile = new wxMenu;
-    menuFile -> Append( ID_Hello, "&Hello...\tCtrl+H", "Help string shown...");
-    menuFile -> AppendSeparator();
-    menuFile -> Append( wxID_EXIT );
-    //Create menu's punct help
-    wxMenu *menuHelp = new wxMenu;
-    menuHelp -> Append( wxID_ABOUT );
-    //Create menu bar
-    wxMenuBar *menuBar = new wxMenuBar;
-    menuBar -> Append( menuFile, "&File" );
-    menuBar -> Append( menuHelp, "&Help" );
-    SetMenuBar( menuBar );
-    //Create status bar
-    CreateStatusBar();
-    SetStatusText( "My first window sample." );
+wxString msg;
+msg.Printf(wxT("Hello and welcome to %s,\nSecond message."),
+wxVERSION_STRING);
+wxMessageBox(msg, wxT("About Minimal"),
+wxOK | wxICON_INFORMATION, this);
 }
-void myWindow::OnExit( wxCommandEvent &event )
+void MyFrame::OnQuit(wxCommandEvent& event)
 {
-    Close( true );
+// Destroy the frame
+Close();
 }
-void myWindow::OnAbout( wxCommandEvent &event )
+void MyFrame::OnSize(wxSizeEvent& event)
 {
-    wxMessageBox( "This is my first window's sample.", "Caption", wxOK|wxICON_INFORMATION );
+    wxSize size = event.GetSize();
 }
-void myWindow::OnHello( wxCommandEvent &event )
+void MyFrame::OnButton(wxCommandEvent& event)
 {
-    wxLogMessage( "1'st window's sample." );
+    wxMessageBox("Button clicked!");
+    
+}
+MyFrame::MyFrame(const wxString& title)
+: wxFrame(NULL, wxID_ANY, title)
+{
+//Create a button
+wxButton *button = new wxButton( this, wxID_OK, wxT("Click me, please,\n if it possible...") );
+// Add the button to the frame
+wxBoxSizer *sizer = new wxBoxSizer(wxVERTICAL);
+//sizer -> Add( button, wxSizerFlags().Center().Border(wxALL, 20) );
+// Add button to the center
+sizer -> AddStretchSpacer();// Add a stretchable space to push the button to the center
+sizer -> Add( button, wxSizerFlags().Center());
+sizer -> AddStretchSpacer();// Add another stretchable space to keep the button centered
+SetSizer(sizer);
+// Create a menu bar
+wxMenu *fileMenu = new wxMenu;
+// The “About” item should be in the help menu
+wxMenu *helpMenu = new wxMenu;
+helpMenu->Append(wxID_ABOUT, wxT("&About...\tF1"),
+wxT("Show about dialog"));
+fileMenu->Append(wxID_EXIT, wxT("E&xit\tAlt-X"),
+wxT("Quit this program"));
+// Now append the freshly created menu to the menu bar...
+wxMenuBar *menuBar = new wxMenuBar();
+menuBar->Append(fileMenu, wxT("&File"));
+menuBar->Append(helpMenu, wxT("&Help"));
+// ... and attach this menu bar to the frame
+SetMenuBar(menuBar);
+// Create a status bar just for fun
+CreateStatusBar(2);
+SetStatusText(wxT("Welcome to wxWidgets!"));
+//another way to attach EVT_SIZE object to frame
+//Bind( wxEVT_SIZE, &MyFrame::OnSize, this );
+// Call the OnSize function to handle the frame resizing event
+wxSizeEvent event(GetClientSize());
+OnSize(event);
+SetSize( wxSize( 400, 400 ) );
+Centre();
 }
