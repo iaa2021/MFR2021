@@ -312,6 +312,37 @@ build src/21_21: CXX_EXECUTABLE_LINKER__21_21_ src/CMakeFiles/21_21.dir/21_21.cp
   TARGET_FILE = src/21_21
   TARGET_PDB = 21_21.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 21_23
+
+
+#############################################
+# Order-only phony target for 21_23
+
+build cmake_object_order_depends_target_21_23: phony || src/CMakeFiles/21_23.dir
+
+build src/CMakeFiles/21_23.dir/21_23.cpp.o: CXX_COMPILER__21_23_unscanned_ /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/src/21_23.cpp || cmake_object_order_depends_target_21_23
+  DEP_FILE = src/CMakeFiles/21_23.dir/21_23.cpp.o.d
+  FLAGS = -std=gnu++11
+  INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/buildN/src -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/src/.
+  OBJECT_DIR = src/CMakeFiles/21_23.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/21_23.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 21_23
+
+
+#############################################
+# Link the executable src/21_23
+
+build src/21_23: CXX_EXECUTABLE_LINKER__21_23_ src/CMakeFiles/21_23.dir/21_23.cpp.o
+  OBJECT_DIR = src/CMakeFiles/21_23.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/21_23
+  TARGET_PDB = 21_23.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -349,6 +380,8 @@ build 21_20: phony src/21_20
 
 build 21_21: phony src/21_21
 
+build 21_23: phony src/21_23
+
 build 21_3: phony src/21_3
 
 build 21_5: phony src/21_5
@@ -370,7 +403,7 @@ build all: phony src/all
 #############################################
 # Folder: /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/buildN/src
 
-build src/all: phony src/21_3 src/21_5 src/21_6 src/21_11 src/21_13 src/21_18 src/21_20 src/21_21
+build src/all: phony src/21_3 src/21_5 src/21_6 src/21_11 src/21_13 src/21_18 src/21_20 src/21_21 src/21_23
 
 # =============================================================================
 # Built-in targets

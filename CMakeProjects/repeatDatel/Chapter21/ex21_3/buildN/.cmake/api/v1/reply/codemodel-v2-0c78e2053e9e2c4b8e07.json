@@ -1,0 +1,159 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ch21_exe"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "ch21_exe_sub",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "21_11::@145eef247bfb46b6828c",
+					"jsonFile" : "target-21_11-0369c64746cf1fa0a6e3.json",
+					"name" : "21_11",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "21_13::@145eef247bfb46b6828c",
+					"jsonFile" : "target-21_13-e71c40e4e3db4bdbe40c.json",
+					"name" : "21_13",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "21_18::@145eef247bfb46b6828c",
+					"jsonFile" : "target-21_18-0c07a4e70d093f3886eb.json",
+					"name" : "21_18",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "21_20::@145eef247bfb46b6828c",
+					"jsonFile" : "target-21_20-221733c7bc9b6f372f51.json",
+					"name" : "21_20",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "21_21::@145eef247bfb46b6828c",
+					"jsonFile" : "target-21_21-3f38a54d3dff2b449b16.json",
+					"name" : "21_21",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "21_23::@145eef247bfb46b6828c",
+					"jsonFile" : "target-21_23-459d238c7ca2923f1dee.json",
+					"name" : "21_23",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "21_3::@145eef247bfb46b6828c",
+					"jsonFile" : "target-21_3-350eb01eaac3efb8a24c.json",
+					"name" : "21_3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "21_5::@145eef247bfb46b6828c",
+					"jsonFile" : "target-21_5-e3931d2329d1ffc6cd9d.json",
+					"name" : "21_5",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "21_6::@145eef247bfb46b6828c",
+					"jsonFile" : "target-21_6-65cafaa68f6bf020929d.json",
+					"name" : "21_6",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3/buildN",
+		"source" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter21/ex21_3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
