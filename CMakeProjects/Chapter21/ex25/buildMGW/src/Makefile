@@ -129,6 +129,20 @@ src/CMakeFiles/21_26.dir/rule:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter21\ex25\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\21_26.dir\build.make src/CMakeFiles/21_26.dir/build
 .PHONY : 21_26/fast
 
+# Convenience name for target.
+src/CMakeFiles/21_30.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter21\ex25\buildMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/21_30.dir/rule
+.PHONY : src/CMakeFiles/21_30.dir/rule
+
+# Convenience name for target.
+21_30: src/CMakeFiles/21_30.dir/rule
+.PHONY : 21_30
+
+# fast build rule for target.
+21_30/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter21\ex25\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\21_30.dir\build.make src/CMakeFiles/21_30.dir/build
+.PHONY : 21_30/fast
+
 21_26.obj: 21_26.cpp.obj
 .PHONY : 21_26.obj
 
@@ -153,6 +167,30 @@ src/CMakeFiles/21_26.dir/rule:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter21\ex25\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\21_26.dir\build.make src/CMakeFiles/21_26.dir/21_26.cpp.s
 .PHONY : 21_26.cpp.s
 
+21_30.obj: 21_30.cpp.obj
+.PHONY : 21_30.obj
+
+# target to build an object file
+21_30.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter21\ex25\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\21_30.dir\build.make src/CMakeFiles/21_30.dir/21_30.cpp.obj
+.PHONY : 21_30.cpp.obj
+
+21_30.i: 21_30.cpp.i
+.PHONY : 21_30.i
+
+# target to preprocess a source file
+21_30.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter21\ex25\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\21_30.dir\build.make src/CMakeFiles/21_30.dir/21_30.cpp.i
+.PHONY : 21_30.cpp.i
+
+21_30.s: 21_30.cpp.s
+.PHONY : 21_30.s
+
+# target to generate assembly for a file
+21_30.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\Chapter21\ex25\buildMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\21_30.dir\build.make src/CMakeFiles/21_30.dir/21_30.cpp.s
+.PHONY : 21_30.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -162,9 +200,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 21_26
+	@echo ... 21_30
 	@echo ... 21_26.obj
 	@echo ... 21_26.i
 	@echo ... 21_26.s
+	@echo ... 21_30.obj
+	@echo ... 21_30.i
+	@echo ... 21_30.s
 .PHONY : help
 
 

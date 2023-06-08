@@ -97,6 +97,39 @@ build src/21_26.exe: CXX_EXECUTABLE_LINKER__21_26_ src/CMakeFiles/21_26.dir/21_2
   TARGET_IMPLIB = src\lib21_26.dll.a
   TARGET_PDB = 21_26.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 21_30
+
+
+#############################################
+# Order-only phony target for 21_30
+
+build cmake_object_order_depends_target_21_30: phony || src/CMakeFiles/21_30.dir
+
+build src/CMakeFiles/21_30.dir/21_30.cpp.obj: CXX_COMPILER__21_30_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/src/21_30.cpp || cmake_object_order_depends_target_21_30
+  DEP_FILE = src\CMakeFiles\21_30.dir\21_30.cpp.obj.d
+  FLAGS = -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/buildNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/src/.
+  OBJECT_DIR = src\CMakeFiles\21_30.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\21_30.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 21_30
+
+
+#############################################
+# Link the executable src\21_30.exe
+
+build src/21_30.exe: CXX_EXECUTABLE_LINKER__21_30_ src/CMakeFiles/21_30.dir/21_30.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\21_30.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\21_30.exe
+  TARGET_IMPLIB = src\lib21_30.dll.a
+  TARGET_PDB = 21_30.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -128,6 +161,10 @@ build 21_26: phony src/21_26.exe
 
 build 21_26.exe: phony src/21_26.exe
 
+build 21_30: phony src/21_30.exe
+
+build 21_30.exe: phony src/21_30.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -143,7 +180,7 @@ build all: phony src/all
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/buildNinja/src
 
-build src/all: phony src/21_26.exe
+build src/all: phony src/21_26.exe src/21_30.exe
 
 # =============================================================================
 # Built-in targets
