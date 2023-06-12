@@ -130,6 +130,20 @@ p1219/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1219.dir/build.make src/CMakeFiles/p1219.dir/build
 .PHONY : p1219/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1236.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1236.dir/rule
+.PHONY : src/CMakeFiles/p1236.dir/rule
+
+# Convenience name for target.
+p1236: src/CMakeFiles/p1236.dir/rule
+.PHONY : p1236
+
+# fast build rule for target.
+p1236/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1236.dir/build.make src/CMakeFiles/p1236.dir/build
+.PHONY : p1236/fast
+
 p1219.o: p1219.cpp.o
 .PHONY : p1219.o
 
@@ -154,6 +168,30 @@ p1219.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1219.dir/build.make src/CMakeFiles/p1219.dir/p1219.cpp.s
 .PHONY : p1219.cpp.s
 
+p1236.o: p1236.cpp.o
+.PHONY : p1236.o
+
+# target to build an object file
+p1236.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1236.dir/build.make src/CMakeFiles/p1236.dir/p1236.cpp.o
+.PHONY : p1236.cpp.o
+
+p1236.i: p1236.cpp.i
+.PHONY : p1236.i
+
+# target to preprocess a source file
+p1236.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1236.dir/build.make src/CMakeFiles/p1236.dir/p1236.cpp.i
+.PHONY : p1236.cpp.i
+
+p1236.s: p1236.cpp.s
+.PHONY : p1236.s
+
+# target to generate assembly for a file
+p1236.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1236.dir/build.make src/CMakeFiles/p1236.dir/p1236.cpp.s
+.PHONY : p1236.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +201,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... p1219"
+	@echo "... p1236"
 	@echo "... p1219.o"
 	@echo "... p1219.i"
 	@echo "... p1219.s"
+	@echo "... p1236.o"
+	@echo "... p1236.i"
+	@echo "... p1236.s"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/p1236.dir/p1236.cpp.o -o p1236 
