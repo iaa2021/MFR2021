@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/p1241.dir/p1241deque.cpp.o -o p1241 

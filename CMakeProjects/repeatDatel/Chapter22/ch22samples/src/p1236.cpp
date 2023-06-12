@@ -40,7 +40,7 @@ int main()
     int *array = new int[ size ];
     for (int i = 0; i < size; i++)
     {
-        array[ i ] = ( i + 1 ) * 10;
+        array[ i ] = ( i + 1 ) * 2;
     }
     cout << "\nArray contains:\n";
     for (int i = 0; i < size; i++)
@@ -56,8 +56,27 @@ int main()
     printList( intList );
     cout << "\nAfter splice, intList1 contains: ";
     printList( intList1 );
+    intList1.insert( intList1.begin(), array, array + size );
     intList.unique();
     cout << "\nAfter unique, intList contains: ";
+    printList( intList );
+    cout << "\nRestoring initial content of intList:\n";
+    intList.clear();
+    intList.insert( intList.begin(), v.begin(), v.end() );
+    printList( intList );
+    cout << "\nMerge intList with intList1, unite with sort:\n";
+    intList.merge( intList1 );
+    printList( intList );
+    cout << "\nintList1 contains:\n";
+    printList( intList1 );
+    intList.unique();
+    cout << "\nAfter unique, intList contains: ";
+    printList( intList );
+    int value;
+    cout << "\nInput value, you'd like to remove: ";
+    cin >> value;
+    intList.remove( value );
+    cout << "\nAfter remove " << value << " intList contains: ";
     printList( intList );
     cout << endl;
     return 0;

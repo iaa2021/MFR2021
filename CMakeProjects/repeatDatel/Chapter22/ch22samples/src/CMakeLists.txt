@@ -6,8 +6,10 @@ configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
 add_executable( p1219 p1219.cpp )
 add_executable( p1236 p1236.cpp )
+add_executable( p1241 p1241deque.cpp )
+add_executable( p1243 p1243multiset.cpp )
 
-set( targets p1219 p1236 )
+set( targets p1219 p1236 p1241 p1243 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES

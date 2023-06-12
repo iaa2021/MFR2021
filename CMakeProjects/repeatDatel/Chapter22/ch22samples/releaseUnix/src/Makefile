@@ -144,6 +144,34 @@ p1236/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1236.dir/build.make src/CMakeFiles/p1236.dir/build
 .PHONY : p1236/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1241.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1241.dir/rule
+.PHONY : src/CMakeFiles/p1241.dir/rule
+
+# Convenience name for target.
+p1241: src/CMakeFiles/p1241.dir/rule
+.PHONY : p1241
+
+# fast build rule for target.
+p1241/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1241.dir/build.make src/CMakeFiles/p1241.dir/build
+.PHONY : p1241/fast
+
+# Convenience name for target.
+src/CMakeFiles/p1243.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1243.dir/rule
+.PHONY : src/CMakeFiles/p1243.dir/rule
+
+# Convenience name for target.
+p1243: src/CMakeFiles/p1243.dir/rule
+.PHONY : p1243
+
+# fast build rule for target.
+p1243/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/build
+.PHONY : p1243/fast
+
 p1219.o: p1219.cpp.o
 .PHONY : p1219.o
 
@@ -192,6 +220,54 @@ p1236.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1236.dir/build.make src/CMakeFiles/p1236.dir/p1236.cpp.s
 .PHONY : p1236.cpp.s
 
+p1241deque.o: p1241deque.cpp.o
+.PHONY : p1241deque.o
+
+# target to build an object file
+p1241deque.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1241.dir/build.make src/CMakeFiles/p1241.dir/p1241deque.cpp.o
+.PHONY : p1241deque.cpp.o
+
+p1241deque.i: p1241deque.cpp.i
+.PHONY : p1241deque.i
+
+# target to preprocess a source file
+p1241deque.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1241.dir/build.make src/CMakeFiles/p1241.dir/p1241deque.cpp.i
+.PHONY : p1241deque.cpp.i
+
+p1241deque.s: p1241deque.cpp.s
+.PHONY : p1241deque.s
+
+# target to generate assembly for a file
+p1241deque.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1241.dir/build.make src/CMakeFiles/p1241.dir/p1241deque.cpp.s
+.PHONY : p1241deque.cpp.s
+
+p1243multiset.o: p1243multiset.cpp.o
+.PHONY : p1243multiset.o
+
+# target to build an object file
+p1243multiset.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/p1243multiset.cpp.o
+.PHONY : p1243multiset.cpp.o
+
+p1243multiset.i: p1243multiset.cpp.i
+.PHONY : p1243multiset.i
+
+# target to preprocess a source file
+p1243multiset.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/p1243multiset.cpp.i
+.PHONY : p1243multiset.cpp.i
+
+p1243multiset.s: p1243multiset.cpp.s
+.PHONY : p1243multiset.s
+
+# target to generate assembly for a file
+p1243multiset.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/p1243multiset.cpp.s
+.PHONY : p1243multiset.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,12 +278,20 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... p1219"
 	@echo "... p1236"
+	@echo "... p1241"
+	@echo "... p1243"
 	@echo "... p1219.o"
 	@echo "... p1219.i"
 	@echo "... p1219.s"
 	@echo "... p1236.o"
 	@echo "... p1236.i"
 	@echo "... p1236.s"
+	@echo "... p1241deque.o"
+	@echo "... p1241deque.i"
+	@echo "... p1241deque.s"
+	@echo "... p1243multiset.o"
+	@echo "... p1243multiset.i"
+	@echo "... p1243multiset.s"
 .PHONY : help
 
 

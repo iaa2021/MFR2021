@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/p1243.dir/p1243multiset.cpp.o -o p1243 
