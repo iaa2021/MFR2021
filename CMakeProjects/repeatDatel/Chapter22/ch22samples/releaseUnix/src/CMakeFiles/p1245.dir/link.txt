@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/p1245.dir/p1245set.cpp.o -o p1245 

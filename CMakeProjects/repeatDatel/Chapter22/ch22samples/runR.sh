@@ -1,5 +1,5 @@
-echo run Ninja debug configuration
+echo [*] run Unix release configuration
 
 cd releaseUnix
 
-src/p1243
+src/p1247

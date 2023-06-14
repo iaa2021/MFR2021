@@ -172,6 +172,34 @@ p1243/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/build
 .PHONY : p1243/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1245.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1245.dir/rule
+.PHONY : src/CMakeFiles/p1245.dir/rule
+
+# Convenience name for target.
+p1245: src/CMakeFiles/p1245.dir/rule
+.PHONY : p1245
+
+# fast build rule for target.
+p1245/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/build
+.PHONY : p1245/fast
+
+# Convenience name for target.
+src/CMakeFiles/p1247.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1247.dir/rule
+.PHONY : src/CMakeFiles/p1247.dir/rule
+
+# Convenience name for target.
+p1247: src/CMakeFiles/p1247.dir/rule
+.PHONY : p1247
+
+# fast build rule for target.
+p1247/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/build
+.PHONY : p1247/fast
+
 p1219.o: p1219.cpp.o
 .PHONY : p1219.o
 
@@ -268,6 +296,54 @@ p1243multiset.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/p1243multiset.cpp.s
 .PHONY : p1243multiset.cpp.s
 
+p1245set.o: p1245set.cpp.o
+.PHONY : p1245set.o
+
+# target to build an object file
+p1245set.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/p1245set.cpp.o
+.PHONY : p1245set.cpp.o
+
+p1245set.i: p1245set.cpp.i
+.PHONY : p1245set.i
+
+# target to preprocess a source file
+p1245set.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/p1245set.cpp.i
+.PHONY : p1245set.cpp.i
+
+p1245set.s: p1245set.cpp.s
+.PHONY : p1245set.s
+
+# target to generate assembly for a file
+p1245set.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/p1245set.cpp.s
+.PHONY : p1245set.cpp.s
+
+p1247multimap.o: p1247multimap.cpp.o
+.PHONY : p1247multimap.o
+
+# target to build an object file
+p1247multimap.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/p1247multimap.cpp.o
+.PHONY : p1247multimap.cpp.o
+
+p1247multimap.i: p1247multimap.cpp.i
+.PHONY : p1247multimap.i
+
+# target to preprocess a source file
+p1247multimap.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/p1247multimap.cpp.i
+.PHONY : p1247multimap.cpp.i
+
+p1247multimap.s: p1247multimap.cpp.s
+.PHONY : p1247multimap.s
+
+# target to generate assembly for a file
+p1247multimap.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/p1247multimap.cpp.s
+.PHONY : p1247multimap.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -280,6 +356,8 @@ help:
 	@echo "... p1236"
 	@echo "... p1241"
 	@echo "... p1243"
+	@echo "... p1245"
+	@echo "... p1247"
 	@echo "... p1219.o"
 	@echo "... p1219.i"
 	@echo "... p1219.s"
@@ -292,6 +370,12 @@ help:
 	@echo "... p1243multiset.o"
 	@echo "... p1243multiset.i"
 	@echo "... p1243multiset.s"
+	@echo "... p1245set.o"
+	@echo "... p1245set.i"
+	@echo "... p1245set.s"
+	@echo "... p1247multimap.o"
+	@echo "... p1247multimap.i"
+	@echo "... p1247multimap.s"
 .PHONY : help
 
 

@@ -82,6 +82,8 @@ src/all: src/CMakeFiles/p1219.dir/all
 src/all: src/CMakeFiles/p1236.dir/all
 src/all: src/CMakeFiles/p1241.dir/all
 src/all: src/CMakeFiles/p1243.dir/all
+src/all: src/CMakeFiles/p1245.dir/all
+src/all: src/CMakeFiles/p1247.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -93,6 +95,8 @@ src/clean: src/CMakeFiles/p1219.dir/clean
 src/clean: src/CMakeFiles/p1236.dir/clean
 src/clean: src/CMakeFiles/p1241.dir/clean
 src/clean: src/CMakeFiles/p1243.dir/clean
+src/clean: src/CMakeFiles/p1245.dir/clean
+src/clean: src/CMakeFiles/p1247.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -198,6 +202,58 @@ p1243: src/CMakeFiles/p1243.dir/rule
 src/CMakeFiles/p1243.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/clean
 .PHONY : src/CMakeFiles/p1243.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/p1245.dir
+
+# All Build rule for target.
+src/CMakeFiles/p1245.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=9,10 "Built target p1245"
+.PHONY : src/CMakeFiles/p1245.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/p1245.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1245.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles 0
+.PHONY : src/CMakeFiles/p1245.dir/rule
+
+# Convenience name for target.
+p1245: src/CMakeFiles/p1245.dir/rule
+.PHONY : p1245
+
+# clean rule for target.
+src/CMakeFiles/p1245.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/clean
+.PHONY : src/CMakeFiles/p1245.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/p1247.dir
+
+# All Build rule for target.
+src/CMakeFiles/p1247.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=11,12 "Built target p1247"
+.PHONY : src/CMakeFiles/p1247.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/p1247.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1247.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles 0
+.PHONY : src/CMakeFiles/p1247.dir/rule
+
+# Convenience name for target.
+p1247: src/CMakeFiles/p1247.dir/rule
+.PHONY : p1247
+
+# clean rule for target.
+src/CMakeFiles/p1247.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/clean
+.PHONY : src/CMakeFiles/p1247.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

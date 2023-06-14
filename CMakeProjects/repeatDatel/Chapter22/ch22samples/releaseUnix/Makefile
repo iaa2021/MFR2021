@@ -168,6 +168,32 @@ p1243/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/build
 .PHONY : p1243/fast
 
+#=============================================================================
+# Target rules for targets named p1245
+
+# Build rule for target.
+p1245: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p1245
+.PHONY : p1245
+
+# fast build rule for target.
+p1245/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/build
+.PHONY : p1245/fast
+
+#=============================================================================
+# Target rules for targets named p1247
+
+# Build rule for target.
+p1247: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p1247
+.PHONY : p1247
+
+# fast build rule for target.
+p1247/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/build
+.PHONY : p1247/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -180,6 +206,8 @@ help:
 	@echo "... p1236"
 	@echo "... p1241"
 	@echo "... p1243"
+	@echo "... p1245"
+	@echo "... p1247"
 .PHONY : help
 
 
