@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/p1251.dir/p1251stack.cpp.o -o p1251 

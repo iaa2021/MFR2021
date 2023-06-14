@@ -200,6 +200,20 @@ p1247/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/build
 .PHONY : p1247/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1251.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1251.dir/rule
+.PHONY : src/CMakeFiles/p1251.dir/rule
+
+# Convenience name for target.
+p1251: src/CMakeFiles/p1251.dir/rule
+.PHONY : p1251
+
+# fast build rule for target.
+p1251/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1251.dir/build.make src/CMakeFiles/p1251.dir/build
+.PHONY : p1251/fast
+
 p1219.o: p1219.cpp.o
 .PHONY : p1219.o
 
@@ -344,6 +358,30 @@ p1247multimap.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/p1247multimap.cpp.s
 .PHONY : p1247multimap.cpp.s
 
+p1251stack.o: p1251stack.cpp.o
+.PHONY : p1251stack.o
+
+# target to build an object file
+p1251stack.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1251.dir/build.make src/CMakeFiles/p1251.dir/p1251stack.cpp.o
+.PHONY : p1251stack.cpp.o
+
+p1251stack.i: p1251stack.cpp.i
+.PHONY : p1251stack.i
+
+# target to preprocess a source file
+p1251stack.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1251.dir/build.make src/CMakeFiles/p1251.dir/p1251stack.cpp.i
+.PHONY : p1251stack.cpp.i
+
+p1251stack.s: p1251stack.cpp.s
+.PHONY : p1251stack.s
+
+# target to generate assembly for a file
+p1251stack.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1251.dir/build.make src/CMakeFiles/p1251.dir/p1251stack.cpp.s
+.PHONY : p1251stack.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -358,6 +396,7 @@ help:
 	@echo "... p1243"
 	@echo "... p1245"
 	@echo "... p1247"
+	@echo "... p1251"
 	@echo "... p1219.o"
 	@echo "... p1219.i"
 	@echo "... p1219.s"
@@ -376,6 +415,9 @@ help:
 	@echo "... p1247multimap.o"
 	@echo "... p1247multimap.i"
 	@echo "... p1247multimap.s"
+	@echo "... p1251stack.o"
+	@echo "... p1251stack.i"
+	@echo "... p1251stack.s"
 .PHONY : help
 
 

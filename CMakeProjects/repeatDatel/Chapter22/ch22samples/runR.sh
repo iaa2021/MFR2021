@@ -2,4 +2,4 @@ echo [*] run Unix release configuration
 
 cd releaseUnix
 
-src/p1247
+src/p1251

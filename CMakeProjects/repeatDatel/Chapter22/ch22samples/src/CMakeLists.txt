@@ -10,8 +10,9 @@ add_executable( p1241 p1241deque.cpp )
 add_executable( p1243 p1243multiset.cpp )
 add_executable( p1245 p1245set.cpp )
 add_executable( p1247 p1247multimap.cpp )
+add_executable( p1251 p1251stack.cpp )
 
-set( targets p1219 p1236 p1241 p1243 p1245 p1247 )
+set( targets p1219 p1236 p1241 p1243 p1245 p1247 p1251 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES
