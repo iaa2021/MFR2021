@@ -10,7 +10,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -20,7 +20,7 @@
 				},
 				{
 					"build" : "src",
-					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"jsonFile" : "directory-src-Release-b6cf2213fc5053b67c22.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -36,11 +36,12 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -69,7 +70,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -78,50 +80,57 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "p1219::@145eef247bfb46b6828c",
-					"jsonFile" : "target-p1219-Debug-72a0a3883fe434713927.json",
+					"jsonFile" : "target-p1219-Release-60960ad133202559aad0.json",
 					"name" : "p1219",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "p1236::@145eef247bfb46b6828c",
-					"jsonFile" : "target-p1236-Debug-01cca1e51debf70c3a88.json",
+					"jsonFile" : "target-p1236-Release-e8e4b97e21e05f294532.json",
 					"name" : "p1236",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "p1241::@145eef247bfb46b6828c",
-					"jsonFile" : "target-p1241-Debug-2b535b9b1f76f00f81a2.json",
+					"jsonFile" : "target-p1241-Release-f562ed1a9cce985253bf.json",
 					"name" : "p1241",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "p1243::@145eef247bfb46b6828c",
-					"jsonFile" : "target-p1243-Debug-9fc97a45bccca8b1817c.json",
+					"jsonFile" : "target-p1243-Release-8061c88e2f5b75139cb5.json",
 					"name" : "p1243",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "p1245::@145eef247bfb46b6828c",
-					"jsonFile" : "target-p1245-Debug-9055bc7747d9f4449df7.json",
+					"jsonFile" : "target-p1245-Release-1258d83a267dbe1f6a27.json",
 					"name" : "p1245",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "p1247::@145eef247bfb46b6828c",
-					"jsonFile" : "target-p1247-Debug-9488c8ed0dbe20ec4824.json",
+					"jsonFile" : "target-p1247-Release-a7acddf676e06c55aa4c.json",
 					"name" : "p1247",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "p1251::@145eef247bfb46b6828c",
-					"jsonFile" : "target-p1251-Debug-8b97e9a00cfc19c95682.json",
+					"jsonFile" : "target-p1251-Release-81a6491e1888852c8b45.json",
 					"name" : "p1251",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1257::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1257-Release-d8cbd3724cc5873312f9.json",
+					"name" : "p1257",
 					"projectIndex" : 1
 				}
 			]
@@ -130,7 +139,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/debugNinja",
+		"build" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix",
 		"source" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples"
 	},
 	"version" : 

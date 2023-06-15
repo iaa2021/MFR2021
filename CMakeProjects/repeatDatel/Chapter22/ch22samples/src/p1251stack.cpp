@@ -23,7 +23,10 @@ using std::time;
 using std::stack;
 #include "config.h"
 #include <string>
-using std:: string;
+using std::string;
+#include <queue>
+using std::queue;
+using std::priority_queue;
 template<class T> void pushStack( T &, int );
 template<class T> void popStack( T & );
 int main()
@@ -46,6 +49,33 @@ int main()
     popStack( vStack );
     cout << "\nPopping elements from list stack:\n";
     popStack( lStask );
+    cout << "\nSample on page 1254, queue STL container:\n";
+    queue<int> intQ;
+    cout << "Pushing elements into queue:\n";
+    for (int i = 0; i < 10; i++)
+    {
+        intQ.push( i * 3 );
+    }
+    cout << "Popping elements from queue:\n";
+    for (int i = 0; i < 10; i++)
+    {
+        cout << intQ.front() << '\t';
+        intQ.pop();
+    }
+    cout << "\nSample on page 1255, priority_queue STL container:\n";
+    priority_queue<int> pQueue;
+    srand( time( 0 ) );
+    cout << "Pushing elements into queue:\n";
+    for (int i = 0; i < 10; i++)
+    {
+        pQueue.push( rand()%50 + 1 );
+    }
+    cout << "Popping elements from priority_queue:\n";
+    while ( !pQueue.empty() )
+    {
+        cout << pQueue.top() << ", ";
+        pQueue.pop();
+    }
     cout << endl;
     return 0;
 }
