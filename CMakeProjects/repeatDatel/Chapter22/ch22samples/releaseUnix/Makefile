@@ -220,6 +220,19 @@ p1257/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1257.dir/build.make src/CMakeFiles/p1257.dir/build
 .PHONY : p1257/fast
 
+#=============================================================================
+# Target rules for targets named p1259
+
+# Build rule for target.
+p1259: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p1259
+.PHONY : p1259
+
+# fast build rule for target.
+p1259/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1259.dir/build.make src/CMakeFiles/p1259.dir/build
+.PHONY : p1259/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,6 +249,7 @@ help:
 	@echo "... p1247"
 	@echo "... p1251"
 	@echo "... p1257"
+	@echo "... p1259"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/p1259.dir/p1259algo.cpp.o -o p1259 

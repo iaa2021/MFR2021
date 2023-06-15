@@ -228,6 +228,20 @@ p1257/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1257.dir/build.make src/CMakeFiles/p1257.dir/build
 .PHONY : p1257/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1259.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1259.dir/rule
+.PHONY : src/CMakeFiles/p1259.dir/rule
+
+# Convenience name for target.
+p1259: src/CMakeFiles/p1259.dir/rule
+.PHONY : p1259
+
+# fast build rule for target.
+p1259/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1259.dir/build.make src/CMakeFiles/p1259.dir/build
+.PHONY : p1259/fast
+
 p1219.o: p1219.cpp.o
 .PHONY : p1219.o
 
@@ -420,6 +434,30 @@ p1257algo.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1257.dir/build.make src/CMakeFiles/p1257.dir/p1257algo.cpp.s
 .PHONY : p1257algo.cpp.s
 
+p1259algo.o: p1259algo.cpp.o
+.PHONY : p1259algo.o
+
+# target to build an object file
+p1259algo.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1259.dir/build.make src/CMakeFiles/p1259.dir/p1259algo.cpp.o
+.PHONY : p1259algo.cpp.o
+
+p1259algo.i: p1259algo.cpp.i
+.PHONY : p1259algo.i
+
+# target to preprocess a source file
+p1259algo.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1259.dir/build.make src/CMakeFiles/p1259.dir/p1259algo.cpp.i
+.PHONY : p1259algo.cpp.i
+
+p1259algo.s: p1259algo.cpp.s
+.PHONY : p1259algo.s
+
+# target to generate assembly for a file
+p1259algo.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1259.dir/build.make src/CMakeFiles/p1259.dir/p1259algo.cpp.s
+.PHONY : p1259algo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -436,6 +474,7 @@ help:
 	@echo "... p1247"
 	@echo "... p1251"
 	@echo "... p1257"
+	@echo "... p1259"
 	@echo "... p1219.o"
 	@echo "... p1219.i"
 	@echo "... p1219.s"
@@ -460,6 +499,9 @@ help:
 	@echo "... p1257algo.o"
 	@echo "... p1257algo.i"
 	@echo "... p1257algo.s"
+	@echo "... p1259algo.o"
+	@echo "... p1259algo.i"
+	@echo "... p1259algo.s"
 .PHONY : help
 
 
