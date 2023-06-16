@@ -1,0 +1,5 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/p1261.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/rebuild_cache.dir
