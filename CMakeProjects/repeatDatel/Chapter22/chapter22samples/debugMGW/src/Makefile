@@ -129,6 +129,20 @@ p1261/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1261.dir\build.make src/CMakeFiles/p1261.dir/build
 .PHONY : p1261/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1264.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1264.dir/rule
+.PHONY : src/CMakeFiles/p1264.dir/rule
+
+# Convenience name for target.
+p1264: src/CMakeFiles/p1264.dir/rule
+.PHONY : p1264
+
+# fast build rule for target.
+p1264/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1264.dir\build.make src/CMakeFiles/p1264.dir/build
+.PHONY : p1264/fast
+
 p1261remove.obj: p1261remove.cpp.obj
 .PHONY : p1261remove.obj
 
@@ -153,6 +167,30 @@ p1261remove.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1261.dir\build.make src/CMakeFiles/p1261.dir/p1261remove.cpp.s
 .PHONY : p1261remove.cpp.s
 
+p1264replace.obj: p1264replace.cpp.obj
+.PHONY : p1264replace.obj
+
+# target to build an object file
+p1264replace.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1264.dir\build.make src/CMakeFiles/p1264.dir/p1264replace.cpp.obj
+.PHONY : p1264replace.cpp.obj
+
+p1264replace.i: p1264replace.cpp.i
+.PHONY : p1264replace.i
+
+# target to preprocess a source file
+p1264replace.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1264.dir\build.make src/CMakeFiles/p1264.dir/p1264replace.cpp.i
+.PHONY : p1264replace.cpp.i
+
+p1264replace.s: p1264replace.cpp.s
+.PHONY : p1264replace.s
+
+# target to generate assembly for a file
+p1264replace.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1264.dir\build.make src/CMakeFiles/p1264.dir/p1264replace.cpp.s
+.PHONY : p1264replace.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -162,9 +200,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... p1261
+	@echo ... p1264
 	@echo ... p1261remove.obj
 	@echo ... p1261remove.i
 	@echo ... p1261remove.s
+	@echo ... p1264replace.obj
+	@echo ... p1264replace.i
+	@echo ... p1264replace.s
 .PHONY : help
 
 

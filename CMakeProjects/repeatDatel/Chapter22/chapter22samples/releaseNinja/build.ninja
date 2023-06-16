@@ -97,6 +97,39 @@ build src/p1261.exe: CXX_EXECUTABLE_LINKER__p1261_ src/CMakeFiles/p1261.dir/p126
   TARGET_IMPLIB = src\libp1261.dll.a
   TARGET_PDB = p1261.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target p1264
+
+
+#############################################
+# Order-only phony target for p1264
+
+build cmake_object_order_depends_target_p1264: phony || src/CMakeFiles/p1264.dir
+
+build src/CMakeFiles/p1264.dir/p1264replace.cpp.obj: CXX_COMPILER__p1264_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1264replace.cpp || cmake_object_order_depends_target_p1264
+  DEP_FILE = src\CMakeFiles\p1264.dir\p1264replace.cpp.obj.d
+  FLAGS = -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
+  OBJECT_DIR = src\CMakeFiles\p1264.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\p1264.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1264
+
+
+#############################################
+# Link the executable src\p1264.exe
+
+build src/p1264.exe: CXX_EXECUTABLE_LINKER__p1264_ src/CMakeFiles/p1264.dir/p1264replace.cpp.obj
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\p1264.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\p1264.exe
+  TARGET_IMPLIB = src\libp1264.dll.a
+  TARGET_PDB = p1264.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -128,6 +161,10 @@ build p1261: phony src/p1261.exe
 
 build p1261.exe: phony src/p1261.exe
 
+build p1264: phony src/p1264.exe
+
+build p1264.exe: phony src/p1264.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -143,7 +180,7 @@ build all: phony src/all
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src
 
-build src/all: phony src/p1261.exe
+build src/all: phony src/p1261.exe src/p1264.exe
 
 # =============================================================================
 # Built-in targets
