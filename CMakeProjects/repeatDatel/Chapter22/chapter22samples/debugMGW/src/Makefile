@@ -143,6 +143,20 @@ p1264/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1264.dir\build.make src/CMakeFiles/p1264.dir/build
 .PHONY : p1264/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1266.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1266.dir/rule
+.PHONY : src/CMakeFiles/p1266.dir/rule
+
+# Convenience name for target.
+p1266: src/CMakeFiles/p1266.dir/rule
+.PHONY : p1266
+
+# fast build rule for target.
+p1266/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1266.dir\build.make src/CMakeFiles/p1266.dir/build
+.PHONY : p1266/fast
+
 p1261remove.obj: p1261remove.cpp.obj
 .PHONY : p1261remove.obj
 
@@ -191,6 +205,30 @@ p1264replace.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1264.dir\build.make src/CMakeFiles/p1264.dir/p1264replace.cpp.s
 .PHONY : p1264replace.cpp.s
 
+p1266numeric.obj: p1266numeric.cpp.obj
+.PHONY : p1266numeric.obj
+
+# target to build an object file
+p1266numeric.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1266.dir\build.make src/CMakeFiles/p1266.dir/p1266numeric.cpp.obj
+.PHONY : p1266numeric.cpp.obj
+
+p1266numeric.i: p1266numeric.cpp.i
+.PHONY : p1266numeric.i
+
+# target to preprocess a source file
+p1266numeric.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1266.dir\build.make src/CMakeFiles/p1266.dir/p1266numeric.cpp.i
+.PHONY : p1266numeric.cpp.i
+
+p1266numeric.s: p1266numeric.cpp.s
+.PHONY : p1266numeric.s
+
+# target to generate assembly for a file
+p1266numeric.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1266.dir\build.make src/CMakeFiles/p1266.dir/p1266numeric.cpp.s
+.PHONY : p1266numeric.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -201,12 +239,16 @@ help:
 	@echo ... rebuild_cache
 	@echo ... p1261
 	@echo ... p1264
+	@echo ... p1266
 	@echo ... p1261remove.obj
 	@echo ... p1261remove.i
 	@echo ... p1261remove.s
 	@echo ... p1264replace.obj
 	@echo ... p1264replace.i
 	@echo ... p1264replace.s
+	@echo ... p1266numeric.obj
+	@echo ... p1266numeric.i
+	@echo ... p1266numeric.s
 .PHONY : help
 
 

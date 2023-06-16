@@ -7,8 +7,9 @@ configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
 add_executable( p1261 p1261remove.cpp )
 add_executable( p1264 p1264replace.cpp )
+add_executable( p1266 p1266numeric.cpp )
 
-set( targets p1261 p1264 )
+set( targets p1261 p1264 p1266 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES

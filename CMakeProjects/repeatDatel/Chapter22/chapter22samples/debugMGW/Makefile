@@ -141,6 +141,19 @@ p1264/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1264.dir\build.make src/CMakeFiles/p1264.dir/build
 .PHONY : p1264/fast
 
+#=============================================================================
+# Target rules for targets named p1266
+
+# Build rule for target.
+p1266: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p1266
+.PHONY : p1266
+
+# fast build rule for target.
+p1266/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1266.dir\build.make src/CMakeFiles/p1266.dir/build
+.PHONY : p1266/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -151,6 +164,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... p1261
 	@echo ... p1264
+	@echo ... p1266
 .PHONY : help
 
 
