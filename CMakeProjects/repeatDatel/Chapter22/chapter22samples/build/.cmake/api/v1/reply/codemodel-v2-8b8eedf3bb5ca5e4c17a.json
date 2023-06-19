@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Chapter22"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "ch22samples",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "p1261::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1261-Debug-d8a161a3fd0baf06e82e.json",
+					"name" : "p1261",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1264::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1264-Debug-248295878b5e54605a9f.json",
+					"name" : "p1264",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1266::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1266-Debug-83295636d453b0e913f8.json",
+					"name" : "p1266",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/build",
+		"source" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

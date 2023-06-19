@@ -154,6 +154,32 @@ p1266/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1266.dir\build.make src/CMakeFiles/p1266.dir/build
 .PHONY : p1266/fast
 
+#=============================================================================
+# Target rules for targets named p1269
+
+# Build rule for target.
+p1269: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p1269
+.PHONY : p1269
+
+# fast build rule for target.
+p1269/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1269.dir\build.make src/CMakeFiles/p1269.dir/build
+.PHONY : p1269/fast
+
+#=============================================================================
+# Target rules for targets named p1272
+
+# Build rule for target.
+p1272: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p1272
+.PHONY : p1272
+
+# fast build rule for target.
+p1272/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1272.dir\build.make src/CMakeFiles/p1272.dir/build
+.PHONY : p1272/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -165,6 +191,8 @@ help:
 	@echo ... p1261
 	@echo ... p1264
 	@echo ... p1266
+	@echo ... p1269
+	@echo ... p1272
 .PHONY : help
 
 

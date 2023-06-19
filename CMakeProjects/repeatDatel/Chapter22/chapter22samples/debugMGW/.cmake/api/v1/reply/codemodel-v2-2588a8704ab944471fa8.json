@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Chapter22"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "ch22samples",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "p1261::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1261-2593c6cb1c7fe0402063.json",
+					"name" : "p1261",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1264::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1264-f4dae9f99b353afcad0d.json",
+					"name" : "p1264",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1266::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1266-b0ef9c822195efac0ec1.json",
+					"name" : "p1266",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1269::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1269-ad5aab8fb71a122fd638.json",
+					"name" : "p1269",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1272::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1272-6f98ca99446b8c6c9744.json",
+					"name" : "p1272",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/debugMGW",
+		"source" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -157,6 +157,34 @@ p1266/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1266.dir\build.make src/CMakeFiles/p1266.dir/build
 .PHONY : p1266/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1269.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1269.dir/rule
+.PHONY : src/CMakeFiles/p1269.dir/rule
+
+# Convenience name for target.
+p1269: src/CMakeFiles/p1269.dir/rule
+.PHONY : p1269
+
+# fast build rule for target.
+p1269/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1269.dir\build.make src/CMakeFiles/p1269.dir/build
+.PHONY : p1269/fast
+
+# Convenience name for target.
+src/CMakeFiles/p1272.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1272.dir/rule
+.PHONY : src/CMakeFiles/p1272.dir/rule
+
+# Convenience name for target.
+p1272: src/CMakeFiles/p1272.dir/rule
+.PHONY : p1272
+
+# fast build rule for target.
+p1272/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1272.dir\build.make src/CMakeFiles/p1272.dir/build
+.PHONY : p1272/fast
+
 p1261remove.obj: p1261remove.cpp.obj
 .PHONY : p1261remove.obj
 
@@ -229,6 +257,54 @@ p1266numeric.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1266.dir\build.make src/CMakeFiles/p1266.dir/p1266numeric.cpp.s
 .PHONY : p1266numeric.cpp.s
 
+p1269find.obj: p1269find.cpp.obj
+.PHONY : p1269find.obj
+
+# target to build an object file
+p1269find.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1269.dir\build.make src/CMakeFiles/p1269.dir/p1269find.cpp.obj
+.PHONY : p1269find.cpp.obj
+
+p1269find.i: p1269find.cpp.i
+.PHONY : p1269find.i
+
+# target to preprocess a source file
+p1269find.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1269.dir\build.make src/CMakeFiles/p1269.dir/p1269find.cpp.i
+.PHONY : p1269find.cpp.i
+
+p1269find.s: p1269find.cpp.s
+.PHONY : p1269find.s
+
+# target to generate assembly for a file
+p1269find.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1269.dir\build.make src/CMakeFiles/p1269.dir/p1269find.cpp.s
+.PHONY : p1269find.cpp.s
+
+p1272swap.obj: p1272swap.cpp.obj
+.PHONY : p1272swap.obj
+
+# target to build an object file
+p1272swap.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1272.dir\build.make src/CMakeFiles/p1272.dir/p1272swap.cpp.obj
+.PHONY : p1272swap.cpp.obj
+
+p1272swap.i: p1272swap.cpp.i
+.PHONY : p1272swap.i
+
+# target to preprocess a source file
+p1272swap.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1272.dir\build.make src/CMakeFiles/p1272.dir/p1272swap.cpp.i
+.PHONY : p1272swap.cpp.i
+
+p1272swap.s: p1272swap.cpp.s
+.PHONY : p1272swap.s
+
+# target to generate assembly for a file
+p1272swap.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1272.dir\build.make src/CMakeFiles/p1272.dir/p1272swap.cpp.s
+.PHONY : p1272swap.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -240,6 +316,8 @@ help:
 	@echo ... p1261
 	@echo ... p1264
 	@echo ... p1266
+	@echo ... p1269
+	@echo ... p1272
 	@echo ... p1261remove.obj
 	@echo ... p1261remove.i
 	@echo ... p1261remove.s
@@ -249,6 +327,12 @@ help:
 	@echo ... p1266numeric.obj
 	@echo ... p1266numeric.i
 	@echo ... p1266numeric.s
+	@echo ... p1269find.obj
+	@echo ... p1269find.i
+	@echo ... p1269find.s
+	@echo ... p1272swap.obj
+	@echo ... p1272swap.i
+	@echo ... p1272swap.s
 .PHONY : help
 
 

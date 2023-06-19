@@ -3,5 +3,7 @@ C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22sam
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/p1261.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/p1264.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/p1266.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/p1269.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/p1272.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/edit_cache.dir
 C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src/CMakeFiles/rebuild_cache.dir
