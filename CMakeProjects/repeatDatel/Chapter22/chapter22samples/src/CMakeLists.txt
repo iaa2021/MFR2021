@@ -10,8 +10,9 @@ add_executable( p1264 p1264replace.cpp )
 add_executable( p1266 p1266numeric.cpp )
 add_executable( p1269 p1269find.cpp )
 add_executable( p1272 p1272swap.cpp )
+add_executable( p1274 p1274copy_backward.cpp )
 
-set( targets p1261 p1264 p1266 p1269 p1272 )
+set( targets p1261 p1264 p1266 p1269 p1272 p1274 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES

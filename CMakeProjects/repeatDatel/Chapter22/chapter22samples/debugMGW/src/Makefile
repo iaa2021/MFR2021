@@ -185,6 +185,20 @@ p1272/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1272.dir\build.make src/CMakeFiles/p1272.dir/build
 .PHONY : p1272/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1274.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1274.dir/rule
+.PHONY : src/CMakeFiles/p1274.dir/rule
+
+# Convenience name for target.
+p1274: src/CMakeFiles/p1274.dir/rule
+.PHONY : p1274
+
+# fast build rule for target.
+p1274/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1274.dir\build.make src/CMakeFiles/p1274.dir/build
+.PHONY : p1274/fast
+
 p1261remove.obj: p1261remove.cpp.obj
 .PHONY : p1261remove.obj
 
@@ -305,6 +319,30 @@ p1272swap.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1272.dir\build.make src/CMakeFiles/p1272.dir/p1272swap.cpp.s
 .PHONY : p1272swap.cpp.s
 
+p1274copy_backward.obj: p1274copy_backward.cpp.obj
+.PHONY : p1274copy_backward.obj
+
+# target to build an object file
+p1274copy_backward.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1274.dir\build.make src/CMakeFiles/p1274.dir/p1274copy_backward.cpp.obj
+.PHONY : p1274copy_backward.cpp.obj
+
+p1274copy_backward.i: p1274copy_backward.cpp.i
+.PHONY : p1274copy_backward.i
+
+# target to preprocess a source file
+p1274copy_backward.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1274.dir\build.make src/CMakeFiles/p1274.dir/p1274copy_backward.cpp.i
+.PHONY : p1274copy_backward.cpp.i
+
+p1274copy_backward.s: p1274copy_backward.cpp.s
+.PHONY : p1274copy_backward.s
+
+# target to generate assembly for a file
+p1274copy_backward.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1274.dir\build.make src/CMakeFiles/p1274.dir/p1274copy_backward.cpp.s
+.PHONY : p1274copy_backward.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -318,6 +356,7 @@ help:
 	@echo ... p1266
 	@echo ... p1269
 	@echo ... p1272
+	@echo ... p1274
 	@echo ... p1261remove.obj
 	@echo ... p1261remove.i
 	@echo ... p1261remove.s
@@ -333,6 +372,9 @@ help:
 	@echo ... p1272swap.obj
 	@echo ... p1272swap.i
 	@echo ... p1272swap.s
+	@echo ... p1274copy_backward.obj
+	@echo ... p1274copy_backward.i
+	@echo ... p1274copy_backward.s
 .PHONY : help
 
 
