@@ -227,6 +227,20 @@ p1277/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1277.dir\build.make src/CMakeFiles/p1277.dir/build
 .PHONY : p1277/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1281.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1281.dir/rule
+.PHONY : src/CMakeFiles/p1281.dir/rule
+
+# Convenience name for target.
+p1281: src/CMakeFiles/p1281.dir/rule
+.PHONY : p1281
+
+# fast build rule for target.
+p1281/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1281.dir\build.make src/CMakeFiles/p1281.dir/build
+.PHONY : p1281/fast
+
 p1261remove.obj: p1261remove.cpp.obj
 .PHONY : p1261remove.obj
 
@@ -419,6 +433,30 @@ p1277includes.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1277.dir\build.make src/CMakeFiles/p1277.dir/p1277includes.cpp.s
 .PHONY : p1277includes.cpp.s
 
+p1281equal_range.obj: p1281equal_range.cpp.obj
+.PHONY : p1281equal_range.obj
+
+# target to build an object file
+p1281equal_range.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1281.dir\build.make src/CMakeFiles/p1281.dir/p1281equal_range.cpp.obj
+.PHONY : p1281equal_range.cpp.obj
+
+p1281equal_range.i: p1281equal_range.cpp.i
+.PHONY : p1281equal_range.i
+
+# target to preprocess a source file
+p1281equal_range.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1281.dir\build.make src/CMakeFiles/p1281.dir/p1281equal_range.cpp.i
+.PHONY : p1281equal_range.cpp.i
+
+p1281equal_range.s: p1281equal_range.cpp.s
+.PHONY : p1281equal_range.s
+
+# target to generate assembly for a file
+p1281equal_range.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1281.dir\build.make src/CMakeFiles/p1281.dir/p1281equal_range.cpp.s
+.PHONY : p1281equal_range.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -435,6 +473,7 @@ help:
 	@echo ... p1274
 	@echo ... p1276
 	@echo ... p1277
+	@echo ... p1281
 	@echo ... p1261remove.obj
 	@echo ... p1261remove.i
 	@echo ... p1261remove.s
@@ -459,6 +498,9 @@ help:
 	@echo ... p1277includes.obj
 	@echo ... p1277includes.i
 	@echo ... p1277includes.s
+	@echo ... p1281equal_range.obj
+	@echo ... p1281equal_range.i
+	@echo ... p1281equal_range.s
 .PHONY : help
 
 
