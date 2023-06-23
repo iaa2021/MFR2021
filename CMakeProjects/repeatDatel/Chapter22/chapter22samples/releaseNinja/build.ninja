@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: Chapter22
-# Configurations: 
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -73,9 +78,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_p1261: phony || src/CMakeFiles/p1261.dir
 
-build src/CMakeFiles/p1261.dir/p1261remove.cpp.obj: CXX_COMPILER__p1261_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1261remove.cpp || cmake_object_order_depends_target_p1261
+build src/CMakeFiles/p1261.dir/p1261remove.cpp.obj: CXX_COMPILER__p1261_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1261remove.cpp || cmake_object_order_depends_target_p1261
   DEP_FILE = src\CMakeFiles\p1261.dir\p1261remove.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
   OBJECT_DIR = src\CMakeFiles\p1261.dir
   OBJECT_FILE_DIR = src\CMakeFiles\p1261.dir
@@ -88,7 +93,8 @@ build src/CMakeFiles/p1261.dir/p1261remove.cpp.obj: CXX_COMPILER__p1261_ C$:/Use
 #############################################
 # Link the executable src\p1261.exe
 
-build src/p1261.exe: CXX_EXECUTABLE_LINKER__p1261_ src/CMakeFiles/p1261.dir/p1261remove.cpp.obj
+build src/p1261.exe: CXX_EXECUTABLE_LINKER__p1261_Release src/CMakeFiles/p1261.dir/p1261remove.cpp.obj
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\p1261.dir
   POST_BUILD = cd .
@@ -106,9 +112,9 @@ build src/p1261.exe: CXX_EXECUTABLE_LINKER__p1261_ src/CMakeFiles/p1261.dir/p126
 
 build cmake_object_order_depends_target_p1264: phony || src/CMakeFiles/p1264.dir
 
-build src/CMakeFiles/p1264.dir/p1264replace.cpp.obj: CXX_COMPILER__p1264_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1264replace.cpp || cmake_object_order_depends_target_p1264
+build src/CMakeFiles/p1264.dir/p1264replace.cpp.obj: CXX_COMPILER__p1264_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1264replace.cpp || cmake_object_order_depends_target_p1264
   DEP_FILE = src\CMakeFiles\p1264.dir\p1264replace.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
   OBJECT_DIR = src\CMakeFiles\p1264.dir
   OBJECT_FILE_DIR = src\CMakeFiles\p1264.dir
@@ -121,7 +127,8 @@ build src/CMakeFiles/p1264.dir/p1264replace.cpp.obj: CXX_COMPILER__p1264_ C$:/Us
 #############################################
 # Link the executable src\p1264.exe
 
-build src/p1264.exe: CXX_EXECUTABLE_LINKER__p1264_ src/CMakeFiles/p1264.dir/p1264replace.cpp.obj
+build src/p1264.exe: CXX_EXECUTABLE_LINKER__p1264_Release src/CMakeFiles/p1264.dir/p1264replace.cpp.obj
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\p1264.dir
   POST_BUILD = cd .
@@ -139,9 +146,9 @@ build src/p1264.exe: CXX_EXECUTABLE_LINKER__p1264_ src/CMakeFiles/p1264.dir/p126
 
 build cmake_object_order_depends_target_p1266: phony || src/CMakeFiles/p1266.dir
 
-build src/CMakeFiles/p1266.dir/p1266numeric.cpp.obj: CXX_COMPILER__p1266_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1266numeric.cpp || cmake_object_order_depends_target_p1266
+build src/CMakeFiles/p1266.dir/p1266numeric.cpp.obj: CXX_COMPILER__p1266_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1266numeric.cpp || cmake_object_order_depends_target_p1266
   DEP_FILE = src\CMakeFiles\p1266.dir\p1266numeric.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
   OBJECT_DIR = src\CMakeFiles\p1266.dir
   OBJECT_FILE_DIR = src\CMakeFiles\p1266.dir
@@ -154,7 +161,8 @@ build src/CMakeFiles/p1266.dir/p1266numeric.cpp.obj: CXX_COMPILER__p1266_ C$:/Us
 #############################################
 # Link the executable src\p1266.exe
 
-build src/p1266.exe: CXX_EXECUTABLE_LINKER__p1266_ src/CMakeFiles/p1266.dir/p1266numeric.cpp.obj
+build src/p1266.exe: CXX_EXECUTABLE_LINKER__p1266_Release src/CMakeFiles/p1266.dir/p1266numeric.cpp.obj
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\p1266.dir
   POST_BUILD = cd .
@@ -172,9 +180,9 @@ build src/p1266.exe: CXX_EXECUTABLE_LINKER__p1266_ src/CMakeFiles/p1266.dir/p126
 
 build cmake_object_order_depends_target_p1269: phony || src/CMakeFiles/p1269.dir
 
-build src/CMakeFiles/p1269.dir/p1269find.cpp.obj: CXX_COMPILER__p1269_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1269find.cpp || cmake_object_order_depends_target_p1269
+build src/CMakeFiles/p1269.dir/p1269find.cpp.obj: CXX_COMPILER__p1269_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1269find.cpp || cmake_object_order_depends_target_p1269
   DEP_FILE = src\CMakeFiles\p1269.dir\p1269find.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
   OBJECT_DIR = src\CMakeFiles\p1269.dir
   OBJECT_FILE_DIR = src\CMakeFiles\p1269.dir
@@ -187,7 +195,8 @@ build src/CMakeFiles/p1269.dir/p1269find.cpp.obj: CXX_COMPILER__p1269_ C$:/Users
 #############################################
 # Link the executable src\p1269.exe
 
-build src/p1269.exe: CXX_EXECUTABLE_LINKER__p1269_ src/CMakeFiles/p1269.dir/p1269find.cpp.obj
+build src/p1269.exe: CXX_EXECUTABLE_LINKER__p1269_Release src/CMakeFiles/p1269.dir/p1269find.cpp.obj
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\p1269.dir
   POST_BUILD = cd .
@@ -205,9 +214,9 @@ build src/p1269.exe: CXX_EXECUTABLE_LINKER__p1269_ src/CMakeFiles/p1269.dir/p126
 
 build cmake_object_order_depends_target_p1272: phony || src/CMakeFiles/p1272.dir
 
-build src/CMakeFiles/p1272.dir/p1272swap.cpp.obj: CXX_COMPILER__p1272_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1272swap.cpp || cmake_object_order_depends_target_p1272
+build src/CMakeFiles/p1272.dir/p1272swap.cpp.obj: CXX_COMPILER__p1272_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1272swap.cpp || cmake_object_order_depends_target_p1272
   DEP_FILE = src\CMakeFiles\p1272.dir\p1272swap.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
   OBJECT_DIR = src\CMakeFiles\p1272.dir
   OBJECT_FILE_DIR = src\CMakeFiles\p1272.dir
@@ -220,7 +229,8 @@ build src/CMakeFiles/p1272.dir/p1272swap.cpp.obj: CXX_COMPILER__p1272_ C$:/Users
 #############################################
 # Link the executable src\p1272.exe
 
-build src/p1272.exe: CXX_EXECUTABLE_LINKER__p1272_ src/CMakeFiles/p1272.dir/p1272swap.cpp.obj
+build src/p1272.exe: CXX_EXECUTABLE_LINKER__p1272_Release src/CMakeFiles/p1272.dir/p1272swap.cpp.obj
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\p1272.dir
   POST_BUILD = cd .
@@ -238,9 +248,9 @@ build src/p1272.exe: CXX_EXECUTABLE_LINKER__p1272_ src/CMakeFiles/p1272.dir/p127
 
 build cmake_object_order_depends_target_p1274: phony || src/CMakeFiles/p1274.dir
 
-build src/CMakeFiles/p1274.dir/p1274copy_backward.cpp.obj: CXX_COMPILER__p1274_ C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1274copy_backward.cpp || cmake_object_order_depends_target_p1274
+build src/CMakeFiles/p1274.dir/p1274copy_backward.cpp.obj: CXX_COMPILER__p1274_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1274copy_backward.cpp || cmake_object_order_depends_target_p1274
   DEP_FILE = src\CMakeFiles\p1274.dir\p1274copy_backward.cpp.obj.d
-  FLAGS = -std=gnu++11
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
   INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
   OBJECT_DIR = src\CMakeFiles\p1274.dir
   OBJECT_FILE_DIR = src\CMakeFiles\p1274.dir
@@ -253,7 +263,8 @@ build src/CMakeFiles/p1274.dir/p1274copy_backward.cpp.obj: CXX_COMPILER__p1274_ 
 #############################################
 # Link the executable src\p1274.exe
 
-build src/p1274.exe: CXX_EXECUTABLE_LINKER__p1274_ src/CMakeFiles/p1274.dir/p1274copy_backward.cpp.obj
+build src/p1274.exe: CXX_EXECUTABLE_LINKER__p1274_Release src/CMakeFiles/p1274.dir/p1274copy_backward.cpp.obj
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\p1274.dir
   POST_BUILD = cd .
@@ -261,6 +272,74 @@ build src/p1274.exe: CXX_EXECUTABLE_LINKER__p1274_ src/CMakeFiles/p1274.dir/p127
   TARGET_FILE = src\p1274.exe
   TARGET_IMPLIB = src\libp1274.dll.a
   TARGET_PDB = p1274.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target p1276
+
+
+#############################################
+# Order-only phony target for p1276
+
+build cmake_object_order_depends_target_p1276: phony || src/CMakeFiles/p1276.dir
+
+build src/CMakeFiles/p1276.dir/p1276inplace_merge.cpp.obj: CXX_COMPILER__p1276_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1276inplace_merge.cpp || cmake_object_order_depends_target_p1276
+  DEP_FILE = src\CMakeFiles\p1276.dir\p1276inplace_merge.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
+  OBJECT_DIR = src\CMakeFiles\p1276.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\p1276.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1276
+
+
+#############################################
+# Link the executable src\p1276.exe
+
+build src/p1276.exe: CXX_EXECUTABLE_LINKER__p1276_Release src/CMakeFiles/p1276.dir/p1276inplace_merge.cpp.obj
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\p1276.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\p1276.exe
+  TARGET_IMPLIB = src\libp1276.dll.a
+  TARGET_PDB = p1276.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target p1277
+
+
+#############################################
+# Order-only phony target for p1277
+
+build cmake_object_order_depends_target_p1277: phony || src/CMakeFiles/p1277.dir
+
+build src/CMakeFiles/p1277.dir/p1277includes.cpp.obj: CXX_COMPILER__p1277_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1277includes.cpp || cmake_object_order_depends_target_p1277
+  DEP_FILE = src\CMakeFiles\p1277.dir\p1277includes.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
+  OBJECT_DIR = src\CMakeFiles\p1277.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\p1277.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1277
+
+
+#############################################
+# Link the executable src\p1277.exe
+
+build src/p1277.exe: CXX_EXECUTABLE_LINKER__p1277_Release src/CMakeFiles/p1277.dir/p1277includes.cpp.obj
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\p1277.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\p1277.exe
+  TARGET_IMPLIB = src\libp1277.dll.a
+  TARGET_PDB = p1277.exe.dbg
 
 
 #############################################
@@ -313,6 +392,14 @@ build p1274: phony src/p1274.exe
 
 build p1274.exe: phony src/p1274.exe
 
+build p1276: phony src/p1276.exe
+
+build p1276.exe: phony src/p1276.exe
+
+build p1277: phony src/p1277.exe
+
+build p1277.exe: phony src/p1277.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -328,7 +415,7 @@ build all: phony src/all
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src
 
-build src/all: phony src/p1261.exe src/p1264.exe src/p1266.exe src/p1269.exe src/p1272.exe src/p1274.exe
+build src/all: phony src/p1261.exe src/p1264.exe src/p1266.exe src/p1269.exe src/p1272.exe src/p1274.exe src/p1276.exe src/p1277.exe
 
 # =============================================================================
 # Built-in targets

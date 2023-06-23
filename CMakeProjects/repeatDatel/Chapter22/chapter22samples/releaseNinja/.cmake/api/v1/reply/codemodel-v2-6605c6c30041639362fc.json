@@ -1,0 +1,150 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Release-c94b7c2814d5a21df52c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Chapter22"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "ch22samples",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "p1261::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1261-Release-e30e83eed34c50e3991a.json",
+					"name" : "p1261",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1264::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1264-Release-275c0b2b96fce5be95ee.json",
+					"name" : "p1264",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1266::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1266-Release-58b0e52e7d9972fb8252.json",
+					"name" : "p1266",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1269::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1269-Release-053ab514b820953085e9.json",
+					"name" : "p1269",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1272::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1272-Release-25a86802be2c331ea5f9.json",
+					"name" : "p1272",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1274::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1274-Release-75defd402b413520018b.json",
+					"name" : "p1274",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1276::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1276-Release-e0ae839ff1af63d5f180.json",
+					"name" : "p1276",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1277::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1277-Release-e38a289c7b1373915030.json",
+					"name" : "p1277",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja",
+		"source" : "C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

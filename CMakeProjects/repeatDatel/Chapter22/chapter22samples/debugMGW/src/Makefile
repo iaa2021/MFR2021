@@ -199,6 +199,34 @@ p1274/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1274.dir\build.make src/CMakeFiles/p1274.dir/build
 .PHONY : p1274/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1276.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1276.dir/rule
+.PHONY : src/CMakeFiles/p1276.dir/rule
+
+# Convenience name for target.
+p1276: src/CMakeFiles/p1276.dir/rule
+.PHONY : p1276
+
+# fast build rule for target.
+p1276/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1276.dir\build.make src/CMakeFiles/p1276.dir/build
+.PHONY : p1276/fast
+
+# Convenience name for target.
+src/CMakeFiles/p1277.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1277.dir/rule
+.PHONY : src/CMakeFiles/p1277.dir/rule
+
+# Convenience name for target.
+p1277: src/CMakeFiles/p1277.dir/rule
+.PHONY : p1277
+
+# fast build rule for target.
+p1277/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1277.dir\build.make src/CMakeFiles/p1277.dir/build
+.PHONY : p1277/fast
+
 p1261remove.obj: p1261remove.cpp.obj
 .PHONY : p1261remove.obj
 
@@ -343,6 +371,54 @@ p1274copy_backward.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1274.dir\build.make src/CMakeFiles/p1274.dir/p1274copy_backward.cpp.s
 .PHONY : p1274copy_backward.cpp.s
 
+p1276inplace_merge.obj: p1276inplace_merge.cpp.obj
+.PHONY : p1276inplace_merge.obj
+
+# target to build an object file
+p1276inplace_merge.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1276.dir\build.make src/CMakeFiles/p1276.dir/p1276inplace_merge.cpp.obj
+.PHONY : p1276inplace_merge.cpp.obj
+
+p1276inplace_merge.i: p1276inplace_merge.cpp.i
+.PHONY : p1276inplace_merge.i
+
+# target to preprocess a source file
+p1276inplace_merge.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1276.dir\build.make src/CMakeFiles/p1276.dir/p1276inplace_merge.cpp.i
+.PHONY : p1276inplace_merge.cpp.i
+
+p1276inplace_merge.s: p1276inplace_merge.cpp.s
+.PHONY : p1276inplace_merge.s
+
+# target to generate assembly for a file
+p1276inplace_merge.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1276.dir\build.make src/CMakeFiles/p1276.dir/p1276inplace_merge.cpp.s
+.PHONY : p1276inplace_merge.cpp.s
+
+p1277includes.obj: p1277includes.cpp.obj
+.PHONY : p1277includes.obj
+
+# target to build an object file
+p1277includes.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1277.dir\build.make src/CMakeFiles/p1277.dir/p1277includes.cpp.obj
+.PHONY : p1277includes.cpp.obj
+
+p1277includes.i: p1277includes.cpp.i
+.PHONY : p1277includes.i
+
+# target to preprocess a source file
+p1277includes.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1277.dir\build.make src/CMakeFiles/p1277.dir/p1277includes.cpp.i
+.PHONY : p1277includes.cpp.i
+
+p1277includes.s: p1277includes.cpp.s
+.PHONY : p1277includes.s
+
+# target to generate assembly for a file
+p1277includes.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1277.dir\build.make src/CMakeFiles/p1277.dir/p1277includes.cpp.s
+.PHONY : p1277includes.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -357,6 +433,8 @@ help:
 	@echo ... p1269
 	@echo ... p1272
 	@echo ... p1274
+	@echo ... p1276
+	@echo ... p1277
 	@echo ... p1261remove.obj
 	@echo ... p1261remove.i
 	@echo ... p1261remove.s
@@ -375,6 +453,12 @@ help:
 	@echo ... p1274copy_backward.obj
 	@echo ... p1274copy_backward.i
 	@echo ... p1274copy_backward.s
+	@echo ... p1276inplace_merge.obj
+	@echo ... p1276inplace_merge.i
+	@echo ... p1276inplace_merge.s
+	@echo ... p1277includes.obj
+	@echo ... p1277includes.i
+	@echo ... p1277includes.s
 .PHONY : help
 
 
