@@ -14,8 +14,10 @@ add_executable( p1274 p1274copy_backward.cpp )
 add_executable( p1276 p1276inplace_merge.cpp )
 add_executable( p1277 p1277includes.cpp )
 add_executable( p1281 p1281equal_range.cpp )
+add_executable( p1283 p1283push_heap.cpp )
+add_executable( p1286 p1286min_max.cpp )
 
-set( targets p1261 p1264 p1266 p1269 p1272 p1274 p1276 p1277 p1281 )
+set( targets p1261 p1264 p1266 p1269 p1272 p1274 p1276 p1277 p1281 p1283 p1286 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES

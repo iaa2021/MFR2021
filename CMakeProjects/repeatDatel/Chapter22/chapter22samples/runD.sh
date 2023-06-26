@@ -1,3 +1,3 @@
 echo [*]Running debug configuration with MinGW
 cd debugMGW
-./src/p1281
+./src/p1286

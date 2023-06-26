@@ -86,6 +86,8 @@ src/all: src/CMakeFiles/p1274.dir/all
 src/all: src/CMakeFiles/p1276.dir/all
 src/all: src/CMakeFiles/p1277.dir/all
 src/all: src/CMakeFiles/p1281.dir/all
+src/all: src/CMakeFiles/p1283.dir/all
+src/all: src/CMakeFiles/p1286.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -102,6 +104,8 @@ src/clean: src/CMakeFiles/p1274.dir/clean
 src/clean: src/CMakeFiles/p1276.dir/clean
 src/clean: src/CMakeFiles/p1277.dir/clean
 src/clean: src/CMakeFiles/p1281.dir/clean
+src/clean: src/CMakeFiles/p1283.dir/clean
+src/clean: src/CMakeFiles/p1286.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -337,6 +341,58 @@ p1281: src/CMakeFiles/p1281.dir/rule
 src/CMakeFiles/p1281.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1281.dir\build.make src/CMakeFiles/p1281.dir/clean
 .PHONY : src/CMakeFiles/p1281.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/p1283.dir
+
+# All Build rule for target.
+src/CMakeFiles/p1283.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1283.dir\build.make src/CMakeFiles/p1283.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1283.dir\build.make src/CMakeFiles/p1283.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW\CMakeFiles --progress-num=19,20 "Built target p1283"
+.PHONY : src/CMakeFiles/p1283.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/p1283.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1283.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW\CMakeFiles 0
+.PHONY : src/CMakeFiles/p1283.dir/rule
+
+# Convenience name for target.
+p1283: src/CMakeFiles/p1283.dir/rule
+.PHONY : p1283
+
+# clean rule for target.
+src/CMakeFiles/p1283.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1283.dir\build.make src/CMakeFiles/p1283.dir/clean
+.PHONY : src/CMakeFiles/p1283.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/p1286.dir
+
+# All Build rule for target.
+src/CMakeFiles/p1286.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW\CMakeFiles --progress-num=21,22 "Built target p1286"
+.PHONY : src/CMakeFiles/p1286.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/p1286.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1286.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW\CMakeFiles 0
+.PHONY : src/CMakeFiles/p1286.dir/rule
+
+# Convenience name for target.
+p1286: src/CMakeFiles/p1286.dir/rule
+.PHONY : p1286
+
+# clean rule for target.
+src/CMakeFiles/p1286.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/clean
+.PHONY : src/CMakeFiles/p1286.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

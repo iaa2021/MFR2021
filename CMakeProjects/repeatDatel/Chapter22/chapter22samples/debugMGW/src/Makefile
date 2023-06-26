@@ -241,6 +241,34 @@ p1281/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1281.dir\build.make src/CMakeFiles/p1281.dir/build
 .PHONY : p1281/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1283.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1283.dir/rule
+.PHONY : src/CMakeFiles/p1283.dir/rule
+
+# Convenience name for target.
+p1283: src/CMakeFiles/p1283.dir/rule
+.PHONY : p1283
+
+# fast build rule for target.
+p1283/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1283.dir\build.make src/CMakeFiles/p1283.dir/build
+.PHONY : p1283/fast
+
+# Convenience name for target.
+src/CMakeFiles/p1286.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1286.dir/rule
+.PHONY : src/CMakeFiles/p1286.dir/rule
+
+# Convenience name for target.
+p1286: src/CMakeFiles/p1286.dir/rule
+.PHONY : p1286
+
+# fast build rule for target.
+p1286/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/build
+.PHONY : p1286/fast
+
 p1261remove.obj: p1261remove.cpp.obj
 .PHONY : p1261remove.obj
 
@@ -457,6 +485,54 @@ p1281equal_range.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1281.dir\build.make src/CMakeFiles/p1281.dir/p1281equal_range.cpp.s
 .PHONY : p1281equal_range.cpp.s
 
+p1283push_heap.obj: p1283push_heap.cpp.obj
+.PHONY : p1283push_heap.obj
+
+# target to build an object file
+p1283push_heap.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1283.dir\build.make src/CMakeFiles/p1283.dir/p1283push_heap.cpp.obj
+.PHONY : p1283push_heap.cpp.obj
+
+p1283push_heap.i: p1283push_heap.cpp.i
+.PHONY : p1283push_heap.i
+
+# target to preprocess a source file
+p1283push_heap.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1283.dir\build.make src/CMakeFiles/p1283.dir/p1283push_heap.cpp.i
+.PHONY : p1283push_heap.cpp.i
+
+p1283push_heap.s: p1283push_heap.cpp.s
+.PHONY : p1283push_heap.s
+
+# target to generate assembly for a file
+p1283push_heap.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1283.dir\build.make src/CMakeFiles/p1283.dir/p1283push_heap.cpp.s
+.PHONY : p1283push_heap.cpp.s
+
+p1286min_max.obj: p1286min_max.cpp.obj
+.PHONY : p1286min_max.obj
+
+# target to build an object file
+p1286min_max.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/p1286min_max.cpp.obj
+.PHONY : p1286min_max.cpp.obj
+
+p1286min_max.i: p1286min_max.cpp.i
+.PHONY : p1286min_max.i
+
+# target to preprocess a source file
+p1286min_max.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/p1286min_max.cpp.i
+.PHONY : p1286min_max.cpp.i
+
+p1286min_max.s: p1286min_max.cpp.s
+.PHONY : p1286min_max.s
+
+# target to generate assembly for a file
+p1286min_max.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/p1286min_max.cpp.s
+.PHONY : p1286min_max.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -474,6 +550,8 @@ help:
 	@echo ... p1276
 	@echo ... p1277
 	@echo ... p1281
+	@echo ... p1283
+	@echo ... p1286
 	@echo ... p1261remove.obj
 	@echo ... p1261remove.i
 	@echo ... p1261remove.s
@@ -501,6 +579,12 @@ help:
 	@echo ... p1281equal_range.obj
 	@echo ... p1281equal_range.i
 	@echo ... p1281equal_range.s
+	@echo ... p1283push_heap.obj
+	@echo ... p1283push_heap.i
+	@echo ... p1283push_heap.s
+	@echo ... p1286min_max.obj
+	@echo ... p1286min_max.i
+	@echo ... p1286min_max.s
 .PHONY : help
 
 

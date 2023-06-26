@@ -375,6 +375,74 @@ build src/p1281.exe: CXX_EXECUTABLE_LINKER__p1281_Release src/CMakeFiles/p1281.d
   TARGET_IMPLIB = src\libp1281.dll.a
   TARGET_PDB = p1281.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target p1283
+
+
+#############################################
+# Order-only phony target for p1283
+
+build cmake_object_order_depends_target_p1283: phony || src/CMakeFiles/p1283.dir
+
+build src/CMakeFiles/p1283.dir/p1283push_heap.cpp.obj: CXX_COMPILER__p1283_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1283push_heap.cpp || cmake_object_order_depends_target_p1283
+  DEP_FILE = src\CMakeFiles\p1283.dir\p1283push_heap.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
+  OBJECT_DIR = src\CMakeFiles\p1283.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\p1283.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1283
+
+
+#############################################
+# Link the executable src\p1283.exe
+
+build src/p1283.exe: CXX_EXECUTABLE_LINKER__p1283_Release src/CMakeFiles/p1283.dir/p1283push_heap.cpp.obj
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\p1283.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\p1283.exe
+  TARGET_IMPLIB = src\libp1283.dll.a
+  TARGET_PDB = p1283.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target p1286
+
+
+#############################################
+# Order-only phony target for p1286
+
+build cmake_object_order_depends_target_p1286: phony || src/CMakeFiles/p1286.dir
+
+build src/CMakeFiles/p1286.dir/p1286min_max.cpp.obj: CXX_COMPILER__p1286_Release C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/p1286min_max.cpp || cmake_object_order_depends_target_p1286
+  DEP_FILE = src\CMakeFiles\p1286.dir\p1286min_max.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/src/.
+  OBJECT_DIR = src\CMakeFiles\p1286.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\p1286.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1286
+
+
+#############################################
+# Link the executable src\p1286.exe
+
+build src/p1286.exe: CXX_EXECUTABLE_LINKER__p1286_Release src/CMakeFiles/p1286.dir/p1286min_max.cpp.obj
+  FLAGS = -O3 -DNDEBUG
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\p1286.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\p1286.exe
+  TARGET_IMPLIB = src\libp1286.dll.a
+  TARGET_PDB = p1286.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -438,6 +506,14 @@ build p1281: phony src/p1281.exe
 
 build p1281.exe: phony src/p1281.exe
 
+build p1283: phony src/p1283.exe
+
+build p1283.exe: phony src/p1283.exe
+
+build p1286: phony src/p1286.exe
+
+build p1286.exe: phony src/p1286.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -453,7 +529,7 @@ build all: phony src/all
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter22/chapter22samples/releaseNinja/src
 
-build src/all: phony src/p1261.exe src/p1264.exe src/p1266.exe src/p1269.exe src/p1272.exe src/p1274.exe src/p1276.exe src/p1277.exe src/p1281.exe
+build src/all: phony src/p1261.exe src/p1264.exe src/p1266.exe src/p1269.exe src/p1272.exe src/p1274.exe src/p1276.exe src/p1277.exe src/p1281.exe src/p1283.exe src/p1286.exe
 
 # =============================================================================
 # Built-in targets
