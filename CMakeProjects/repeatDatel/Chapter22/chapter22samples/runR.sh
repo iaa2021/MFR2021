@@ -1,3 +1,3 @@
 echo [*]Running release configuration with Ninja
 cd releaseNinja
-./src/p1286
+./src/p1290

@@ -269,6 +269,20 @@ p1286/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/build
 .PHONY : p1286/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1290.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1290.dir/rule
+.PHONY : src/CMakeFiles/p1290.dir/rule
+
+# Convenience name for target.
+p1290: src/CMakeFiles/p1290.dir/rule
+.PHONY : p1290
+
+# fast build rule for target.
+p1290/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1290.dir\build.make src/CMakeFiles/p1290.dir/build
+.PHONY : p1290/fast
+
 p1261remove.obj: p1261remove.cpp.obj
 .PHONY : p1261remove.obj
 
@@ -533,6 +547,30 @@ p1286min_max.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/p1286min_max.cpp.s
 .PHONY : p1286min_max.cpp.s
 
+p1290erato_bitset.obj: p1290erato_bitset.cpp.obj
+.PHONY : p1290erato_bitset.obj
+
+# target to build an object file
+p1290erato_bitset.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1290.dir\build.make src/CMakeFiles/p1290.dir/p1290erato_bitset.cpp.obj
+.PHONY : p1290erato_bitset.cpp.obj
+
+p1290erato_bitset.i: p1290erato_bitset.cpp.i
+.PHONY : p1290erato_bitset.i
+
+# target to preprocess a source file
+p1290erato_bitset.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1290.dir\build.make src/CMakeFiles/p1290.dir/p1290erato_bitset.cpp.i
+.PHONY : p1290erato_bitset.cpp.i
+
+p1290erato_bitset.s: p1290erato_bitset.cpp.s
+.PHONY : p1290erato_bitset.s
+
+# target to generate assembly for a file
+p1290erato_bitset.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter22\chapter22samples\debugMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1290.dir\build.make src/CMakeFiles/p1290.dir/p1290erato_bitset.cpp.s
+.PHONY : p1290erato_bitset.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -552,6 +590,7 @@ help:
 	@echo ... p1281
 	@echo ... p1283
 	@echo ... p1286
+	@echo ... p1290
 	@echo ... p1261remove.obj
 	@echo ... p1261remove.i
 	@echo ... p1261remove.s
@@ -585,6 +624,9 @@ help:
 	@echo ... p1286min_max.obj
 	@echo ... p1286min_max.i
 	@echo ... p1286min_max.s
+	@echo ... p1290erato_bitset.obj
+	@echo ... p1290erato_bitset.i
+	@echo ... p1290erato_bitset.s
 .PHONY : help
 
 

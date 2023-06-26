@@ -258,6 +258,19 @@ p1286/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1286.dir\build.make src/CMakeFiles/p1286.dir/build
 .PHONY : p1286/fast
 
+#=============================================================================
+# Target rules for targets named p1290
+
+# Build rule for target.
+p1290: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p1290
+.PHONY : p1290
+
+# fast build rule for target.
+p1290/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1290.dir\build.make src/CMakeFiles/p1290.dir/build
+.PHONY : p1290/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -277,6 +290,7 @@ help:
 	@echo ... p1281
 	@echo ... p1283
 	@echo ... p1286
+	@echo ... p1290
 .PHONY : help
 
 
