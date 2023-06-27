@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/p1294.dir/p1294accumulate.cpp.o -o p1294 

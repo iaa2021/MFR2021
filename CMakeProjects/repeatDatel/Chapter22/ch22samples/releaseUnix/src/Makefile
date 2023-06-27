@@ -242,6 +242,20 @@ p1259/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1259.dir/build.make src/CMakeFiles/p1259.dir/build
 .PHONY : p1259/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1294.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1294.dir/rule
+.PHONY : src/CMakeFiles/p1294.dir/rule
+
+# Convenience name for target.
+p1294: src/CMakeFiles/p1294.dir/rule
+.PHONY : p1294
+
+# fast build rule for target.
+p1294/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1294.dir/build.make src/CMakeFiles/p1294.dir/build
+.PHONY : p1294/fast
+
 p1219.o: p1219.cpp.o
 .PHONY : p1219.o
 
@@ -458,6 +472,30 @@ p1259algo.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1259.dir/build.make src/CMakeFiles/p1259.dir/p1259algo.cpp.s
 .PHONY : p1259algo.cpp.s
 
+p1294accumulate.o: p1294accumulate.cpp.o
+.PHONY : p1294accumulate.o
+
+# target to build an object file
+p1294accumulate.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1294.dir/build.make src/CMakeFiles/p1294.dir/p1294accumulate.cpp.o
+.PHONY : p1294accumulate.cpp.o
+
+p1294accumulate.i: p1294accumulate.cpp.i
+.PHONY : p1294accumulate.i
+
+# target to preprocess a source file
+p1294accumulate.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1294.dir/build.make src/CMakeFiles/p1294.dir/p1294accumulate.cpp.i
+.PHONY : p1294accumulate.cpp.i
+
+p1294accumulate.s: p1294accumulate.cpp.s
+.PHONY : p1294accumulate.s
+
+# target to generate assembly for a file
+p1294accumulate.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1294.dir/build.make src/CMakeFiles/p1294.dir/p1294accumulate.cpp.s
+.PHONY : p1294accumulate.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -475,6 +513,7 @@ help:
 	@echo "... p1251"
 	@echo "... p1257"
 	@echo "... p1259"
+	@echo "... p1294"
 	@echo "... p1219.o"
 	@echo "... p1219.i"
 	@echo "... p1219.s"
@@ -502,6 +541,9 @@ help:
 	@echo "... p1259algo.o"
 	@echo "... p1259algo.i"
 	@echo "... p1259algo.s"
+	@echo "... p1294accumulate.o"
+	@echo "... p1294accumulate.i"
+	@echo "... p1294accumulate.s"
 .PHONY : help
 
 

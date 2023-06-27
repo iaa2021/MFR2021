@@ -56,4 +56,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/p1251.dir/DependInfo.cmake"
   "src/CMakeFiles/p1257.dir/DependInfo.cmake"
   "src/CMakeFiles/p1259.dir/DependInfo.cmake"
+  "src/CMakeFiles/p1294.dir/DependInfo.cmake"
   )
