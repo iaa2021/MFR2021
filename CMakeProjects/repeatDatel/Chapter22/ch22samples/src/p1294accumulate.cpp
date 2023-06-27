@@ -35,7 +35,7 @@ int main()
     cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
     cout << "Sample on page 1294, demo of accumulate.\n";
     ostream_iterator<int> it( cout, ", " ); int size = 10, result;
-    int *ptr1 = new int[ size ]; 
+    int *ptr1 = new int[ size ]; int *ptr = new int[ size ];
     for (int i = 0; i < size; i++)
     {
         ptr1[ i ] = i + 1;
@@ -54,6 +54,11 @@ int main()
         result += vl * vl;
     }
     cout << result << endl;
+    cout << "\nNow copy v1 values into ptr via copy():\n";
+    copy( v1.begin(), v1.end(), ptr );
+    cout << "ptr contains:\n";
+    copy( ptr, ptr + size, it );
+    cout << endl;
     return 0;
 }
 int sumSquares( int total, int value )
