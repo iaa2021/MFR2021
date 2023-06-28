@@ -2,4 +2,4 @@ echo [*] run Ninja debug configuration
 
 cd debugNinja
 
-src/p1294
+src/ex22_1

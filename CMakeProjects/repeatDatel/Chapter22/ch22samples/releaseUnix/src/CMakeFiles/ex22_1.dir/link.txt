@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/ex22_1.dir/ex22_1.cpp.o -o ex22_1 

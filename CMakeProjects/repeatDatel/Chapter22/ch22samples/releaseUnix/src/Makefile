@@ -256,6 +256,44 @@ p1294/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1294.dir/build.make src/CMakeFiles/p1294.dir/build
 .PHONY : p1294/fast
 
+# Convenience name for target.
+src/CMakeFiles/ex22_1.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ex22_1.dir/rule
+.PHONY : src/CMakeFiles/ex22_1.dir/rule
+
+# Convenience name for target.
+ex22_1: src/CMakeFiles/ex22_1.dir/rule
+.PHONY : ex22_1
+
+# fast build rule for target.
+ex22_1/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_1.dir/build.make src/CMakeFiles/ex22_1.dir/build
+.PHONY : ex22_1/fast
+
+ex22_1.o: ex22_1.cpp.o
+.PHONY : ex22_1.o
+
+# target to build an object file
+ex22_1.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_1.dir/build.make src/CMakeFiles/ex22_1.dir/ex22_1.cpp.o
+.PHONY : ex22_1.cpp.o
+
+ex22_1.i: ex22_1.cpp.i
+.PHONY : ex22_1.i
+
+# target to preprocess a source file
+ex22_1.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_1.dir/build.make src/CMakeFiles/ex22_1.dir/ex22_1.cpp.i
+.PHONY : ex22_1.cpp.i
+
+ex22_1.s: ex22_1.cpp.s
+.PHONY : ex22_1.s
+
+# target to generate assembly for a file
+ex22_1.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_1.dir/build.make src/CMakeFiles/ex22_1.dir/ex22_1.cpp.s
+.PHONY : ex22_1.cpp.s
+
 p1219.o: p1219.cpp.o
 .PHONY : p1219.o
 
@@ -504,6 +542,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... ex22_1"
 	@echo "... p1219"
 	@echo "... p1236"
 	@echo "... p1241"
@@ -514,6 +553,9 @@ help:
 	@echo "... p1257"
 	@echo "... p1259"
 	@echo "... p1294"
+	@echo "... ex22_1.o"
+	@echo "... ex22_1.i"
+	@echo "... ex22_1.s"
 	@echo "... p1219.o"
 	@echo "... p1219.i"
 	@echo "... p1219.s"

@@ -10,5 +10,6 @@
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/src/CMakeFiles/p1257.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/src/CMakeFiles/p1259.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/src/CMakeFiles/p1294.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/src/CMakeFiles/ex22_1.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/src/CMakeFiles/edit_cache.dir
 /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/src/CMakeFiles/rebuild_cache.dir
