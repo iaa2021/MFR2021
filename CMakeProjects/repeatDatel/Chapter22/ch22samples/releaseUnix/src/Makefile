@@ -270,6 +270,20 @@ ex22_1/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_1.dir/build.make src/CMakeFiles/ex22_1.dir/build
 .PHONY : ex22_1/fast
 
+# Convenience name for target.
+src/CMakeFiles/ex22_2.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ex22_2.dir/rule
+.PHONY : src/CMakeFiles/ex22_2.dir/rule
+
+# Convenience name for target.
+ex22_2: src/CMakeFiles/ex22_2.dir/rule
+.PHONY : ex22_2
+
+# fast build rule for target.
+ex22_2/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_2.dir/build.make src/CMakeFiles/ex22_2.dir/build
+.PHONY : ex22_2/fast
+
 ex22_1.o: ex22_1.cpp.o
 .PHONY : ex22_1.o
 
@@ -293,6 +307,30 @@ ex22_1.s: ex22_1.cpp.s
 ex22_1.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_1.dir/build.make src/CMakeFiles/ex22_1.dir/ex22_1.cpp.s
 .PHONY : ex22_1.cpp.s
+
+ex22_2.o: ex22_2.cpp.o
+.PHONY : ex22_2.o
+
+# target to build an object file
+ex22_2.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_2.dir/build.make src/CMakeFiles/ex22_2.dir/ex22_2.cpp.o
+.PHONY : ex22_2.cpp.o
+
+ex22_2.i: ex22_2.cpp.i
+.PHONY : ex22_2.i
+
+# target to preprocess a source file
+ex22_2.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_2.dir/build.make src/CMakeFiles/ex22_2.dir/ex22_2.cpp.i
+.PHONY : ex22_2.cpp.i
+
+ex22_2.s: ex22_2.cpp.s
+.PHONY : ex22_2.s
+
+# target to generate assembly for a file
+ex22_2.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_2.dir/build.make src/CMakeFiles/ex22_2.dir/ex22_2.cpp.s
+.PHONY : ex22_2.cpp.s
 
 p1219.o: p1219.cpp.o
 .PHONY : p1219.o
@@ -543,6 +581,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ex22_1"
+	@echo "... ex22_2"
 	@echo "... p1219"
 	@echo "... p1236"
 	@echo "... p1241"
@@ -556,6 +595,9 @@ help:
 	@echo "... ex22_1.o"
 	@echo "... ex22_1.i"
 	@echo "... ex22_1.s"
+	@echo "... ex22_2.o"
+	@echo "... ex22_2.i"
+	@echo "... ex22_2.s"
 	@echo "... p1219.o"
 	@echo "... p1219.i"
 	@echo "... p1219.s"

@@ -89,6 +89,7 @@ src/all: src/CMakeFiles/p1257.dir/all
 src/all: src/CMakeFiles/p1259.dir/all
 src/all: src/CMakeFiles/p1294.dir/all
 src/all: src/CMakeFiles/ex22_1.dir/all
+src/all: src/CMakeFiles/ex22_2.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -107,6 +108,7 @@ src/clean: src/CMakeFiles/p1257.dir/clean
 src/clean: src/CMakeFiles/p1259.dir/clean
 src/clean: src/CMakeFiles/p1294.dir/clean
 src/clean: src/CMakeFiles/ex22_1.dir/clean
+src/clean: src/CMakeFiles/ex22_2.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -116,7 +118,7 @@ src/clean: src/CMakeFiles/ex22_1.dir/clean
 src/CMakeFiles/p1219.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1219.dir/build.make src/CMakeFiles/p1219.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1219.dir/build.make src/CMakeFiles/p1219.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=3,4 "Built target p1219"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=5,6 "Built target p1219"
 .PHONY : src/CMakeFiles/p1219.dir/all
 
 # Build rule for subdir invocation for target.
@@ -142,7 +144,7 @@ src/CMakeFiles/p1219.dir/clean:
 src/CMakeFiles/p1236.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1236.dir/build.make src/CMakeFiles/p1236.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1236.dir/build.make src/CMakeFiles/p1236.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=5,6 "Built target p1236"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=7,8 "Built target p1236"
 .PHONY : src/CMakeFiles/p1236.dir/all
 
 # Build rule for subdir invocation for target.
@@ -168,7 +170,7 @@ src/CMakeFiles/p1236.dir/clean:
 src/CMakeFiles/p1241.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1241.dir/build.make src/CMakeFiles/p1241.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1241.dir/build.make src/CMakeFiles/p1241.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=7,8 "Built target p1241"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=9,10 "Built target p1241"
 .PHONY : src/CMakeFiles/p1241.dir/all
 
 # Build rule for subdir invocation for target.
@@ -194,7 +196,7 @@ src/CMakeFiles/p1241.dir/clean:
 src/CMakeFiles/p1243.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1243.dir/build.make src/CMakeFiles/p1243.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=9,10 "Built target p1243"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=11,12 "Built target p1243"
 .PHONY : src/CMakeFiles/p1243.dir/all
 
 # Build rule for subdir invocation for target.
@@ -220,7 +222,7 @@ src/CMakeFiles/p1243.dir/clean:
 src/CMakeFiles/p1245.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1245.dir/build.make src/CMakeFiles/p1245.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=11,12 "Built target p1245"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=13,14 "Built target p1245"
 .PHONY : src/CMakeFiles/p1245.dir/all
 
 # Build rule for subdir invocation for target.
@@ -246,7 +248,7 @@ src/CMakeFiles/p1245.dir/clean:
 src/CMakeFiles/p1247.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1247.dir/build.make src/CMakeFiles/p1247.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=13,14 "Built target p1247"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=15,16 "Built target p1247"
 .PHONY : src/CMakeFiles/p1247.dir/all
 
 # Build rule for subdir invocation for target.
@@ -272,7 +274,7 @@ src/CMakeFiles/p1247.dir/clean:
 src/CMakeFiles/p1251.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1251.dir/build.make src/CMakeFiles/p1251.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1251.dir/build.make src/CMakeFiles/p1251.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=15,16 "Built target p1251"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=17,18 "Built target p1251"
 .PHONY : src/CMakeFiles/p1251.dir/all
 
 # Build rule for subdir invocation for target.
@@ -298,7 +300,7 @@ src/CMakeFiles/p1251.dir/clean:
 src/CMakeFiles/p1257.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1257.dir/build.make src/CMakeFiles/p1257.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1257.dir/build.make src/CMakeFiles/p1257.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=17,18 "Built target p1257"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=19,20 "Built target p1257"
 .PHONY : src/CMakeFiles/p1257.dir/all
 
 # Build rule for subdir invocation for target.
@@ -324,7 +326,7 @@ src/CMakeFiles/p1257.dir/clean:
 src/CMakeFiles/p1259.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1259.dir/build.make src/CMakeFiles/p1259.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1259.dir/build.make src/CMakeFiles/p1259.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=19,20 "Built target p1259"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=21,22 "Built target p1259"
 .PHONY : src/CMakeFiles/p1259.dir/all
 
 # Build rule for subdir invocation for target.
@@ -350,7 +352,7 @@ src/CMakeFiles/p1259.dir/clean:
 src/CMakeFiles/p1294.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1294.dir/build.make src/CMakeFiles/p1294.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1294.dir/build.make src/CMakeFiles/p1294.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=21,22 "Built target p1294"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=23,24 "Built target p1294"
 .PHONY : src/CMakeFiles/p1294.dir/all
 
 # Build rule for subdir invocation for target.
@@ -394,6 +396,32 @@ ex22_1: src/CMakeFiles/ex22_1.dir/rule
 src/CMakeFiles/ex22_1.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_1.dir/build.make src/CMakeFiles/ex22_1.dir/clean
 .PHONY : src/CMakeFiles/ex22_1.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/ex22_2.dir
+
+# All Build rule for target.
+src/CMakeFiles/ex22_2.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_2.dir/build.make src/CMakeFiles/ex22_2.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_2.dir/build.make src/CMakeFiles/ex22_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles --progress-num=3,4 "Built target ex22_2"
+.PHONY : src/CMakeFiles/ex22_2.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/ex22_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ex22_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix/CMakeFiles 0
+.PHONY : src/CMakeFiles/ex22_2.dir/rule
+
+# Convenience name for target.
+ex22_2: src/CMakeFiles/ex22_2.dir/rule
+.PHONY : ex22_2
+
+# clean rule for target.
+src/CMakeFiles/ex22_2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_2.dir/build.make src/CMakeFiles/ex22_2.dir/clean
+.PHONY : src/CMakeFiles/ex22_2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

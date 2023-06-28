@@ -1,0 +1,186 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Release-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ch21samples"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "samples",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ex22_1::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ex22_1-Release-c2660d203becaa2a8ff8.json",
+					"name" : "ex22_1",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ex22_2::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ex22_2-Release-8e5bddedd8848cd2c0cc.json",
+					"name" : "ex22_2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1219::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1219-Release-4514a977e383b8a61aa5.json",
+					"name" : "p1219",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1236::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1236-Release-8fa496a277f5d33b1e98.json",
+					"name" : "p1236",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1241::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1241-Release-5aec887df39966575350.json",
+					"name" : "p1241",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1243::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1243-Release-8ae2cf31436fd51df919.json",
+					"name" : "p1243",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1245::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1245-Release-8a3395aa56fa2538c4fd.json",
+					"name" : "p1245",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1247::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1247-Release-741af2f8440c5b67c2e4.json",
+					"name" : "p1247",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1251::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1251-Release-472a9ecb3018602bdd62.json",
+					"name" : "p1251",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1257::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1257-Release-0723952b5c3ba4946f54.json",
+					"name" : "p1257",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1259::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1259-Release-5d188104d9870b3b20f0.json",
+					"name" : "p1259",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "p1294::@145eef247bfb46b6828c",
+					"jsonFile" : "target-p1294-Release-a1a91eb19e435880387d.json",
+					"name" : "p1294",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/releaseUnix",
+		"source" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

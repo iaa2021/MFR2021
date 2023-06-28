@@ -15,8 +15,9 @@ add_executable( p1257 p1257algo.cpp )
 add_executable( p1259 p1259algo.cpp )
 add_executable( p1294 p1294accumulate.cpp )
 add_executable( ex22_1 ex22_1.cpp )
+add_executable( ex22_2 ex22_2.cpp )
 
-set( targets p1219 p1236 p1241 p1243 p1245 p1247 p1251 p1257 p1259 p1294 ex22_1 )
+set( targets p1219 p1236 p1241 p1243 p1245 p1247 p1251 p1257 p1259 p1294 ex22_1 ex22_2 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES

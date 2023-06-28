@@ -421,6 +421,38 @@ build src/ex22_1: CXX_EXECUTABLE_LINKER__ex22_1_Debug src/CMakeFiles/ex22_1.dir/
   TARGET_FILE = src/ex22_1
   TARGET_PDB = ex22_1.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target ex22_2
+
+
+#############################################
+# Order-only phony target for ex22_2
+
+build cmake_object_order_depends_target_ex22_2: phony || src/CMakeFiles/ex22_2.dir
+
+build src/CMakeFiles/ex22_2.dir/ex22_2.cpp.o: CXX_COMPILER__ex22_2_unscanned_Debug /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/src/ex22_2.cpp || cmake_object_order_depends_target_ex22_2
+  DEP_FILE = src/CMakeFiles/ex22_2.dir/ex22_2.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/debugNinja/src -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/src/.
+  OBJECT_DIR = src/CMakeFiles/ex22_2.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/ex22_2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ex22_2
+
+
+#############################################
+# Link the executable src/ex22_2
+
+build src/ex22_2: CXX_EXECUTABLE_LINKER__ex22_2_Debug src/CMakeFiles/ex22_2.dir/ex22_2.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = src/CMakeFiles/ex22_2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/ex22_2
+  TARGET_PDB = ex22_2.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -449,6 +481,8 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 # Target aliases.
 
 build ex22_1: phony src/ex22_1
+
+build ex22_2: phony src/ex22_2
 
 build p1219: phony src/p1219
 
@@ -485,7 +519,7 @@ build all: phony src/all
 #############################################
 # Folder: /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter22/ch22samples/debugNinja/src
 
-build src/all: phony src/p1219 src/p1236 src/p1241 src/p1243 src/p1245 src/p1247 src/p1251 src/p1257 src/p1259 src/p1294 src/ex22_1
+build src/all: phony src/p1219 src/p1236 src/p1241 src/p1243 src/p1245 src/p1247 src/p1251 src/p1257 src/p1259 src/p1294 src/ex22_1 src/ex22_2
 
 # =============================================================================
 # Built-in targets

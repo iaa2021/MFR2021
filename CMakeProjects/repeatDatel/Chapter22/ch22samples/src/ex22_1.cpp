@@ -22,7 +22,7 @@ int main()
 {
     cout << "Project version is: " << (PROJECT_VERSION_MAJOR) << '.';
     cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
-    cout << "Sample on page 1294, demo of accumulate.\n";
+    cout << "Exersise 22.1, palindrom.\n";
     ostream_iterator<int> it( cout, ", " ); int size = 10, result;
     string text;
     cout << "\nInput text: ";

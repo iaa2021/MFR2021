@@ -259,6 +259,19 @@ ex22_1/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_1.dir/build.make src/CMakeFiles/ex22_1.dir/build
 .PHONY : ex22_1/fast
 
+#=============================================================================
+# Target rules for targets named ex22_2
+
+# Build rule for target.
+ex22_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ex22_2
+.PHONY : ex22_2
+
+# fast build rule for target.
+ex22_2/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ex22_2.dir/build.make src/CMakeFiles/ex22_2.dir/build
+.PHONY : ex22_2/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -268,6 +281,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ex22_1"
+	@echo "... ex22_2"
 	@echo "... p1219"
 	@echo "... p1236"
 	@echo "... p1241"
