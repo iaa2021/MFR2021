@@ -133,6 +133,38 @@ build src/p1311: CXX_EXECUTABLE_LINKER__p1311_Debug src/CMakeFiles/p1311.dir/p13
   TARGET_FILE = src/p1311
   TARGET_PDB = p1311.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target p1316
+
+
+#############################################
+# Order-only phony target for p1316
+
+build cmake_object_order_depends_target_p1316: phony || src/CMakeFiles/p1316.dir
+
+build src/CMakeFiles/p1316.dir/p1316key_words.cpp.o: CXX_COMPILER__p1316_unscanned_Debug /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/src/p1316key_words.cpp || cmake_object_order_depends_target_p1316
+  DEP_FILE = src/CMakeFiles/p1316.dir/p1316key_words.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/debugNinja/src -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/src/.
+  OBJECT_DIR = src/CMakeFiles/p1316.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/p1316.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1316
+
+
+#############################################
+# Link the executable src/p1316
+
+build src/p1316: CXX_EXECUTABLE_LINKER__p1316_Debug src/CMakeFiles/p1316.dir/p1316key_words.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = src/CMakeFiles/p1316.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/p1316
+  TARGET_PDB = p1316.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -164,6 +196,8 @@ build p1309: phony src/p1309
 
 build p1311: phony src/p1311
 
+build p1316: phony src/p1316
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +213,7 @@ build all: phony src/all
 #############################################
 # Folder: /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/debugNinja/src
 
-build src/all: phony src/p1309 src/p1311
+build src/all: phony src/p1309 src/p1311 src/p1316
 
 # =============================================================================
 # Built-in targets

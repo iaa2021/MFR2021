@@ -6,8 +6,9 @@ configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
 add_executable( p1309 p1309const_cast.cpp )
 add_executable( p1311 p1311namespace.cpp )
+add_executable( p1316 p1316key_words.cpp )
 
-set( targets p1309 p1311 )
+set( targets p1309 p1311 p1316 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES

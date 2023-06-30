@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/p1316.dir/p1316key_words.cpp.o -o p1316 

@@ -144,6 +144,20 @@ p1311/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1311.dir/build.make src/CMakeFiles/p1311.dir/build
 .PHONY : p1311/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1316.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/releaseUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/p1316.dir/rule
+.PHONY : src/CMakeFiles/p1316.dir/rule
+
+# Convenience name for target.
+p1316: src/CMakeFiles/p1316.dir/rule
+.PHONY : p1316
+
+# fast build rule for target.
+p1316/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1316.dir/build.make src/CMakeFiles/p1316.dir/build
+.PHONY : p1316/fast
+
 p1309const_cast.o: p1309const_cast.cpp.o
 .PHONY : p1309const_cast.o
 
@@ -192,6 +206,30 @@ p1311namespace.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1311.dir/build.make src/CMakeFiles/p1311.dir/p1311namespace.cpp.s
 .PHONY : p1311namespace.cpp.s
 
+p1316key_words.o: p1316key_words.cpp.o
+.PHONY : p1316key_words.o
+
+# target to build an object file
+p1316key_words.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1316.dir/build.make src/CMakeFiles/p1316.dir/p1316key_words.cpp.o
+.PHONY : p1316key_words.cpp.o
+
+p1316key_words.i: p1316key_words.cpp.i
+.PHONY : p1316key_words.i
+
+# target to preprocess a source file
+p1316key_words.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1316.dir/build.make src/CMakeFiles/p1316.dir/p1316key_words.cpp.i
+.PHONY : p1316key_words.cpp.i
+
+p1316key_words.s: p1316key_words.cpp.s
+.PHONY : p1316key_words.s
+
+# target to generate assembly for a file
+p1316key_words.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/Chapter23/Ch23samples/releaseUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/p1316.dir/build.make src/CMakeFiles/p1316.dir/p1316key_words.cpp.s
+.PHONY : p1316key_words.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,12 +240,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... p1309"
 	@echo "... p1311"
+	@echo "... p1316"
 	@echo "... p1309const_cast.o"
 	@echo "... p1309const_cast.i"
 	@echo "... p1309const_cast.s"
 	@echo "... p1311namespace.o"
 	@echo "... p1311namespace.i"
 	@echo "... p1311namespace.s"
+	@echo "... p1316key_words.o"
+	@echo "... p1316key_words.i"
+	@echo "... p1316key_words.s"
 .PHONY : help
 
 
