@@ -128,6 +128,19 @@ p1318/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1318.dir\build.make src/CMakeFiles/p1318.dir/build
 .PHONY : p1318/fast
 
+#=============================================================================
+# Target rules for targets named p1319
+
+# Build rule for target.
+p1319: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p1319
+.PHONY : p1319
+
+# fast build rule for target.
+p1319/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1319.dir\build.make src/CMakeFiles/p1319.dir/build
+.PHONY : p1319/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -137,6 +150,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... p1318
+	@echo ... p1319
 .PHONY : help
 
 

@@ -6,9 +6,9 @@ configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
 
 add_executable( p1318 p1318mutable.cpp )
+add_executable( p1319 p1319seldomPtrs.cpp )
 
-
-set( targets p1318 )
+set( targets p1318 p1319 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES

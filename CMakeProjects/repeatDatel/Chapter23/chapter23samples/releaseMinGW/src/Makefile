@@ -129,6 +129,44 @@ p1318/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\chapter23samples\releaseMinGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1318.dir\build.make src/CMakeFiles/p1318.dir/build
 .PHONY : p1318/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1319.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\chapter23samples\releaseMinGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1319.dir/rule
+.PHONY : src/CMakeFiles/p1319.dir/rule
+
+# Convenience name for target.
+p1319: src/CMakeFiles/p1319.dir/rule
+.PHONY : p1319
+
+# fast build rule for target.
+p1319/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\chapter23samples\releaseMinGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1319.dir\build.make src/CMakeFiles/p1319.dir/build
+.PHONY : p1319/fast
+
+P1319seldomPtrs.obj: P1319seldomPtrs.cpp.obj
+.PHONY : P1319seldomPtrs.obj
+
+# target to build an object file
+P1319seldomPtrs.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\chapter23samples\releaseMinGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1319.dir\build.make src/CMakeFiles/p1319.dir/P1319seldomPtrs.cpp.obj
+.PHONY : P1319seldomPtrs.cpp.obj
+
+P1319seldomPtrs.i: P1319seldomPtrs.cpp.i
+.PHONY : P1319seldomPtrs.i
+
+# target to preprocess a source file
+P1319seldomPtrs.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\chapter23samples\releaseMinGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1319.dir\build.make src/CMakeFiles/p1319.dir/P1319seldomPtrs.cpp.i
+.PHONY : P1319seldomPtrs.cpp.i
+
+P1319seldomPtrs.s: P1319seldomPtrs.cpp.s
+.PHONY : P1319seldomPtrs.s
+
+# target to generate assembly for a file
+P1319seldomPtrs.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\chapter23samples\releaseMinGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1319.dir\build.make src/CMakeFiles/p1319.dir/P1319seldomPtrs.cpp.s
+.PHONY : P1319seldomPtrs.cpp.s
+
 p1318mutable.obj: p1318mutable.cpp.obj
 .PHONY : p1318mutable.obj
 
@@ -162,6 +200,10 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... p1318
+	@echo ... p1319
+	@echo ... P1319seldomPtrs.obj
+	@echo ... P1319seldomPtrs.i
+	@echo ... P1319seldomPtrs.s
 	@echo ... p1318mutable.obj
 	@echo ... p1318mutable.i
 	@echo ... p1318mutable.s

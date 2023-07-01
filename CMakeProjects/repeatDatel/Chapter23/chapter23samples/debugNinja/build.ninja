@@ -103,6 +103,40 @@ build src/p1318.exe: CXX_EXECUTABLE_LINKER__p1318_Debug src/CMakeFiles/p1318.dir
   TARGET_IMPLIB = src\libp1318.dll.a
   TARGET_PDB = p1318.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target p1319
+
+
+#############################################
+# Order-only phony target for p1319
+
+build cmake_object_order_depends_target_p1319: phony || src/CMakeFiles/p1319.dir
+
+build src/CMakeFiles/p1319.dir/P1319seldomPtrs.cpp.obj: CXX_COMPILER__p1319_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/src/P1319seldomPtrs.cpp || cmake_object_order_depends_target_p1319
+  DEP_FILE = src\CMakeFiles\p1319.dir\P1319seldomPtrs.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/debugNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/src/.
+  OBJECT_DIR = src\CMakeFiles\p1319.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\p1319.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1319
+
+
+#############################################
+# Link the executable src\p1319.exe
+
+build src/p1319.exe: CXX_EXECUTABLE_LINKER__p1319_Debug src/CMakeFiles/p1319.dir/P1319seldomPtrs.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\p1319.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\p1319.exe
+  TARGET_IMPLIB = src\libp1319.dll.a
+  TARGET_PDB = p1319.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -134,6 +168,10 @@ build p1318: phony src/p1318.exe
 
 build p1318.exe: phony src/p1318.exe
 
+build p1319: phony src/p1319.exe
+
+build p1319.exe: phony src/p1319.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -149,7 +187,7 @@ build all: phony src/all
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/debugNinja/src
 
-build src/all: phony src/p1318.exe
+build src/all: phony src/p1318.exe src/p1319.exe
 
 # =============================================================================
 # Built-in targets
