@@ -1,0 +1,5 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/debugNinja/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/debugNinja/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/debugNinja/src/CMakeFiles/p1318.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/debugNinja/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/debugNinja/src/CMakeFiles/rebuild_cache.dir
