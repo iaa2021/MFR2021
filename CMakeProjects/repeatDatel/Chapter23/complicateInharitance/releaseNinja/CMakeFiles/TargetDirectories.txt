@@ -1,0 +1,8 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/releaseNinja/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/releaseNinja/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/releaseNinja/lib/CMakeFiles/myLib.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/releaseNinja/lib/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/releaseNinja/lib/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/releaseNinja/src/CMakeFiles/p1324.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/releaseNinja/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/releaseNinja/src/CMakeFiles/rebuild_cache.dir

@@ -7,7 +7,6 @@ double Derived::getReal() const
 {
     return real;
 }
-void Derived::printVersion() const
 
 ostream &operator<<( ostream &output, Derived &derived )
 {
