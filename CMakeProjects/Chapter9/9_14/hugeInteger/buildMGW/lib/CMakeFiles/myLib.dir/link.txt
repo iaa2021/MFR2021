@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libmyLib.a CMakeFiles/myLib.dir/hugeInteger.cpp.obj
-C:\MinGW\bin\ranlib.exe libmyLib.a

@@ -1,3 +1,0 @@
-C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter8/8_25labirint/buildMGW/CMakeFiles/8_25.dir
-C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter8/8_25labirint/buildMGW/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitStore/MFR2021/CMakeProjects/Chapter8/8_25labirint/buildMGW/CMakeFiles/rebuild_cache.dir

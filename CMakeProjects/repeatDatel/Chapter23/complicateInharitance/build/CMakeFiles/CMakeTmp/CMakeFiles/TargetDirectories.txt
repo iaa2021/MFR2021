@@ -1,0 +1,3 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_fc416.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/build/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/build/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir

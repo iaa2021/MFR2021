@@ -1,3 +1,0 @@
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter5/ex5_24/build/CMakeFiles/5_24.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter5/ex5_24/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter5/ex5_24/build/CMakeFiles/ZERO_CHECK.dir
