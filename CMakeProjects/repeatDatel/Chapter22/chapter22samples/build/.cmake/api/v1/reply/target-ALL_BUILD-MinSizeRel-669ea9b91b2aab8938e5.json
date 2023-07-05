@@ -1,0 +1,69 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "p1266::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1269::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1261::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1264::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1272::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1274::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1276::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1277::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1281::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1283::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1286::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "p1290::@145eef247bfb46b6828c"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

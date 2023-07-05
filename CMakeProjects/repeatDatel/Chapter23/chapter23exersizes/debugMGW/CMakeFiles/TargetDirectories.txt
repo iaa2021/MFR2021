@@ -1,0 +1,5 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23exersizes/debugMGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23exersizes/debugMGW/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23exersizes/debugMGW/src/CMakeFiles/ex23_4.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23exersizes/debugMGW/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23exersizes/debugMGW/src/CMakeFiles/rebuild_cache.dir
