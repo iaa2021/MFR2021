@@ -133,4 +133,4 @@ lib/CMakeFiles/myLib.dir/Derived.cpp.obj: \
  c:\mingw\include\c++\11.2.0\bits\istream.tcc \
  C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\complicateInharitance\lib\base1.h \
  C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\complicateInharitance\lib\base2.h \
- C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/debugMinGW/lib/config.h
+ C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\complicateInharitance\lib\config1.h

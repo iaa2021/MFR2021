@@ -133,4 +133,5 @@ src/CMakeFiles/p1324.dir/p1324.cpp.obj: \
  c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter23\complicateinharitance\lib\derived.h \
  c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter23\complicateinharitance\lib\base1.h \
  c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter23\complicateinharitance\lib\base2.h \
- C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/complicateInharitance/debugMinGW/src/config.h
+ c:\users\ivano\desktop\gitwatch\cmakeprojects\repeatdatel\chapter23\complicateinharitance\lib\config1.h \
+ C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\Chapter23\complicateInharitance\src\config.h

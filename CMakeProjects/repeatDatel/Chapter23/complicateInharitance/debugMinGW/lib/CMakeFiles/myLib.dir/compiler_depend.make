@@ -137,7 +137,7 @@ lib/CMakeFiles/myLib.dir/Derived.cpp.obj: ../lib/Derived.cpp \
   C:/MinGW/include/c++/11.2.0/bits/istream.tcc \
   ../lib/base1.h \
   ../lib/base2.h \
-  lib/config.h
+  ../lib/config1.h
 
 
 C:/MinGW/include/c++/11.2.0/x86_64-w64-mingw32/bits/os_defines.h:
@@ -352,8 +352,6 @@ C:/MinGW/include/c++/11.2.0/bits/stl_function.h:
 
 C:/MinGW/include/c++/11.2.0/backward/binders.h:
 
-lib/config.h:
-
 C:/MinGW/include/c++/11.2.0/initializer_list:
 
 C:/MinGW/include/c++/11.2.0/ext/alloc_traits.h:
@@ -413,3 +411,5 @@ C:/MinGW/include/c++/11.2.0/bits/ostream.tcc:
 C:/MinGW/include/c++/11.2.0/istream:
 
 ../lib/base2.h:
+
+../lib/config1.h:

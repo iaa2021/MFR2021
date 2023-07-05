@@ -48,9 +48,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/config.h"
+  "lib/config1.h"
+  "../lib/config1.h"
   "lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/config.h"
+  "../src/config.h"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

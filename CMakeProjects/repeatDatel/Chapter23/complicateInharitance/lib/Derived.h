@@ -5,7 +5,7 @@ using std::cout;
 using std::endl;
 #include "base1.h"
 #include "base2.h"
-#include "config.h"
+#include "config1.h"
 class Derived : public base1, public base2
 {
     friend ostream &operator<<( ostream &, Derived & );
@@ -17,6 +17,7 @@ class Derived : public base1, public base2
     cout << "Library's version is " << (PROJECT_VERSION_MAJOR) << '.';
     cout << (PROJECT_VERSION_MINOR) << '.' << (PROJECT_VERSION_PATCH) << endl;
     }
+
     private:
     double real;
 };
