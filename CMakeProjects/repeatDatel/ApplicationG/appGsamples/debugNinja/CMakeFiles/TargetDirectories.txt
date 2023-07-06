@@ -1,0 +1,6 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/src/CMakeFiles/p1349.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/src/CMakeFiles/p1351.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/src/CMakeFiles/rebuild_cache.dir
