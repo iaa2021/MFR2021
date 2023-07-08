@@ -205,6 +205,40 @@ build src/p1357.exe: CXX_EXECUTABLE_LINKER__p1357_Debug src/CMakeFiles/p1357.dir
   TARGET_IMPLIB = src\libp1357.dll.a
   TARGET_PDB = p1357.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target p1364
+
+
+#############################################
+# Order-only phony target for p1364
+
+build cmake_object_order_depends_target_p1364: phony || src/CMakeFiles/p1364.dir
+
+build src/CMakeFiles/p1364.dir/p1364union.cpp.obj: CXX_COMPILER__p1364_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/src/p1364union.cpp || cmake_object_order_depends_target_p1364
+  DEP_FILE = src\CMakeFiles\p1364.dir\p1364union.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/src/.
+  OBJECT_DIR = src\CMakeFiles\p1364.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\p1364.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1364
+
+
+#############################################
+# Link the executable src\p1364.exe
+
+build src/p1364.exe: CXX_EXECUTABLE_LINKER__p1364_Debug src/CMakeFiles/p1364.dir/p1364union.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\p1364.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\p1364.exe
+  TARGET_IMPLIB = src\libp1364.dll.a
+  TARGET_PDB = p1364.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -248,6 +282,10 @@ build p1357: phony src/p1357.exe
 
 build p1357.exe: phony src/p1357.exe
 
+build p1364: phony src/p1364.exe
+
+build p1364.exe: phony src/p1364.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -263,7 +301,7 @@ build all: phony src/all
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/src
 
-build src/all: phony src/p1349.exe src/p1351.exe src/p1355.exe src/p1357.exe
+build src/all: phony src/p1349.exe src/p1351.exe src/p1355.exe src/p1357.exe src/p1364.exe
 
 # =============================================================================
 # Built-in targets

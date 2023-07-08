@@ -81,6 +81,7 @@ src/all: src/CMakeFiles/p1349.dir/all
 src/all: src/CMakeFiles/p1351.dir/all
 src/all: src/CMakeFiles/p1355.dir/all
 src/all: src/CMakeFiles/p1357.dir/all
+src/all: src/CMakeFiles/p1364.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -92,6 +93,7 @@ src/clean: src/CMakeFiles/p1349.dir/clean
 src/clean: src/CMakeFiles/p1351.dir/clean
 src/clean: src/CMakeFiles/p1355.dir/clean
 src/clean: src/CMakeFiles/p1357.dir/clean
+src/clean: src/CMakeFiles/p1364.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -197,6 +199,32 @@ p1357: src/CMakeFiles/p1357.dir/rule
 src/CMakeFiles/p1357.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1357.dir\build.make src/CMakeFiles/p1357.dir/clean
 .PHONY : src/CMakeFiles/p1357.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/p1364.dir
+
+# All Build rule for target.
+src/CMakeFiles/p1364.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1364.dir\build.make src/CMakeFiles/p1364.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1364.dir\build.make src/CMakeFiles/p1364.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW\CMakeFiles --progress-num=9,10 "Built target p1364"
+.PHONY : src/CMakeFiles/p1364.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/p1364.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1364.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW\CMakeFiles 0
+.PHONY : src/CMakeFiles/p1364.dir/rule
+
+# Convenience name for target.
+p1364: src/CMakeFiles/p1364.dir/rule
+.PHONY : p1364
+
+# clean rule for target.
+src/CMakeFiles/p1364.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1364.dir\build.make src/CMakeFiles/p1364.dir/clean
+.PHONY : src/CMakeFiles/p1364.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

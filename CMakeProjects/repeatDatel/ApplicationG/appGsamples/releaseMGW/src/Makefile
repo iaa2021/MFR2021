@@ -171,6 +171,20 @@ p1357/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1357.dir\build.make src/CMakeFiles/p1357.dir/build
 .PHONY : p1357/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1364.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1364.dir/rule
+.PHONY : src/CMakeFiles/p1364.dir/rule
+
+# Convenience name for target.
+p1364: src/CMakeFiles/p1364.dir/rule
+.PHONY : p1364
+
+# fast build rule for target.
+p1364/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1364.dir\build.make src/CMakeFiles/p1364.dir/build
+.PHONY : p1364/fast
+
 p1349volatileArgs.obj: p1349volatileArgs.cpp.obj
 .PHONY : p1349volatileArgs.obj
 
@@ -267,6 +281,30 @@ p1357sygnals.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1357.dir\build.make src/CMakeFiles/p1357.dir/p1357sygnals.cpp.s
 .PHONY : p1357sygnals.cpp.s
 
+p1364union.obj: p1364union.cpp.obj
+.PHONY : p1364union.obj
+
+# target to build an object file
+p1364union.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1364.dir\build.make src/CMakeFiles/p1364.dir/p1364union.cpp.obj
+.PHONY : p1364union.cpp.obj
+
+p1364union.i: p1364union.cpp.i
+.PHONY : p1364union.i
+
+# target to preprocess a source file
+p1364union.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1364.dir\build.make src/CMakeFiles/p1364.dir/p1364union.cpp.i
+.PHONY : p1364union.cpp.i
+
+p1364union.s: p1364union.cpp.s
+.PHONY : p1364union.s
+
+# target to generate assembly for a file
+p1364union.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1364.dir\build.make src/CMakeFiles/p1364.dir/p1364union.cpp.s
+.PHONY : p1364union.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -279,6 +317,7 @@ help:
 	@echo ... p1351
 	@echo ... p1355
 	@echo ... p1357
+	@echo ... p1364
 	@echo ... p1349volatileArgs.obj
 	@echo ... p1349volatileArgs.i
 	@echo ... p1349volatileArgs.s
@@ -291,6 +330,9 @@ help:
 	@echo ... p1357sygnals.obj
 	@echo ... p1357sygnals.i
 	@echo ... p1357sygnals.s
+	@echo ... p1364union.obj
+	@echo ... p1364union.i
+	@echo ... p1364union.s
 .PHONY : help
 
 

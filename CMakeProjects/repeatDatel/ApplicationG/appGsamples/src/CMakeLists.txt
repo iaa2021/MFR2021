@@ -9,8 +9,9 @@ add_executable( p1349 p1349volatileArgs.cpp )
 add_executable( p1351 p1351comLineArgs.cpp )
 add_executable( p1355 p1355exit_atexit.cpp ) 
 add_executable( p1357 p1357sygnals.cpp )
+add_executable( p1364 p1364union.cpp )
 
-set( targets p1349 p1351 p1355 p1357 )
+set( targets p1349 p1351 p1355 p1357 p1364 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES

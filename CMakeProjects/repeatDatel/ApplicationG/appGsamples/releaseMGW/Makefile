@@ -167,6 +167,19 @@ p1357/fast:
 	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1357.dir\build.make src/CMakeFiles/p1357.dir/build
 .PHONY : p1357/fast
 
+#=============================================================================
+# Target rules for targets named p1364
+
+# Build rule for target.
+p1364: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p1364
+.PHONY : p1364
+
+# fast build rule for target.
+p1364/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1364.dir\build.make src/CMakeFiles/p1364.dir/build
+.PHONY : p1364/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -179,6 +192,7 @@ help:
 	@echo ... p1351
 	@echo ... p1355
 	@echo ... p1357
+	@echo ... p1364
 .PHONY : help
 
 
