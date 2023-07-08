@@ -1,3 +1,3 @@
 echo [*]Running debug configuration with Ninja
 cd debugNinja
-./src/p1351
+./src/p1357

@@ -137,6 +137,74 @@ build src/p1351.exe: CXX_EXECUTABLE_LINKER__p1351_Debug src/CMakeFiles/p1351.dir
   TARGET_IMPLIB = src\libp1351.dll.a
   TARGET_PDB = p1351.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target p1355
+
+
+#############################################
+# Order-only phony target for p1355
+
+build cmake_object_order_depends_target_p1355: phony || src/CMakeFiles/p1355.dir
+
+build src/CMakeFiles/p1355.dir/p1355exit_atexit.cpp.obj: CXX_COMPILER__p1355_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/src/p1355exit_atexit.cpp || cmake_object_order_depends_target_p1355
+  DEP_FILE = src\CMakeFiles\p1355.dir\p1355exit_atexit.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/src/.
+  OBJECT_DIR = src\CMakeFiles\p1355.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\p1355.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1355
+
+
+#############################################
+# Link the executable src\p1355.exe
+
+build src/p1355.exe: CXX_EXECUTABLE_LINKER__p1355_Debug src/CMakeFiles/p1355.dir/p1355exit_atexit.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\p1355.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\p1355.exe
+  TARGET_IMPLIB = src\libp1355.dll.a
+  TARGET_PDB = p1355.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target p1357
+
+
+#############################################
+# Order-only phony target for p1357
+
+build cmake_object_order_depends_target_p1357: phony || src/CMakeFiles/p1357.dir
+
+build src/CMakeFiles/p1357.dir/p1357sygnals.cpp.obj: CXX_COMPILER__p1357_Debug C$:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/src/p1357sygnals.cpp || cmake_object_order_depends_target_p1357
+  DEP_FILE = src\CMakeFiles\p1357.dir\p1357sygnals.cpp.obj.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/src -IC:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/src/.
+  OBJECT_DIR = src\CMakeFiles\p1357.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\p1357.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p1357
+
+
+#############################################
+# Link the executable src\p1357.exe
+
+build src/p1357.exe: CXX_EXECUTABLE_LINKER__p1357_Debug src/CMakeFiles/p1357.dir/p1357sygnals.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\p1357.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\p1357.exe
+  TARGET_IMPLIB = src\libp1357.dll.a
+  TARGET_PDB = p1357.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -172,6 +240,14 @@ build p1351: phony src/p1351.exe
 
 build p1351.exe: phony src/p1351.exe
 
+build p1355: phony src/p1355.exe
+
+build p1355.exe: phony src/p1355.exe
+
+build p1357: phony src/p1357.exe
+
+build p1357.exe: phony src/p1357.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -187,7 +263,7 @@ build all: phony src/all
 #############################################
 # Folder: C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/ApplicationG/appGsamples/debugNinja/src
 
-build src/all: phony src/p1349.exe src/p1351.exe
+build src/all: phony src/p1349.exe src/p1351.exe src/p1355.exe src/p1357.exe
 
 # =============================================================================
 # Built-in targets

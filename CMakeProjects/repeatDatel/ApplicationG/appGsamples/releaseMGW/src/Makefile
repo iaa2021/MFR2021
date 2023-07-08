@@ -143,6 +143,34 @@ p1351/fast:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1351.dir\build.make src/CMakeFiles/p1351.dir/build
 .PHONY : p1351/fast
 
+# Convenience name for target.
+src/CMakeFiles/p1355.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1355.dir/rule
+.PHONY : src/CMakeFiles/p1355.dir/rule
+
+# Convenience name for target.
+p1355: src/CMakeFiles/p1355.dir/rule
+.PHONY : p1355
+
+# fast build rule for target.
+p1355/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1355.dir\build.make src/CMakeFiles/p1355.dir/build
+.PHONY : p1355/fast
+
+# Convenience name for target.
+src/CMakeFiles/p1357.dir/rule:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/p1357.dir/rule
+.PHONY : src/CMakeFiles/p1357.dir/rule
+
+# Convenience name for target.
+p1357: src/CMakeFiles/p1357.dir/rule
+.PHONY : p1357
+
+# fast build rule for target.
+p1357/fast:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1357.dir\build.make src/CMakeFiles/p1357.dir/build
+.PHONY : p1357/fast
+
 p1349volatileArgs.obj: p1349volatileArgs.cpp.obj
 .PHONY : p1349volatileArgs.obj
 
@@ -191,6 +219,54 @@ p1351comLineArgs.cpp.s:
 	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1351.dir\build.make src/CMakeFiles/p1351.dir/p1351comLineArgs.cpp.s
 .PHONY : p1351comLineArgs.cpp.s
 
+p1355exit_atexit.obj: p1355exit_atexit.cpp.obj
+.PHONY : p1355exit_atexit.obj
+
+# target to build an object file
+p1355exit_atexit.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1355.dir\build.make src/CMakeFiles/p1355.dir/p1355exit_atexit.cpp.obj
+.PHONY : p1355exit_atexit.cpp.obj
+
+p1355exit_atexit.i: p1355exit_atexit.cpp.i
+.PHONY : p1355exit_atexit.i
+
+# target to preprocess a source file
+p1355exit_atexit.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1355.dir\build.make src/CMakeFiles/p1355.dir/p1355exit_atexit.cpp.i
+.PHONY : p1355exit_atexit.cpp.i
+
+p1355exit_atexit.s: p1355exit_atexit.cpp.s
+.PHONY : p1355exit_atexit.s
+
+# target to generate assembly for a file
+p1355exit_atexit.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1355.dir\build.make src/CMakeFiles/p1355.dir/p1355exit_atexit.cpp.s
+.PHONY : p1355exit_atexit.cpp.s
+
+p1357sygnals.obj: p1357sygnals.cpp.obj
+.PHONY : p1357sygnals.obj
+
+# target to build an object file
+p1357sygnals.cpp.obj:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1357.dir\build.make src/CMakeFiles/p1357.dir/p1357sygnals.cpp.obj
+.PHONY : p1357sygnals.cpp.obj
+
+p1357sygnals.i: p1357sygnals.cpp.i
+.PHONY : p1357sygnals.i
+
+# target to preprocess a source file
+p1357sygnals.cpp.i:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1357.dir\build.make src/CMakeFiles/p1357.dir/p1357sygnals.cpp.i
+.PHONY : p1357sygnals.cpp.i
+
+p1357sygnals.s: p1357sygnals.cpp.s
+.PHONY : p1357sygnals.s
+
+# target to generate assembly for a file
+p1357sygnals.cpp.s:
+	cd /d C:\Users\ivano\Desktop\gitWatch\CMakeProjects\repeatDatel\ApplicationG\appGsamples\releaseMGW && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\p1357.dir\build.make src/CMakeFiles/p1357.dir/p1357sygnals.cpp.s
+.PHONY : p1357sygnals.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -201,12 +277,20 @@ help:
 	@echo ... rebuild_cache
 	@echo ... p1349
 	@echo ... p1351
+	@echo ... p1355
+	@echo ... p1357
 	@echo ... p1349volatileArgs.obj
 	@echo ... p1349volatileArgs.i
 	@echo ... p1349volatileArgs.s
 	@echo ... p1351comLineArgs.obj
 	@echo ... p1351comLineArgs.i
 	@echo ... p1351comLineArgs.s
+	@echo ... p1355exit_atexit.obj
+	@echo ... p1355exit_atexit.i
+	@echo ... p1355exit_atexit.s
+	@echo ... p1357sygnals.obj
+	@echo ... p1357sygnals.i
+	@echo ... p1357sygnals.s
 .PHONY : help
 
 

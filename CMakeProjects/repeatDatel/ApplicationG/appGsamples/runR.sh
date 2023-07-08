@@ -1,3 +1,3 @@
 echo [*]Running release configuration with MinGW
 cd releaseMGW
-./src/p1351
+./src/p1357

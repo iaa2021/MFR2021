@@ -7,8 +7,10 @@ configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
 add_executable( p1349 p1349volatileArgs.cpp )
 add_executable( p1351 p1351comLineArgs.cpp )
+add_executable( p1355 p1355exit_atexit.cpp ) 
+add_executable( p1357 p1357sygnals.cpp )
 
-set( targets p1349 p1351 )
+set( targets p1349 p1351 p1355 p1357 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES

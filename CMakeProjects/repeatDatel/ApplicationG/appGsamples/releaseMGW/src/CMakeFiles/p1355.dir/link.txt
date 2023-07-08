@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\p1355.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\p1355.dir/objects.a @CMakeFiles\p1355.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\p1355.dir/objects.a -Wl,--no-whole-archive -o p1355.exe -Wl,--out-implib,libp1355.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\p1355.dir\linklibs.rsp
