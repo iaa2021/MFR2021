@@ -6,6 +6,7 @@ using std::fixed;
 using std::ios;
 #include <iomanip>
 using std::setw;
+using std::left;
 #include <cstdlib>
 using std::exit;
 using std::rand;
@@ -33,6 +34,16 @@ int main()
         if( (i + 1) % 10 == 0 )
         cout << endl;
     }
+    cout << "\nDemonstration of goto operator.\n";
+    int count = 0;
+    start:
+    if( count > 10 )
+    goto end;
+    cout << setw( 3 ) << count;
+    ++count;
+    goto start;
+    end:
+    cout << endl;
     return 0;
 }
 void signalHandler( int signalValue )
