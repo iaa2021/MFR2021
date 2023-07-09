@@ -1,0 +1,5 @@
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW/CMakeFiles/rebuild_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW/src/CMakeFiles/g2.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW/src/CMakeFiles/edit_cache.dir
+/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW/src/CMakeFiles/rebuild_cache.dir
