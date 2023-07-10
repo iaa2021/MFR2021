@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/g3.dir/g3.cpp.o -o g3 

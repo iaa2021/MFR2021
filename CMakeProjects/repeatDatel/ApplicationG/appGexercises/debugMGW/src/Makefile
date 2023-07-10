@@ -130,6 +130,34 @@ g2/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g2.dir/build.make src/CMakeFiles/g2.dir/build
 .PHONY : g2/fast
 
+# Convenience name for target.
+src/CMakeFiles/g3.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/g3.dir/rule
+.PHONY : src/CMakeFiles/g3.dir/rule
+
+# Convenience name for target.
+g3: src/CMakeFiles/g3.dir/rule
+.PHONY : g3
+
+# fast build rule for target.
+g3/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g3.dir/build.make src/CMakeFiles/g3.dir/build
+.PHONY : g3/fast
+
+# Convenience name for target.
+src/CMakeFiles/g4.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/g4.dir/rule
+.PHONY : src/CMakeFiles/g4.dir/rule
+
+# Convenience name for target.
+g4: src/CMakeFiles/g4.dir/rule
+.PHONY : g4
+
+# fast build rule for target.
+g4/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g4.dir/build.make src/CMakeFiles/g4.dir/build
+.PHONY : g4/fast
+
 g2.o: g2.cpp.o
 .PHONY : g2.o
 
@@ -154,6 +182,54 @@ g2.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g2.dir/build.make src/CMakeFiles/g2.dir/g2.cpp.s
 .PHONY : g2.cpp.s
 
+g3.o: g3.cpp.o
+.PHONY : g3.o
+
+# target to build an object file
+g3.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g3.dir/build.make src/CMakeFiles/g3.dir/g3.cpp.o
+.PHONY : g3.cpp.o
+
+g3.i: g3.cpp.i
+.PHONY : g3.i
+
+# target to preprocess a source file
+g3.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g3.dir/build.make src/CMakeFiles/g3.dir/g3.cpp.i
+.PHONY : g3.cpp.i
+
+g3.s: g3.cpp.s
+.PHONY : g3.s
+
+# target to generate assembly for a file
+g3.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g3.dir/build.make src/CMakeFiles/g3.dir/g3.cpp.s
+.PHONY : g3.cpp.s
+
+g4.o: g4.cpp.o
+.PHONY : g4.o
+
+# target to build an object file
+g4.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g4.dir/build.make src/CMakeFiles/g4.dir/g4.cpp.o
+.PHONY : g4.cpp.o
+
+g4.i: g4.cpp.i
+.PHONY : g4.i
+
+# target to preprocess a source file
+g4.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g4.dir/build.make src/CMakeFiles/g4.dir/g4.cpp.i
+.PHONY : g4.cpp.i
+
+g4.s: g4.cpp.s
+.PHONY : g4.s
+
+# target to generate assembly for a file
+g4.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/debugMGW && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/g4.dir/build.make src/CMakeFiles/g4.dir/g4.cpp.s
+.PHONY : g4.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +239,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... g2"
+	@echo "... g3"
+	@echo "... g4"
 	@echo "... g2.o"
 	@echo "... g2.i"
 	@echo "... g2.s"
+	@echo "... g3.o"
+	@echo "... g3.i"
+	@echo "... g3.s"
+	@echo "... g4.o"
+	@echo "... g4.i"
+	@echo "... g4.s"
 .PHONY : help
 
 

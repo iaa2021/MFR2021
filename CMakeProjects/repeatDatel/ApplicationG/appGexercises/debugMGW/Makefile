@@ -129,6 +129,32 @@ g2/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/g2.dir/build.make src/CMakeFiles/g2.dir/build
 .PHONY : g2/fast
 
+#=============================================================================
+# Target rules for targets named g3
+
+# Build rule for target.
+g3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 g3
+.PHONY : g3
+
+# fast build rule for target.
+g3/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/g3.dir/build.make src/CMakeFiles/g3.dir/build
+.PHONY : g3/fast
+
+#=============================================================================
+# Target rules for targets named g4
+
+# Build rule for target.
+g4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 g4
+.PHONY : g4
+
+# fast build rule for target.
+g4/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/g4.dir/build.make src/CMakeFiles/g4.dir/build
+.PHONY : g4/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -138,6 +164,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... g2"
+	@echo "... g3"
+	@echo "... g4"
 .PHONY : help
 
 

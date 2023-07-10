@@ -101,6 +101,70 @@ build src/g2: CXX_EXECUTABLE_LINKER__g2_Release src/CMakeFiles/g2.dir/g2.cpp.o
   TARGET_FILE = src/g2
   TARGET_PDB = g2.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target g3
+
+
+#############################################
+# Order-only phony target for g3
+
+build cmake_object_order_depends_target_g3: phony || src/CMakeFiles/g3.dir
+
+build src/CMakeFiles/g3.dir/g3.cpp.o: CXX_COMPILER__g3_unscanned_Release /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/src/g3.cpp || cmake_object_order_depends_target_g3
+  DEP_FILE = src/CMakeFiles/g3.dir/g3.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
+  INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/releaseNinja/src -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/src/.
+  OBJECT_DIR = src/CMakeFiles/g3.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/g3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target g3
+
+
+#############################################
+# Link the executable src/g3
+
+build src/g3: CXX_EXECUTABLE_LINKER__g3_Release src/CMakeFiles/g3.dir/g3.cpp.o
+  FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = src/CMakeFiles/g3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/g3
+  TARGET_PDB = g3.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target g4
+
+
+#############################################
+# Order-only phony target for g4
+
+build cmake_object_order_depends_target_g4: phony || src/CMakeFiles/g4.dir
+
+build src/CMakeFiles/g4.dir/g4.cpp.o: CXX_COMPILER__g4_unscanned_Release /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/src/g4.cpp || cmake_object_order_depends_target_g4
+  DEP_FILE = src/CMakeFiles/g4.dir/g4.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
+  INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/releaseNinja/src -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/src/.
+  OBJECT_DIR = src/CMakeFiles/g4.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/g4.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target g4
+
+
+#############################################
+# Link the executable src/g4
+
+build src/g4: CXX_EXECUTABLE_LINKER__g4_Release src/CMakeFiles/g4.dir/g4.cpp.o
+  FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = src/CMakeFiles/g4.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/g4
+  TARGET_PDB = g4.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -130,6 +194,10 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
 build g2: phony src/g2
 
+build g3: phony src/g3
+
+build g4: phony src/g4
+
 # =============================================================================
 # Folder targets.
 
@@ -145,7 +213,7 @@ build all: phony src/all
 #############################################
 # Folder: /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationG/appGexercises/releaseNinja/src
 
-build src/all: phony src/g2
+build src/all: phony src/g2 src/g3 src/g4
 
 # =============================================================================
 # Built-in targets
