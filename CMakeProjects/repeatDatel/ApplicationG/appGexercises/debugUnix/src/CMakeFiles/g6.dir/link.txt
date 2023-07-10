@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/g6.dir/g6.cpp.o -o g6 

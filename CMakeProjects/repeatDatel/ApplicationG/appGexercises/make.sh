@@ -1,5 +1,5 @@
 echo [*]making debug configuration with Unix
-cd debugMGW
+cd debugUnix
 cmake -DCMAKE_BUILD_TYPE=Debug .. 
 cmake --build .
 cd ..

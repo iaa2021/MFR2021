@@ -1,3 +1,3 @@
 echo [*] running release configuration with Ninja
 cd releaseNinja
-src/g4 -a
+src/g7 text1 text2

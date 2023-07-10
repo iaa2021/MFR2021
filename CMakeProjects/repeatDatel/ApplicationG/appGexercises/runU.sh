@@ -1,3 +1,3 @@
 echo [*] running debug configuration with Unix
-cd debugMGW
-src/g4 -d
+cd debugUnix
+src/g7 text1 text2
