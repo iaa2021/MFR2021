@@ -5,8 +5,9 @@ project( appDsamples VERSION 3.5.8 )
 configure_file( config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h )
 
 add_executable( d2 d2.cpp )
+add_executable( d3 d3.cpp )
 
-set( targets d2  )
+set( targets d2 d3 )
 
 foreach( target ${targets} )
 set_target_properties( ${target} PROPERTIES
