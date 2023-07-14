@@ -17,7 +17,9 @@ using std::ostream_iterator;
 using std::copy;
 #include "config.h"
 void printArray( int *, int );
+int sumArray( int *, int );
 #define PRINTARRAY( a, b )( printArray( a, b ) );
+#define SUMARRAY( a, b )( sumArray( a, b ) );
 int main()
 {
     cout << "Project version is: " << (PROJECT_VERSION_MAJOR) << '.';
@@ -37,7 +39,8 @@ int main()
     }
     cout << "\nArray is:\n";
     PRINTARRAY( ptr, count );
-    cout << '\n';
+    cout << "\nArray's sum is: " << SUMARRAY( ptr, count );
+    cout << endl;
     return 0;
 }
 string print( string a )
@@ -50,4 +53,13 @@ void printArray( int *ptr, int count )
     { 
         cout << ptr[ i ] << ", ";
     }
+}
+int sumArray( int *ptr, int count )
+{
+    int sum = 0;
+    for (size_t i = 0; i < count; i++)
+    { 
+        sum +=  ptr[ i ];
+    }
+    return sum;
 }
