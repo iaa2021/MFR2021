@@ -133,6 +133,38 @@ build src/d3: CXX_EXECUTABLE_LINKER__d3_Release src/CMakeFiles/d3.dir/d3.cpp.o
   TARGET_FILE = src/d3
   TARGET_PDB = d3.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target d8
+
+
+#############################################
+# Order-only phony target for d8
+
+build cmake_object_order_depends_target_d8: phony || src/CMakeFiles/d8.dir
+
+build src/CMakeFiles/d8.dir/d8.cpp.o: CXX_COMPILER__d8_unscanned_Release /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/src/d8.cpp || cmake_object_order_depends_target_d8
+  DEP_FILE = src/CMakeFiles/d8.dir/d8.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++11
+  INCLUDES = -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/releaseNinja/src -I/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/src/.
+  OBJECT_DIR = src/CMakeFiles/d8.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/d8.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target d8
+
+
+#############################################
+# Link the executable src/d8
+
+build src/d8: CXX_EXECUTABLE_LINKER__d8_Release src/CMakeFiles/d8.dir/d8.cpp.o
+  FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = src/CMakeFiles/d8.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/d8
+  TARGET_PDB = d8.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -164,6 +196,8 @@ build d2: phony src/d2
 
 build d3: phony src/d3
 
+build d8: phony src/d8
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +213,7 @@ build all: phony src/all
 #############################################
 # Folder: /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/releaseNinja/src
 
-build src/all: phony src/d2 src/d3
+build src/all: phony src/d2 src/d3 src/d8
 
 # =============================================================================
 # Built-in targets

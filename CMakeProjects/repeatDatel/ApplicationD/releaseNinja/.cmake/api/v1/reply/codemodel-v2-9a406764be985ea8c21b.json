@@ -10,7 +10,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -20,7 +20,7 @@
 				},
 				{
 					"build" : "src",
-					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"jsonFile" : "directory-src-Release-b6cf2213fc5053b67c22.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -31,11 +31,12 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -59,7 +60,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -68,15 +70,22 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "d2::@145eef247bfb46b6828c",
-					"jsonFile" : "target-d2-Debug-85e0eb21b1613d762e12.json",
+					"jsonFile" : "target-d2-Release-b85a8dbd8fe8e9d2206c.json",
 					"name" : "d2",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "d3::@145eef247bfb46b6828c",
-					"jsonFile" : "target-d3-Debug-04779834d8f5bb804f1f.json",
+					"jsonFile" : "target-d3-Release-5720e68c5a9ef8fe85d4.json",
 					"name" : "d3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "d8::@145eef247bfb46b6828c",
+					"jsonFile" : "target-d8-Release-3f1c029b1aed4bb03316.json",
+					"name" : "d8",
 					"projectIndex" : 1
 				}
 			]
@@ -85,7 +94,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/debugUnix",
+		"build" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/releaseNinja",
 		"source" : "/home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD"
 	},
 	"version" : 

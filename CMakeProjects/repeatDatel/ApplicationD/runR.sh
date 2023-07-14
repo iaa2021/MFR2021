@@ -1,3 +1,3 @@
 echo [*] running release configuration with Ninja
 cd releaseNinja
-src/d3
+src/d8

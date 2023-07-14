@@ -142,6 +142,19 @@ d3/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/d3.dir/build.make src/CMakeFiles/d3.dir/build
 .PHONY : d3/fast
 
+#=============================================================================
+# Target rules for targets named d8
+
+# Build rule for target.
+d8: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 d8
+.PHONY : d8
+
+# fast build rule for target.
+d8/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/d8.dir/build.make src/CMakeFiles/d8.dir/build
+.PHONY : d8/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -152,6 +165,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... d2"
 	@echo "... d3"
+	@echo "... d8"
 .PHONY : help
 
 

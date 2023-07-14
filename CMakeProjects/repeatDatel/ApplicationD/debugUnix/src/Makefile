@@ -144,6 +144,20 @@ d3/fast:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/debugUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/d3.dir/build.make src/CMakeFiles/d3.dir/build
 .PHONY : d3/fast
 
+# Convenience name for target.
+src/CMakeFiles/d8.dir/rule:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/debugUnix && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/d8.dir/rule
+.PHONY : src/CMakeFiles/d8.dir/rule
+
+# Convenience name for target.
+d8: src/CMakeFiles/d8.dir/rule
+.PHONY : d8
+
+# fast build rule for target.
+d8/fast:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/debugUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/d8.dir/build.make src/CMakeFiles/d8.dir/build
+.PHONY : d8/fast
+
 d2.o: d2.cpp.o
 .PHONY : d2.o
 
@@ -192,6 +206,30 @@ d3.cpp.s:
 	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/debugUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/d3.dir/build.make src/CMakeFiles/d3.dir/d3.cpp.s
 .PHONY : d3.cpp.s
 
+d8.o: d8.cpp.o
+.PHONY : d8.o
+
+# target to build an object file
+d8.cpp.o:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/debugUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/d8.dir/build.make src/CMakeFiles/d8.dir/d8.cpp.o
+.PHONY : d8.cpp.o
+
+d8.i: d8.cpp.i
+.PHONY : d8.i
+
+# target to preprocess a source file
+d8.cpp.i:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/debugUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/d8.dir/build.make src/CMakeFiles/d8.dir/d8.cpp.i
+.PHONY : d8.cpp.i
+
+d8.s: d8.cpp.s
+.PHONY : d8.s
+
+# target to generate assembly for a file
+d8.cpp.s:
+	cd /home/iaa/Desktop/gitStore/MFR2021/CMakeProjects/repeatDatel/ApplicationD/debugUnix && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/d8.dir/build.make src/CMakeFiles/d8.dir/d8.cpp.s
+.PHONY : d8.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,12 +240,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... d2"
 	@echo "... d3"
+	@echo "... d8"
 	@echo "... d2.o"
 	@echo "... d2.i"
 	@echo "... d2.s"
 	@echo "... d3.o"
 	@echo "... d3.i"
 	@echo "... d3.s"
+	@echo "... d8.o"
+	@echo "... d8.i"
+	@echo "... d8.s"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/d8.dir/d8.cpp.o -o d8 
