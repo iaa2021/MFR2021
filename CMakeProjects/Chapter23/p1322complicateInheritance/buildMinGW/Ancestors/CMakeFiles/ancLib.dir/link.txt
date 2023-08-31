@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libancLib.a CMakeFiles/ancLib.dir/Derived.cpp.obj
-C:\MinGW\bin\ranlib.exe libancLib.a

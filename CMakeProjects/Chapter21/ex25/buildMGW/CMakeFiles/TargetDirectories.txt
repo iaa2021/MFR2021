@@ -1,6 +1,0 @@
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/buildMGW/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/buildMGW/CMakeFiles/rebuild_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/buildMGW/src/CMakeFiles/21_26.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/buildMGW/src/CMakeFiles/21_30.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/buildMGW/src/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter21/ex25/buildMGW/src/CMakeFiles/rebuild_cache.dir

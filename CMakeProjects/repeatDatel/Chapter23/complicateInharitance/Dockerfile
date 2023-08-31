@@ -1,15 +1,18 @@
-FROM gcc:latest 
+FROM gcc:latest
 
 WORKDIR /app
 
+ADD ./lib /app/lib
 ADD ./src /app/src
-ADD  ./lib /app/lib
-ADD  ./CMakeLists.txt /app
+ADD ./CMakeLists.txt /app
 
 RUN apt-get update && apt-get install -y cmake
+
 WORKDIR /app/build
-RUN cmake .. 
+
+RUN cmake ..
 RUN cmake --build .
 
 WORKDIR /app/build/src
-CMD [ "./1122" ]
+
+CMD [ "./p1324" ]

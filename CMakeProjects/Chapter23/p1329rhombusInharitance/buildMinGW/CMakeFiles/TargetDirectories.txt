@@ -1,6 +1,0 @@
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1329rhombusInharitance/buildMinGW/CMakeFiles/1329.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1329rhombusInharitance/buildMinGW/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1329rhombusInharitance/buildMinGW/CMakeFiles/rebuild_cache.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1329rhombusInharitance/buildMinGW/headerLib/CMakeFiles/hLib.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1329rhombusInharitance/buildMinGW/headerLib/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1329rhombusInharitance/buildMinGW/headerLib/CMakeFiles/rebuild_cache.dir

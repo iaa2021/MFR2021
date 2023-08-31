@@ -1,3 +1,0 @@
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter22/p1294accumulate/buildMinGW/CMakeFiles/1294.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter22/p1294accumulate/buildMinGW/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter22/p1294accumulate/buildMinGW/CMakeFiles/rebuild_cache.dir

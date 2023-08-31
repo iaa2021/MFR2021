@@ -1,6 +1,0 @@
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter23/p1322complicateInheritance/build/CMakeFiles/1322.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter23/p1322complicateInheritance/build/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter23/p1322complicateInheritance/build/CMakeFiles/rebuild_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter23/p1322complicateInheritance/build/Ancestors/CMakeFiles/ancLib.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter23/p1322complicateInheritance/build/Ancestors/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter23/p1322complicateInheritance/build/Ancestors/CMakeFiles/rebuild_cache.dir

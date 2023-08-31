@@ -1,6 +1,0 @@
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1322complicateInheritance/buildMinGW/CMakeFiles/1322.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1322complicateInheritance/buildMinGW/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1322complicateInheritance/buildMinGW/CMakeFiles/rebuild_cache.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1322complicateInheritance/buildMinGW/Ancestors/CMakeFiles/ancLib.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1322complicateInheritance/buildMinGW/Ancestors/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/GitStore/MFR2021/CMakeProjects/Chapter23/p1322complicateInheritance/buildMinGW/Ancestors/CMakeFiles/rebuild_cache.dir
