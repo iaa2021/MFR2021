@@ -1,0 +1,6 @@
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/releaseMinGW/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/releaseMinGW/CMakeFiles/rebuild_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/releaseMinGW/src/CMakeFiles/p1318.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/releaseMinGW/src/CMakeFiles/p1319.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/releaseMinGW/src/CMakeFiles/edit_cache.dir
+C:/Users/ivano/Desktop/gitWatch/CMakeProjects/repeatDatel/Chapter23/chapter23samples/releaseMinGW/src/CMakeFiles/rebuild_cache.dir

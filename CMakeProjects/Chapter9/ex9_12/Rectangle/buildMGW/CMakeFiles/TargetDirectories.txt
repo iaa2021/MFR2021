@@ -1,8 +1,0 @@
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/buildMGW/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/buildMGW/CMakeFiles/rebuild_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/buildMGW/src/CMakeFiles/9_12.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/buildMGW/src/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/buildMGW/src/CMakeFiles/rebuild_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/buildMGW/lib/CMakeFiles/lib.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/buildMGW/lib/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/buildMGW/lib/CMakeFiles/rebuild_cache.dir

@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libratLib.a CMakeFiles/ratLib.dir/Rational.cpp.obj
-C:\MinGW\bin\ranlib.exe libratLib.a

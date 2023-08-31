@@ -1,6 +1,0 @@
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/build/src/CMakeFiles/9_12.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/build/src/CMakeFiles/ALL_BUILD.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/build/lib/CMakeFiles/lib.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/ex9_12/Rectangle/build/lib/CMakeFiles/ALL_BUILD.dir

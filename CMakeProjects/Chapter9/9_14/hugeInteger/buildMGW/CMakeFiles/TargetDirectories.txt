@@ -1,8 +1,0 @@
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/9_14/hugeInteger/buildMGW/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/9_14/hugeInteger/buildMGW/CMakeFiles/rebuild_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/9_14/hugeInteger/buildMGW/lib/CMakeFiles/myLib.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/9_14/hugeInteger/buildMGW/lib/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/9_14/hugeInteger/buildMGW/lib/CMakeFiles/rebuild_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/9_14/hugeInteger/buildMGW/src/CMakeFiles/9_14.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/9_14/hugeInteger/buildMGW/src/CMakeFiles/edit_cache.dir
-C:/Users/ivano/Desktop/gitWatch/CMakeProjects/Chapter9/9_14/hugeInteger/buildMGW/src/CMakeFiles/rebuild_cache.dir
