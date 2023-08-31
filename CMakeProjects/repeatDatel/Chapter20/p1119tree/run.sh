@@ -1,7 +1,13 @@
 echo[*]Running debug configuration via VS
+mkdir build1
 
-cd build
+cd build1
 
-src/1122
+cmake ..
+
+cmake --build .
+
+cd src
+./1122
 
 cd ..

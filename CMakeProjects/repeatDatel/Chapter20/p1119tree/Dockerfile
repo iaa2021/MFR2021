@@ -3,7 +3,8 @@ FROM gcc:latest
 WORKDIR /app
 
 COPY . .
+COPY src /app/src
+COPY lib /app/lib
+COPY run.sh /app
 
-WORKDIR /app/build/src
-
-CMD [ "./1122" ]
+CMD [ "./run.sh" ]
