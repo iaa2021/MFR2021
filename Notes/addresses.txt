@@ -1,0 +1,10 @@
+URL для извлечения: https://github.com/proffix4/CPP_CROSS_DEV_UBUNTU22.git
+  URL для отправки: https://github.com/proffix4/CPP_CROSS_DEV_UBUNTU22.git
+
+URL для извлечения: https://github.com/wxFormBuilder/wxFormBuilder
+  URL для отправки: https://github.com/wxFormBuilder/wxFormBuilder
+
+URL для извлечения: https://github.com/ohmyzsh/ohmyzsh.git
+  URL для отправки: https://github.com/ohmyzsh/ohmyzsh.git
+
+
