@@ -22,12 +22,14 @@ private:
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
-<<<<<<< HEAD
     void  deleteNodeHelper( TreeNode<NT> *, NT );
+<<<<<<< HEAD
 =======
     bool  deleteNodeHelper( TreeNode<NT> *, NT );
     void makeVectorHelper( TreeNode<NT> *, vector<NT> );
 >>>>>>> 15cc890b (20.21 19 01 2022)
+=======
+>>>>>>> a7b17099 (Correcting damage 20.21)
 public:
     Tree();
     void preOrderTraversal() const;
@@ -41,12 +43,14 @@ public:
     map<NT, int> getMap() const;
     void levelTraversal( const Tree & ) const;
     TreeNode<NT> *getRoot() const;
-<<<<<<< HEAD
     void deleteNode( NT );
+<<<<<<< HEAD
 =======
     void deletetNode( TreeNode<NT> *, NT );
     void makeVector();
 >>>>>>> 15cc890b (20.21 19 01 2022)
+=======
+>>>>>>> a7b17099 (Correcting damage 20.21)
 };
 template <class NT>
 Tree<NT>::Tree()
@@ -226,62 +230,28 @@ TreeNode<NT> * Tree<NT>::getRoot() const
     return root;
 }
 template <class NT>
-<<<<<<< HEAD
 void Tree<NT>::deleteNode( NT value )
+<<<<<<< HEAD
 =======
 void Tree<NT>::deletetNode( TreeNode<NT> *ptr, NT value)
 >>>>>>> 15cc890b (20.21 19 01 2022)
+=======
+>>>>>>> a7b17099 (Correcting damage 20.21)
 {
     deleteNodeHelper( root, value );
 }
 template <class NT>
-<<<<<<< HEAD
 void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
-{
-    TreeNode<NT> *temp;
-    if( (ptr ->left) ->data == value )
-    {
-        temp = ptr ->left;
-        if( temp ->left == 0 && temp ->right == 0 )
-        {
-            ptr ->left = 0;
-            delete temp;
-        }
-    }
-    if( (ptr ->right) ->data == value )
-    {
-        temp = ptr ->right;
-        if( temp ->left == 0 && temp ->right == 0 )
-        {
-            ptr ->right = 0;
-            delete temp;
-        }
-    }
-    if( ptr ->right != 0 )
-    deleteNodeHelper( ptr ->right, value );
-    if( ptr ->left != 0 )
-    deleteNodeHelper( ptr ->left, value );
-=======
-bool Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
 {
     TreeNode<NT> *temp;
     if( ptr != 0 )
     {
-        if( ( ptr ->left ) ->data > value )
+        cout << ptr ->data << ", ";
+    
         deleteNodeHelper( ptr ->right, value );
-        if( ( ptr ->left ) ->data < value )
         deleteNodeHelper( ptr ->left, value );
-        if( ( ptr ->left ) ->data == value )
-        {
-            cout << "\n Desired value" << value << "has been found in the left branch.\n";
-            return true;
-        }
-        if( ( ptr ->right ) ->data == value )
-        {
-            cout << "\n Desired value" << value << "has been found in the right branch.\n";
-            return true;
-        }
     }
+<<<<<<< HEAD
     return false;
 }
 template <class NT>
@@ -304,5 +274,8 @@ void Tree<NT>::makeVectorHelper( TreeNode<NT> *ptr, vector<NT> vct )
     
     
 >>>>>>> 15cc890b (20.21 19 01 2022)
+=======
+>>>>>>> a7b17099 (Correcting damage 20.21)
 }
+
 #endif

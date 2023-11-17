@@ -79,17 +79,18 @@ int main()
     stringTree.depth( stringTree,  ptr4  );
     cout << "\n Demonstration of levelTraversal function:\n";
     stringTree.levelTraversal( stringTree );
-<<<<<<< HEAD
-    cout << "\n Demonstration of levelTraversal functionf on intTree:\n";
+    cout << "\n Demonstration of levelTraversal function on intTree:\n";
     intTree.levelTraversal( intTree );
-    int value;
+    double value;
     cout << "\nInput value, you'd like to delete;\n";
     cin >> value;
-    intTree.deleteNode(value);
-=======
+    intTree.deleteNode( value );
     cout << "\n Demonstration of levelTraversal function:\n";
     intTree.levelTraversal( intTree );
+<<<<<<< HEAD
     intTree.makeVector();
 >>>>>>> 15cc890b (20.21 19 01 2022)
+=======
+>>>>>>> a7b17099 (Correcting damage 20.21)
     return 0;
 }
