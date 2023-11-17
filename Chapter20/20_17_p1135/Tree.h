@@ -22,6 +22,7 @@ private:
     void  preOrderHelper( TreeNode<NT> *ptr ) const;
     void  inOrderHelper( TreeNode<NT> *ptr ) const;
     void  postOrderHelper( TreeNode<NT> *ptr ) const;
+<<<<<<< HEAD
     void  deleteNodeHelper( TreeNode<NT> *, NT );
 <<<<<<< HEAD
 =======
@@ -30,6 +31,9 @@ private:
 >>>>>>> 15cc890b (20.21 19 01 2022)
 =======
 >>>>>>> a7b17099 (Correcting damage 20.21)
+=======
+    bool  deleteNodeHelper( TreeNode<NT> *, NT );
+>>>>>>> 87779886 (20.21 20 01 2022)
 public:
     Tree();
     void preOrderTraversal() const;
@@ -241,16 +245,31 @@ void Tree<NT>::deletetNode( TreeNode<NT> *ptr, NT value)
     deleteNodeHelper( root, value );
 }
 template <class NT>
-void Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
+bool Tree<NT>::deleteNodeHelper( TreeNode<NT> *ptr, NT value )
 {
     TreeNode<NT> *temp;
     if( ptr != 0 )
     {
-        cout << ptr ->data << ", ";
-    
+        if(  ptr ->left != 0 )
+        {
+            if( (ptr ->left) ->data == value )
+            {
+                ( ptr ->left ) = nullptr;
+                return true;
+            }
+        }
+        if( ptr ->right != 0 )
+        {
+            if( ( ptr ->right ) ->data == value  )
+            {
+                ( ptr ->right ) = nullptr;
+                return true;
+            }
+        }
         deleteNodeHelper( ptr ->right, value );
         deleteNodeHelper( ptr ->left, value );
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     return false;
 }
@@ -276,6 +295,9 @@ void Tree<NT>::makeVectorHelper( TreeNode<NT> *ptr, vector<NT> vct )
 >>>>>>> 15cc890b (20.21 19 01 2022)
 =======
 >>>>>>> a7b17099 (Correcting damage 20.21)
+=======
+    return false;
+>>>>>>> 87779886 (20.21 20 01 2022)
 }
 
 #endif
